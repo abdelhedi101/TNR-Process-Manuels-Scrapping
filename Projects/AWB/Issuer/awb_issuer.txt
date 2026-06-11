@@ -1,0 +1,278 @@
+Paramètrage>Configuration Technique
+Paramètrage>Configuration Technique>Chargement des configurations
+Paramètrage>Configuration Technique>Class Dispatcher
+Paramètrage>Configuration Technique>Outil de Test
+Paramètrage>Configuration Technique>PurgeScript
+Paramètrage>Configuration Technique>Type de notifications
+Paramètrage>Configuration du Process 
+Paramètrage>Configuration du Process >Commissionnement et Facturation
+Paramètrage>Configuration du Process >Commissionnement et Facturation>Compte espèce éligible
+Paramètrage>Configuration du Process >Commissionnement et Facturation>Configuration de la Facturation
+Paramètrage>Configuration du Process >Commissionnement et Facturation>Configuration de la TVA
+Paramètrage>Configuration du Process >Commissionnement et Facturation>Régles de frais
+Paramètrage>Configuration du Process >Commissionnement et Facturation>Service facturé
+Paramètrage>Configuration du Process >Configuration Centralisation
+Paramètrage>Configuration du Process >Configuration Centralisation>Configuration de la consolidation
+Paramètrage>Configuration du Process >Configuration Centralisation>Configuration du RCQ
+Paramètrage>Configuration du Process >Configuration Centralisation>Configuration du compte Centralisateur
+Paramètrage>Configuration du Process >Configuration Centralisation>Création d'event du Tableau d'amortissement
+Paramètrage>Configuration du Process >Configuration Centralisation>Création d'event du Tableau d'amortissement>Condifuration des dates
+Paramètrage>Configuration du Process >Configuration Centralisation>Création d'event du Tableau d'amortissement>Configuration des events 
+Paramètrage>Configuration du Process >Configuration Centralisation>Création d'event du Tableau d'amortissement>Intervalle de création
+Paramètrage>Configuration du Process >Configuration Centralisation>Dépendence des champs
+Paramètrage>Configuration du Process >Configuration Centralisation>Fiscalité
+Paramètrage>Configuration du Process >Configuration Centralisation>Fiscalité>Nature fiscale
+Paramètrage>Configuration du Process >Configuration Centralisation>Fiscalité>Revenue
+Paramètrage>Configuration du Process >Configuration Centralisation>Fiscalité>SLA Exonération de Taxe
+Paramètrage>Configuration du Process >Configuration Centralisation>Fiscalité>SLA de la Régle fiscale 
+Paramètrage>Configuration du Process >Configuration Centralisation>Fiscalité>SLA de la catégorie fiscale
+Paramètrage>Configuration du Process >Configuration Centralisation>SLA Compte titre centralisateur
+Paramètrage>Configuration du Process >Configuration Centralisation>SLA de tolérance
+Paramètrage>Configuration du Process >Configuration Comptabilité
+Paramètrage>Configuration du Process >Configuration Comptabilité>Chercher / Créer Mappeur Simple
+Paramètrage>Configuration du Process >Configuration Système
+Paramètrage>Configuration du Process >Configuration Système>Configuration des contrôles métiers
+Paramètrage>Configuration du Process >Configuration Système>Configuration des références
+Paramètrage>Configuration du Process >Configuration Système>Configuration du chargement Excel
+Paramètrage>Configuration du Process >Configuration Système>Message et notifications
+Paramètrage>Configuration du Process >Configuration Système>Message et notifications>Channel Configuration
+Paramètrage>Configuration du Process >Configuration Système>Message et notifications>Driver config
+Paramètrage>Configuration du Process >Configuration Système>Message et notifications>Impact
+Paramètrage>Configuration du Process >Configuration Système>Message et notifications>Notification type
+Paramètrage>Configuration du Process >Configuration Système>Message et notifications>Router SLA
+Paramètrage>Configuration du Process >Configuration Système>System Parameters
+Paramètrage>Configuration du Process >Configuration Système>Type des documents
+Paramètrage>Configuration du Process >Configuration Tenue de Registre
+Paramètrage>Configuration du Process >Configuration Tenue de Registre>Configuration des comptes
+Paramètrage>Configuration du Process >Configuration Tenue de Registre>Configuration des comptes>Compte dépositaire SLA d'éligibilité 
+Paramètrage>Configuration du Process >Configuration Tenue de Registre>Configuration des comptes>Compte technique SLA d'éligibilité 
+Paramètrage>Configuration du Process >Configuration Tenue de Registre>Configuration des comptes>Compte émetteur SLA d'éligibilité 
+Paramètrage>Configuration du Process >Configuration Tenue de Registre>Evénement d'émission
+Paramètrage>Configuration du Process >Configuration Tenue de Registre>Evénement d'émission>Evénement d'émission
+Paramètrage>Configuration du Process >Configuration Tenue de Registre>Type de Transaction
+Paramètrage>Configuration du Process >Configuration Tenue de Registre>Type de Transaction>SLA de type de transaction
+Paramètrage>Configuration du Process >Configuration Tenue de Registre>Type de Transaction>Type de transaction
+Paramètrage>Configuration du Process >Configuration du chargement Excel
+Paramètrage>Configuration du Process >Configuration du chargement Excel>Configuration du chargement Excel
+Paramètrage>Planificateur Quartz
+Paramètrage>Planificateur Quartz>Chercher / Créer processus
+Paramètrage>Planificateur Quartz>Configuration processus
+Paramètrage>Planificateur Quartz>Suivi execution processus
+Paramètrage>Raccourci du Référentiel
+Paramètrage>Raccourci du Référentiel>Acteurs
+Paramètrage>Raccourci du Référentiel>Acteurs>Actionnaires
+Paramètrage>Raccourci du Référentiel>Acteurs>Centralisateur
+Paramètrage>Raccourci du Référentiel>Acteurs>Contreparties
+Paramètrage>Raccourci du Référentiel>Acteurs>Dépositaires
+Paramètrage>Raccourci du Référentiel>Acteurs>Emetteur
+Paramètrage>Raccourci du Référentiel>Acteurs>Société de Gestion
+Paramètrage>Raccourci du Référentiel>Acteurs>Teneur de Registre
+Paramètrage>Raccourci du Référentiel>Comptes
+Paramètrage>Raccourci du Référentiel>Comptes>Compte Titre Centralisateur
+Paramètrage>Raccourci du Référentiel>Comptes>Compte dépositaire
+Paramètrage>Raccourci du Référentiel>Comptes>Compte technique
+Paramètrage>Raccourci du Référentiel>Comptes>Compte émetteur
+Paramètrage>Raccourci du Référentiel>Entité Principale
+Paramètrage>Raccourci du Référentiel>Entité Principale>Consultattion de l'entité principale
+Paramètrage>Raccourci du Référentiel>Instruments Financiers
+Paramètrage>Raccourci du Référentiel>Instruments Financiers>Actions
+Paramètrage>Raccourci du Référentiel>Instruments Financiers>Droits
+Paramètrage>Raccourci du Référentiel>Instruments Financiers>OPCVM
+Paramètrage>Raccourci du Référentiel>Instruments Financiers>Obligations
+Centralisation>Annonce de capital
+Centralisation>Annonce de capital>Attributions
+Centralisation>Annonce de capital>Attributions>Attribution 
+Centralisation>Annonce de capital>Attributions>Chargement des attributions
+Centralisation>Annonce de capital>Attributions>Mise à jour avec attribution et restitution
+Centralisation>Annonce de capital>Distribution des titres
+Centralisation>Annonce de capital>Distribution des titres>Distribution des Titres
+Centralisation>Annonce de capital>Gestion des souscriptions
+Centralisation>Annonce de capital>Gestion des souscriptions>Annulation des souscriptions
+Centralisation>Annonce de capital>Gestion des souscriptions>Chargement des souscriptions
+Centralisation>Annonce de capital>Gestion des souscriptions>Consolidation des souscriptions
+Centralisation>Annonce de capital>Gestion des souscriptions>Consultation des souscriptions
+Centralisation>Annonce de capital>Gestion des souscriptions>Envoi des souscriptions
+Centralisation>Annonce de capital>Gestion des souscriptions>Export des souscriptions
+Centralisation>Annonce de capital>Gestion des souscriptions>Mise à jour des souscriptions
+Centralisation>Annonce de capital>Gestion des souscriptions>Réctification des souscriptions
+Centralisation>Annonce de capital>Gestion des souscriptions>Souscription par dépositaire
+Centralisation>Annonce de capital>Gestion des souscriptions>Validation des souscriptions
+Centralisation>Annonce de capital>Notifications
+Centralisation>Annonce de capital>Notifications>Consultation attestation de blocage envoyées
+Centralisation>Annonce de capital>Notifications>Consultation notifications envoyées
+Centralisation>Annonce de capital>Notifications>Envoie notification au dépositaire
+Centralisation>Annonce de capital>Notifications>Envoie notification à l'émetteur
+Centralisation>Annonce de capital>Restitution
+Centralisation>Annonce de capital>Restitution>Calcul des restitutions
+Centralisation>Annonce de capital>Restitution>Consultation des restitutions 
+Centralisation>Annonce de capital>Réconciliation
+Centralisation>Annonce de capital>Réconciliation>Reconcilation
+Centralisation>Annonce de capital>Réconciliation>Résultat de réconciliation montant
+Centralisation>Annonce de capital>Réconciliation>Résultat de réconciliation quantité
+Centralisation>Gestion des annonces
+Centralisation>Gestion des annonces>Annulation d'annonce
+Centralisation>Gestion des annonces>Clôture d'annonce
+Centralisation>Gestion des annonces>Consultation d'annonce
+Centralisation>Gestion des annonces>Création d'annonce
+Centralisation>Gestion des annonces>Echéances remboursés par émetteur
+Centralisation>Gestion des annonces>Impact d'une annonce sur les comptes émissions
+Centralisation>Gestion des annonces>Mise à jour d'annonce
+Centralisation>Gestion des annonces>Ratification d'annonce
+Centralisation>Gestion des annonces>Validation d'annonce
+Centralisation>Paiement dépositaire
+Centralisation>Paiement dépositaire>Génération de paiement Dépositaire
+Centralisation>Paiement dépositaire>Génération de paiement Dépositaire>Calcul paiement
+Centralisation>Paiement dépositaire>Génération de paiement Dépositaire>Comparaison paiements espèces
+Centralisation>Paiement dépositaire>Génération de paiement Dépositaire>Confirmation paiements espèces
+Centralisation>Paiement dépositaire>Génération de paiement Dépositaire>Confirmation paiements titres
+Centralisation>Paiement dépositaire>Génération de paiement Dépositaire>Consultation détails de paiement
+Centralisation>Paiement dépositaire>Génération de paiement Dépositaire>Consultation paiement
+Centralisation>Paiement dépositaire>Génération de paiement Dépositaire>Revenu
+Centralisation>Paiement dépositaire>Simulation paiement dépositaire
+Centralisation>Paiement dépositaire>Simulation paiement dépositaire>Consultation
+Centralisation>Paiement dépositaire>Simulation paiement dépositaire>Création
+Centralisation>Paiement dépositaire>Ticket SRBM
+Centralisation>Paiement dépositaire>Ticket SRBM>Génération ticket SRBM
+Centralisation>Paiement dépositaire>Ticket SRBM>Mise à jour instruction par dépositaire
+Centralisation>Paiement dépositaire>Ticket SRBM>Mise à jour paiement
+Centralisation>Paiement émetteur
+Centralisation>Paiement émetteur>Annulation paiement émetteur
+Centralisation>Paiement émetteur>Confirmation paiement émetteur
+Centralisation>Paiement émetteur>Consultation paiement émetteur
+Centralisation>Paiement émetteur>Création paiement émetteur
+Centralisation>Paiement émetteur>Envoi paiement émetteur
+Centralisation>Paiement émetteur>Suivi des échéances
+Centralisation>Paiement émetteur>Validation WorkFlow Agence
+Centralisation>Paiement émetteur>Validation paiement émetteur
+Centralisation>Participation dépositaire
+Centralisation>Participation dépositaire>Confirmation participation dépositaires
+Centralisation>Participation dépositaire>Consultation participation dépositaires
+Centralisation>Participation dépositaire>Création participation dépositaires
+Centralisation>Participation dépositaire>Ignorer participation dépositaires
+Centralisation>Participation dépositaire>Mise à jour de participation dépositaire
+Centralisation>Participation dépositaire>Participation dépositaires confirmée 
+Centralisation>Participation dépositaire>Ségrégation des participations dépositaire
+Centralisation>Participation dépositaire>Ségrégation des participations dépositaire>Ségrégation par catégorie d'avoirs
+Centralisation>Participation dépositaire>Ségrégation des participations dépositaire>Ségrégation par catégorie de client
+Centralisation>Participation dépositaire>Ungnorer participation dépositaires
+Centralisation>Participation dépositaire>Validation de participation dépositaire
+Centralisation>Position
+Centralisation>Position>Consultation
+Centralisation>Position>Historique Mouvement Client
+Facturation>Commission MaroClear
+Facturation>Commission MaroClear>Commission de Conversion
+Facturation>Commission MaroClear>Commission de gestion des Comptes Courants
+Facturation>Commission MaroClear>Commission de gestion des Comptes Emission
+Facturation>Commission MaroClear>Commission sur les Avoirs
+Facturation>Commission MaroClear>Commission sur les Avoirs>Annuler Le Process des Frais sur les Avoirs
+Facturation>Commission MaroClear>Commission sur les Avoirs>Calculer les Commissions sur les Avoirs
+Facturation>Commission MaroClear>Commission sur les Avoirs>Commissions sur les Avoirs
+Facturation>Commission MegaIssuer
+Facturation>Commission MegaIssuer>Commission de Centralisation : Echéance
+Facturation>Commission MegaIssuer>Commission de Tenue de Registre
+Facturation>Génération de la Facture
+Facturation>Génération de la Facture>Afficher une facture en PDF
+Facturation>Génération de la Facture>Annuler une Facture
+Facturation>Génération de la Facture>Consulter une Facture
+Facturation>Génération de la Facture>Envoyer une Facture
+Facturation>Génération de la Facture>Générer une Facture
+Facturation>Génération de la Facture>Recevoir un Paiement
+Facturation>Génération de la Facture>Valider une Facture
+Marché primaire>Communication Maroclear
+Marché primaire>Communication Maroclear>Envoie de la demande d'admission
+Marché primaire>Communication Maroclear>Envoie de la lettre comptable
+Marché primaire>Communication Maroclear>Mise à jour de l'ISIN
+Marché primaire>Gestion de souscription
+Marché primaire>Gestion de souscription>Clôture des souscriptions
+Marché primaire>Gestion de souscription>Consultation de souscription
+Marché primaire>Gestion de souscription>Saisie de souscription
+Marché primaire>Gestion du dossier d'admission
+Marché primaire>Gestion du dossier d'admission>Clôture d'un dossier d'admission
+Marché primaire>Gestion du dossier d'admission>Consultation du dossier d'admission
+Marché primaire>Gestion du dossier d'admission>Création de dossier d'admission
+Marché primaire>Gestion du dossier d'admission>Edition de dossier avant validation
+Marché primaire>Gestion du dossier d'admission>Mise à jour dossier d'admission
+Marché primaire>Gestion du dossier d'admission>Rejet
+Marché primaire>Gestion du dossier d'admission>Rejet>Rejet de la clôture
+Marché primaire>Gestion du dossier d'admission>Rejet>Rejet de la création
+Marché primaire>Gestion du dossier d'admission>Validation
+Marché primaire>Gestion du dossier d'admission>Validation>Validation de la clôture
+Marché primaire>Gestion du dossier d'admission>Validation>Validation de la création
+Marché primaire>Gestion du dossier d'admission>Validation>Validation de la mise à jour
+Marché primaire>IRLs
+Marché primaire>IRLs>Envoie d'IRL
+Marché primaire>Notification
+Marché primaire>Notification>Demande d'admission 
+Marché primaire>Notification>Lettre comptable d'admission
+Marché primaire>Notification>Notification MT54X envoyées
+Marché primaire>Notification>Notification de Tenue de registre envoyée
+Marché primaire>Notification>Notification de Tenue de registre reçue  
+Notifications>Comptabilité
+Notifications>Comptabilité>Comptabilité Espèce
+Notifications>Comptabilité>Comptabilité Titre
+Notifications>Comptabilité>Comptabilité Titre sur les valeurs nominatives
+Notifications>Notifications
+Notifications>Notifications>CA Confirmation
+Notifications>Notifications>Data CA
+Notifications>Notifications>Instruction MegaCor
+Notifications>Notifications>Message
+Notifications>Notifications>Notification
+Notifications>Notifications>Notification MT54X
+Notifications>Notifications>Notification Tenu de registre
+Paramètrage>Raccourci du Référentiel>Instruments Financiers>TCN
+Rapports>Rapport Clientèle
+Rapports>Rapport Clientèle>Avis de débit de paiement des dividendes
+Rapports>Rapport Clientèle>Avis de débit de remboursement des intérêts
+Rapports>Rapport Clientèle>Avis de débit à la facturation
+Rapports>Rapport Clientèle>Etat Fiscal
+Rapports>Rapport Clientèle>Etat des soldes de gestion
+Rapports>Rapport Clientèle>Fiche position titres actionnaire
+Rapports>Rapport Clientèle>Génération d'attestation de blocage
+Rapports>Rapport Clientèle>Journal des mouvements émetteur
+Rapports>Rapport Clientèle>Registre de transfert des actionnaires
+Rapports>Rapport Clientèle>Relevé des titres par actionnaire
+Rapports>Rapport Clientèle>Répartition du capital
+Rapports>Rapport Clientèle>variation nombre de part
+Tenue de registre>Compte émission OPCVM
+Tenue de registre>Compte émission OPCVM>Clôture des comptes émission
+Tenue de registre>Compte émission OPCVM>Consultation des comptes émission
+Tenue de registre>Compte émission OPCVM>Déversement du compte technique
+Tenue de registre>Compte émission OPCVM>Edition des comptes émission
+Tenue de registre>Compte émission OPCVM>Mise à jour des comptes émission
+Tenue de registre>Compte émission OPCVM>Validation
+Tenue de registre>Compte émission OPCVM>Validation>Rejet de la création
+Tenue de registre>Compte émission OPCVM>Validation>Validation de la création
+Tenue de registre>Compte émission OPCVM>Validation>Validation de la mise à jour / clôture
+Tenue de registre>Compte émission non OPCVM
+Tenue de registre>Compte émission non OPCVM>Clôture des comptes émission
+Tenue de registre>Compte émission non OPCVM>Consultation des comptes émission
+Tenue de registre>Compte émission non OPCVM>Edition des comptes émission
+Tenue de registre>Compte émission non OPCVM>Mise à jour des comptes émission
+Tenue de registre>Compte émission non OPCVM>Validation
+Tenue de registre>Compte émission non OPCVM>Validation>Rejet de la création
+Tenue de registre>Compte émission non OPCVM>Validation>Validation de la création
+Tenue de registre>Compte émission non OPCVM>Validation>Validation de la mise à jour / clôture
+Tenue de registre>Création compte émission
+Tenue de registre>Création compte émission>Création compte émission
+Tenue de registre>Création compte émission>Création compte émission droit / coupon
+Tenue de registre>Gestion des opérations
+Tenue de registre>Gestion des opérations>Annulation des opérations
+Tenue de registre>Gestion des opérations>Annulation des opérations>Annulation des opérations
+Tenue de registre>Gestion des opérations>Consultation des opérations
+Tenue de registre>Gestion des opérations>Consultation des opérations>Consultation des impacts d'opérations
+Tenue de registre>Gestion des opérations>Consultation des opérations>Consultation des opérations
+Tenue de registre>Gestion des opérations>Consultation des opérations>Les encours
+Tenue de registre>Gestion des opérations>Saisie des opérations
+Tenue de registre>Gestion des opérations>Saisie des opérations>Achat/Vente
+Tenue de registre>Gestion des opérations>Saisie des opérations>Blocage / Déblocage
+Tenue de registre>Gestion des opérations>Saisie des opérations>Conversion
+Tenue de registre>Gestion des opérations>Saisie des opérations>Nantissement / Levée de Nantissement
+Tenue de registre>Gestion des opérations>Saisie des opérations>Souscription/Rachat
+Tenue de registre>Gestion des opérations>Saisie des opérations>Transfert
+Tenue de registre>Gestion des opérations>Validation des opérations
+Tenue de registre>Gestion des opérations>Validation des opérations>Validation des opérations
+Tenue de registre>Gestion des opérations>Validation des opérations>Validation des transferts
+Tenue de registre>Gestion des registres
+Tenue de registre>Gestion des registres>Consultation des avoirs
+Tenue de registre>Gestion des registres>Consultation des registres générès par date
+Tenue de registre>Gestion des registres>Génération du registre nominatif

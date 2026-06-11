@@ -1,0 +1,28 @@
+j'ai des application web, et je veux parcourir tous les ecrans de ces application pour realister les tests de non regression je veux m'assurer que tous les ecrans s'ouvre normalement 
+
+elle est une suite modulaire de megara et ceci son lien , je pense que selenium fait l'affaire; : 
+
+on dispose de 3 client : cdg , bmce et awb 
+
+pour chaque client il y'en a plusieurs modules , on commence par cdg vu il s'intentiife par keycloack 
+pour rous les modules : megacommon megacustody , megacor, megatrade , megacompliance , megalend et megaaccounting .
+
+on devrait tous d'abord opter pour le choix de client : cdg ou bmce ou awb 
+
+on commence par cdg , 
+on commence par megacommon et ceci est le lien :  http://10.1.145.37:8780/auth/realms/EXTERNAL/protocol/openid-connect/auth?response_type=code&client_id=MegaCommon&redirect_uri=https%3A%2F%2F10.1.140.42%2FMegaCommon%2F&state=1e55198f-bb41-49ce-93b0-a34b073e3e0d&login=true&scope=openid
+lorsqu'on accede a ce lien on doit cliquer sur cet element : 
+<a id="social-internal-keycloak-oidc-link" class="pf-c-button pf-m-control pf-m-block kc-social-item kc-social-gray " type="button" href="/auth/realms/EXTERNAL/broker/internal-keycloak-oidc-link/login?client_id=MegaCommon&amp;tab_id=_cH8BEzEK7c&amp;session_code=owbC66u1vobz9Z7Bg4b9Q59F6JL9gTaQ-_YxxOFXtjU">
+                                <span class="kc-social-provider-name">INTERNAL USERS LOGIN (CDGK)</span>
+                        </a>
+
+par la suite ce lien s'ouvre : http://10.1.140.42:8780/auth/realms/CDG/protocol/openid-connect/auth?scope=openid&state=2VtpjIobNV8ILfQ8EhTvF2_jpBkNvKJplpDMHVQaqTk.UyBweHvjFPs.MegaCommon&response_type=code&client_id=broker&redirect_uri=http%3A%2F%2F10.1.145.37%3A8780%2Fauth%2Frealms%2FEXTERNAL%2Fbroker%2Finternal-keycloak-oidc-link%2Fendpoint&prompt=login&nonce=xD9EmHE3yH8n_Ej-2z-xng
+
+on devrait decocher : <input tabindex="3" id="userTransform" name="userTransform" type="checkbox" checked="">
+
+pour le username : <input tabindex="1" id="username" class="pf-c-form-control" name="username" type="text" autofocus="" autocomplete="off">
+
+on devrait taper : migration 
+pour le password on devrait taper: Vermeg+123 
+pour le domain on a plusieurs choix possible mais par defaut on opte a CDG CAPITAL 
+par la suite on clique sur le bouton Submit

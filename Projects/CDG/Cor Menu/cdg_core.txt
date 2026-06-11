@@ -1,0 +1,152 @@
+Configuration MegaCor>Taxe>Référentiel>Créer/Afficher Nom Classification Fiscale
+Configuration MegaCor>Taxe>Référentiel>Créer/Afficher Règle de Calcul de Taxe
+Configuration MegaCor>Taxe>Référentiel>Créer/Afficher Type de Taxation
+Configuration MegaCor>Transaction Fees>Find/Create Bill By Process
+Configuration MegaCor>Transaction Fees>Find/Create Transaction Fees
+Configuration MegaCor>Transaction Fees>Find/Create Transaction Fees Job
+Configuration MegaCor>Transaction Fees>Find/Create Transaction Fees Profile
+Configuration MegaCor>Transaction Fees>Find/Create Transaction Fees SLA
+Configuration MegaCor>Transaction Fees>Manual Transaction Fees Process
+Exécutions>Fichier Centralisateur
+Exécutions>Marché>Annuler
+Exécutions>Marché>Exécutions Marché Reçues>Messages
+Exécutions>Marché>Exécutions Marché Reçues>Messages>Free MT568
+Exécutions>Marché>Exécutions Marché Reçues>Messages>Free MT568>Envoyer MT568
+Exécutions>Marché>Exécutions Marché Reçues>Messages>Free MT568>Fill MT568
+Exécutions>Marché>Exécutions Marché Reçues>Messages>Free MT568>Lister
+Exécutions>Marché>Exécutions Marché Reçues>Messages>Free MT568>MT568
+Exécutions>Marché>Exécutions Marché Reçues>Messages>Messages Entrants
+Exécutions>Marché>Exécutions Marché Reçues>Messages>MT567
+Exécutions>Marché>Exécutions Marché Reçues>Messages>MT567>Générer MT567 Ad Hoc
+Exécutions>Marché>Exécutions Marché Reçues>Reconcilier Exécutions Reçues
+Exécutions>Marché>Exécutions Marché Reçues>Reconcilier Exécutions Reçues>Annuler Exécution Espèce
+Exécutions>Marché>Exécutions Marché Reçues>Reconcilier Exécutions Reçues>Annuler Exécution Titre
+Exécutions>Marché>Exécutions Marché Reçues>Reconcilier Exécutions Reçues>Reconcilier Exécution Espèce
+Exécutions>Marché>Exécutions Marché Reçues>Reconcilier Exécutions Reçues>Reconcilier Exécution Titre
+Exécutions>Marché>Mise à jour>Accepter/Rejecter Brouillon
+Exécutions>Marché>Mise à jour>Mise à jour Exécution
+Exécutions>Marché>Mise à jour>Prix des Rompus
+Exécutions>Marché>Mise à jour>Prix Fraction
+Exécutions>Réclamations>Annulation
+Exécutions>Réclamations>Annulation>Annuler Cash
+Exécutions>Réclamations>Annulation>Annuler Titre
+Exécutions>Réclamations>Compensation
+Exécutions>Réclamations>Configurations
+Exécutions>Réclamations>Configurations>Claim Management SLA
+Exécutions>Réclamations>Configurations>Claim Reporting SLA
+Exécutions>Réclamations>Confirmation
+Exécutions>Réclamations>Confirmation>Confirmer Cash
+Exécutions>Réclamations>Confirmation>Confirmer Titre
+Exécutions>Réclamations>Générer
+Exécutions>Réclamations>Late Trade
+Exécutions>Réclamations>Late Trade>Calculater les exécutions
+Exécutions>Réclamations>Notifier
+Exécutions>Réclamations>Réparer
+Exécutions>Réclamations>Réparer>Réparer Cash
+Exécutions>Réclamations>Réparer>Réparer Titre
+Instructions>Client>Consolidation
+Instructions>Client>Créer
+Instructions>Client>Créer>Bulk Election
+Instructions>Client>Créer>Entrer
+Instructions>Client>Créer>Generate Standing Instructions
+Instructions>Client>Déblocage Positions 
+Instructions>Client>Lister
+Instructions>Client>Lock
+Instructions>Client>Manipuler Instruction
+Instructions>Client>Manipuler Instruction>Ajouter Donnée Manquante
+Instructions>Client>Manipuler Instruction>Annuler
+Instructions>Client>Manipuler Instruction>Après Date Limite Client
+Instructions>Client>Manipuler Instruction>Après Date Limite Client>Réenvoyer Instruction
+Instructions>Client>Manipuler Instruction>Après Date Limite Client>Rejecter
+Instructions>Client>Valider
+Instructions>Marché
+Instructions>Marché>Annuler
+Instructions>Marché>Envoyer
+Instructions>Marché>Lister
+Instructions>Messages Sortants
+Instructions>Messages Sortants>Ack/Nack Sortants
+Instructions>Messages Sortants>Message Instruction
+Opérations Sur titres>Annonces
+Opérations Sur titres>Annonces>Accepter/Rejeter Brouillon
+Opérations Sur titres>Annonces>Activer
+Opérations Sur titres>Annonces>Annuler
+Opérations Sur titres>Annonces>Consultation Des Annonces Clôturées
+Opérations Sur titres>Annonces>Création
+Opérations Sur titres>Annonces>Création>OST Marché Etranger
+Opérations Sur titres>Annonces>Création>OST Marché Local
+Opérations Sur titres>Annonces>Création>OST sans Brouillon
+Opérations Sur titres>Annonces>Fermer
+Opérations Sur titres>Annonces>Lister
+Opérations Sur titres>Annonces>Mise à jour
+Opérations Sur titres>Annonces>Mise à jour>Code Coupon
+Opérations Sur titres>Annonces>Mise à jour>Mise à Jour OST
+Opérations Sur titres>Annonces>Mise à jour>Mise à jour OST Marché étranger
+Opérations Sur titres>Annonces>Mise à jour>Utilisateur en charge
+Opérations Sur titres>Annonces>Valider
+Opérations Sur titres>Notifications
+Opérations Sur titres>Notifications>Envoyer un Rappel
+Opérations Sur titres>Notifications>Global
+Opérations Sur titres>Notifications>Global>Tout Envoyer
+Opérations Sur titres>Notifications>Global>Tout Générer
+Opérations Sur titres>Notifications>Lister Notifications
+Opérations Sur titres>Notifications>Par OST
+Opérations Sur titres>Notifications>Par OST>Envoyer par OST
+Opérations Sur titres>Notifications>Par OST>Générer par OST
+Paiements>Allouer aux Clients
+Paiements>Allouer aux Clients>Annulation
+Paiements>Allouer aux Clients>Annulation>Espèce
+Paiements>Allouer aux Clients>Annulation>Titre
+Paiements>Allouer aux Clients>Manuelle
+Paiements>Allouer aux Clients>Manuelle>Espèce Brut
+Paiements>Allouer aux Clients>Manuelle>Espèce Net
+Paiements>Allouer aux Clients>Manuelle>Titre
+Paiements>Allouer aux Clients>Simulation
+Paiements>Allouer aux Clients>Simulation>Espèce
+Paiements>Allouer aux Clients>Simulation>Titre
+Paiements>Message de Confirmation
+Paiements>Monitoring CRO
+Paiements>Paiements Client
+Paiements>Paiements Client>Annuler
+Paiements>Paiements Client>Annuler>Espèce
+Paiements>Paiements Client>Annuler>Paiement Confirmé
+Paiements>Paiements Client>Annuler>Titre
+Paiements>Paiements Client>Confirmer Paiement
+Paiements>Paiements Client>Création
+Paiements>Paiements Client>Création>Forçage
+Paiements>Paiements Client>Création>Forçage>Espèce
+Paiements>Paiements Client>Création>Forçage>Titre
+Paiements>Paiements Client>Création>Paiement Actuel
+Paiements>Paiements Client>Création>Paiement Contractuel
+Paiements>Paiements Client>Lister
+Paiements>Paiements Client>Lister>Consultation des Paiement Client Clôturées
+Paiements>Paiements Client>Lister>Paiement Client
+Paiements>Paiements Client>Lister>Paiement Confirmé
+Paiements>Paiements Client>Mise à jour de la Taxe
+Paiements>Paiements Client>Paiement Partiel (OVER)
+Paiements>Paiements Client>Paiement Partiel (OVER)>Generation des restitutions
+Paiements>Paiements Client>Paiement Partiel (OVER)>Generation des restitutions en montant
+Paiements>Paiements Client>Paiement Partiel (OVER)>Paiement Espèce
+Paiements>Paiements Client>Paiement Partiel (OVER)>Paiement Titre
+Paiements>Paiements Client>Validation
+Paiements>Paiements Client>Validation>Reprocess Paiement Espèce
+Paiements>Paiements Client>Validation>Reprocess Paiement Titre
+Paiements>Paiements Client>Validation>Titre
+Paiements>Paiements Marché
+Paiements>Paiements Marché>Annuler
+Paiements>Paiements Marché>Annuler>Espèce
+Paiements>Paiements Marché>Annuler>Titre
+Paiements>Paiements Marché>Consultation Paiement Marché Cloturées
+Paiements>Paiements Marché>Créer
+Paiements>Paiements Marché>Créer>Créer
+Paiements>Paiements Marché>Créer>Générer Ad-hoc
+Paiements>Paiements Marché>Paiement Marché
+Paiements>Reconciliation
+Paiements>Reconciliation>Annulation
+Paiements>Reconciliation>Annulation>Espèce
+Paiements>Reconciliation>Annulation>Titre
+Paiements>Reconciliation>Manuelle
+Paiements>Reconciliation>Manuelle>Espèce
+Paiements>Reconciliation>Manuelle>Titre
+Paiements>Reconciliation>Simulation
+Paiements>Reconciliation>Simulation>Espèce
+Paiements>Reconciliation>Simulation>Titre

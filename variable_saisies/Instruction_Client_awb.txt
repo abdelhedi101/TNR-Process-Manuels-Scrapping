@@ -1,0 +1,17 @@
+# Valeurs modifiables pour le menu Process RL AWB
+client_sec_account=0000018180
+tradable_asset=MA0000021545
+trade_date=15/05/2026
+position_basis=Date métier
+otc_traded=Vrai
+client_reference=Test_RVP13
+transaction_type=RVP - ACHAT CONTRE PAIEMENT
+incoming_quantity=587
+devise_denouement=
+nostro_sec_account=25040090|000001030000002
+counterpart=000000004028
+beneficiary=000000004028
+compte_titres_beneficiaire=
+settlement_date=15/05/2026
+price=250
+negociated_rate=1

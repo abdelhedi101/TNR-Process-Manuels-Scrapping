@@ -1,0 +1,2 @@
+Référentiel>Entités>Créer/Afficher les Entités
+Référentiel>Entités>Affecter les Rôles des Entités

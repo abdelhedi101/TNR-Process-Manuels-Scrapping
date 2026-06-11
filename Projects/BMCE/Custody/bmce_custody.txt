@@ -1,0 +1,113 @@
+Notification>Traitement Swifts et Notifications Maroclear>MT548
+Notification>Traitement Swifts et Notifications Maroclear>Recycler MRL
+Notification>Traitement Swifts et Notifications Maroclear>Recycler MT54X
+Notification>Traitement Swifts et Notifications Maroclear>Recycler Message
+Notification>Traitement Swifts et Notifications Maroclear>Recycler RCQ
+Notification>Traitement Swifts et Notifications Maroclear>Recycler RMQ
+Notification>Traitement Swifts et Notifications Maroclear>Recycler RSM
+Paramètrage>Configuration Générale
+Paramètrage>Configuration Marché
+Paramètrage>Configuration Table Opération>Configuration execution à ignorer
+Paramètrage>Configuration Table Opération>SLA delit d'initié
+Paramètrage>Configuration Tech Table Opération
+Paramètrage>Configuration Tech Table Opération>Configuration des sources
+Paramètrage>Configuration Tech Table Opération>MatchingSLA
+Paramètrage>Configuration Technique
+Paramètrage>Configuration Technique>Class  Dispatcher
+Paramètrage>Configuration Technique>Configuration des références
+Paramètrage>Configuration Technique>Dynamic Join Configuration
+Paramètrage>Configuration Technique>Effacer cache
+Paramètrage>Configuration Technique>Excel Driver
+Paramètrage>Configuration Technique>Excel Driver>Configuration
+Paramètrage>Configuration Technique>Excel Driver>Excel Enumerations des Convertisseurs
+Paramètrage>Configuration Technique>Excel Driver>IOExcelGConfig
+Paramètrage>Configuration Technique>Job Retrocession
+Paramètrage>Configuration Technique>LCRunner
+Paramètrage>Configuration Technique>Monitoring SLA
+Paramètrage>Configuration Technique>Paramètres de système
+Paramètrage>Configuration Technique>Réparer CGC avec erreur
+Paramètrage>Configuration Technique>SLA instanciation
+Paramètrage>Configuration Technique>Simulation Ebanking
+Paramètrage>Configuration Technique>Test Tool
+Paramètrage>Configuration Technique>reprocess Rejected CGC
+Paramètrage>Configuration de la Position Espèces
+Paramètrage>Configuration de la Position Espèces>Context Espèces
+Paramètrage>Configuration de la Reconciliation
+Paramètrage>Configuration de la Reconciliation>Configuration des critères d'ajustement
+Paramètrage>Configuration de la Reconciliation>Maching Setup
+Paramètrage>Configuration de la Reconciliation>Market Position To Int Market Rec
+Paramètrage>Configuration de la Reconciliation>Market Statement To Ext Marker Rec
+Paramètrage>Configuration de types de  Transaction  
+Paramètrage>Configuration de types de  Transaction  >SLA Type de Transaction
+Paramètrage>Configuration de types de  Transaction  >Type de Transactions
+Paramètrage>Configuration des Messages
+Paramètrage>Configuration des Messages>Configuration MT548 
+Paramètrage>Configuration des Messages>Configuration MT548 >Codes Raisons
+Paramètrage>Configuration des Messages>Configuration MT548 >Codes Statuts
+Paramètrage>Configuration des Messages>Configuration MT548 >Configuration Détails MT548
+Paramètrage>Configuration des Messages>Configuration MT548 >Qualificateurs Statuts
+Paramètrage>Configuration des Messages>Configuration des drivers
+Paramètrage>Configuration des Messages>Configuration des drivers>Configuration MT54X Driver
+Paramètrage>Configuration des Messages>Configuration des drivers>Configuration Scripting 
+Paramètrage>Configuration des Messages>Notifications En entrée
+Paramètrage>Configuration des Messages>Notifications En entrée>Impacts
+Paramètrage>Configuration des Messages>Notifications En entrée>Régles Swift
+Paramètrage>Configuration des Messages>Notifications En entrée>SLA Accounting Document Impact
+Paramètrage>Configuration des Messages>Notifications En entrée>SLA Fichier Ktp Impact
+Paramètrage>Configuration des Messages>Notifications En entrée>SLA MT548 Impact
+Paramètrage>Configuration des Messages>Notifications En entrée>SLA MT54X Impact 
+Paramètrage>Configuration des Messages>Notifications En entrée>SLA Maroclear Impact
+Paramètrage>Configuration des Messages>Notifications En entrée>SLA Routing
+Paramètrage>Configuration des Messages>Notifications En sortie
+Paramètrage>Configuration des Messages>Notifications En sortie>AOR Raisons de Refus
+Paramètrage>Configuration des Messages>Notifications En sortie>Configuration Bloc 3 
+Paramètrage>Configuration des Messages>Notifications En sortie>Configuration des canales
+Paramètrage>Configuration des Messages>Notifications En sortie>Types de Notification
+Paramètrage>Configuration des Régles de validation
+Paramètrage>Configuration des Régles de validation>Configuration des données obligatoires
+Paramètrage>Configuration des Régles de validation>Configuration des régles Métier
+Paramètrage>Configuration des frais
+Paramètrage>Configuration des frais>Configuration générale des frais
+Paramètrage>Configuration des frais>Frais de Transaction
+Paramètrage>Configuration des frais>Frais de Transaction>Afficher Job Frais de Transaction
+Paramètrage>Configuration des frais>Frais de Transaction>Afficher/Créer Profile de Transaction
+Paramètrage>Configuration des frais>Frais de Transaction>Afficher/Créer SLA Frais de Transaction
+Paramètrage>Configuration des frais>Régles de Frais
+Paramètrage>Configuration des frais>SLA Commission de courtage
+Paramètrage>Configuration des frais>SLA Frais d'annulation
+Paramètrage>Configuration des frais>SLA Frais de modification
+Paramètrage>Configuration des frais>SLA Frais de rejet
+Paramètrage>Configuration des frais>SLA Frais de réparation manuelle
+Paramètrage>Configuration des frais>SLA Frais de transaction
+Paramètrage>Configuration des frais>SLA Impôt de bourse
+Paramètrage>Configuration des frais>SLA Montant Dû
+Paramètrage>Configuration des frais>SLA commission réseau placeur
+Règlement/Livraison>Ajustement>Ajustement Automatique
+Règlement/Livraison>Ajustement>Pré Ajustement Manuel
+Règlement/Livraison>Commissions Fin de Période >Afficher  Frais de Transaction
+Règlement/Livraison>Commissions Fin de Période >Afficher Facture par Process
+Règlement/Livraison>Commissions Fin de Période >Annuler Process frais de Transaction
+Règlement/Livraison>Commissions Fin de Période >Calculer Frais de Transaction
+Règlement/Livraison>Commissions Fin de Période >Extraction des Sujets à frais de transactions
+Règlement/Livraison>Instruction Globale>Saisie Instruction Globale
+Règlement/Livraison>Instruction Globale>Saisie Instruction Globale ME
+Règlement/Livraison>Instruction Globale>Validation Instruction Globale
+Règlement/Livraison>Instructions Clients Marché Etranger>Monitoring FX Request
+Règlement/Livraison>Instructions Clients Marché Etranger>Saisie Instruction ME
+Règlement/Livraison>Instructions Clients Marché Local> Appariement instruction interne WebPortal
+Règlement/Livraison>Instructions Clients Marché Local>Autoriser marge tolérance
+Règlement/Livraison>Instructions Clients Marché Local>Génération MT548
+Règlement/Livraison>Instructions Clients Marché Local>Réparation Massive des Instructions
+Règlement/Livraison>Instructions Clients Marché Local>Saisie Instruction groupée
+Règlement/Livraison>OST individuelles>Blocage>Demande de Déblocage>Réparation Demande de Déblocage
+Règlement/Livraison>OST individuelles>Transfert>Validation des modifications transfert
+Règlement/Livraison>Retour Sur>Retour sur Dénouement
+Notification>Consultation Notifications Maroclear>Documents Comptables>MRB
+Notification>Consultation Notifications Maroclear>Documents Comptables>MRL
+Notification>Consultation Notifications Maroclear>Documents Comptables>PONA BAM
+Notification>Consultation Notifications Maroclear>Documents Comptables>RCQ
+Notification>Consultation Notifications Maroclear>Documents Comptables>RCQ élémentaires
+Notification>Consultation Notifications Maroclear>Documents Comptables>RMQ
+Notification>Consultation Notifications Maroclear>Documents Comptables>RMQ élémentaires
+Notification>Consultation Notifications Maroclear>Documents Comptables>RSM
+Notification>Consultation Notifications Maroclear>Documents Comptables>RSM élémentaires

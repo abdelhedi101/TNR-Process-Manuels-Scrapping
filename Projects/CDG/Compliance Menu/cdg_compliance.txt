@@ -1,0 +1,505 @@
+Referentiels>Afficher Les Comptes>Compte Titre Client
+Referentiels>Afficher Les Comptes>Compte Espece Client 
+Referentiels>Afficher Les Comptes
+Referentiels>Instruments Financiers>Autres Donnees>Incices boursiers
+Referentiels>Instruments Financiers>Autres Donnees>Tableau D'Amortissement
+Referentiels>Instruments Financiers>Autres Donnees>Indices de marches
+Referentiels>Instruments Financiers>Autres Donnees>Nature de titres
+Referentiels>Instruments Financiers>Autres Donnees
+Referentiels>Instruments Financiers>Afficher les Instruments Financiers> Instruments Financiers
+Referentiels>Instruments Financiers>Afficher les Instruments Financiers>Fond etape 1
+Referentiels>Instruments Financiers>Afficher les Instruments Financiers>Fond etape 2
+Referentiels>Instruments Financiers>Afficher les Instruments Financiers>Droits
+Referentiels>Instruments Financiers>Afficher les Instruments Financiers>TCNs
+Referentiels>Instruments Financiers>Afficher les Instruments Financiers>Obligations
+Referentiels>Instruments Financiers>Afficher les Instruments Financiers>Actions
+Referentiels>Instruments Financiers>Afficher les Instruments Financiers
+Referentiels>Instruments Financiers>Creer Les Instruments Financiers>Fonds
+Referentiels>Instruments Financiers>Creer Les Instruments Financiers>Parts
+Referentiels>Instruments Financiers>Creer Les Instruments Financiers>Certificats d?investissements
+Referentiels>Instruments Financiers>Creer Les Instruments Financiers>Droits
+Referentiels>Instruments Financiers>Creer Les Instruments Financiers>Titres de creances negociables 
+Referentiels>Instruments Financiers>Creer Les Instruments Financiers>Obligations
+Referentiels>Instruments Financiers>Creer Les Instruments Financiers>Actions
+Referentiels>Instruments Financiers>Creer Les Instruments Financiers
+Referentiels>Instruments Financiers
+Referentiels>Afficher Les roles Des Entites>Type de clients
+Referentiels>Afficher Les roles Des Entites>Gestionnaires de Fond
+Referentiels>Afficher Les roles Des Entites>Distributeur de Fond
+Referentiels>Afficher Les roles Des Entites>Depositaire de Fond
+Referentiels>Afficher Les roles Des Entites>Porteur de Part
+Referentiels>Afficher Les roles Des Entites>Emetteur
+Referentiels>Afficher Les roles Des Entites>Clients
+Referentiels>Afficher Les roles Des Entites
+Referentiels>Afficher l'Entite Principale
+Referentiels>Consulter decouvert par SDG
+Referentiels
+Configuration Systeme>Autres Configurations>ElementaryInterestDateSLA
+Configuration Systeme>Autres Configurations>ExpandedSla
+Configuration Systeme>Autres Configurations>ColouredEntity
+Configuration Systeme>Autres Configurations>classDispatcher
+Configuration Systeme>Autres Configurations>Runnable Jobs>MT537 Runnable Jobs
+Configuration Systeme>Autres Configurations>Runnable Jobs>MT536 Runnable Jobs
+Configuration Systeme>Autres Configurations>Runnable Jobs>MT535 Runnable Jobs
+Configuration Systeme>Autres Configurations>Runnable Jobs>Bill Runnable Jobs
+Configuration Systeme>Autres Configurations>Runnable Jobs>Holding Fees Runnable Jobs
+Configuration Systeme>Autres Configurations>Runnable Jobs
+Configuration Systeme>Autres Configurations>Technical Configuration>Chargement des configurations
+Configuration Systeme>Autres Configurations>Technical Configuration>Scripting Config
+Configuration Systeme>Autres Configurations>Technical Configuration>Notification Setup>Notification In Configuration> Impact Configuration>Request Security Statement Impact SLA 
+Configuration Systeme>Autres Configurations>Technical Configuration>Notification Setup>Notification In Configuration> Impact Configuration>MT537 Impact SLA
+Configuration Systeme>Autres Configurations>Technical Configuration>Notification Setup>Notification In Configuration> Impact Configuration>MT536 Impact SLA
+Configuration Systeme>Autres Configurations>Technical Configuration>Notification Setup>Notification In Configuration> Impact Configuration>MT535 Impact SLA
+Configuration Systeme>Autres Configurations>Technical Configuration>Notification Setup>Notification In Configuration> Impact Configuration>Impacts
+Configuration Systeme>Autres Configurations>Technical Configuration>Notification Setup>Notification In Configuration> Impact Configuration
+Configuration Systeme>Autres Configurations>Technical Configuration>Notification Setup>Notification In Configuration>Routing SLA
+Configuration Systeme>Autres Configurations>Technical Configuration>Notification Setup>Notification In Configuration
+Configuration Systeme>Autres Configurations>Technical Configuration>Notification Setup>Notification Out Configuration>Channel Configuration
+Configuration Systeme>Autres Configurations>Technical Configuration>Notification Setup>Notification Out Configuration>Notification Types
+Configuration Systeme>Autres Configurations>Technical Configuration>Notification Setup>Notification Out Configuration
+Configuration Systeme>Autres Configurations>Technical Configuration>Notification Setup
+Configuration Systeme>Autres Configurations>Technical Configuration>Import Data>Import From Text
+Configuration Systeme>Autres Configurations>Technical Configuration>Import Data>Import From Excel
+Configuration Systeme>Autres Configurations>Technical Configuration>Import Data>Load Static Data
+Configuration Systeme>Autres Configurations>Technical Configuration>Import Data
+Configuration Systeme>Autres Configurations>Technical Configuration>TestFeatures>Test Tool
+Configuration Systeme>Autres Configurations>Technical Configuration>TestFeatures>Appointments Created
+Configuration Systeme>Autres Configurations>Technical Configuration>TestFeatures>TestPeriodicity
+Configuration Systeme>Autres Configurations>Technical Configuration>TestFeatures>TestCurrentAction
+Configuration Systeme>Autres Configurations>Technical Configuration>TestFeatures
+Configuration Systeme>Autres Configurations>Technical Configuration>Monitor Dynamic Join Configuration
+Configuration Systeme>Autres Configurations>Technical Configuration>Clean Config
+Configuration Systeme>Autres Configurations>Technical Configuration>Text Driver>IO Config
+Configuration Systeme>Autres Configurations>Technical Configuration>Text Driver>Config
+Configuration Systeme>Autres Configurations>Technical Configuration>Text Driver
+Configuration Systeme>Autres Configurations>Technical Configuration>Excel Driver>IO Config
+Configuration Systeme>Autres Configurations>Technical Configuration>Excel Driver>Config
+Configuration Systeme>Autres Configurations>Technical Configuration>Excel Driver
+Configuration Systeme>Autres Configurations>Technical Configuration>Process Monitoring> Log Configuration>Monitor Log Configuration
+Configuration Systeme>Autres Configurations>Technical Configuration>Process Monitoring> Log Configuration
+Configuration Systeme>Autres Configurations>Technical Configuration>Process Monitoring>Monitor Process Logs
+Configuration Systeme>Autres Configurations>Technical Configuration>Process Monitoring>Purge Process Log
+Configuration Systeme>Autres Configurations>Technical Configuration>Process Monitoring>Monitoring SLA
+Configuration Systeme>Autres Configurations>Technical Configuration>Process Monitoring
+Configuration Systeme>Autres Configurations>Technical Configuration>Presentation >Screen Generator
+Configuration Systeme>Autres Configurations>Technical Configuration>Presentation >Homepage
+Configuration Systeme>Autres Configurations>Technical Configuration>Presentation >Report Template
+Configuration Systeme>Autres Configurations>Technical Configuration>Presentation >ActionsSuggestions>Current To Do Actions
+Configuration Systeme>Autres Configurations>Technical Configuration>Presentation >ActionsSuggestions>Next To Do Actions
+Configuration Systeme>Autres Configurations>Technical Configuration>Presentation >ActionsSuggestions
+Configuration Systeme>Autres Configurations>Technical Configuration>Presentation 
+Configuration Systeme>Autres Configurations>Technical Configuration
+Configuration Systeme>Autres Configurations>Notification Configuration>Client Setup>Client Notification SLA
+Configuration Systeme>Autres Configurations>Notification Configuration>Client Setup
+Configuration Systeme>Autres Configurations>Notification Configuration>Market Setup>Market Notification SLA
+Configuration Systeme>Autres Configurations>Notification Configuration>Market Setup
+Configuration Systeme>Autres Configurations>Notification Configuration
+Configuration Systeme>Autres Configurations>Cash Position Configuration
+Configuration Systeme>Autres Configurations>Securities Position Configuration>Load Position Config
+Configuration Systeme>Autres Configurations>Securities Position Configuration>Profile By Valorization Purpose
+Configuration Systeme>Autres Configurations>Securities Position Configuration>Securities Position
+Configuration Systeme>Autres Configurations>Securities Position Configuration
+Configuration Systeme>Autres Configurations>Valuation Configuration
+Configuration Systeme>Autres Configurations>Pricing Configuration
+Configuration Systeme>Autres Configurations>Main Screen Config
+Configuration Systeme>Autres Configurations>System Parmeters
+Configuration Systeme>Autres Configurations>Notification Setup>Notification In Configuration>Routing SLA
+Configuration Systeme>Autres Configurations>Notification Setup>Notification In Configuration
+Configuration Systeme>Autres Configurations>Notification Setup>Notification Out Configuration>Channel Configuration
+Configuration Systeme>Autres Configurations>Notification Setup>Notification Out Configuration
+Configuration Systeme>Autres Configurations>Notification Setup
+Configuration Systeme>Autres Configurations
+Configuration Systeme>Gestion du decouvert>SLA Decouvert
+Configuration Systeme>Gestion du decouvert>Configuration des Lignes de Credit
+Configuration Systeme>Gestion du decouvert>Regles de Controle sur le Decouvert
+Configuration Systeme>Gestion du decouvert
+Configuration Systeme>Configuration du Capital Minimum>Regles de Controle du Capital Minimum
+Configuration Systeme>Configuration du Capital Minimum
+Configuration Systeme>Configuration Des Ratios>Consultation des Ratios>Regles prudentielles recommandations
+Configuration Systeme>Configuration Des Ratios>Consultation des Ratios>Regles prudentielles limites
+Configuration Systeme>Configuration Des Ratios>Consultation des Ratios>Politiques d'investissement
+Configuration Systeme>Configuration Des Ratios>Consultation des Ratios
+Configuration Systeme>Configuration Des Ratios>Versions des ratios
+Configuration Systeme>Configuration Des Ratios>SLARatio
+Configuration Systeme>Configuration Des Ratios>Packages des ratios
+Configuration Systeme>Configuration Des Ratios>Categories des ratios
+Configuration Systeme>Configuration Des Ratios>Creation des Ratios
+Configuration Systeme>Configuration Des Ratios
+Configuration Systeme>Configuration De la Reconciliation>Configuration des Cas d'utilisation
+Configuration Systeme>Configuration De la Reconciliation>Configuration des Criteres de Reconciliation
+Configuration Systeme>Configuration De la Reconciliation
+Configuration Systeme>Configuration Des Sections>Autres>Formules
+Configuration Systeme>Configuration Des Sections>Autres>Cles de Regroupement
+Configuration Systeme>Configuration Des Sections>Autres>Resultat des Sections
+Configuration Systeme>Configuration Des Sections>Autres>Sous Expression
+Configuration Systeme>Configuration Des Sections>Autres>Expression
+Configuration Systeme>Configuration Des Sections>Autres>GrossAsset
+Configuration Systeme>Configuration Des Sections>Autres>Inventory
+Configuration Systeme>Configuration Des Sections>Autres>Ratio
+Configuration Systeme>Configuration Des Sections>Autres
+Configuration Systeme>Configuration Des Sections>Configuration des Sections
+Configuration Systeme>Configuration Des Sections>Configuration des Details des Sections
+Configuration Systeme>Configuration Des Sections>Configuration des Tables
+Configuration Systeme>Configuration Des Sections
+Configuration Systeme>Configuration generale>VATInterestSLA
+Configuration Systeme>Configuration generale>Interfaces a reconcilier
+Configuration Systeme>Configuration generale>Interfaces a charger
+Configuration Systeme>Configuration generale>Societes de gestion a controler
+Configuration Systeme>Configuration generale
+Configuration Systeme
+Reporting>Tableau de bord>Indicateurs de Suivi: DAT
+Reporting>Tableau de bord>Indicateurs de Suivi: Ratios
+Reporting>Tableau de bord>Actif valorise des placements en devises
+Reporting>Tableau de bord
+Reporting>Reporting>Registre Nominatif Consolide
+Reporting>Reporting>Registre Nominatif Defalque
+Reporting>Reporting>Complement d'Informations (Inventaire)
+Reporting>Reporting>TCB11: Inventaire des actifs
+Reporting>Reporting>CDVM
+Reporting>Reporting>Lettres Comptables
+Reporting>Reporting>Fonds Dedies
+Reporting>Reporting>Actif Brut
+Reporting>Reporting>TCB 9: Rapport de controle des OPCVM
+Reporting>Reporting
+Reporting
+Interfaces>XML Result>XML Result
+Interfaces>XML Result>XML Operation
+Interfaces>XML Result
+Interfaces>Sensibilite>Reexecuter
+Interfaces>Sensibilite>Sensibilite
+Interfaces>Sensibilite
+Interfaces>Indices boursiers>Reexecuter
+Interfaces>Indices boursiers>Ponderation MASI
+Interfaces>Indices boursiers
+Interfaces>Reexecuter les Interfaces>Interfaces SDG>ASFIM 
+Interfaces>Reexecuter les Interfaces>Interfaces SDG>Operations Repo / RvRepo
+Interfaces>Reexecuter les Interfaces>Interfaces SDG>Valeur Liquidative/SDG
+Interfaces>Reexecuter les Interfaces>Interfaces SDG>Registre Nominatif/SDG
+Interfaces>Reexecuter les Interfaces>Interfaces SDG>Nombre De Parts/SDG
+Interfaces>Reexecuter les Interfaces>Interfaces SDG>Mouvements Especes/SDG
+Interfaces>Reexecuter les Interfaces>Interfaces SDG>Soldes Bancaires/SDG
+Interfaces>Reexecuter les Interfaces>Interfaces SDG>Frais de gestion Societe de Gestion/SDG
+Interfaces>Reexecuter les Interfaces>Interfaces SDG>Positions Valorisees/SDG
+Interfaces>Reexecuter les Interfaces>Interfaces SDG
+Interfaces>Reexecuter les Interfaces>Interfaces Depositaire>Pret/Emprunt Instructions
+Interfaces>Reexecuter les Interfaces>Interfaces Depositaire>Interet
+Interfaces>Reexecuter les Interfaces>Interfaces Depositaire>Instructions
+Interfaces>Reexecuter les Interfaces>Interfaces Depositaire>Dividendes
+Interfaces>Reexecuter les Interfaces>Interfaces Depositaire>Registre nominatif
+Interfaces>Reexecuter les Interfaces>Interfaces Depositaire>Nombre De Parts
+Interfaces>Reexecuter les Interfaces>Interfaces Depositaire>Mouvements Especes
+Interfaces>Reexecuter les Interfaces>Interfaces Depositaire>Soldes Bancaires
+Interfaces>Reexecuter les Interfaces>Interfaces Depositaire>Frais de gestion 
+Interfaces>Reexecuter les Interfaces>Interfaces Depositaire>Positions Valorisees
+Interfaces>Reexecuter les Interfaces>Interfaces Depositaire
+Interfaces>Reexecuter les Interfaces
+Interfaces>Interfaces>Interfaces SDG>ASFIM
+Interfaces>Interfaces>Interfaces SDG>Operations Repo / RvRepo
+Interfaces>Interfaces>Interfaces SDG>Valeur Liquidative/SDG
+Interfaces>Interfaces>Interfaces SDG>Registre Nominatif/SDG
+Interfaces>Interfaces>Interfaces SDG>Nombre De Parts/SDG
+Interfaces>Interfaces>Interfaces SDG>Mouvements Especes/SDG
+Interfaces>Interfaces>Interfaces SDG>Soldes Bancaires/SDG
+Interfaces>Interfaces>Interfaces SDG>Frais de gestion Societe de Gestion/SDG
+Interfaces>Interfaces>Interfaces SDG>Positions Valorisees/SDG
+Interfaces>Interfaces>Interfaces SDG
+Interfaces>Interfaces>Interfaces Depositaire>Dividendes etrangeres
+Interfaces>Interfaces>Interfaces Depositaire>Positions Valorisees Borrow
+Interfaces>Interfaces>Interfaces Depositaire>Positions Valorisees Lent
+Interfaces>Interfaces>Interfaces Depositaire>Interet Crediteurs et Debiteurs Nouveau
+Interfaces>Interfaces>Interfaces Depositaire>Frais de gestion payes
+Interfaces>Interfaces>Interfaces Depositaire>Interet
+Interfaces>Interfaces>Interfaces Depositaire>Cumul des frais de gestion
+Interfaces>Interfaces>Interfaces Depositaire>Interets crediteurs / debiteurs
+Interfaces>Interfaces>Interfaces Depositaire>Registre nominatif
+Interfaces>Interfaces>Interfaces Depositaire>Nombre De Parts
+Interfaces>Interfaces>Interfaces Depositaire>Mouvements Especes
+Interfaces>Interfaces>Interfaces Depositaire>Soldes Bancaires avant R/S du jour
+Interfaces>Interfaces>Interfaces Depositaire>Soldes Bancaires apres R/S du jour
+Interfaces>Interfaces>Interfaces Depositaire>Charge en cours manuelles
+Interfaces>Interfaces>Interfaces Depositaire>Commissions de reglement livraison
+Interfaces>Interfaces>Interfaces Depositaire>Instructions R/S
+Interfaces>Interfaces>Interfaces Depositaire>Pret/Emprunt Instructions
+Interfaces>Interfaces>Interfaces Depositaire>Instructions
+Interfaces>Interfaces>Interfaces Depositaire>Produits en cours manuels
+Interfaces>Interfaces>Interfaces Depositaire>Dividendes
+Interfaces>Interfaces>Interfaces Depositaire>Frais de gestion 
+Interfaces>Interfaces>Interfaces Depositaire>Positions Valorisees
+Interfaces>Interfaces>Interfaces Depositaire>Charger les interfaces
+Interfaces>Interfaces>Interfaces Depositaire
+Interfaces>Interfaces>Actifs immobilises
+Interfaces>Interfaces
+Interfaces
+Suivi de Decouverts>Controle du decouvert>Resultats OPCVM
+Suivi de Decouverts>Controle du decouvert>Resultats SDG
+Suivi de Decouverts>Controle du decouvert>Controler Decouvert
+Suivi de Decouverts>Controle du decouvert
+Suivi de Decouverts>Calcul du decouvert>Consulter / Editer Decouvert par fond
+Suivi de Decouverts>Calcul du decouvert>Consulter Decouvert par Societe De Gestion
+Suivi de Decouverts>Calcul du decouvert>Calculer Decouvert
+Suivi de Decouverts>Calcul du decouvert
+Suivi de Decouverts
+Processus de supervision>Suivi des Ratios>Resultats>Conformite des ratios par categories
+Processus de supervision>Suivi des Ratios>Resultats>Conformite des ratios
+Processus de supervision>Suivi des Ratios>Resultats
+Processus de supervision>Suivi des Ratios>Calculer Ratio
+Processus de supervision>Suivi des Ratios
+Processus de supervision>Inventaire et VL>Mise a jour de l'actif brut>Mise a jour de l'actif brut
+Processus de supervision>Inventaire et VL>Mise a jour de l'actif brut
+Processus de supervision>Inventaire et VL>Consultation>Consulter l'historique de l'Actif Brut
+Processus de supervision>Inventaire et VL>Consultation>Consulter Actif Brut
+Processus de supervision>Inventaire et VL>Consultation>Consulter Inventaire
+Processus de supervision>Inventaire et VL>Consultation
+Processus de supervision>Inventaire et VL>Calcul>Calcul de Simulation>Simuler VL
+Processus de supervision>Inventaire et VL>Calcul>Calcul de Simulation>Simuler les Frais
+Processus de supervision>Inventaire et VL>Calcul>Calcul de Simulation>Simuler Actif Brut
+Processus de supervision>Inventaire et VL>Calcul>Calcul de Simulation>Simuler Inventaire
+Processus de supervision>Inventaire et VL>Calcul>Calcul de Simulation>Simuler Chargement des Interfaces
+Processus de supervision>Inventaire et VL>Calcul>Calcul de Simulation
+Processus de supervision>Inventaire et VL>Calcul>Calculer VL
+Processus de supervision>Inventaire et VL>Calcul>Calculer Frais
+Processus de supervision>Inventaire et VL>Calcul>Calculer Actif Brut
+Processus de supervision>Inventaire et VL>Calcul
+Processus de supervision>Inventaire et VL
+Processus de supervision>Reconciliations>Reconciliation de la VL>Monitoring Reconciliation De La VL
+Processus de supervision>Reconciliations>Reconciliation de la VL>Reconciliation de la VL
+Processus de supervision>Reconciliations>Reconciliation de la VL
+Processus de supervision>Reconciliations>Reconciliation des frais de gestion>Monitoring des reconciliation des frais de gestion
+Processus de supervision>Reconciliations>Reconciliation des frais de gestion>Reconciliation des frais de gestion
+Processus de supervision>Reconciliations>Reconciliation des frais de gestion
+Processus de supervision>Reconciliations>Reconciliations Globales>Resultat des Reconciliations
+Processus de supervision>Reconciliations>Reconciliations Globales>Monitoring Reconciliations Globales
+Processus de supervision>Reconciliations>Reconciliations Globales>Reconciliations Globales
+Processus de supervision>Reconciliations>Reconciliations Globales
+Processus de supervision>Reconciliations
+Processus de supervision
+Supervision des fonds>Traitement des ecarts >Ratios non respectes
+Supervision des fonds>Traitement des ecarts >VL non reconciliees
+Supervision des fonds>Traitement des ecarts >Frais de gestion non reconcilies
+Supervision des fonds>Traitement des ecarts >Actifs non reconcilies
+Supervision des fonds>Traitement des ecarts 
+Supervision des fonds>Annulation>Annulation des Ratios
+Supervision des fonds>Annulation>Annulation de reconciliation de l'actif net
+Supervision des fonds>Annulation>Annulation de calcul d'atif Net
+Supervision des fonds>Annulation>Annulation de reconciliation des frais de gestion
+Supervision des fonds>Annulation>Annulation de validation de l'actif brut
+Supervision des fonds>Annulation>Annulation de calcul de l'actif brut
+Supervision des fonds>Annulation>Annulation de reconciliation de l'actif
+Supervision des fonds>Annulation>Annulation des interfaces depositaires
+Supervision des fonds>Annulation
+Supervision des fonds>Forcage>Retraiter le chargement des dividendes
+Supervision des fonds>Forcage>force reconcilation de la VL
+Supervision des fonds>Forcage>force reconcilation des frais
+Supervision des fonds>Forcage>force reconciliation des interfaces
+Supervision des fonds>Forcage>force chargement des donnees
+Supervision des fonds>Forcage
+Supervision des fonds>Gestion des processus>Calcul des ratios
+Supervision des fonds>Gestion des processus>Reconciliation de la VL
+Supervision des fonds>Gestion des processus>Calcul de l'actif net
+Supervision des fonds>Gestion des processus>Reconciliation des frais de gestion
+Supervision des fonds>Gestion des processus>Validation de l'actif Brut
+Supervision des fonds>Gestion des processus>MAJ de l'actif brut
+Supervision des fonds>Gestion des processus>Calcul de l'actif brut
+Supervision des fonds>Gestion des processus>Reconciliation de l'actif
+Supervision des fonds>Gestion des processus
+Supervision des fonds>Tableaux de bord
+Supervision des fonds
+System Configuration>Palmyra Calendar>Holidays>Find Holidays
+System Configuration>Palmyra Calendar>Holidays>Find / Create Exceptional Holiday
+System Configuration>Palmyra Calendar>Holidays>Find / Create Permanent Holiday
+System Configuration>Palmyra Calendar>Holidays>Find / Create Weekly Holiday
+System Configuration>Palmyra Calendar>Holidays
+System Configuration>Palmyra Calendar>Appointment>New_App
+System Configuration>Palmyra Calendar>Appointment
+System Configuration>Palmyra Calendar
+System Configuration>Quartz Scheduler>Create Quartz Tables
+System Configuration>Quartz Scheduler>Import/Export
+System Configuration>Quartz Scheduler>Start / Stop Scheduler
+System Configuration>Quartz Scheduler>Jobs Management>Resume blocked jobs
+System Configuration>Quartz Scheduler>Jobs Management>Track Job Execution
+System Configuration>Quartz Scheduler>Jobs Management>Configure Job
+System Configuration>Quartz Scheduler>Jobs Management>Find / Create Job
+System Configuration>Quartz Scheduler>Jobs Management
+System Configuration>Quartz Scheduler
+System Configuration>Event Management>Generate Exception Report
+System Configuration>Event Management>Export Event
+System Configuration>Event Management>Find / Create Notification
+System Configuration>Event Management>Find Event Occurrence
+System Configuration>Event Management>Find / Create Event
+System Configuration>Event Management>Find / Create Event Type
+System Configuration>Event Management>Find / Create Event Notification
+System Configuration>Event Management
+System Configuration>Translator>Enumeration Translation>View / Edit Enumeration Configuration
+System Configuration>Translator>Enumeration Translation>View / Edit Enumeration Config SLA
+System Configuration>Translator>Enumeration Translation
+System Configuration>Translator>Exception Translation
+System Configuration>Translator>Class Translation
+System Configuration>Translator>Use Case Translation
+System Configuration>Translator>Generic Translation>Hierarchical Class Translation
+System Configuration>Translator>Generic Translation>Dialog Translation
+System Configuration>Translator>Generic Translation>Generic VFLabel Translation
+System Configuration>Translator>Generic Translation>Defined Errors Translation
+System Configuration>Translator>Generic Translation>Generic Group Translation
+System Configuration>Translator>Generic Translation>Generic Action Translation
+System Configuration>Translator>Generic Translation
+System Configuration>Translator>Consultation of class translation
+System Configuration>Translator>Consultation of use case translation
+System Configuration>Translator>Import Translation
+System Configuration>Translator>Export Translation
+System Configuration>Translator
+System Configuration>Persistence>Find / Create Operations Audit Configuration
+System Configuration>Persistence>Advanced Historical Search
+System Configuration>Persistence>ExternalEntityConfig
+System Configuration>Persistence>Historical Search
+System Configuration>Persistence>Database Schema Operations
+System Configuration>Persistence
+System Configuration>PDF Forms>Find Forms
+System Configuration>PDF Forms>Upload a new Form
+System Configuration>PDF Forms
+System Configuration>LifeCycle>Life Cycle Alias Search Input
+System Configuration>LifeCycle>Life Cycle Alias Transformer
+System Configuration>LifeCycle>Find / Create PLM Transition
+System Configuration>LifeCycle>Find / Create PLM Automat Event
+System Configuration>LifeCycle>Find / Create PLM State
+System Configuration>LifeCycle>Find / Create Life Cycle
+System Configuration>LifeCycle>Find / Create Life Cycle Configuration
+System Configuration>LifeCycle>Load Life Cycle
+System Configuration>LifeCycle>Find / Create Events Transactions
+System Configuration>LifeCycle
+System Configuration>Mapping>Import / Export Mapping Configuration
+System Configuration>Mapping>Converter>Find / Create Numeric Converter
+System Configuration>Mapping>Converter>Find / Create Enumeration Converter
+System Configuration>Mapping>Converter>Find / Create Date Converter
+System Configuration>Mapping>Converter>Find / Create Config Service
+System Configuration>Mapping>Converter>Find / Create Builtin Converter
+System Configuration>Mapping>Converter>Find / Create Converter
+System Configuration>Mapping>Converter
+System Configuration>Mapping>Rich Mapping>Find / Create Composite Single Result Mapper
+System Configuration>Mapping>Rich Mapping>Find / Create Composite Mapper
+System Configuration>Mapping>Rich Mapping>Find / Create Checked Mapper
+System Configuration>Mapping>Rich Mapping>Find / Create Simple Mapper
+System Configuration>Mapping>Rich Mapping
+System Configuration>Mapping>Find / Create Mapping
+System Configuration>Mapping
+System Configuration>Profile>Find / Create Profile
+System Configuration>Profile
+System Configuration>Dashboard>Dashboard General Configuration
+System Configuration>Dashboard>Find / Create User
+System Configuration>Dashboard>Find / Create Task
+System Configuration>Dashboard>Find / Create Node
+System Configuration>Dashboard>Find / Create Dashboard
+System Configuration>Dashboard>Find / Create DBException
+System Configuration>Dashboard>Configuration
+System Configuration>Dashboard
+System Configuration>Errors Manager>Exceptions Report
+System Configuration>Errors Manager>Show Errors History
+System Configuration>Errors Manager>Load Errors Definitions
+System Configuration>Errors Manager>Clear Errors Definitions
+System Configuration>Errors Manager>Find / Create Modules
+System Configuration>Errors Manager>Define New Errors
+System Configuration>Errors Manager
+System Configuration>Security>WebserviceConfig
+System Configuration>Security>AllLoggedUsers
+System Configuration>Security>Find Currently Connected Users
+System Configuration>Security>Import / Export Security Configuration>Database to XML
+System Configuration>Security>Import / Export Security Configuration>XML to Database
+System Configuration>Security>Import / Export Security Configuration
+System Configuration>Security>Find / Create Validation Configuration
+System Configuration>Security>Find / Create Application Security Property
+System Configuration>Security>Find / Create Automat Policy
+System Configuration>Security>Find / Create Entity Policy
+System Configuration>Security>Find / Create Service Policy
+System Configuration>Security>Find / Create Role
+System Configuration>Security>Find / Create Group
+System Configuration>Security>Find / Create User
+System Configuration>Security
+System Configuration>Swift Management>Search Swift Objects
+System Configuration>Swift Management>Load Swift Messages
+System Configuration>Swift Management
+System Configuration>Fixed Format Driver>Find / Create First Sequence
+System Configuration>Fixed Format Driver>Find / Create Driver Sequence
+System Configuration>Fixed Format Driver
+System Configuration>Business Parameters>Find / Create Business Rule Configuration
+System Configuration>Business Parameters>Constraints Model>Load Model
+System Configuration>Business Parameters>Constraints Model>Edit Model
+System Configuration>Business Parameters>Constraints Model
+System Configuration>Business Parameters
+System Configuration>Swift Driver>Load Swift Message Description
+System Configuration>Swift Driver>Find / Create Swift Message Description
+System Configuration>Swift Driver
+System Configuration>IODevices>Output Devices>Find / Create FIX Device
+System Configuration>IODevices>Output Devices>Find / Create SMS Device
+System Configuration>IODevices>Output Devices>Find / Create WebDAV Device
+System Configuration>IODevices>Output Devices>Find / Create Queue Device
+System Configuration>IODevices>Output Devices>Find / Create SFTP  Device
+System Configuration>IODevices>Output Devices>Find / Create FTP Device
+System Configuration>IODevices>Output Devices>Find / Create Service Device
+System Configuration>IODevices>Output Devices>Find / Create Mail Device
+System Configuration>IODevices>Output Devices>Find / Create File Device
+System Configuration>IODevices>Output Devices
+System Configuration>IODevices>Input Devices>Find / Create FIX Device
+System Configuration>IODevices>Input Devices>Find / Create WebDAV Device
+System Configuration>IODevices>Input Devices>Find / Create Queue Device
+System Configuration>IODevices>Input Devices>Find / Create SFTP Device
+System Configuration>IODevices>Input Devices>Find / Create FTP Device
+System Configuration>IODevices>Input Devices>Find / Create Mail Device
+System Configuration>IODevices>Input Devices>Find / Create File Device
+System Configuration>IODevices>Input Devices
+System Configuration>IODevices
+System Configuration>Presentation>Find / Create Business Use Case
+System Configuration>Presentation>Page Layout>Screens
+System Configuration>Presentation>Page Layout>Search
+System Configuration>Presentation>Page Layout>Create
+System Configuration>Presentation>Page Layout
+System Configuration>Presentation>Read-only Fields Configuration
+System Configuration>Presentation>Menu>Menu Editor
+System Configuration>Presentation>Menu>Configuration Menu Management
+System Configuration>Presentation>Menu>Menu Management
+System Configuration>Presentation>Menu
+System Configuration>Presentation>Find / Create Screen Id Configuration
+System Configuration>Presentation>Actions Configuration>Search Registered Actions
+System Configuration>Presentation>Actions Configuration>Search
+System Configuration>Presentation>Actions Configuration
+System Configuration>Presentation>Find / Create Default Value
+System Configuration>Presentation>View Format>Check
+System Configuration>Presentation>View Format>Search
+System Configuration>Presentation>View Format>Create
+System Configuration>Presentation>View Format
+System Configuration>Presentation>Widget Dashboard>Find / Create Widget Category
+System Configuration>Presentation>Widget Dashboard>Dashboard Layout Configuration
+System Configuration>Presentation>Widget Dashboard>Default Dashboard Configuration
+System Configuration>Presentation>Widget Dashboard>Find / Create User Dashboard Configuration
+System Configuration>Presentation>Widget Dashboard>Widget Configuration>Find / Create Business Configuration
+System Configuration>Presentation>Widget Dashboard>Widget Configuration>Find / Create Feed Reader Configuration
+System Configuration>Presentation>Widget Dashboard>Widget Configuration>Find / Create Internet Link Configuration
+System Configuration>Presentation>Widget Dashboard>Widget Configuration>Find / Create Widget Configuration
+System Configuration>Presentation>Widget Dashboard>Widget Configuration
+System Configuration>Presentation>Widget Dashboard
+System Configuration>Presentation>alert>Alert
+System Configuration>Presentation>alert>alerts
+System Configuration>Presentation>alert
+System Configuration>Presentation
+System Configuration>Miscleanous>Cache Configuration
+System Configuration>Miscleanous>Resource Loader
+System Configuration>Miscleanous>Trace
+System Configuration>Miscleanous>Import Value
+System Configuration>Miscleanous>Find / Create Alias Config
+System Configuration>Miscleanous>Update Application
+System Configuration>Miscleanous
+System Configuration>Service>Find / Create Broadcast Configuration
+System Configuration>Service>Find / Create Application Configuration
+System Configuration>Service>Find / Create Mirror Configuration
+System Configuration>Service>Find / Create Web Service Configuration
+System Configuration>Service>Find / Create Service Transaction Configuration
+System Configuration>Service>Find / Create Remote Service Configuration
+System Configuration>Service
+System Configuration>Chart>ConfigChart
+System Configuration>Chart>SearchChart
+System Configuration>Chart
+System Configuration>AdvancedReport>Jasper Configuration>Search
+System Configuration>AdvancedReport>Jasper Configuration>Create
+System Configuration>AdvancedReport>Jasper Configuration
+System Configuration>AdvancedReport>SearchXslConfig
+System Configuration>AdvancedReport>SearchReportContext
+System Configuration>AdvancedReport
+System Configuration

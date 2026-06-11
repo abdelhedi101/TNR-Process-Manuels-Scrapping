@@ -1,0 +1,14 @@
+Configuration MegaCor>Taxe>Référentiel
+Configuration MegaCor>Taxe>Référentiel>Créer/Afficher Autorité Fiscale
+Configuration MegaCor>Taxe>Référentiel>Créer/Afficher Crédit de Taxe
+Configuration MegaCor>Taxe>Référentiel>Créer/Afficher Exercice Fiscal
+Configuration MegaCor>Taxe>Référentiel>Créer/Afficher Nom Classification Fiscale
+Configuration MegaCor>Taxe>Référentiel>Créer/Afficher Règle de Calcul de Taxe
+Configuration MegaCor>Taxe>Référentiel>Créer/Afficher Type de Taxation
+Configuration MegaCor>Transaction Fees
+Configuration MegaCor>Transaction Fees>Find/Create Bill By Process
+Configuration MegaCor>Transaction Fees>Find/Create Transaction Fees
+Configuration MegaCor>Transaction Fees>Find/Create Transaction Fees Job
+Configuration MegaCor>Transaction Fees>Find/Create Transaction Fees Profile
+Configuration MegaCor>Transaction Fees>Find/Create Transaction Fees SLA
+Configuration MegaCor>Transaction Fees>Manual Transaction Fees Process

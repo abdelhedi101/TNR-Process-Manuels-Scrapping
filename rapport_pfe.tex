@@ -1,0 +1,2560 @@
+% ============================================================
+%  Rapport de Stage PFE -- Master Business Analytics
+%  Automatisation TNR -- Megara Suite -- Ahmed Abdelhedi
+%  2025/2026
+% ============================================================
+\documentclass[12pt, a4paper]{report}
+
+% ── 1. Encodage & langue (en premier) ──────────────────────
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+
+% ── 2. Polices ─────────────────────────────────────────────
+\usepackage{lmodern}
+\usepackage{caladea}         % Calibri clone (pdflatex)
+
+% ── 3. Mise en page ────────────────────────────────────────
+\usepackage[top=3cm, bottom=3cm, left=3.5cm, right=3.5cm]{geometry}
+\usepackage{setspace}
+\onehalfspacing
+
+% Formatage corps de texte (exigences PFE)
+\setlength{\parindent}{0.8cm}
+\setlength{\parskip}{6pt plus 1pt minus 1pt}
+
+% ── 4. Typographie ─────────────────────────────────────────
+\usepackage{microtype}
+\setlength{\emergencystretch}{3em}   % evite les debordements de texte
+
+% ── 5. Maths ───────────────────────────────────────────────
+\usepackage{amsmath, amssymb}
+
+% ── 6. Couleurs & graphiques ───────────────────────────────
+\usepackage[dvipsnames, table, x11names]{xcolor}
+\usepackage{graphicx}
+
+% ── 7. TikZ ────────────────────────────────────────────────
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric, arrows.meta, positioning, fit, backgrounds, calc}
+
+% ── 8. Tableaux ────────────────────────────────────────────
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage{array}
+
+% ── 9. Listes ──────────────────────────────────────────────
+\usepackage{enumitem}
+
+% ── 10. Code source ────────────────────────────────────────
+\usepackage{listings}
+\usepackage{fvextra}   % retour a la ligne automatique dans verbatim
+
+% ── 11. Mise en page avancee ───────────────────────────────
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{float}
+\usepackage{caption}
+
+% ── 12. Cadres & citations ─────────────────────────────────
+\usepackage{mdframed}
+\usepackage{csquotes}
+
+% ── 13. Liens (DERNIER) ────────────────────────────────────
+\PassOptionsToPackage{hyphens}{url}  % coupe les URLs longues
+\usepackage[
+  colorlinks = true,
+  linkcolor  = BrickRed,
+  citecolor  = BrickRed,
+  urlcolor   = BrickRed,
+  pdftitle   = {Rapport de Stage -- Automatisation TNR Megara},
+  pdfauthor  = {Ahmed Abdelhedi}
+]{hyperref}
+
+% ── 14. Declarations Unicode (apres inputenc) ──────────────
+% Caracteres hors Latin-1 utilises dans le texte courant
+\DeclareUnicodeCharacter{2013}{\textendash}    % en-dash --
+\DeclareUnicodeCharacter{2014}{\textemdash}    % em-dash ---
+\DeclareUnicodeCharacter{2192}{\ensuremath{\rightarrow}}
+\DeclareUnicodeCharacter{2190}{\ensuremath{\leftarrow}}
+\DeclareUnicodeCharacter{2713}{\checkmark}
+
+% ── 15. Couleurs projet ────────────────────────────────────
+\definecolor{vermegRed}{RGB}{210, 35, 42}
+\definecolor{nexusBlue}{RGB}{45, 62, 80}
+\definecolor{nexusYellow}{RGB}{241, 196, 15}
+\definecolor{lightGray}{RGB}{248, 248, 248}
+\definecolor{codeGray}{RGB}{245, 245, 245}
+\definecolor{titleGray}{RGB}{80, 80, 80}
+
+% ── 16. Configuration listings ─────────────────────────────
+\lstset{
+  basicstyle    = \ttfamily\footnotesize,
+  backgroundcolor = \color{codeGray},
+  frame         = single,
+  rulecolor     = \color{gray!40},
+  breaklines    = true,
+  breakatwhitespace = false,
+  columns       = fullflexible,
+  showstringspaces = false,
+  extendedchars = false,
+  keywordstyle  = \color{nexusBlue}\bfseries,
+  commentstyle  = \color{gray!60},
+  stringstyle   = \color{vermegRed!80}
+}
+
+% verbatim avec retour a la ligne automatique (via fvextra)
+\RecustomVerbatimEnvironment{verbatim}{Verbatim}{%
+  breaklines=true, breakanywhere=true, fontsize=\small}
+
+% ── 17. Style des titres ───────────────────────────────────
+\titleformat{\chapter}[display]
+  {\normalfont\huge\bfseries\color{nexusBlue}}
+  {\chaptertitlename\ \thechapter}{18pt}{\Huge}
+\titlespacing*{\chapter}{0pt}{-10pt}{30pt}
+
+\titleformat{\section}
+  {\normalfont\Large\bfseries\color{nexusBlue}}{\thesection}{1em}{}
+\titleformat{\subsection}
+  {\normalfont\large\bfseries\color{titleGray}}{\thesubsection}{1em}{}
+\titleformat{\subsubsection}
+  {\normalfont\normalsize\bfseries\color{titleGray}}{\thesubsubsection}{1em}{}
+
+% ── 18. En-tete / Pied de page ─────────────────────────────
+\setlength{\headheight}{14pt}
+\addtolength{\topmargin}{-2pt}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\color{titleGray}%
+  \textit{Rapport de Stage PFE -- Master Business Analytics}}
+\fancyhead[R]{\small\color{titleGray}\textit{Ahmed Abdelhedi}}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+
+% ── 19. Application globale du formatage (apres tous les packages) ──
+\AtBeginDocument{%
+  \setlength{\parindent}{0.8cm}%
+  \setlength{\parskip}{6pt plus 1pt minus 1pt}%
+}
+
+% ══════════════════════════════════════════════════════════
+\begin{document}
+
+% ══════════════════════════════════════════════════════════
+%  PAGE DE GARDE  (style Hamza Boubaker)
+% ══════════════════════════════════════════════════════════
+\begin{titlepage}
+\thispagestyle{empty}
+\newgeometry{top=1.5cm, bottom=1.5cm, left=2.5cm, right=2.5cm}
+
+% ── Nom de l'école ─────────────────────────────────────────
+\begin{center}
+  {\small\bfseries École Supérieure Privée de Management de Tunis}\\[2pt]
+  {\small\bfseries Esprit School of Business}
+\end{center}
+
+\vspace{0.6cm}
+
+% ── Logos côte à côte ─────────────────────────────────────
+\begin{center}
+\begin{tabular}{@{}p{0.48\linewidth}@{\hfill}p{0.48\linewidth}@{}}
+  \includegraphics[height=1.8cm, keepaspectratio]{nexus_logo.jpg}
+  &
+  \raggedleft
+  \includegraphics[height=1.8cm, keepaspectratio]{vermeg_logo.jpg}
+\end{tabular}
+\end{center}
+
+\vspace{0.5cm}
+{\color{vermegRed}\rule{\linewidth}{2pt}}
+\vspace{0.3cm}
+
+% ── Titre principal ────────────────────────────────────────
+\begin{center}
+  {\fontsize{36}{44}\selectfont\bfseries\color{vermegRed} Internship Report}
+\end{center}
+
+{\color{vermegRed}\rule{\linewidth}{2pt}}
+
+\vspace{0.5cm}
+
+\begin{center}
+  {\normalsize For the purpose of obtaining the Professional Master's Degree in}
+
+  \vspace{0.4cm}
+  {\large\bfseries Business Analytics\\[4pt]
+   Work-Study Program at Vermeg}
+
+  \vspace{0.8cm}
+  {\color{vermegRed}\rule{0.6\linewidth}{1pt}}
+
+  \vspace{0.5cm}
+  {\normalsize Defended on :\ \textbf{June 2026}}
+
+  \vspace{0.3cm}
+  {\Large\bfseries Project elaborated by :\ Ahmed Abdelhedi}
+
+  \vspace{0.7cm}
+  {\color{vermegRed}\rule{0.6\linewidth}{1pt}}
+
+  \vspace{0.5cm}
+  {\normalsize\bfseries
+    Automation of Non-Regression Tests and Main Functional Scenarios\\[4pt]
+    in Megara Suite among CDG Capital, BMCE Bank of Africa and AWB\\[4pt]
+    — Major Moroccan Financial Institutions —}
+
+  \vspace{0.4cm}
+  {\normalsize\itshape March 2025 – June 2026}
+
+  \vspace{0.7cm}
+\end{center}
+
+\begin{flushleft}
+  {\normalsize\bfseries Corporate Internship Supervisor :}\ \ Bilel Ben Said / Wassim Louiz\\[6pt]
+  {\normalsize\bfseries Academic Supervisor :}\ \ Mr.\ Ben Brik Aymen
+\end{flushleft}
+
+\vfill
+\begin{center}
+  \textbf{Academic Year 2025/2026}
+\end{center}
+
+\restoregeometry
+\end{titlepage}
+
+% ══════════════════════════════════════════════════════════
+%  DÉDICACE
+% ══════════════════════════════════════════════════════════
+\chapter*{Dédicace}
+\thispagestyle{empty}
+\begin{center}
+\vspace*{2cm}
+\itshape
+À ma famille, pour son soutien indéfectible tout au long de ce parcours.\\[1em]
+À mes encadrants, pour leur disponibilité et leurs précieux conseils.\\[1em]
+À tous ceux qui m'ont accompagné dans cette aventure professionnelle et académique.
+\end{center}
+\newpage
+
+% ══════════════════════════════════════════════════════════
+%  REMERCIEMENTS
+% ══════════════════════════════════════════════════════════
+\chapter*{Remerciements}
+\addcontentsline{toc}{chapter}{Remerciements}
+
+Je tiens à exprimer ma profonde gratitude à toutes les personnes qui ont contribué à la réussite de ce projet de fin d'études.
+
+Mes remerciements les plus sincères vont en premier lieu à \textbf{M. Bilel Ben Said} et \textbf{M. Wassim Louiz}, mes encadrants au sein de VERMEG, pour m'avoir accordé leur confiance, partagé leur expertise métier et technique, et guidé tout au long de cette expérience enrichissante.
+
+Je remercie également \textbf{M. Ben Brik Aymen}, mon encadrant académique, pour ses conseils avisés et son suivi attentif qui m'ont permis de maintenir la rigueur scientifique indispensable à tout travail de recherche appliquée.
+
+Ma gratitude va aussi à l'ensemble des équipes techniques de \textbf{CDG Capital}, \textbf{BMCE Bank of Africa} et \textbf{Attijari Wafa Bank (AWB)} pour leur coopération lors des phases de validation et de déploiement des tests, ainsi qu'à \textbf{Nexus Groupe} pour le contexte opérationnel offert dans le cadre de ce projet marocain.
+
+\newpage
+
+% ══════════════════════════════════════════════════════════
+%  RÉSUMÉ & ABSTRACT
+% ══════════════════════════════════════════════════════════
+\chapter*{Résumé}
+\addcontentsline{toc}{chapter}{Résumé}
+
+Dans un secteur financier de plus en plus exigeant en matière de fiabilité logicielle, l'automatisation des tests constitue un levier stratégique pour garantir la qualité des systèmes d'information. Ce rapport présente les travaux réalisés dans le cadre d'un stage au sein de \textbf{VERMEG}, éditeur de la suite Megara, en collaboration avec \textbf{Nexus Groupe}, pour trois établissements financiers marocains majeurs : CDG Capital, BMCE Bank of Africa et Attijari Wafa Bank (AWB).
+
+L'objectif principal est la conception et le déploiement d'un framework d'automatisation couvrant les tests de non-régression (TNR) et les scénarios fonctionnels principaux de Megara. La solution repose sur \textbf{Playwright} pour l'automatisation de l'interface ExtJS, \textbf{WinSCP} et \textbf{IBM MQ} pour l'injection SWIFT, et \textbf{Streamlit} pour le tableau de bord d'orchestration. Le projet a été conduit selon la méthodologie \textbf{SCRUM}.
+
+Les résultats obtenus démontrent une couverture supérieure à 95\% des menus applicatifs critiques et une réduction de plus de 90\% du temps de validation entre deux releases.
+
+\textbf{Mots-clés :} Tests de non-régression, Playwright, Megara, SWIFT, SCRUM, CDG Capital, BMCE Bank of Africa, AWB, Nexus Groupe, automatisation.
+
+\bigskip\hrule\bigskip
+
+\chapter*{Abstract}
+\addcontentsline{toc}{chapter}{Abstract}
+
+In an increasingly demanding financial sector regarding software reliability, test automation is a strategic lever for ensuring the quality of information systems. This report presents the work carried out during an internship at \textbf{VERMEG}, in collaboration with \textbf{Nexus Groupe}, targeting three major Moroccan financial institutions: CDG Capital, BMCE Bank of Africa, and Attijari Wafa Bank (AWB).
+
+The main objective is the design and deployment of an automation framework covering non-regression tests (NRT) and main functional scenarios of the Megara suite. The solution relies on \textbf{Playwright} for ExtJS UI automation, \textbf{WinSCP} and \textbf{IBM MQ} for SWIFT injection, and \textbf{Streamlit} for the orchestration dashboard. The project was managed using the \textbf{SCRUM} methodology.
+
+Results demonstrate coverage exceeding 95\% of critical menu paths and a reduction of over 90\% in validation time between releases.
+
+\textbf{Keywords:} Non-regression testing, Playwright, Megara, SWIFT, SCRUM, CDG Capital, BMCE Bank of Africa, AWB, Nexus Groupe, automation.
+
+\newpage
+
+% ══════════════════════════════════════════════════════════
+%  TABLES
+% ══════════════════════════════════════════════════════════
+{% tables des matieres : parskip neutralise pour eviter l'espacement excessif
+\setlength{\parskip}{0pt}
+\tableofcontents
+\listoffigures
+\listoftables
+}
+\newpage
+
+% ══════════════════════════════════════════════════════════
+%  LISTE DES ABRÉVIATIONS
+% ══════════════════════════════════════════════════════════
+\chapter*{Liste des abréviations}
+\addcontentsline{toc}{chapter}{Liste des abréviations}
+
+\begin{tabular}{@{}lp{11cm}@{}}
+\toprule
+\textbf{Sigle} & \textbf{Signification} \\
+\midrule
+API    & Application Programming Interface \\
+AWB    & Attijari Wafa Bank (Maroc) \\
+BMCE   & Banque Marocaine du Commerce Extérieur — Bank of Africa \\
+CDG    & Caisse de Dépôt et de Gestion (Capital) \\
+CI/CD  & Continuous Integration / Continuous Deployment \\
+ExtJS  & Extended JavaScript (Sencha UI Framework) \\
+IBM MQ & IBM Message Queue \\
+IOD    & IODevice (composant d'intégration Megara) \\
+KPI    & Key Performance Indicator \\
+MT54X  & Message SWIFT de règlement-livraison (MT540–543) \\
+NGB    & Nexus Global Banking \\
+OST    & Opération Sur Titres \\
+PFE    & Projet de Fin d'Études \\
+QA     & Quality Assurance \\
+RL     & Réconciliation List \\
+SCRUM  & Cadre de gestion de projet agile \\
+SFTP   & SSH File Transfer Protocol \\
+SWIFT  & Society for Worldwide Interbank Financial Telecommunication \\
+TNR    & Test de Non-Régression \\
+UI     & User Interface \\
+VERMEG & Éditeur logiciel fintech \\
+\bottomrule
+\end{tabular}
+\newpage
+
+% ══════════════════════════════════════════════════════════
+%  INTRODUCTION GÉNÉRALE
+% ══════════════════════════════════════════════════════════
+\chapter*{Introduction générale}
+\addcontentsline{toc}{chapter}{Introduction générale}
+
+Le secteur des services financiers marocains connaît une transformation numérique accélérée, portée par des acteurs de premier plan tels que CDG Capital, BMCE Bank of Africa et Attijari Wafa Bank (AWB). Ces institutions s'appuient sur la suite logicielle \textbf{Megara} de VERMEG pour l'ensemble de leurs opérations de titres, de garde et de trading financier. Dans ce contexte, assurer la stabilité et la fiabilité de la plateforme à chaque nouvelle version est un impératif opérationnel et réglementaire.
+
+Ce projet de fin d'études, réalisé au sein de VERMEG en collaboration avec \textbf{Nexus Groupe}, porte sur la conception et le déploiement d'un framework d'automatisation des tests de non-régression (TNR) et des scénarios fonctionnels principaux de la suite Megara. La conduite du projet s'appuie sur la méthodologie \textbf{SCRUM}, permettant une livraison incrémentale et une adaptation continue aux retours des parties prenantes.
+
+Ce rapport s'articule autour de deux chapitres principaux. Le \textbf{premier chapitre} établit le cadre général du projet : présentation de l'environnement de stage, analyse et critique de l'existant, problématique, solution proposée et choix méthodologique. Le \textbf{deuxième chapitre} présente la spécification des besoins et la mise en place du projet avec SCRUM : acteurs, besoins fonctionnels et non-fonctionnels, KPIs, rôles, Product Backlog, Sprint Backlog et diagramme de Gantt.
+
+\newpage
+
+% ══════════════════════════════════════════════════════════
+%  CHAPITRE 1 – CADRE GÉNÉRAL DU PROJET
+% ══════════════════════════════════════════════════════════
+\chapter{Cadre général du projet}
+
+\section*{Introduction}
+\addcontentsline{toc}{section}{Introduction}
+
+Le secteur bancaire et financier marocain traverse une phase de transformation numérique profonde, caractérisée par une exigence croissante en matière de fiabilité et de qualité logicielle. Les systèmes d'information qui supportent les opérations sur titres — règlement-livraison, garde, gestion des OST, conformité réglementaire — constituent le c\oe{}ur opérationnel d'institutions telles que CDG Capital, BMCE Bank of Africa et Attijari Wafa Bank (AWB). Toute régression non détectée dans ces systèmes peut engendrer des conséquences opérationnelles, financières et réglementaires significatives.
+
+C'est dans ce contexte exigeant que s'inscrit le présent projet de fin d'études, réalisé au sein de \textbf{VERMEG} en collaboration avec \textbf{Nexus Groupe}. Son objectif est la conception et le déploiement d'un framework d'automatisation des tests de non-régression (TNR) et des scénarios fonctionnels principaux de la suite logicielle \textbf{Megara}, adaptée aux configurations spécifiques de trois institutions financières marocaines majeures.
+
+Ce premier chapitre pose les fondations du projet. Il présente successivement les organismes impliqués, analyse le processus de validation existant et ses limites, formule la problématique centrale, décrit la solution architecturée en réponse, et justifie le choix méthodologique qui a guidé la conduite du projet.
+
+% ─────────────────────────────────────────────────────────
+\section{Présentation de l'organisme d'accueil}
+% ─────────────────────────────────────────────────────────
+
+\subsection{VERMEG}
+
+\textbf{VERMEG} est un éditeur international de solutions logicielles \textit{mission-critical} spécialisées dans le secteur financier et de l'assurance, fondé à Tunis en \textbf{2000}. Fort d'une présence dans \textbf{40+ pays}, d'un portefeuille de \textbf{160+ clients} dont \textbf{24 banques centrales}, et de plusieurs centaines d'ingénieurs répartis entre ses centres de compétences en Tunisie, en Belgique, en France et au Royaume-Uni, VERMEG positionne ses solutions au c\oe{}ur des systèmes d'information des grandes institutions financières mondiales. Plus de \textbf{30\%} de ses effectifs sont dédiés à la Recherche \& Développement, assurant une innovation continue des plateformes logicielles.
+
+Son portefeuille couvre deux domaines stratégiques complémentaires :
+
+\medskip
+\noindent\textcolor{nexusBlue}{\large\bfseries Solutions Capital Markets}
+
+\begin{figure}[H]
+\centering
+\begin{tabular}{@{}ccc@{}}
+  \includegraphics[height=1.8cm,keepaspectratio]{colline_logo.jpg} &
+  \includegraphics[height=1.8cm,keepaspectratio]{megara.jpg} &
+  \includegraphics[height=1.8cm,keepaspectratio]{Optimizer.jpg}\\[3pt]
+  \small\textbf{Colline} & \small\textbf{Megara} & \small\textbf{Optimizer}
+\end{tabular}
+\end{figure}
+
+\begin{itemize}
+  \item \textbf{Colline} : plateforme SaaS de gestion du collatéral couvrant les dérivés OTC, les repos, le prêt-emprunt de titres et les marges CCP. Elle automatise les appels de marge, l'optimisation et la résolution des litiges en conformité avec EMIR, Dodd-Frank et Bâle III — plus de 250\,000 contrats de gouvernance gérés quotidiennement ;
+  \item \textbf{Megara} : suite post-trade modulaire pour la gestion des titres, de la garde et des opérations sur titres, à destination des banques centrales, CCP, CSD, dépositaires et custodians. Lauréate du \textit{Central Banking Technology Award} 2025 et 2026, certifiée SWIFT pour le règlement-titres, les actions sur titres et la gestion du collatéral ;
+  \item \textbf{Optimizer} : hub intelligent d'optimisation du collatéral qui digitalise les contrats juridiques (CSA, GMRA, GMSLA), consolide les inventaires multi-actifs et automatise les allocations par des algorithmes d'optimisation avancés (simplexe, programmation en nombres entiers mixtes).
+\end{itemize}
+
+\medskip
+\noindent\textcolor{nexusBlue}{\large\bfseries Solutions Assurance}
+
+\begin{figure}[H]
+\centering
+\begin{tabular}{@{}cc@{}}
+  \includegraphics[height=1.8cm,keepaspectratio]{Soliam.jpg} &
+  \includegraphics[height=1.8cm,keepaspectratio]{Solife.jpg}\\[3pt]
+  \small\textbf{Soliam} & \small\textbf{Solife}
+\end{tabular}
+\end{figure}
+
+\begin{itemize}
+  \item \textbf{Soliam} : solution intégrée front-to-back de gestion de portefeuille pour gestionnaires d'actifs et assureurs, couvrant l'order management, la conformité réglementaire (IFRS9, MiFID II, ESG, Solvency II) et les tableaux de bord en temps réel ;
+  \item \textbf{Solife} : système d'administration de polices d'assurance vie et santé, automatisant la configuration des produits, la gestion fiscale multi-juridictions, le traitement des sinistres et l'ensemble des opérations front-to-back.
+\end{itemize}
+
+\subsubsection{La suite Megara}
+
+La suite \textbf{Megara} constitue le c\oe{}ur du présent projet. Il s'agit d'une plateforme modulaire, développée en \textbf{Java/JEE} et déployée sur serveur d'applications \textbf{IBM WebSphere}. Son interface utilisateur repose sur le framework \textbf{ExtJS} (Sencha), qui produit une application web monopage de type \textit{Rich Internet Application} (RIA). Cette technologie, si elle offre une expérience utilisateur riche et réactive, génère des identifiants de composants dynamiques à l'exécution — caractéristique qui constitue l'un des principaux défis techniques de l'automatisation, comme nous le verrons au chapitre~3.
+
+Megara est structurée en huit modules fonctionnels indépendants, chacun déployé sur un port applicatif distinct :
+
+\begin{table}[H]
+\centering
+\caption{Modules de la suite Megara et leur périmètre fonctionnel}
+\label{tab:modules}
+\begin{tabularx}{\textwidth}{llX}
+\toprule
+\textbf{Module}       & \textbf{Port type} & \textbf{Périmètre fonctionnel} \\
+\midrule
+MegaCommon      & 9080 & Référentiel transversal, positions titres, fiscalité, facturation \\
+MegaCustody     & 9082 & Règlement-livraison, instructions clients, réconciliation, SWIFT \\
+MegaCor         & 9081 & Opérations sur titres (OST), annonces, exécutions, paiements \\
+MegaTrade       & 9083 & Trading, ordres de marché, gestion des portefeuilles \\
+MegaCompliance  & 9086 & Conformité réglementaire, surveillance des transactions \\
+MegaLend        & 9083 & Prêt-emprunt de titres \\
+MegaIssuer      & 9084 & Gestion des émissions et des émetteurs \\
+MegaAccounting  & 9085 & Comptabilité titre, rapprochements comptables \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+Cette architecture multi-module implique qu'une campagne de TNR exhaustive nécessite de couvrir, pour chaque client, l'ensemble des modules déployés dans son environnement — avec des configurations d'URL, de port et d'authentification qui leur sont propres.
+
+\subsection{Nexus Groupe}
+
+\begin{figure}[H]
+\centering
+\includegraphics[height=1.5cm,keepaspectratio]{nexus_logo.jpg}
+\end{figure}
+
+\textbf{Nexus Groupe} est une société marocaine de conseil stratégique et de solutions technologiques dont la mission est d'\textit{« élever les entreprises grâce à des stratégies innovantes et des solutions technologiques de pointe pour un marché dynamique »}. Elle constitue la \textbf{société d'accueil principale} du présent projet de fin d'études, dans le cadre d'un partenariat de travail en alternance avec VERMEG.
+
+Nexus Groupe intervient sur quatre domaines stratégiques :
+
+\begin{itemize}
+  \item \textbf{Global Banking} : déploiement et paramétrage de solutions bancaires core pour les établissements financiers de la région ;
+  \item \textbf{Capital Markets} : implémentation et intégration de plateformes post-trade, de règlement-livraison et de gestion des titres — notamment la suite Megara de VERMEG — auprès des dépositaires, custodians et banques marocains ;
+  \item \textbf{Consulting \& Audit} : accompagnement des directions métier et IT dans leurs projets de transformation digitale, d'optimisation des processus et de mise en conformité réglementaire ;
+  \item \textbf{Assurance} : conseil et déploiement de solutions de gestion de polices et de portefeuilles pour le secteur assurantiel.
+\end{itemize}
+
+Dans le cadre du présent projet, Nexus Groupe joue un double rôle opérationnel :
+
+\begin{itemize}
+  \item \textbf{Donneur d'ordre fonctionnel} côté marché marocain : il définit les exigences de qualité propres aux configurations locales (typologies d'OST, format des messages Maroclear, règles de réconciliation) et valide les livrables à chaque Sprint ;
+  \item \textbf{Facilitateur d'accès} aux environnements de recette des trois institutions clientes, en assurant la coordination technique et fonctionnelle avec leurs équipes respectives.
+\end{itemize}
+
+\subsection{Les institutions financières clientes}
+
+Le projet cible trois institutions financières marocaines de premier plan, chacune exploitant un environnement Megara distinct, avec ses propres configurations d'authentification, de réseau et de modules déployés.
+
+\begin{figure}[H]
+\centering
+\begin{tabular}{@{}ccc@{}}
+  \includegraphics[height=1.8cm,keepaspectratio]{CDG_Capital_logo.jpg} &
+  \includegraphics[height=1.8cm,keepaspectratio]{bmce_logo.jpg} &
+  \includegraphics[height=1.8cm,keepaspectratio]{awb_logo.jpg}
+\end{tabular}
+\caption*{Institutions financières marocaines clientes}
+\end{figure}
+
+\begin{table}[H]
+\centering
+\caption{Caractéristiques techniques des environnements Megara clients}
+\label{tab:clients}
+\begin{tabularx}{\textwidth}{lXp{3.2cm}l}
+\toprule
+\textbf{Institution} & \textbf{Description} & \textbf{Authentification} & \textbf{Protocole} \\
+\midrule
+CDG Capital  & Filiale d'investissement de la Caisse de Dépôt et de Gestion du Maroc — dépositaire central & Keycloak (OAuth2/OIDC) & HTTPS \\[4pt]
+BMCE Bank of Africa & Banque Marocaine du Commerce Extérieur, filiale Bank of Africa & Native JSP & HTTP \\[4pt]
+AWB          & Attijari Wafa Bank & Native JSP & HTTP \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+La distinction entre l'authentification \textbf{Keycloak} de CDG Capital et l'authentification \textbf{native} de BMCE Bank of Africa et AWB est techniquement significative : CDG Capital impose un flux OAuth2/OIDC avec redirection vers un serveur d'identité externe, tandis que les deux autres institutions exposent un formulaire JSP de connexion directe. Cette hétérogénéité a conduit à implémenter deux branches d'authentification distinctes dans le framework, comme détaillé au chapitre~3.
+
+Par ailleurs, les modules déployés diffèrent selon l'institution. AWB et CDG Capital exposent cinq à six modules, dont MegaCustody (règlement-livraison et SWIFT) et MegaCor (OST). BMCE Bank of Africa déploie la couverture la plus large avec huit modules, incluant MegaLend, MegaAccounting et MegaIssuer. Cette variabilité structurelle renforce la nécessité d'une architecture de framework réellement multi-client et configurable.
+
+% ─────────────────────────────────────────────────────────
+\section{Présentation du projet}
+% ─────────────────────────────────────────────────────────
+
+\subsection{Analyse de l'existant}
+
+Avant l'initiation de ce projet, le processus de validation des nouvelles versions de la suite Megara reposait exclusivement sur des \textbf{tests manuels}. À chaque nouvelle \textit{release}, un ingénieur QA devait parcourir séquentiellement l'intégralité des menus de chaque module Megara, pour chacun des trois clients, afin de détecter d'éventuelles régressions d'affichage ou de comportement fonctionnel. Ce processus, tel qu'il était conduit, présentait les caractéristiques suivantes :
+
+\begin{itemize}
+  \item \textbf{Durée de validation} : entre quatre et cinq jours ouvrés par client et par cycle de release, soit une charge totale pouvant atteindre quinze jours-hommes pour couvrir les trois institutions simultanément ;
+  \item \textbf{Outil de suivi} : des feuilles de calcul Excel, sans mécanisme de versionnage ni d'historique automatisé, utilisées pour consigner les chemins de menus visités et les anomalies observées ;
+  \item \textbf{Traçabilité des défauts} : les captures d'écran en cas d'anomalie étaient réalisées manuellement, sans nomenclature systématique ni horodatage normalisé, rendant leur exploitation lors des réunions de correction difficile et chronophage ;
+  \item \textbf{Absence totale d'automatisation fonctionnelle} : les scénarios métier critiques — saisie d'instructions de règlement, injection de messages SWIFT (MT54X, MT548, MT54Y), création et validation d'Opérations Sur Titres (OST), réconciliation de liste — ne faisaient l'objet d'aucun test automatisé et n'étaient pas systématiquement couverts à chaque release ;
+  \item \textbf{Dépendance à l'expertise individuelle} : la connaissance des chemins de menus critiques et des procédures de validation fonctionnelle était concentrée chez un nombre restreint d'ingénieurs, constituant un risque organisationnel en cas d'absence ou de départ.
+\end{itemize}
+
+Il est important de noter que la suite Megara expose, pour chaque client, une arborescence de menus pouvant dépasser quatre-vingt-dix chemins distincts par module, distribués sur plusieurs niveaux hiérarchiques. La couverture manuelle exhaustive de ce périmètre était donc structurellement impossible dans des délais compatibles avec les cycles de livraison.
+
+\subsection{Critique de l'existant}
+
+L'analyse du processus de validation en place met en évidence cinq lacunes majeures, dont les conséquences sont à la fois opérationnelles et stratégiques :
+
+\begin{enumerate}[label=\textbf{L\arabic*.}]
+
+  \item \textbf{Non-scalabilité structurelle.}
+  La charge de validation croît linéairement avec le nombre de clients et de modules couverts. L'intégration d'un nouveau client Megara ou l'extension du périmètre d'un client existant se traduit mécaniquement par un accroissement proportionnel du temps QA mobilisé, sans possibilité d'absorption sans ressources humaines supplémentaires. Ce modèle est incompatible avec une stratégie de croissance du portefeuille client.
+
+  \item \textbf{Répétabilité et cohérence insuffisantes.}
+  Les tests manuels sont intrinsèquement sujets à des variations d'exécution : omissions involontaires de certains chemins, différences de procédure entre ingénieurs, fatigue lors de campagnes longues. Ces variations compromettent la comparabilité des résultats entre deux cycles successifs et réduisent la fiabilité des conclusions de non-régression.
+
+  \item \textbf{Absence de traçabilité automatisée et centralisée.}
+  En l'absence d'un système de logging structuré, les résultats de chaque campagne de validation existaient sous forme de fichiers Excel disparates, sans historique inter-releases, sans indexation par module ou par chemin de menu, et sans possibilité de corrélation automatique avec les anomalies déclarées. La reconstitution de l'historique d'une régression spécifique entre deux versions de Megara nécessitait une investigation manuelle longue et incertaine.
+
+  \item \textbf{Délai de détection prohibitif.}
+  Une régression introduite dans une release n'était identifiée qu'après plusieurs jours de tests, au mieux à mi-parcours de la campagne. Ce délai de détection tardif implique que les correctifs devaient être intégrés dans un cycle de release ultérieur, alourdissant la charge des équipes de développement et retardant les livraisons aux clients.
+
+  \item \textbf{Couverture fonctionnelle nulle sur les scénarios critiques.}
+  Les processus métier les plus complexes et les plus risqués — le traitement des messages SWIFT ISO~15022 de la catégorie~5 (MT541, MT548, MT54Y), le cycle complet des OST de marché local, la réconciliation de position — ne faisaient l'objet d'aucune validation automatisée. Or, ce sont précisément ces scénarios qui, en cas de régression, exposent les institutions à des risques opérationnels directs (instructions de règlement non traitées, distributions d'OST incorrectes, écarts de réconciliation non détectés).
+
+\end{enumerate}
+
+\subsection{Problématique}
+
+Au terme de cette analyse, la problématique centrale du projet se formule de la manière suivante :
+
+\begin{mdframed}[linecolor=vermegRed, linewidth=2pt, innertopmargin=12pt, innerbottommargin=12pt, innerleftmargin=14pt, innerrightmargin=14pt]
+\textit{Comment concevoir et déployer un framework d'automatisation des tests de non-régression et des scénarios fonctionnels principaux de la suite Megara, capable de s'adapter aux hétérogénéités de configuration de trois institutions financières marocaines (CDG Capital, BMCE Bank of Africa, AWB) — notamment en termes d'authentification, de modules déployés et de données de test — tout en garantissant la maintenabilité du framework, une couverture fonctionnelle supérieure à 90\%, et une réduction significative du cycle de validation entre deux releases consécutives ?}
+\end{mdframed}
+
+\subsection{Solution proposée}
+
+La réponse à cette problématique repose sur la conception d'un \textbf{framework d'automatisation multi-client à architecture data-driven}, dont le principe fondamental est la séparation stricte entre le code d'exécution et les données de configuration. Concrètement, les chemins de menus à parcourir, les données de formulaires à saisir et les messages SWIFT à injecter sont externalisés dans des fichiers de configuration dédiés — aucune donnée client n'est encodée en dur dans le code source. Cette conception garantit qu'ajouter un nouveau client ou modifier le périmètre d'un client existant ne nécessite que la création ou la modification de fichiers de configuration, sans refactorisation du code.
+
+Le framework est structuré autour de \textbf{trois moteurs complémentaires}, chacun répondant à une catégorie de besoins distincte :
+
+\begin{enumerate}
+
+  \item \textbf{Moteur TNR de navigation.}
+  Ce composant automatise le parcours exhaustif des arborescences de menus de chaque module Megara pour chacun des trois clients. Il s'appuie sur \textbf{Playwright} (Microsoft) pour piloter un navigateur Chromium, navigue dans l'interface ExtJS en simulant les interactions d'un utilisateur humain (clics sur les nœuds d'arbre, déclenchement de recherches, ouverture de fiches en mode Vue puis en mode Édition), et détecte les anomalies à partir d'un ensemble de dix motifs d'erreur caractéristiques de l'interface Megara. En cas de défaut détecté, une capture d'écran est automatiquement sauvegardée avec un nommage normalisé incluant le client, le module, le chemin de menu et l'horodatage.
+
+  \item \textbf{Moteur de scénarios fonctionnels.}
+  Ce composant automatise les scénarios métier critiques qui ne peuvent être couverts par la simple navigation de menus. Il comprend~:
+  \begin{itemize}
+    \item la \textbf{saisie d'instructions de règlement-livraison} dans MegaCustody, avec remplissage paramétré d'une quinzaine de champs (textes libres, listes déroulantes ExtJS, champs de recherche avec lookup F2, champs date) ;
+    \item l'\textbf{injection SWIFT end-to-end}, couvrant le dépôt de fichiers MT54X (instruction), MT548 (matching) et MT54Y (règlement) sur le serveur SFTP distant via WinSCP, la surveillance de leur absorption par l'IODevice Megara, et la vérification de leur enregistrement dans l'interface utilisateur ;
+    \item l'\textbf{automatisation des Opérations Sur Titres} dans MegaCor, depuis la création de l'annonce jusqu'à son activation et au traitement post-activation (exécutions client et marché, génération des paiements) ;
+    \item la \textbf{réconciliation de liste} pour AWB et CDG Capital, couvrant la consultation des positions dans MegaCommon et l'exécution du processus de réconciliation dans MegaCustody.
+  \end{itemize}
+
+  \item \textbf{Module de diagnostics serveur.}
+  Ce composant vérifie, par connexion SFTP, l'état opérationnel de l'infrastructure Megara côté serveur avant le lancement d'une campagne : état du dossier d'entrée de l'IODevice (répertoire ALLIANCE), statut du serveur IBM WebSphere, présence de fichiers verrous bloquants, et queue des dernières lignes du journal système. Un mode correctif automatique (\texttt{--fix}) permet, en cas d'anomalie détectée, de supprimer les fichiers verrous et de redémarrer le serveur WebSphere sans intervention humaine.
+
+\end{enumerate}
+
+L'ensemble de ces composants est piloté par des variables d'environnement système — aucun identifiant ni URL d'accès n'est stocké en clair dans le code source, conformément aux bonnes pratiques de sécurité des systèmes d'information.
+
+La figure~\ref{fig:archi_solution} illustre l'architecture globale de la solution, faisant apparaître les interactions entre les trois moteurs du framework et les environnements Megara des trois institutions clientes.
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[
+  node distance=1.4cm and 2cm,
+  motor/.style={rectangle, rounded corners=5pt, draw=nexusBlue, fill=nexusBlue!7,
+                text width=3.4cm, align=center, minimum height=1cm, font=\small\bfseries},
+  client/.style={rectangle, rounded corners=4pt, draw=OliveGreen!70!black, fill=OliveGreen!8,
+                 text width=2.6cm, align=center, minimum height=0.85cm, font=\small},
+  config/.style={rectangle, rounded corners=3pt, draw=gray!60, fill=gray!8,
+                 text width=2.8cm, align=center, minimum height=0.85cm, font=\footnotesize},
+  arrow/.style={-Stealth, thick, nexusBlue!70},
+  cfg/.style={-Stealth, dashed, gray!60}
+]
+  % Moteurs
+  \node[motor] (tnr)   at (0,0)    {Moteur TNR\\Navigation};
+  \node[motor] (func)  at (0,-2.2) {Moteur Scénarios\\Fonctionnels};
+  \node[motor] (diag)  at (0,-4.4) {Module Diagnostics\\Serveur};
+
+  % Clients Megara
+  \node[client] (cdg)  at (5.5, 0)    {CDG Capital\\Megara};
+  \node[client] (bmce) at (5.5, -2.2) {BMCE Bank of Africa\\Megara};
+  \node[client] (awb)  at (5.5, -4.4) {AWB\\Megara};
+
+  % Fichiers de configuration
+  \node[config] (cfg_menus) at (-4.5, -0.8) {Projects/\\<CLIENT>/*.txt\\Chemins menus};
+  \node[config] (cfg_data)  at (-4.5, -2.8) {variable\_saisies/\\*.txt\\Données formulaires};
+  \node[config] (cfg_swift) at (-4.5, -4.8) {SWIFTS/\\<CLIENT>/*.txt\\Messages ISO~15022};
+
+  % Flèches vers clients
+  \draw[arrow] (tnr)  -- node[above, font=\scriptsize]{Playwright} (cdg);
+  \draw[arrow] (tnr)  -- (bmce);
+  \draw[arrow] (func) -- node[above, font=\scriptsize]{SFTP/UI} (awb);
+  \draw[arrow] (diag) -- node[below, font=\scriptsize]{WinSCP} (awb);
+
+  % Flèches depuis configs
+  \draw[cfg] (cfg_menus) -- (tnr);
+  \draw[cfg] (cfg_data)  -- (func);
+  \draw[cfg] (cfg_swift) -- (func);
+
+  % Légende
+  \node[font=\scriptsize, text=gray] at (0.5, -5.6) {Sorties : screenshots/ · run.log · horodatage normalisé};
+\end{tikzpicture}
+\caption{Architecture globale du framework d'automatisation multi-client}
+\label{fig:archi_solution}
+\end{figure}
+
+% ─────────────────────────────────────────────────────────
+\section{Méthodologie de gestion de projet}
+% ─────────────────────────────────────────────────────────
+
+\subsection{Comparaison des méthodologies}
+
+La conduite d'un projet d'automatisation de cette envergure — périmètre fonctionnel évolutif, trois clients aux configurations hétérogènes, dépendances vis-à-vis d'infrastructures externes, retours fréquents des équipes QA — nécessite le choix d'une méthodologie adaptée. Trois approches ont été comparées : le \textbf{Cycle en V}, \textbf{Kanban} et \textbf{SCRUM}.
+
+\begin{table}[H]
+\centering
+\caption{Comparaison des méthodologies de gestion de projet}
+\label{tab:comparaison_methodologies}
+\renewcommand{\arraystretch}{1.2}
+\begin{tabularx}{\textwidth}{|p{3.5cm}|X|X|X|}
+\hline
+\textbf{Critère} &
+\textbf{Cycle en V} &
+\textbf{Kanban} &
+\textbf{SCRUM} \\
+\hline
+Planification &
+Rigide et séquentielle &
+Continue, flux tiré &
+Itérative par Sprints fixes \\
+\hline
+Adaptabilité aux changements &
+Faible (spécifications gelées) &
+Bonne &
+Excellente \\
+\hline
+Visibilité des parties prenantes &
+Faible (livraison finale) &
+Moyenne &
+Forte (démonstrations à chaque Sprint) \\
+\hline
+Gestion des risques &
+Tardive (phase V) &
+Continue &
+Précoce (backlog priorisé) \\
+\hline
+Taille d'équipe idéale &
+Grande &
+Variable &
+Petite à moyenne (3 à 9 personnes) \\
+\hline
+Convient pour &
+Projets à spécifications stables &
+Amélioration continue &
+Projets évolutifs et complexes \\
+\hline
+Livrables intermédiaires &
+Non &
+Oui (par tâche) &
+Oui (incrément par Sprint) \\
+\hline
+Gestion des dépendances externes &
+Difficile à réviser &
+Flexible &
+Intégrée au backlog \\
+\hline
+\end{tabularx}
+\end{table}
+
+\subsection{Choix de la méthodologie agile}
+
+Le \textbf{Cycle en V} a été écarté en raison de la nature intrinsèquement évolutive du périmètre : les chemins de menus à couvrir, les types de champs à remplir et les scénarios SWIFT à automatiser ont été progressivement précisés au contact des équipes VERMEG et des trois institutions, rendant une spécification exhaustive préalable impossible.
+
+\textbf{Kanban}, bien qu'adapté aux flux continus, ne fournit pas les mécanismes de planification par itérations temporelles nécessaires pour structurer les livraisons et communiquer des jalons aux parties prenantes (VERMEG QA, Nexus Groupe).
+
+La méthodologie \textbf{agile} constitue donc le cadre le plus adapté à ce projet, pour les raisons suivantes :
+\begin{itemize}
+  \item elle valorise les \textbf{livraisons incrémentales} de logiciel fonctionnel plutôt qu'une documentation exhaustive préalable ;
+  \item elle favorise la \textbf{collaboration continue} avec les parties prenantes, permettant d'ajuster les priorités entre clients et modules à chaque itération ;
+  \item elle intègre la \textbf{gestion précoce des risques} via la priorisation du backlog — les modules et les clients les plus critiques sont traités en premier.
+\end{itemize}
+
+\subsection{Adoption de la méthode SCRUM}
+
+Parmi les méthodes agiles, \textbf{SCRUM} a été retenu comme cadre de travail pour les raisons suivantes :
+
+\begin{itemize}
+
+  \item \textbf{Cadence adaptée aux cycles Megara.}
+  Des Sprints de deux semaines s'alignent naturellement sur les cycles de release de Megara : chaque Sprint produit un incrément testable (un module couvert, un scénario fonctionnel opérationnel) qui peut être immédiatement validé par les équipes VERMEG dans leur environnement de recette.
+
+  \item \textbf{Product Backlog comme outil de priorisation.}
+  La formalisation de l'ensemble des fonctionnalités à développer sous forme de User Stories, estimées en points et priorisées par valeur métier, permet de concentrer les efforts sur les modules les plus critiques (MegaCustody, MegaCommon) et les clients les plus contraints (AWB pour les scénarios SWIFT).
+
+  \item \textbf{Cérémonies SCRUM comme vecteur de communication.}
+  Les réunions quotidiennes (\textit{daily stand-up}), les revues de Sprint (\textit{sprint review}) et les rétrospectives assurent une communication régulière et structurée entre l'ingénieur QA, le Product Owner (Bilel Ben Said, VERMEG), le Scrum Master (Wassim Louiz, Nexus) et les équipes métier des banques clientes.
+
+  \item \textbf{Definition of Done rigoureuse.}
+  Un module est considéré comme couvert — et la User Story correspondante comme terminée — lorsque deux conditions sont simultanément remplies : (1) le taux de couverture TNR dépasse 90\% des chemins de menus définis dans le fichier de configuration du module, et (2) l'ensemble des scénarios fonctionnels associés s'exécutent sans erreur bloquante dans l'environnement de recette du client.
+
+\end{itemize}
+
+Le projet a été planifié en \textbf{six Sprints de deux semaines}, couvrant une période initiale de douze semaines (mars à juillet 2025, première phase), puis prolongé pour intégrer les validations CDG Capital et BMCE Bank of Africa. Le tableau~\ref{tab:sprints_ch1} présente la répartition thématique des Sprints.
+
+\begin{table}[H]
+\centering
+\caption{Vision synthétique des Sprints SCRUM}
+\label{tab:sprints_ch1}
+\begin{tabularx}{\textwidth}{clX}
+\toprule
+\textbf{Sprint} & \textbf{Période} & \textbf{Objectif principal} \\
+\midrule
+Sprint 1 & S1–S2   & Infrastructure technique, authentifications Keycloak (CDG) et native (AWB, BMCE), gestion limite 10 onglets \\
+Sprint 2 & S3–S4   & Moteur TNR MegaCommon pour les trois clients \\
+Sprint 3 & S5–S6   & Moteur TNR MegaCustody et MegaTrade \\
+Sprint 4 & S7–S8   & Saisie d'instructions clients et pipeline SWIFT end-to-end \\
+Sprint 5 & S9–S10  & Automatisation OST, réconciliation, diagnostics serveur, modules complémentaires \\
+Sprint 6 & S11–S12 & Stabilisation, campagnes de recette, corrections et clôture \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\section*{Conclusion}
+\addcontentsline{toc}{section}{Conclusion}
+
+Ce premier chapitre a posé le cadre organisationnel, fonctionnel et méthodologique du projet. La présentation de VERMEG, de Nexus Groupe et des trois institutions financières clientes a mis en lumière la diversité et la complexité des environnements Megara à couvrir. L'analyse critique du processus de validation existant a révélé cinq lacunes structurelles majeures — non-scalabilité, répétabilité insuffisante, absence de traçabilité, délai de détection trop long et couverture fonctionnelle nulle — qui justifient pleinement la démarche d'automatisation entreprise.
+
+La solution proposée, un framework à architecture data-driven articulé autour de trois moteurs complémentaires, répond de manière ciblée à chacune de ces lacunes. Le choix de la méthodologie SCRUM, avec ses six Sprints thématiques et sa \textit{Definition of Done} rigoureuse, garantit une livraison incrémentale et contrôlée, alignée sur les cycles de release de Megara et les attentes des parties prenantes.
+
+Le chapitre suivant formalisera l'ensemble des besoins fonctionnels et non-fonctionnels du projet, définira les indicateurs clés de performance retenus, et présentera le Product Backlog ainsi que la planification détaillée des Sprints.
+
+\newpage
+
+% ══════════════════════════════════════════════════════════
+%  CHAPITRE 2 – SPÉCIFICATION DES BESOINS ET SCRUM
+% ══════════════════════════════════════════════════════════
+\chapter{Spécification des besoins et mise en place avec SCRUM}
+
+\section*{Introduction}
+\addcontentsline{toc}{section}{Introduction}
+
+La qualité d'un système logiciel se mesure d'abord à la précision avec laquelle ses exigences ont été formulées et organisées. Ce deuxième chapitre constitue le référentiel fonctionnel et non-fonctionnel du framework d'automatisation : il identifie les acteurs impliqués, formalise les besoins en les ancrant directement dans les fonctionnalités observées dans le code source du projet, définit les indicateurs clés de performance qui serviront à évaluer le succès du projet, puis présente la mise en œuvre concrète de la démarche SCRUM retenue — répartition des rôles, construction du Product Backlog, décomposition en Sprint Backlog et planification temporelle.
+
+% ─────────────────────────────────────────────────────────
+\section{Analyse des besoins}
+% ─────────────────────────────────────────────────────────
+
+\subsection{Identification des acteurs}
+
+L'identification précise des acteurs est une étape préliminaire indispensable à toute spécification d'exigences. Dans le cadre de ce projet, les acteurs sont répartis en deux catégories : les acteurs humains, qui interagissent directement avec le framework, et les systèmes externes, avec lesquels le framework interagit de manière programmatique.
+
+\begin{table}[H]
+\centering
+\caption{Identification des acteurs du système}
+\label{tab:acteurs}
+\begin{tabularx}{\textwidth}{p{2.8cm}p{2.4cm}X}
+\toprule
+\textbf{Acteur} & \textbf{Catégorie} & \textbf{Rôle dans le système} \\
+\midrule
+Ingénieur QA VERMEG
+  & Humain principal
+  & Configure les variables d'environnement, lance les campagnes TNR et fonctionnelles, consulte les logs et captures d'écran, remonte les anomalies détectées aux équipes de développement \\[4pt]
+Product Owner (Nexus Groupe)
+  & Humain principal
+  & Définit et priorise le Product Backlog, valide les incréments à chaque revue de Sprint, arbitre les priorités entre clients et modules, représente les exigences des trois institutions financières \\[4pt]
+Encadrant technique VERMEG
+  & Humain secondaire
+  & Apporte le contexte métier Megara, valide les chemins de menus à couvrir, confirme la conformité des scénarios fonctionnels (SWIFT, OST) avec les processus réels \\[4pt]
+Suite Megara (CDG / BMCE / AWB)
+  & Système externe principal
+  & Application sous test — interface ExtJS pilotée par Playwright ; expose huit modules fonctionnels sur des ports applicatifs distincts \\[4pt]
+IODevice ALLIANCE
+  & Système externe
+  & Composant Megara chargé de surveiller le répertoire SFTP \nolinkurl{/Megara/IODevices/MegaCustody/IN/ALLIANCE/} et d'absorber les fichiers SWIFT déposés pour les injecter dans le bus de traitement \\[4pt]
+Serveur SFTP (IBM WebSphere)
+  & Système externe
+  & Infrastructure Linux hébergeant Megara ; point d'entrée SFTP pour le dépôt des fichiers SWIFT et l'exécution des diagnostics distants \\[4pt]
+IBM MQ
+  & Système externe
+  & Bus de messages asynchrones inter-modules de la suite Megara ; utilisé pour la transmission des notifications de traitement SWIFT entre MegaCustody et les autres modules \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\subsection{Besoins fonctionnels}
+
+Les besoins fonctionnels ci-dessous ont été extraits directement des fonctionnalités implémentées dans le code source du framework. Chaque besoin est ancré dans un ou plusieurs modules Python identifiables.
+
+\begin{enumerate}[label=\textbf{BF\arabic*.}, leftmargin=*, itemsep=6pt]
+
+  \item \textbf{Authentification multi-client hétérogène.}
+  Le système doit prendre en charge deux mécanismes d'authentification distincts selon l'institution cliente. Pour \textbf{CDG Capital}, il doit gérer le flux OAuth2/OIDC avec redirection vers le serveur Keycloak, suivi de la saisie des identifiants sur le formulaire d'identité et du retour vers Megara. Pour \textbf{BMCE Bank of Africa} et \textbf{AWB}, il doit soumettre un formulaire JSP natif comprenant le nom d'utilisateur, le mot de passe et la sélection du domaine d'entité légale.
+  \textit{(Modules : \texttt{non\_regression\_cdg.py}, \texttt{non\_regression\_awb.py}, \texttt{non\_regression\_bmce.py})}
+
+  \item \textbf{Navigation TNR exhaustive par module et par client.}
+  Le système doit charger dynamiquement les chemins de menus depuis les fichiers \texttt{Projects/<CLIENT>/<Module>/*.txt}, naviguer dans l'arborescence ExtJS jusqu'au nœud feuille de chaque chemin (niveaux 1 à 5), déclencher les recherches sur les écrans de consultation, et tenter l'ouverture des fiches en mode Vue puis en mode Édition lorsqu'une ligne de résultat est disponible. Cette opération doit être reproduite pour les cinq à huit modules déployés chez chaque client, et pour les trois institutions simultanément.
+  \textit{(Modules : \texttt{non\_regression\_awb.py}, \texttt{non\_regression\_bmce.py}, \texttt{non\_regression\_cdg.py})}
+
+  \item \textbf{Détection et capture d'anomalies d'affichage.}
+  Le système doit détecter les régressions à partir d'un ensemble de dix indicateurs d'erreur caractéristiques de l'interface ExtJS de Megara : modaux d'erreur avec icône d'avertissement, libellés d'en-tête contenant le texte \og{}Error in ProcessPageResult.onFailure\fg{}, messages \og{}No Validation Configuration Found\fg{}, popups \og{}null\fg{}, entrées de journal système signalant une erreur applicative, et contenus de composants inattendus. En cas de détection, une capture d'écran pleine page doit être sauvegardée dans un répertoire organisé selon la hiérarchie \nolinkurl{screenshots/<CLIENT>/<module>/<menu>/}, avec un nom de fichier incluant le chemin normalisé et l'horodatage Unix.
+  \textit{(Fonctions : \texttt{failure\_indicators\_present()}, \texttt{capture\_failure()})}
+
+  \item \textbf{Gestion de la contrainte des dix onglets ExtJS.}
+  L'interface Megara impose une limite stricte de dix écrans ouverts simultanément par session utilisateur. Lorsque cette limite est atteinte, une fenêtre modale d'information bloque toute navigation ultérieure. Le système doit détecter cette fenêtre, la fermer via son bouton OK, puis fermer tous les onglets ouverts par un menu contextuel (clic droit \og{}Close all other tabs\fg{} puis \og{}Close this tab\fg{}), afin de libérer des emplacements pour la suite du parcours.
+  \textit{(Fonctions : \texttt{handle\_max\_screens\_popup()}, \texttt{close\_active\_tab\_and\_others()})}
+
+  \item \textbf{Saisie automatique d'instructions de règlement-livraison.}
+  Le système doit créer des instructions de règlement dans MegaCustody en remplissant un formulaire d'environ quinze champs, dont les valeurs sont lues depuis le fichier \nolinkurl{variable_saisies/Instruction_Client_<CLIENT>.txt}. Les types de champs supportés sont : saisie texte libre, liste déroulante ExtJS (\textit{combo}), champ de recherche avec déclenchement du popup de sélection par la touche F2 (\textit{lookup}), et champ date au format \texttt{dd/mm/yyyy}. Le mécanisme de lecture du fichier doit préserver l'ordre des entrées et gérer les clés dupliquées (plusieurs occurrences d'un même libellé de champ dans le formulaire) par consommation FIFO.
+  \textit{(Modules : \texttt{saisie\_awb.py}, \texttt{saisie\_CDG.py})}
+
+  \item \textbf{Injection SWIFT ISO~15022 end-to-end.}
+  Le système doit déposer un fichier de message SWIFT de catégorie~5 (format MT54X — MT541, MT542 ou MT543) dans le répertoire d'entrée \texttt{ALLIANCE} du serveur SFTP distant via WinSCP, puis surveiller par interrogation périodique (toutes les quinze secondes, pendant trente minutes au maximum) la disparition de ce fichier du répertoire, signe de son absorption par l'IODevice Megara. Cette opération doit être enchaînée séquentiellement pour les trois types de messages impliqués dans le cycle complet de règlement~: MT54X (création d'instruction), MT548 (matching), MT54Y (règlement). Avant chaque injection, le répertoire ALLIANCE doit être nettoyé de tout fichier résiduel ou fichier partiel (\texttt{.filepart}).
+  \textit{(Module : \texttt{Process\_Swift\_AWB.py})}
+
+  \item \textbf{Vérification UI post-injection SWIFT.}
+  Après absorption du message MT54X par l'IODevice, le système doit se connecter à l'interface MegaCustody via Playwright et vérifier l'enregistrement de l'instruction créée dans les écrans \textit{Notification > Swifts > MT54X} et \textit{Règlement/Livraison > Instructions Clients > Monitoring Instructions Client}, en filtrant les résultats par un horodatage de début de campagne afin d'isoler les enregistrements de la session en cours.
+  \textit{(Fonction : \texttt{step\_verify\_ui()} dans \texttt{Process\_Swift\_AWB.py})}
+
+  \item \textbf{Automatisation du cycle complet d'une OST.}
+  Pour chaque type d'Opération Sur Titres configuré, le système doit exécuter le cycle complet dans MegaCor : création de l'annonce OST en remplissant le formulaire dédié (douze à dix-huit champs selon le type), capture de l'horodatage de sauvegarde à la milliseconde près, validation de l'annonce par filtrage temporel, activation de l'annonce, puis traitement post-activation comprenant, pour chaque événement de l'OST, le calcul en Exécutions Client, le calcul en Exécutions Marché, la génération des paiements marché en mode \textit{Ad-hoc}, et la création du paiement client. Les types d'OST couverts sont : \textit{Paiement de Dividendes en Espèce} et \textit{Paiement d'Intérêts}.
+  \textit{(Module : \texttt{ost\_awb.py})}
+
+  \item \textbf{Réconciliation de liste automatisée.}
+  Le système doit exécuter le processus de réconciliation de liste dans MegaCustody, en navigant préalablement dans MegaCommon pour consulter la position client, puis en remplissant les critères de la réconciliation depuis le fichier de configuration, pour les instances AWB et CDG Capital.
+  \textit{(Modules : \texttt{Process\_RL\_AWB.py}, \texttt{Process\_RL\_CDG.py})}
+
+  \item \textbf{Diagnostics et remédiation automatique de l'infrastructure serveur.}
+  Avant le lancement d'une campagne d'injection SWIFT, le système doit vérifier l'état opérationnel de l'infrastructure Megara côté serveur : présence ou absence de fichiers dans le répertoire ALLIANCE, statut du serveur IBM WebSphere (démarré ou arrêté), présence de fichiers verrous bloquants, et contenu des dernières lignes du journal système \texttt{SystemOut.log}. En mode correctif (\texttt{--fix}), le système doit supprimer les fichiers verrous détectés et redémarrer automatiquement le serveur WebSphere si celui-ci est à l'arrêt.
+  \textit{(Module : \texttt{diag\_megara.py})}
+
+\end{enumerate}
+
+\subsection{Besoins non-fonctionnels}
+
+Les besoins non-fonctionnels définissent les contraintes de qualité que le framework doit satisfaire indépendamment de ses fonctionnalités métier. Ils sont directement dérivés des choix d'architecture et d'implémentation observés dans le code source.
+
+\begin{enumerate}[label=\textbf{BNF\arabic*.}, leftmargin=*, itemsep=6pt]
+
+  \item \textbf{Performance.}
+  Une campagne TNR complète pour un client (tous modules confondus) doit s'exécuter en moins de quatre heures. Au niveau unitaire, le temps de traitement d'un chemin de menu — incluant la navigation, la recherche, l'ouverture d'une fiche et la fermeture — ne doit pas dépasser trente secondes en conditions normales de chargement de l'interface ExtJS.
+
+  \item \textbf{Fiabilité et tolérance aux latences.}
+  Le framework doit tolérer les délais de chargement variables inhérents à l'interface ExtJS de Megara. Les interactions doivent s'appuyer sur les mécanismes d'attente automatique de Playwright (\textit{auto-waiting}) plutôt que sur des délais fixes. Pour les opérations d'upload SFTP, le système doit retenter jusqu'à trois fois en cas d'échec, avec nettoyage du répertoire distant entre chaque tentative. Pour le polling d'absorption IODevice, un délai d'attente maximal de trente minutes est imposé avec une granularité de polling de quinze secondes.
+
+  \item \textbf{Maintenabilité et architecture data-driven.}
+  Toutes les données de test — chemins de menus (\texttt{Projects/<CLIENT>/<Module>/*.txt}), données de formulaires (\texttt{variable\_saisies/*.txt}), messages SWIFT (\texttt{SWIFTS/<CLIENT>/<TYPE>/*.txt}) — doivent être externalisées dans des fichiers de configuration texte. Aucune donnée cliente (menu, valeur de champ, ISIN, quantité, montant) ne doit être encodée en dur dans le code source. La modification d'un scénario de test doit se limiter à l'édition d'un fichier de configuration, sans toucher au code Python.
+
+  \item \textbf{Traçabilité complète des exécutions.}
+  Chaque exécution du framework doit produire un fichier de log structuré au format ISO~8601 (\texttt{YYYY-MM-DD HH:mm:ss,mmm}), incluant pour chaque chemin de menu : l'heure de début de traversée, le résultat (succès ou échec avec type d'erreur), et le chemin complet de la capture d'écran associée le cas échéant. Les captures d'écran doivent être organisées selon la hiérarchie \nolinkurl{screenshots/<CLIENT>/<module>/<menu_top>/<chemin_normalisé>_<timestamp>.png}, garantissant une traçabilité sans ambiguïté.
+
+  \item \textbf{Extensibilité à de nouveaux clients.}
+  L'intégration d'un nouveau client Megara dans le framework doit nécessiter uniquement la création des fichiers de configuration correspondants (répertoire de menus et fichiers de données), sans modification du code source des moteurs d'exécution. Ce principe est garanti par le fait que les modules Python lisent dynamiquement les fichiers de configuration via des variables d'environnement système, sans référence en dur aux noms de clients.
+
+  \item \textbf{Sécurité des identifiants et données sensibles.}
+  L'intégralité des informations sensibles — identifiants de connexion Megara, URLs des environnements clients, adresses IP des serveurs SFTP, clés d'hôte SFTP — doit être injectée via des variables d'environnement système (mécanisme \texttt{os.getenv()}) et jamais écrite en clair dans le code source ou dans les fichiers de configuration versionnés. Les scripts WinSCP sont générés dans des fichiers temporaires chiffrés par le système d'exploitation et supprimés immédiatement après exécution.
+
+  \item \textbf{Portabilité sur environnement Windows.}
+  Le framework doit fonctionner sur \textbf{Windows 10 et Windows 11} avec \textbf{PowerShell 5.1}, qui constitue l'environnement standard des postes VERMEG. Les dépendances système (WinSCP) doivent être localisées automatiquement parmi plusieurs chemins d'installation candidats, sans configuration manuelle de l'ingénieur. L'ensemble des dépendances Python doit être gérable via un environnement virtuel standard (\texttt{venv}).
+
+  \item \textbf{Robustesse des interactions avec l'interface ExtJS.}
+  Compte tenu du comportement dynamique de l'interface ExtJS — génération d'identifiants de composants à l'exécution, animations de chargement, menus contextuels disparaissant après délai — le framework doit implémenter une stratégie de clic à cinq niveaux de robustesse croissante pour chaque interaction critique : clic Playwright forcé, clic DOM direct par évaluation JavaScript (\texttt{el.click()}), dispatchement d'événement synthétique, simulation de séquence souris manuelle, et fallback par recherche JavaScript dans le DOM complet. La navigation dans l'arbre de menus doit supporter un défilement bidirectionnel (remontée initiale en haut, puis descente progressive par paliers) sur jusqu'à vingt-cinq tentatives de défilement.
+
+\end{enumerate}
+
+\subsection{Identification des KPIs}
+
+Les indicateurs clés de performance (KPI) constituent le référentiel objectif permettant d'évaluer l'atteinte des objectifs du projet. Ils ont été définis en tenant compte des valeurs de référence observées avant le projet (baseline) et des cibles fixées en concertation avec VERMEG et Nexus Groupe.
+
+\begin{longtable}{@{}p{4.8cm}p{5.7cm}cc@{}}
+\caption{KPIs du projet d'automatisation — cibles et baselines}
+\label{tab:kpis}\\
+\toprule
+\textbf{KPI} & \textbf{Description} & \textbf{Cible} & \textbf{Baseline} \\
+\midrule
+\endfirsthead
+\multicolumn{4}{c}{\tablename~\thetable{} — suite}\\
+\toprule
+\textbf{KPI} & \textbf{Description} & \textbf{Cible} & \textbf{Baseline} \\
+\midrule
+\endhead
+\bottomrule
+\endlastfoot
+Taux de couverture TNR
+  & Proportion de chemins de menus traversés automatiquement par rapport au total des chemins définis dans les fichiers de configuration
+  & $\geq 90\%$
+  & $0\%$ \\[4pt]
+Durée du cycle de validation
+  & Temps total d'exécution d'une campagne TNR complète (tous modules) pour un client donné
+  & $\leq 4\,\text{h}$
+  & $4\text{–}5\,\text{j}$ \\[4pt]
+Taux de détection de régression
+  & Proportion de régressions applicatives détectées par le framework avant livraison aux clients
+  & $\geq 95\%$
+  & $\approx 70\%$ \\[4pt]
+Taux d'automatisation fonctionnelle
+  & Proportion de scénarios fonctionnels critiques (SWIFT, OST, saisie, RL) couverts par le framework
+  & $\geq 80\%$
+  & $0\%$ \\[4pt]
+Taux de succès injection SWIFT
+  & Proportion d'injections SWIFT aboutissant à une absorption par l'IODevice en moins de trente minutes
+  & $\geq 98\%$
+  & Manuel \\[4pt]
+Stabilité du framework
+  & Proportion d'exécutions complètes sans crash du framework (erreur non gérée interrompant la campagne)
+  & $\geq 99\%$
+  & N/A \\[4pt]
+Traçabilité des anomalies
+  & Proportion d'erreurs détectées donnant lieu à une capture d'écran horodatée et localisée
+  & $100\%$
+  & $0\%$ \\
+\end{longtable}
+
+% ─────────────────────────────────────────────────────────
+\section{Mise en place du projet avec SCRUM}
+% ─────────────────────────────────────────────────────────
+
+\subsection{Distribution des rôles}
+
+L'équipe SCRUM du projet est composée de quatre intervenants aux responsabilités distinctes et complémentaires. La taille réduite de l'équipe, conforme aux recommandations du Scrum Guide (trois à neuf personnes), favorise la communication directe et la réactivité face aux obstacles.
+
+\begin{table}[H]
+\centering
+\caption{Équipe SCRUM et responsabilités}
+\label{tab:roles}
+\begin{tabularx}{\textwidth}{p{2.6cm}p{3.0cm}X}
+\toprule
+\textbf{Rôle SCRUM} & \textbf{Intervenant} & \textbf{Responsabilités} \\
+\midrule
+Product Owner
+  & Bilel Ben Said (VERMEG)
+  & Rédaction et priorisation du Product Backlog, validation des incréments lors des revues de Sprint, arbitrage des priorités entre clients et modules, représentation des exigences de Nexus Groupe et des trois institutions financières \\[6pt]
+Scrum Master
+  & Wassim Louiz (Nexus)
+  & Animation des cérémonies SCRUM (daily stand-up, sprint planning, sprint review, rétrospective), identification et levée des obstacles techniques et organisationnels, garant du respect du cadre méthodologique \\[6pt]
+Développeur / Ingénieur QA Automation
+  & Ahmed Abdelhedi
+  & Conception et implémentation du framework d'automatisation, rédaction des fichiers de configuration, exécution des campagnes de recette, livraison des incréments à chaque fin de Sprint \\[6pt]
+Encadrant académique
+  & M. Ben Brik Aymen
+  & Supervision académique du projet, validation de la rigueur scientifique de la démarche, accompagnement dans la rédaction du rapport de stage \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\subsection{Product Backlog}
+
+Le Product Backlog constitue l'inventaire ordonné et exhaustif de l'ensemble des fonctionnalités à développer. Chaque User Story est formulée du point de vue de l'ingénieur QA, estimée en points de complexité selon l'échelle de Fibonacci, et priorisée selon sa valeur métier et sa criticité opérationnelle. Les User Stories ci-dessous sont directement extraites des fonctionnalités identifiées dans le code source du projet.
+
+\begin{longtable}{p{0.9cm} p{6.0cm} p{2.6cm} p{1.5cm} p{0.9cm}}
+\caption{Product Backlog du projet d'automatisation} \label{tab:backlog} \\
+\toprule
+\textbf{ID} & \textbf{User Story} & \textbf{Module cible} & \textbf{Priorité} & \textbf{SP} \\
+\midrule
+\endfirsthead
+\multicolumn{5}{c}{\small\itshape Suite du Tableau \ref{tab:backlog}} \\[4pt]
+\toprule
+\textbf{ID} & \textbf{User Story} & \textbf{Module cible} & \textbf{Priorité} & \textbf{SP} \\
+\midrule
+\endhead
+\midrule
+\multicolumn{5}{r}{\small\itshape Suite page suivante} \\
+\endfoot
+\bottomrule
+\multicolumn{5}{r}{\small SP = Story Points (Fibonacci)} \\
+\endlastfoot
+
+US01 & En tant qu'ingénieur QA, je veux que le framework gère l'authentification Keycloak OAuth2/OIDC pour CDG Capital, afin de lancer des campagnes TNR sans intervention manuelle sur le formulaire d'identité
+      & Infrastructure / Auth & Haute & 5 \\[4pt]
+
+US02 & En tant qu'ingénieur QA, je veux que le framework gère l'authentification native JSP Megara pour AWB et BMCE Bank of Africa, avec sélection du domaine d'entité légale, afin de couvrir les trois clients de manière uniforme
+      & Infrastructure / Auth & Haute & 3 \\[4pt]
+
+US03 & En tant qu'ingénieur QA, je veux que le framework détecte et gère automatiquement la popup de limite à 10 onglets ExtJS, afin que la campagne TNR ne soit pas interrompue par cette contrainte système
+      & Infrastructure / Core & Haute & 3 \\[4pt]
+
+US04 & En tant qu'ingénieur QA, je veux que le framework détecte les anomalies d'affichage via dix patterns d'erreur et génère une capture d'écran horodatée et localisée, afin de disposer d'une preuve d'anomalie exploitable
+      & Infrastructure / Core & Haute & 5 \\[4pt]
+
+US05 & En tant qu'ingénieur QA, je veux que le framework parcoure automatiquement l'ensemble des chemins de menus de MegaCommon pour AWB, afin de détecter toute régression d'affichage sur ce module
+      & MegaCommon – AWB & Haute & 8 \\[4pt]
+
+US06 & En tant qu'ingénieur QA, je veux que le framework parcoure automatiquement les chemins de menus de MegaCommon pour BMCE Bank
+      & MegaCommon – BMCE & Haute & 8 \\[4pt]
+
+US07 & En tant qu'ingénieur QA, je veux que le framework parcoure automatiquement les chemins de menus de MegaCommon pour CDG Capital
+      & MegaCommon – CDG & Haute & 8 \\[4pt]
+
+US08 & En tant qu'ingénieur QA, je veux que le framework parcoure automatiquement les chemins de menus de MegaCustody pour AWB, incluant les écrans de règlement-livraison, de notification SWIFT et de réconciliation
+      & MegaCustody – AWB & Haute & 8 \\[4pt]
+
+US09 & En tant qu'ingénieur QA, je veux que le framework parcoure automatiquement les chemins de menus de MegaCustody pour BMCE Bank
+      & MegaCustody – BMCE & Haute & 8 \\[4pt]
+
+US10 & En tant qu'ingénieur QA, je veux que le framework parcoure automatiquement les chemins de menus de MegaCustody pour CDG Capital
+      & MegaCustody – CDG & Haute & 8 \\[4pt]
+
+US11 & En tant qu'ingénieur QA, je veux que le framework parcoure automatiquement les chemins de menus de MegaCor pour AWB et CDG Capital, incluant la gestion des Opérations Sur Titres
+      & MegaCor – AWB/CDG & Moyenne & 6 \\[4pt]
+
+US12 & En tant qu'ingénieur QA, je veux que le framework parcoure automatiquement les chemins de menus de MegaTrade pour AWB, BMCE et CDG
+      & MegaTrade & Moyenne & 5 \\[4pt]
+
+US13 & En tant qu'ingénieur QA, je veux que le framework parcoure les modules complémentaires de BMCE Bank of Africa (MegaLend, MegaAccounting, MegaCompliance, MegaIssuer) et les modules restants de CDG (MegaCompliance, MegaAccounting)
+      & Modules secondaires & Basse & 8 \\[4pt]
+
+US14 & En tant qu'ingénieur QA, je veux que le framework crée automatiquement une instruction de règlement-livraison dans MegaCustody pour AWB, en remplissant les quinze champs du formulaire à partir du fichier de configuration \texttt{Instruction\_Client\_awb.txt}
+      & MegaCustody – Saisie AWB & Haute & 8 \\[4pt]
+
+US15 & En tant qu'ingénieur QA, je veux que le framework crée automatiquement une instruction de règlement-livraison dans MegaCustody pour CDG Capital, à partir du fichier \texttt{Instruction\_Client\_CDG.txt}
+      & MegaCustody – Saisie CDG & Haute & 8 \\[4pt]
+
+US16 & En tant qu'ingénieur QA, je veux que le framework dépose un message SWIFT MT54X dans le répertoire ALLIANCE d'AWB et surveille son absorption par l'IODevice, afin de simuler la réception d'une instruction de règlement
+      & Pipeline SWIFT – MT54X & Haute & 13 \\[4pt]
+
+US17 & En tant qu'ingénieur QA, je veux que le framework enchaîne l'injection des messages MT548 (matching) et MT54Y (settlement) après absorption du MT54X, afin de couvrir le cycle complet de règlement SWIFT
+      & Pipeline SWIFT – MT548/MT54Y & Haute & 8 \\[4pt]
+
+US18 & En tant qu'ingénieur QA, je veux que le framework vérifie dans l'interface MegaCustody l'enregistrement de l'instruction créée par le MT54X, en filtrant par horodatage de session
+      & MegaCustody – UI SWIFT & Haute & 5 \\[4pt]
+
+US19 & En tant qu'ingénieur QA, je veux que le framework crée une annonce OST de type \textit{Paiement de Dividendes en Espèce} dans MegaCor pour AWB, la valide et l'active, puis exécute le flux post-activation complet
+      & MegaCor – OST Dividendes & Moyenne & 8 \\[4pt]
+
+US20 & En tant qu'ingénieur QA, je veux que le framework crée une annonce OST de type \textit{Paiement d'Intérêts} dans MegaCor pour AWB, la valide, l'active et traite le flux post-activation complet
+      & MegaCor – OST Intérêts & Moyenne & 8 \\[4pt]
+
+US21 & En tant qu'ingénieur QA, je veux que le framework exécute le processus de réconciliation de liste dans MegaCustody pour AWB, depuis la consultation de position dans MegaCommon jusqu'à l'enregistrement du résultat
+      & Réconciliation – AWB & Moyenne & 5 \\[4pt]
+
+US22 & En tant qu'ingénieur QA, je veux que le framework exécute la réconciliation de liste pour CDG Capital
+      & Réconciliation – CDG & Moyenne & 5 \\[4pt]
+
+US23 & En tant qu'ingénieur QA, je veux que le framework effectue un diagnostic complet de l'infrastructure serveur avant toute campagne SWIFT, et produise un rapport d'état de l'IODevice et du serveur WebSphere
+      & Infrastructure – Diagnostic & Moyenne & 5 \\[4pt]
+
+US24 & En tant qu'ingénieur QA, je veux que le framework supprime les fichiers verrous et redémarre automatiquement WebSphere en mode correctif (\texttt{--fix}), afin de réduire les interventions manuelles pré-campagne
+      & Infrastructure – Remédiation & Moyenne & 5 \\[4pt]
+
+US25 & En tant qu'ingénieur QA, je veux que le framework gère les écrans spéciaux de MegaCustody (filtres de position, écrans Recycler, écrans en lecture seule) avec des comportements de pré-remplissage et de navigation dédiés, afin d'éviter les faux positifs lors du TNR
+      & Infrastructure / Core & Haute & 5 \\
+
+\end{longtable}
+
+\subsection{Sprint Backlog}
+
+Le projet est décomposé en \textbf{six Sprints de deux semaines chacun}, organisés selon un ordre de priorité croissante en valeur métier : les fonctionnalités d'infrastructure et de TNR de navigation sont développées en premier, car elles constituent la base sur laquelle reposent les scénarios fonctionnels plus complexes. Le tableau~\ref{tab:sprint_backlog} présente la décomposition détaillée de chaque Sprint.
+
+\begingroup
+\small
+\setlength{\extrarowheight}{2pt}
+\renewcommand{\arraystretch}{1.1}
+\begin{longtable}{@{}p{1.5cm}p{1.5cm}p{\dimexpr\linewidth-1.5cm-1.5cm-1.5cm-6\tabcolsep\relax}>{\centering\arraybackslash}p{1.5cm}@{}}
+\caption{Sprint Backlog détaillé — six Sprints de deux semaines}
+\label{tab:sprint_backlog}\\
+\toprule
+\textbf{Sprint} & \textbf{Période} & \textbf{Objectif et User Stories} & \textbf{Total SP} \\
+\midrule
+\endfirsthead
+\multicolumn{4}{c}{\tablename~\thetable{} — suite}\\
+\toprule
+\textbf{Sprint} & \textbf{Période} & \textbf{Objectif et User Stories} & \textbf{Total SP} \\
+\midrule
+\endhead
+\bottomrule
+\endlastfoot
+
+Sprint 1
+  & S1–S2
+  & \textbf{Infrastructure et authentification}\newline
+    {\footnotesize
+    US01 — Auth Keycloak CDG Capital\newline
+    US02 — Auth native AWB et BMCE\newline
+    US03 — Gestion limite 10 onglets\newline
+    US04 — Détection anomalies et captures d'écran\newline
+    \textit{Livrable : framework s'authentifiant sur les 3 instances et détectant les erreurs ExtJS}}
+  & 16 \tabularnewline[4pt]
+
+Sprint 2
+  & S3–S4
+  & \textbf{TNR MegaCommon — trois clients}\newline
+    {\footnotesize
+    US05 — TNR MegaCommon AWB\newline
+    US06 — TNR MegaCommon BMCE\newline
+    US07 — TNR MegaCommon CDG\newline
+    \textit{Livrable : couverture TNR du module référentiel transversal pour les 3 institutions}}
+  & 24 \tabularnewline[4pt]
+
+Sprint 3
+  & S5–S6
+  & \textbf{TNR MegaCustody et MegaTrade}\newline
+    {\footnotesize
+    US08 — TNR MegaCustody AWB ; US09 — BMCE ; US10 — CDG\newline
+    US12 — TNR MegaTrade (trois clients)\newline
+    US25 — Gestion écrans spéciaux (Recycler, filtres, Save-only)\newline
+    \textit{Livrable : couverture TNR des modules règlement-livraison et trading}}
+  & 34 \tabularnewline[4pt]
+
+Sprint 4
+  & S7–S8
+  & \textbf{Saisie d'instructions et pipeline SWIFT}\newline
+    {\footnotesize
+    US14 — Saisie instruction AWB ; US15 — Saisie instruction CDG\newline
+    US16 — Injection SWIFT MT54X + polling absorption\newline
+    US17 — Injection MT548 + MT54Y (cycle complet)\newline
+    US18 — Vérification UI post-injection\newline
+    \textit{Livrable : cycle SWIFT end-to-end sur AWB avec vérification Playwright}}
+  & 42 \tabularnewline[4pt]
+
+Sprint 5
+  & S9–S10
+  & \textbf{OST, réconciliation, diagnostics et modules complémentaires}\newline
+    {\footnotesize
+    US11 — TNR MegaCor AWB/CDG ; US13 — Modules secondaires BMCE/CDG\newline
+    US19 — OST Dividendes (création/validation/activation/post-flow)\newline
+    US20 — OST Intérêts (création/validation/activation/post-flow)\newline
+    US21/22 — Réconciliation AWB et CDG ; US23/24 — Diagnostics \& Remédiation\newline
+    \textit{Livrable : couverture fonctionnelle complète — OST, RL et diagnostics}}
+  & 50 \tabularnewline[4pt]
+
+Sprint 6
+  & S11–S12
+  & \textbf{Stabilisation, campagnes de recette et documentation}\newline
+    {\footnotesize
+    Correction anomalies, recette complète sur les 3 instances\newline
+    Optimisation des temps d'exécution, finalisation des configurations\newline
+    \textit{Livrable : framework stable, validé sur CDG Capital, BMCE Bank of Africa et AWB}}
+  & — \tabularnewline
+\end{longtable}
+\endgroup
+
+\subsection{Planification temporelle — Diagramme de Gantt}
+
+La figure~\ref{fig:gantt} représente la planification temporelle du projet sur quatorze semaines, période couvrant la première phase de développement (mars à juillet 2025). Elle fait apparaître les six Sprints de développement, auxquels s'ajoutent deux phases transversales : une phase de tests et recette intensive, qui s'étend sur les quatre dernières semaines du projet, et une phase de rédaction du rapport, conduite en parallèle à partir de la huitième semaine.
+
+Cette superposition intentionnelle des phases de recette et de rédaction avec les derniers Sprints de développement reflète une réalité de terrain : les premiers incréments (infrastructure, TNR MegaCommon) sont suffisamment stables dès la quatrième semaine pour que leur documentation puisse être amorcée, tandis que les scénarios fonctionnels complexes (SWIFT, OST) nécessitent des itérations de correction jusqu'à la dernière semaine.
+
+\begin{figure}[H]
+\centering
+\resizebox{\linewidth}{!}{%
+\begin{tikzpicture}[x=1cm, y=1cm, font=\small]
+  % ── Palette ──
+  \colorlet{col1}{nexusBlue!55}
+  \colorlet{col2}{nexusBlue!40}
+  \colorlet{col3}{OliveGreen!55}
+  \colorlet{col4}{orange!65}
+  \colorlet{col5}{purple!45}
+  \colorlet{col6}{teal!55}
+  \colorlet{colr}{vermegRed!45}
+  \colorlet{cold}{gray!40}
+
+  % ── Labels (bord droit à x=5) ──
+  \node[anchor=east, text width=4.8cm, align=right,
+        font=\scriptsize\bfseries, text=nexusBlue]
+    at (5, -0.375) {Sprint 1 — Infrastructure \& Auth};
+  \node[anchor=east, text width=4.8cm, align=right,
+        font=\scriptsize\bfseries, text=nexusBlue]
+    at (5, -1.125) {Sprint 2 — TNR MegaCommon};
+  \node[anchor=east, text width=4.8cm, align=right,
+        font=\scriptsize\bfseries, text=nexusBlue]
+    at (5, -1.875) {Sprint 3 — TNR MegaCustody/Trade};
+  \node[anchor=east, text width=4.8cm, align=right,
+        font=\scriptsize\bfseries, text=nexusBlue]
+    at (5, -2.625) {Sprint 4 — Saisie \& SWIFT};
+  \node[anchor=east, text width=4.8cm, align=right,
+        font=\scriptsize\bfseries, text=nexusBlue]
+    at (5, -3.375) {Sprint 5 — OST / RL / Diagnostics};
+  \node[anchor=east, text width=4.8cm, align=right,
+        font=\scriptsize\bfseries, text=nexusBlue]
+    at (5, -4.125) {Sprint 6 — Stabilisation};
+  \node[anchor=east, text width=4.8cm, align=right,
+        font=\scriptsize, text=gray]
+    at (5, -5.075) {Tests \& Recette};
+  \node[anchor=east, text width=4.8cm, align=right,
+        font=\scriptsize, text=gray]
+    at (5, -5.825) {Rédaction rapport};
+  \node[anchor=east, text width=4.8cm, align=right,
+        font=\scriptsize, text=gray]
+    at (5, -6.725) {Revues / Rétrospectives};
+
+  % ── Grille et en-têtes semaines ──
+  \foreach \w in {0,...,13} {
+    \draw[gray!20, very thin] ({5.3 + \w}, 0.15) -- ({5.3 + \w}, -7.1);
+    \pgfmathtruncatemacro{\wlabel}{\w + 1}
+    \node[above, font=\tiny\bfseries] at ({5.3 + \w + 0.5}, 0.15) {S\wlabel};
+  }
+  \draw[gray!20, very thin] (19.3, 0.15) -- (19.3, -7.1);
+  \draw[gray!40] (5.3, 0.15) -- (19.3, 0.15);
+
+  % ── Barres Sprints (1 semaine = 1 unité, offset = 5.3) ──
+  \fill[col1, rounded corners=2pt] (5.3,-0.05) rectangle (7.3,-0.70);
+  \fill[col2, rounded corners=2pt] (7.3,-0.80) rectangle (9.3,-1.45);
+  \fill[col3, rounded corners=2pt] (9.3,-1.55) rectangle (11.3,-2.20);
+  \fill[col4, rounded corners=2pt] (11.3,-2.30) rectangle (13.3,-2.95);
+  \fill[col5, rounded corners=2pt] (13.3,-3.05) rectangle (15.3,-3.70);
+  \fill[col6, rounded corners=2pt] (15.3,-3.80) rectangle (17.3,-4.45);
+
+  % ── Phases transversales ──
+  \fill[colr, rounded corners=2pt] (14.3,-4.75) rectangle (19.3,-5.40);
+  \fill[cold, rounded corners=2pt] (11.3,-5.50) rectangle (19.3,-6.15);
+
+  % ── Jalons de revue Sprint ──
+  \foreach \xjal in {7.3, 9.3, 11.3, 13.3, 15.3, 17.3}{
+    \fill[vermegRed]
+      (\xjal,        -6.5)  --
+      ({\xjal+0.17}, -6.25) --
+      ({\xjal+0.34}, -6.5)  --
+      ({\xjal+0.17}, -6.75) -- cycle;
+  }
+  \node[font=\tiny, text=gray] at (12.3,-7.0)
+    {\itshape Revue de Sprint à chaque fin de Sprint};
+
+  % ── Encadré grille ──
+  \draw[gray!40, thin] (5.3, 0.15) rectangle (19.3, -6.8);
+
+\end{tikzpicture}%
+}
+\caption{Diagramme de Gantt — Planification du projet (14 semaines, phase 1)}
+\label{fig:gantt}
+\end{figure}
+
+\section*{Conclusion}
+\addcontentsline{toc}{section}{Conclusion}
+
+Ce deuxième chapitre a établi le référentiel complet des exigences du projet et les bases de son organisation. L'identification des sept acteurs — humains et systèmes — a permis de cerner précisément les frontières du framework et ses interactions avec l'écosystème Megara. Les dix besoins fonctionnels, directement extraits du code source, couvrent l'ensemble du périmètre : authentification hétérogène, navigation TNR, saisie d'instructions, pipeline SWIFT, automatisation OST, réconciliation et diagnostics serveur. Les huit besoins non-fonctionnels définissent les contraintes de qualité que chaque composant du framework doit respecter, notamment en termes de performance, de fiabilité, de traçabilité et de sécurité des identifiants.
+
+Les sept KPIs retenus — dont le taux de couverture TNR, la durée du cycle de validation et le taux de succès de l'injection SWIFT — fourniront, au chapitre suivant, les indicateurs de mesure des résultats obtenus. La décomposition en vingt-cinq User Stories et six Sprints thématiques, associée à la planification de Gantt, garantit une livraison incrémentale et contrôlée, validée à chaque revue de Sprint par le Product Owner et les équipes VERMEG.
+
+Le chapitre suivant présentera la réalisation technique de chaque composant du framework, les défis d'implémentation rencontrés et les solutions mises en œuvre, ainsi que les résultats obtenus au regard des KPIs définis.
+
+% ══════════════════════════════════════════════════════════
+%  CHAPITRE 3 – CONCEPTION DU SYSTÈME
+% ══════════════════════════════════════════════════════════
+\chapter{Conception du système}
+
+\section*{Introduction}
+\addcontentsline{toc}{section}{Introduction}
+
+La conception constitue le pont entre la spécification des besoins, établie au chapitre précédent, et la réalisation technique détaillée au chapitre suivant. Elle a pour objet de définir, à un niveau d'abstraction suffisant, l'architecture du système, la structure de ses composants, les interactions entre ces composants et les conventions de données sur lesquelles ils s'appuient — sans descendre dans les détails d'implémentation.
+
+Ce chapitre présente successivement : l'architecture générale du framework et le découpage en composants, les diagrammes UML formalisant le comportement du système (cas d'utilisation, classes, séquences), le modèle de données gouvernant les fichiers de configuration, et les patrons de conception qui structurent les décisions architecturales.
+
+% ─────────────────────────────────────────────────────────
+\section{Architecture générale du système}
+% ─────────────────────────────────────────────────────────
+
+\subsection{Vue d'ensemble architecturale}
+
+Le framework repose sur une \textbf{architecture à trois couches} dont la séparation des responsabilités est strictement respectée. Ce choix architectural est directement motivé par le besoin non-fonctionnel d'extensibilité (BNF5) et de maintenabilité (BNF3) : aucune des trois couches ne doit dépendre des détails internes d'une autre.
+
+\medskip
+
+\noindent\textbf{Couche 1 — Configuration (Data Layer)}
+
+\noindent Cette couche est constituée exclusivement de fichiers texte structurés, organisés sous trois répertoires distincts : \texttt{Projects/} pour les chemins de menus, \texttt{variable\_saisies/} pour les données de formulaires et d'OST, \texttt{SWIFTS/} pour les messages SWIFT ISO~15022. Aucun code n'est présent dans cette couche. Elle encapsule l'intégralité de la variabilité inter-clients : ajouter un client revient à peupler ces répertoires sans toucher au code.
+
+\medskip
+
+\noindent\textbf{Couche 2 — Traitement (Processing Layer)}
+
+\noindent Cette couche contient les six modules de traitement Python, chacun responsable d'un scénario d'automatisation distinct. Ces modules sont conçus pour être \textbf{indépendants les uns des autres}, leur seul point commun étant la lecture de la couche Configuration via \texttt{ConfigLoader} et l'utilisation de l'interface ExtJS via Playwright. Le couplage entre modules est nul : un module TNR ne connaît pas le module OST.
+
+\medskip
+
+\noindent\textbf{Couche 3 — Intégration (Integration Layer)}
+
+\noindent Cette couche regroupe les adaptateurs vers les systèmes externes : WinSCP pour les transferts SFTP, l'API Playwright pour l'interaction avec le navigateur Chromium, et PyMQI pour le bus IBM MQ. Ces adaptateurs exposent une interface simple aux modules de la couche Traitement et cachent la complexité des protocoles sous-jacents.
+
+\medskip
+
+\begin{figure}[H]
+\centering
+\resizebox{\linewidth}{!}{%
+\begin{tikzpicture}[
+  layer/.style={draw=nexusBlue, fill=nexusBlue!6, rounded corners=5pt,
+                minimum width=12cm, minimum height=1.1cm,
+                align=center, font=\small\bfseries},
+  comp/.style={draw=nexusBlue!60, fill=white, rounded corners=3pt,
+               minimum width=2.6cm, minimum height=0.75cm,
+               align=center, font=\scriptsize},
+  ext/.style={draw=OliveGreen!70!black, fill=OliveGreen!8, rounded corners=3pt,
+              minimum width=2.2cm, minimum height=0.75cm,
+              align=center, font=\scriptsize},
+  >=Stealth
+]
+  % Layer 1: Configuration
+  \node[layer, text=nexusBlue] (l1) at (0, 0)
+    {Couche 1 — Configuration (Data Layer)};
+  \node[comp] (cfg1) at (-4,   -0.78) {Projects/\\<CLIENT>/*.txt};
+  \node[comp] (cfg2) at (-1.1, -0.78) {variable\_saisies/\\*.txt};
+  \node[comp] (cfg3) at ( 1.9, -0.78) {SWIFTS/\\<CLIENT>/*.txt};
+  \node[comp] (cfg4) at ( 4.6, -0.78) {ost\_awb\_\\<TypeOST>.txt};
+
+  % Layer 2: Processing
+  \node[layer, text=nexusBlue] (l2) at (0, -2.3)
+    {Couche 2 — Traitement (Processing Layer)};
+  \node[comp] (p1) at (-4.3,  -3.1) {NavigationEngine\\(TNR)};
+  \node[comp] (p2) at (-1.5,  -3.1) {SaisieEngine\\(Instructions)};
+  \node[comp] (p3) at ( 1.15, -3.1) {SWIFTInjector\\(Pipeline)};
+  \node[comp] (p4) at ( 3.8,  -3.1) {OSTEngine\\(OST)};
+  \node[comp, minimum width=2cm] (p5) at ( 5.9, -3.1) {ServerDiag};
+
+  % Layer 3: Integration
+  \node[layer, text=nexusBlue] (l3) at (0, -4.4)
+    {Couche 3 — Intégration (Integration Layer)};
+  \node[ext] (e1) at (-3.5, -5.2) {Playwright\\(Chromium)};
+  \node[ext] (e2) at ( 0,   -5.2) {WinSCP\\(SFTP)};
+  \node[ext] (e3) at ( 3.5, -5.2) {PyMQI\\(IBM MQ)};
+
+  % Flow arrows between layers
+  \draw[->, thick, nexusBlue!40] (0, -1.1) -- (0, -1.75)
+    node[midway, right, font=\scriptsize, text=gray]{lecture configuration};
+  \draw[->, thick, nexusBlue!40] (0, -3.45) -- (0, -3.9)
+    node[midway, right, font=\scriptsize, text=gray]{appels adaptateurs};
+
+\end{tikzpicture}%
+}
+\caption{Architecture à trois couches du framework d'automatisation}
+\label{fig:archi_couches}
+\end{figure}
+
+\subsection{Découpage en composants}
+
+Le tableau~\ref{tab:composants} présente le découpage complet en composants, en associant à chaque composant son périmètre fonctionnel, son module source et ses dépendances externes.
+
+\begin{table}[H]
+\centering
+\caption{Composants principaux du framework et leurs responsabilités}
+\label{tab:composants}
+\begin{tabularx}{\textwidth}{p{3.0cm}p{3.0cm}Xp{2.0cm}}
+\toprule
+\textbf{Composant}       & \textbf{Module source}          & \textbf{Responsabilité}                                                  & \textbf{Dépendances} \\
+\midrule
+ConfigLoader             & (transversal)                   & Lecture et parsing des fichiers de configuration (menus, saisie, SWIFT, OST) & —\\[3pt]
+AuthStrategy             & \texttt{non\_regression\_*.py}  & Authentification sur Megara (Keycloak ou native)                         & Playwright \\[3pt]
+NavigationEngine         & \texttt{non\_regression\_*.py}  & Traversée des menus ExtJS, détection d'erreurs, gestion des écrans spéciaux & Playwright \\[3pt]
+ErrorCapture             & (transversal)                   & Détection des 10 patterns d'erreur ExtJS, capture d'écran horodatée      & Playwright \\[3pt]
+SaisieEngine             & \texttt{saisie\_awb.py}         & Remplissage de formulaires Megara (15 champs, consommation FIFO)          & Playwright \\[3pt]
+SWIFTInjector            & \texttt{Process\_Swift\_AWB.py} & Upload SFTP, polling absorption IODevice, vérification UI                & WinSCP, Playwright \\[3pt]
+OSTEngine                & \texttt{ost\_awb.py}            & Création/validation/activation annonces OST, flux post-activation        & Playwright \\[3pt]
+ReconciliationEngine     & \texttt{Process\_RL\_*.py}      & Réconciliation de liste MegaCommon + MegaCustody                         & Playwright \\[3pt]
+ServerDiagnostic         & \texttt{diag\_megara.py}        & Diagnostic SFTP WebSphere + IODevice, remédiation automatique             & WinSCP \\[3pt]
+SFTPAdapter              & WinSCP wrapper                  & Abstraction des commandes WinSCP (upload, ls, rm, call shell)             & WinSCP 6.x \\[3pt]
+MQAdapter                & \texttt{queue.py}               & Connexion IBM MQ, réception de messages de la file                       & PyMQI \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+% ─────────────────────────────────────────────────────────
+\section{Diagramme de cas d'utilisation}
+% ─────────────────────────────────────────────────────────
+
+Le diagramme de cas d'utilisation (figure~\ref{fig:usecase}) représente les interactions entre les acteurs du système et les fonctionnalités exposées par le framework. L'acteur principal est l'\textbf{Ingénieur QA VERMEG}, qui configure et déclenche l'ensemble des campagnes. Les acteurs secondaires — \textbf{Suite Megara}, \textbf{IODevice ALLIANCE} et \textbf{Serveur SFTP} — sont des systèmes externes avec lesquels le framework interagit de manière programmatique.
+
+Deux relations structurelles sont représentées : la relation \textit{include} indique une dépendance obligatoire entre cas d'utilisation (toute campagne doit préalablement s'authentifier) ; la relation \textit{extend} indique une extension conditionnelle (la remédiation automatique n'est déclenchée que si le diagnostic détecte une anomalie).
+
+\begin{figure}[H]
+\centering
+\resizebox{\linewidth}{!}{%
+\begin{tikzpicture}[
+  uc/.style={ellipse, draw=nexusBlue, fill=blue!5,
+             text width=3cm, align=center,
+             font=\scriptsize, minimum height=0.8cm},
+  act/.style={rectangle, draw=nexusBlue, fill=nexusBlue!10,
+              rounded corners=3pt, text width=2cm,
+              align=center, font=\scriptsize\bfseries,
+              minimum height=0.8cm},
+  ext/.style={rectangle, draw=OliveGreen!70, fill=OliveGreen!8,
+              rounded corners=3pt, text width=2cm,
+              align=center, font=\scriptsize,
+              minimum height=0.7cm},
+  >=Stealth, font=\scriptsize
+]
+  %% System boundary
+  \draw[dashed, gray!60, rounded corners=6pt, thick]
+    (2.2, 1.8) rectangle (12.8, -11.2);
+  \node[font=\tiny, text=gray, anchor=south west] at (2.2,-11.2)
+    {Périmètre : Framework d'Automatisation Megara};
+
+  %% QA Actor (left)
+  \node[act] (qa) at (0, -4.7) {Ingénieur QA\\VERMEG};
+
+  %% Use cases (inside boundary, 2 cols)
+  \node[uc] (uc1)  at (5.5,  1.2) {S'authentifier\\sur Megara};
+  \node[uc] (uc2)  at (5.5, -0.4) {Lancer campagne\\TNR navigation};
+  \node[uc] (uc3)  at (9.5, -0.4) {Gérer limite\\10 onglets};
+  \node[uc] (uc4)  at (5.5, -2.2) {Détecter et\\capturer anomalie};
+  \node[uc] (uc5)  at (9.5, -2.2) {Naviguer dans\\l'arbre de menus};
+  \node[uc] (uc6)  at (5.5, -4.2) {Saisir instruction\\de règlement};
+  \node[uc] (uc7)  at (9.5, -4.2) {Injecter message\\SWIFT};
+  \node[uc] (uc8)  at (5.5, -6.2) {Automatiser\\cycle OST};
+  \node[uc] (uc9)  at (9.5, -6.2) {Exécuter\\réconciliation RL};
+  \node[uc] (uc10) at (5.5, -8.2) {Diagnostiquer\\infrastructure};
+  \node[uc] (uc11) at (9.5, -8.2) {Remédier\\automatiquement};
+  \node[uc] (uc12) at (7.5,-10.2) {Vérifier\\absorption IODevice};
+
+  %% External systems (right)
+  \node[ext] (megara) at (14.5, -1.3) {Suite Megara\\CDG/BMCE/AWB};
+  \node[ext] (iodev)  at (14.5, -5.2) {IODevice\\ALLIANCE};
+  \node[ext] (sftp)   at (14.5, -9.2) {Serveur\\SFTP};
+
+  %% QA → use cases
+  \foreach \uc in {uc1,uc2,uc6,uc7,uc8,uc9,uc10}
+    \draw (qa) -- (\uc);
+
+  %% include relations
+  \draw[dashed,->,gray] (uc2)  -- node[above,font=\tiny,sloped]{«include»} (uc1);
+  \draw[dashed,->,gray] (uc2)  -- node[left, font=\tiny]{«include»} (uc5);
+  \draw[dashed,->,gray] (uc5)  -- node[above,font=\tiny,sloped]{«include»} (uc4);
+  \draw[dashed,->,gray] (uc5)  -- node[above,font=\tiny]{«include»} (uc3);
+  \draw[dashed,->,gray] (uc6)  -- node[above,font=\tiny,sloped]{«include»} (uc1);
+  \draw[dashed,->,gray] (uc7)  -- node[above,font=\tiny]{«include»} (uc12);
+  \draw[dashed,->,gray] (uc8)  -- node[above,font=\tiny,sloped]{«include»} (uc1);
+  \draw[dashed,->,gray] (uc9)  -- node[above,font=\tiny,sloped]{«include»} (uc1);
+  \draw[dashed,->,gray] (uc11) -- node[left, font=\tiny]{«extend»}  (uc10);
+
+  %% Use cases → external systems
+  \draw[->,OliveGreen!60] (uc5)  -- (megara);
+  \draw[->,OliveGreen!60] (uc12) -- (iodev);
+  \draw[->,OliveGreen!60] (uc10) -- (sftp);
+  \draw[->,OliveGreen!60] (uc11) -- (sftp);
+
+\end{tikzpicture}%
+}
+\caption{Diagramme de cas d'utilisation — Framework d'automatisation Megara}
+\label{fig:usecase}
+\end{figure}
+
+Les cas d'utilisation se structurent en trois groupes fonctionnels. Le premier groupe, centré sur le TNR de navigation, comprend les UC de lancement de campagne, de navigation dans les menus, de gestion de la limite d'onglets et de capture d'anomalie. Le deuxième groupe regroupe les scénarios fonctionnels métier : saisie d'instructions, injection SWIFT avec vérification d'absorption, et automatisation OST. Le troisième groupe couvre les opérations d'infrastructure : réconciliation de liste, diagnostic serveur et remédiation automatique.
+
+% ─────────────────────────────────────────────────────────
+\section{Diagramme de classes}
+% ─────────────────────────────────────────────────────────
+
+Le diagramme de classes (figure~\ref{fig:classdiag}) modélise la structure statique du framework au niveau conceptuel. Il ne représente pas les fonctions internes d'implémentation, mais les entités de conception — classes, responsabilités et relations — qui guident l'organisation du code. Huit classes principales sont identifiées.
+
+\textbf{AuthStrategy} est une classe abstraite définissant le contrat d'authentification. Ses deux sous-classes concrètes, \textbf{KeycloakAuth} et \textbf{NativeAuth}, implémentent respectivement le flux OAuth2/OIDC et la soumission du formulaire JSP natif. \textbf{ConfigLoader} est une classe utilitaire transversale chargée de lire et de parser les fichiers de configuration de chaque type. \textbf{NavigationEngine} constitue le c\oe{}ur du moteur TNR ; il délègue l'authentification à une instance d'AuthStrategy et la détection d'erreurs à \textbf{ErrorCapture}. \textbf{SaisieEngine}, \textbf{SWIFTInjector} et \textbf{OSTEngine} sont des engines fonctionnels indépendants, chacun opérant sur un périmètre métier distinct. \textbf{ServerDiagnostic} encapsule les opérations d'introspection et de remédiation de l'infrastructure serveur.
+
+\begin{figure}[H]
+\centering
+\resizebox{\linewidth}{!}{%
+\begin{tikzpicture}[
+  >=Stealth,
+  every node/.style={font=\scriptsize},
+  cls/.style={draw=nexusBlue, fill=blue!4, minimum width=3.2cm, align=left}
+]
+
+%% ── HELPER: draw a 3-compartment UML class box ──
+%% Usage: \classbox{anchor-name}{x}{y}{Title}{attr-text}{method-text}
+%% We draw each manually for full control.
+
+%% ─── AuthStrategy (abstract) ───────────────────
+\node[cls, minimum height=0.55cm, anchor=north] (as_title) at (4.5, 0)
+  {\textit{«abstract»} \textbf{AuthStrategy}};
+\draw[nexusBlue] (as_title.south west) -- (as_title.south east);
+\node[cls, minimum height=0.5cm, anchor=north] (as_attr) at (4.5, -0.55)
+  {\itshape page : BrowserPage};
+\draw[nexusBlue] (as_attr.south west) -- (as_attr.south east);
+\node[cls, minimum height=0.55cm, anchor=north] (as_meth) at (4.5,-1.05)
+  {+ authenticate() : bool};
+
+%% ─── KeycloakAuth ─────────────────────────────
+\node[cls, minimum height=0.55cm, anchor=north] (ka_title) at (1.4,-3.2)
+  {\textbf{KeycloakAuth}};
+\draw[nexusBlue](ka_title.south west)--(ka_title.south east);
+\node[cls, minimum height=0.55cm, anchor=north] (ka_meth)  at (1.4,-3.75)
+  {+ authenticate() : bool\\+ handle\_redirect()};
+
+%% ─── NativeAuth ───────────────────────────────
+\node[cls, minimum height=0.55cm, anchor=north] (na_title) at (9.0,-3.2)
+  {\textbf{NativeAuth}};
+\draw[nexusBlue](na_title.south west)--(na_title.south east);
+\node[cls, minimum height=0.55cm, anchor=north] (na_meth)  at (9.0,-3.75)
+  {+ authenticate() : bool\\+ select\_domain()};
+
+%% Inheritance arrows
+\draw[-{Triangle[open]}, thick, nexusBlue]
+  (1.4,-3.2) -- (1.4,-2.1) -- (4.5,-2.1) -- (as_meth.south);
+\draw[-{Triangle[open]}, thick, nexusBlue]
+  (9.0,-3.2) -- (9.0,-2.1) -- (4.5,-2.1);
+
+%% ─── ConfigLoader ─────────────────────────────
+\node[cls, minimum height=0.55cm, anchor=north] (cl_title) at (11.5,-0.5)
+  {\textbf{ConfigLoader}};
+\draw[nexusBlue](cl_title.south west)--(cl_title.south east);
+\node[cls, minimum height=0.5cm, anchor=north] (cl_attr) at (11.5,-1.05)
+  {\itshape base\_path : Path};
+\draw[nexusBlue](cl_attr.south west)--(cl_attr.south east);
+\node[cls, minimum height=1.1cm, anchor=north] (cl_meth) at (11.5,-1.55)
+  {+ load\_menu\_paths()\\+ load\_field\_specs()\\+ load\_swift\_file()};
+
+%% ─── NavigationEngine ─────────────────────────
+\node[cls, minimum height=0.55cm, anchor=north] (ne_title) at (4.5,-6.2)
+  {\textbf{NavigationEngine}};
+\draw[nexusBlue](ne_title.south west)--(ne_title.south east);
+\node[cls, minimum height=0.55cm, anchor=north] (ne_attr) at (4.5,-6.75)
+  {\itshape auth : AuthStrategy\\paths : List[MenuPath]};
+\draw[nexusBlue](ne_attr.south west)--(ne_attr.south east);
+\node[cls, minimum height=0.55cm, anchor=north] (ne_meth) at (4.5,-7.55)
+  {+ traverse\_paths()\\+ find\_tree\_node()};
+
+%% ─── ErrorCapture ─────────────────────────────
+\node[cls, minimum height=0.55cm, anchor=north] (ec_title) at (1.4,-9.8)
+  {\textbf{ErrorCapture}};
+\draw[nexusBlue](ec_title.south west)--(ec_title.south east);
+\node[cls, minimum height=0.55cm, anchor=north] (ec_meth)  at (1.4,-10.35)
+  {+ check\_patterns() : bool\\+ capture\_screenshot()};
+
+%% ─── SaisieEngine ─────────────────────────────
+\node[cls, minimum height=0.55cm, anchor=north] (se_title) at (9.0,-6.2)
+  {\textbf{SaisieEngine}};
+\draw[nexusBlue](se_title.south west)--(se_title.south east);
+\node[cls, minimum height=0.55cm, anchor=north] (se_attr)  at (9.0,-6.75)
+  {\itshape specs : List[FieldSpec]};
+\draw[nexusBlue](se_attr.south west)--(se_attr.south east);
+\node[cls, minimum height=0.55cm, anchor=north] (se_meth)  at (9.0,-7.55)
+  {+ fill\_form()\\+ consume\_fifo()};
+
+%% ─── SWIFTInjector ────────────────────────────
+\node[cls, minimum height=0.55cm, anchor=north] (si_title) at (13.0,-6.2)
+  {\textbf{SWIFTInjector}};
+\draw[nexusBlue](si_title.south west)--(si_title.south east);
+\node[cls, minimum height=0.55cm, anchor=north] (si_attr) at (13.0,-6.75)
+  {\itshape timeout\_s : int\\interval\_s : int};
+\draw[nexusBlue](si_attr.south west)--(si_attr.south east);
+\node[cls, minimum height=0.55cm, anchor=north] (si_meth) at (13.0,-7.55)
+  {+ upload()\\+ poll\_absorption()\\+ verify\_ui()};
+
+%% ─── OSTEngine ────────────────────────────────
+\node[cls, minimum height=0.55cm, anchor=north] (oe_title) at (4.5,-10.5)
+  {\textbf{OSTEngine}};
+\draw[nexusBlue](oe_title.south west)--(oe_title.south east);
+\node[cls, minimum height=0.55cm, anchor=north] (oe_attr) at (4.5,-11.05)
+  {\itshape ost\_type : str};
+\draw[nexusBlue](oe_attr.south west)--(oe_attr.south east);
+\node[cls, minimum height=0.55cm, anchor=north] (oe_meth) at (4.5,-11.85)
+  {+ create()\\+ validate(ts)\\+ activate(ts)\\+ post\_flow()};
+
+%% ─── ServerDiagnostic ─────────────────────────
+\node[cls, minimum height=0.55cm, anchor=north] (sd_title) at (10,-10.5)
+  {\textbf{ServerDiagnostic}};
+\draw[nexusBlue](sd_title.south west)--(sd_title.south east);
+\node[cls, minimum height=0.55cm, anchor=north] (sd_meth)  at (10,-11.05)
+  {+ run\_diagnostic()\\+ auto\_fix()};
+
+%% ── Association arrows ────────────────────────
+%% NavigationEngine uses AuthStrategy
+\draw[->, dashed, gray] (ne_title.north) -- (as_meth.south)
+  node[midway, left, font=\tiny, text=gray]{uses};
+
+%% NavigationEngine composes ErrorCapture
+\draw[-{Diamond}, nexusBlue] (ne_meth.south) -- (ec_title.north)
+  node[midway, right, font=\tiny, text=gray]{1..1};
+
+%% All engines depend on ConfigLoader (dashed dependency)
+%% NavigationEngine: route above subclass row (y=-4.45) then right to ConfigLoader
+\draw[->, dashed, gray!60] (ne_title.north)
+  -- ++(0,1.8) -- ++(7.0,0) -- (cl_meth.south);
+%% SaisieEngine: route above (y=-4.45) then right, then up to ConfigLoader bottom
+\draw[->, dashed, gray!60] (se_title.north)
+  -- ++(0,1.8) -- ++(2.5,0) -- ++(0,1.8) -- (cl_meth.south)
+  node[pos=0.55, above, font=\tiny, text=gray]{depends};
+%% SWIFTInjector: diagonal up-left directly to ConfigLoader
+\draw[->, dashed, gray!60] (si_title.north) -- (cl_meth.south);
+%% OSTEngine and ServerDiagnostic: indicate direction toward ConfigLoader
+\draw[->, dashed, gray!60] (oe_title.east)    -| (10.5,-9.5);
+\draw[->, dashed, gray!60] (sd_title.north)   -| (11.5,-9.2);
+
+\end{tikzpicture}%
+}
+\caption{Diagramme de classes — Structure conceptuelle du framework}
+\label{fig:classdiag}
+\end{figure}
+
+Les relations de \textbf{généralisation} entre \textit{AuthStrategy} et ses sous-classes concrètes matérialisent le patron Stratégie (détaillé en section~\ref{sec:patterns}). La relation de \textbf{composition} entre \textit{NavigationEngine} et \textit{ErrorCapture} traduit le fait que l'engine de navigation contrôle le cycle de vie du composant de capture. Les relations de \textbf{dépendance} (flèches en tirets) entre les engines et \textit{ConfigLoader} indiquent que chaque engine utilise ConfigLoader sans le posséder — ConfigLoader est partagé et sans état mutable.
+
+% ─────────────────────────────────────────────────────────
+\section{Diagrammes de séquence}
+% ─────────────────────────────────────────────────────────
+
+\subsection{Séquence 1 — Cycle TNR de navigation}
+
+Le diagramme ci-dessous décrit le flux principal d'une campagne TNR : (1)~chargement des chemins depuis \texttt{ConfigLoader}, (2)~authentification via la stratégie client (Keycloak ou native), (3)~boucle de navigation — pour chaque chemin, le framework navigue dans l'arbre ExtJS, déclenche la recherche, tente View/Edit, capture l'écran en cas d'anomalie, puis ferme l'onglet. La phase de boucle est représentée par le segment encadré.
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[>=Stealth, font=\scriptsize, thick,
+  hd/.style={draw=nexusBlue, fill=nexusBlue!10, minimum width=2.5cm,
+             minimum height=0.5cm, align=center, font=\scriptsize}]
+
+  \node[hd] at (0,0)   {Framework};
+  \node[hd] at (3.5,0) {ConfigLoader};
+  \node[hd] at (7,0)   {Authenticator};
+  \node[hd] at (10.5,0){Megara (ExtJS)};
+  \foreach \x in {0,3.5,7,10.5}
+    \draw[dashed,gray!35] (\x,-0.25) -- (\x,-9.2);
+
+  \draw[->] (0,-0.8)  -- (3.5,-0.8)  node[midway,above,font=\tiny]{load\_menu\_paths(file)};
+  \draw[->,dashed,gray!60] (3.5,-1.3) -- (0,-1.3) node[midway,above,font=\tiny]{paths[0..N]};
+  \draw[->] (0,-2.0)  -- (7,-2.0)    node[midway,above,font=\tiny]{authenticate(page)};
+  \draw[->] (7,-2.5)  -- (10.5,-2.5) node[midway,above,font=\tiny]{submit credentials};
+  \draw[->,dashed,gray!60] (10.5,-3.0) -- (0,-3.0) node[midway,above,font=\tiny]{auth OK};
+  \draw[gray!50,rounded corners=2pt] (-0.1,-3.5) rectangle (11.2,-8.7);
+  \node[font=\tiny,text=gray,anchor=north west] at (-0.08,-3.5)
+    {\textit{loop [pour chaque chemin]}};
+  \draw[->] (0,-4.2)  -- (10.5,-4.2) node[midway,above,font=\tiny]{navigate\_tree\_node() + trigger\_search()};
+  \draw[->,dashed,gray!60] (10.5,-4.8) -- (0,-4.8) node[midway,above,font=\tiny]{result grid loaded};
+  \draw[->] (0,-5.5)  -- (10.5,-5.5) node[midway,above,font=\tiny]{right\_click + view\_option()};
+  \draw[->,dashed,gray!60] (10.5,-6.1) -- (0,-6.1) node[midway,above,font=\tiny]{fiche ouverte};
+  \node[font=\tiny,text=gray,anchor=west] at (0,-6.7) {\textit{alt [failure\_indicators\_present()]}};
+  \draw[->] (0,-7.3)  -- (10.5,-7.3) node[midway,above,font=\tiny]{capture\_screenshot(path)};
+  \draw[->] (0,-8.0)  -- (10.5,-8.0) node[midway,above,font=\tiny]{close\_work\_window()};
+
+  \draw[->,dashed,gray!60] (0,-9.0) -- (-1,-9.0) node[anchor=east,font=\tiny]{log summary};
+
+\end{tikzpicture}
+\caption{Diagramme de séquence — Cycle TNR de navigation}
+\label{fig:seq_tnr}
+\end{figure}
+
+\subsection{Séquence 2 — Pipeline d'injection SWIFT}
+
+Le pipeline suit trois étapes séquentielles (MT54X → MT548 → MT54Y), chacune composée d'un upload SFTP suivi d'un polling jusqu'à absorption par l'IODevice. La vérification UI Playwright n'intervient qu'après le premier upload. Le patron de polling est détaillé en section~\ref{sec:patterns}.
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[>=Stealth, font=\scriptsize, thick,
+  hd/.style={draw=nexusBlue, fill=nexusBlue!10, minimum width=2.5cm,
+             minimum height=0.5cm, align=center, font=\scriptsize}]
+
+  \node[hd] at (0,0)   {Framework};
+  \node[hd] at (3.5,0) {SFTPAdapter\\(WinSCP)};
+  \node[hd] at (7,0)   {Serveur SFTP\\(ALLIANCE)};
+  \node[hd] at (10.5,0){MegaCustody UI};
+  \foreach \x in {0,3.5,7,10.5}
+    \draw[dashed,gray!35] (\x,-0.25) -- (\x,-9.5);
+
+  \draw[->] (0,-0.8)  -- (3.5,-0.8)  node[midway,above,font=\tiny]{cleanup\_alliance()};
+  \draw[->] (3.5,-1.1)-- (7,-1.1)    node[midway,above,font=\tiny]{rm residual files};
+  \node[font=\tiny,text=vermegRed,anchor=west] at (0,-1.7) {\textbf{Étape 1 — MT54X}};
+  \draw[->] (0,-2.2)  -- (3.5,-2.2)  node[midway,above,font=\tiny]{upload(MT54X, -resumesupport=off)};
+  \draw[->] (3.5,-2.6)-- (7,-2.6)    node[midway,above,font=\tiny]{SFTP PUT};
+  \draw[->,dashed,gray!60] (7,-3.0) -- (0,-3.0) node[midway,above,font=\tiny]{upload OK};
+  \node[font=\tiny,text=gray,anchor=west] at (0,-3.6)
+    {\textit{loop [poll toutes les 15 s, max 30 min]}};
+  \draw[->] (0,-4.1)  -- (3.5,-4.1)  node[midway,above,font=\tiny]{ls ALLIANCE/};
+  \draw[->,dashed,gray!60] (3.5,-4.5) -- (0,-4.5) node[midway,above,font=\tiny]{MT54X absent → ABSORBED};
+  \draw[->] (0,-5.2)  -- (10.5,-5.2) node[midway,above,font=\tiny]{verify: Notification$>$Swifts$>$MT54X};
+  \draw[->,dashed,gray!60] (10.5,-5.7) -- (0,-5.7) node[midway,above,font=\tiny]{record found};
+  \node[font=\tiny,text=vermegRed,anchor=west] at (0,-6.3)
+    {\textbf{Étapes 2 \& 3 — MT548 (matching) puis MT54Y (settlement) : même séquence upload+poll}};
+  \draw[->] (0,-6.9)  -- (3.5,-6.9)  node[midway,above,font=\tiny]{upload(MT548) + poll};
+  \draw[->,dashed,gray!60] (3.5,-7.3)-- (0,-7.3)  node[midway,above,font=\tiny]{absorbed};
+  \draw[->] (0,-7.8)  -- (3.5,-7.8)  node[midway,above,font=\tiny]{upload(MT54Y) + poll};
+  \draw[->,dashed,gray!60] (3.5,-8.2)-- (0,-8.2)  node[midway,above,font=\tiny]{cycle SWIFT complet};
+
+\end{tikzpicture}
+\caption{Diagramme de séquence — Pipeline d'injection SWIFT end-to-end}
+\label{fig:seq_swift}
+\end{figure}
+
+\subsection{Séquence 3 — Cycle complet d'une OST}
+
+L'OST couvre quatre phases séquentielles : (1)~connexion domaine \texttt{ALL} + création du formulaire OST + capture du timestamp~T, (2)~validation filtrée par T, (3)~activation filtrée par T, (4)~reconnexion domaine \texttt{awb} + post-flow (ExecClient → ExecMarché → Paiements) répété pour chaque événement défini dans \texttt{POST\_FLOW\_BY\_TYPE[ost\_type]}.
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[>=Stealth, font=\scriptsize, thick,
+  hd/.style={draw=nexusBlue, fill=nexusBlue!10, minimum width=2.6cm,
+             minimum height=0.5cm, align=center, font=\scriptsize}]
+
+  \node[hd] at (0,0)   {Framework};
+  \node[hd] at (3.5,0) {Authenticator};
+  \node[hd] at (7.5,0) {MegaCor UI (ExtJS)};
+  \foreach \x in {0,3.5,7.5}
+    \draw[dashed,gray!35] (\x,-0.25) -- (\x,-10);
+
+  \node[font=\tiny,text=vermegRed,anchor=west] at (0,-0.75)  {\textbf{Phase 1 — Création}};
+  \draw[->] (0,-1.2)  -- (3.5,-1.2)  node[midway,above,font=\tiny]{login(domain=ALL)};
+  \draw[->,dashed,gray!60] (3.5,-1.6) -- (0,-1.6) node[midway,above,font=\tiny]{session OK};
+  \draw[->] (0,-2.1)  -- (7.5,-2.1)  node[midway,above,font=\tiny]{fill\_form(FORM\_FIELDS[type]) + save()};
+  \draw[->,dashed,gray!60] (7.5,-2.5) -- (0,-2.5) node[midway,above,font=\tiny]{timestamp T};
+
+  \node[font=\tiny,text=vermegRed,anchor=west] at (0,-3.1)  {\textbf{Phase 2 — Validation}};
+  \draw[->] (0,-3.6)  -- (7.5,-3.6)  node[midway,above,font=\tiny]{navigate Validation + filter($\geq$T) + valider()};
+  \draw[->,dashed,gray!60] (7.5,-4.0) -- (0,-4.0) node[midway,above,font=\tiny]{VALIDÉE};
+
+  \node[font=\tiny,text=vermegRed,anchor=west] at (0,-4.6)  {\textbf{Phase 3 — Activation}};
+  \draw[->] (0,-5.1)  -- (7.5,-5.1)  node[midway,above,font=\tiny]{navigate Activation + filter($\geq$T) + activer()};
+  \draw[->,dashed,gray!60] (7.5,-5.5) -- (0,-5.5) node[midway,above,font=\tiny]{ACTIVÉE};
+
+  \node[font=\tiny,text=vermegRed,anchor=west] at (0,-6.1)
+    {\textbf{Phase 4 — Post-activation (domaine awb)}};
+  \draw[->] (0,-6.6)  -- (3.5,-6.6)  node[midway,above,font=\tiny]{login(domain=awb)};
+  \draw[->,dashed,gray!60] (3.5,-7.0) -- (0,-7.0) node[midway,above,font=\tiny]{session OK};
+  \node[font=\tiny,text=gray,anchor=west] at (0,-7.5) {\textit{loop [pour chaque événement POST\_FLOW\_BY\_TYPE]}};
+  \draw[->] (0,-8.0)  -- (7.5,-8.0)  node[midway,above,font=\tiny]{ExecClient + ExecMarché (Calcul OST)};
+  \draw[->] (0,-8.5)  -- (7.5,-8.5)  node[midway,above,font=\tiny]{Paiements Marché + Paiements Client};
+  \draw[->,dashed,gray!60] (7.5,-9.0)-- (0,-9.0)  node[midway,above,font=\tiny]{cycle OST complet};
+
+\end{tikzpicture}
+\caption{Diagramme de séquence — Cycle complet d'une OST (création $\to$ post-activation)}
+\label{fig:seq_ost}
+\end{figure}
+
+% ─────────────────────────────────────────────────────────
+\section{Modèle de données et conventions de configuration}
+% ─────────────────────────────────────────────────────────
+
+L'architecture data-driven du framework repose sur quatre types de fichiers de configuration, chacun obéissant à une convention de format précise. \textbf{ConfigLoader} est le seul composant autorisé à lire ces fichiers ; tous les autres composants reçoivent les données déjà parsées.
+
+\subsection[Fichiers de chemins de menus]%
+  {Fichiers de chemins de menus (\texttt{Projects/<CLIENT>/\allowbreak<Module>/\allowbreak*.txt})}
+
+Chaque ligne représente un chemin de navigation complet vers un nœud feuille de l'arborescence Megara. Les niveaux hiérarchiques sont séparés par le caractère \og{}\texttt{>}\fg{}. Les lignes vides et les lignes commençant par \texttt{\#} sont ignorées. Le parser extrait une liste ordonnée de listes de segments (\texttt{List[List[str]]}).
+
+\begin{mdframed}[backgroundcolor=codeGray, linewidth=0pt, innerleftmargin=8pt]
+\begin{verbatim}
+# awb_custody.txt - extrait
+Notification>Notifications Maroclear>Documents Comptables>MRB
+Notification>Reprocess>Recycler MT54X
+Notification>Swifts>MT54X
+Règlement/Livraison>Instructions Clients>Monitoring Instructions Client
+Règlement/Livraison>Instructions Marché>Monitoring Instructions Marché
+\end{verbatim}
+\end{mdframed}
+
+\subsection{Fichiers de données de formulaire (\texttt{variable\_saisies/*.txt})}
+
+Ces fichiers utilisent une syntaxe \texttt{clé=valeur} UTF-8 (avec BOM toléré). La contrainte majeure de ce format est la \textbf{gestion des clés dupliquées} : certains formulaires Megara comportent plusieurs champs portant le même libellé (ex. : deux champs \og{}Titre Exécuté\fg{} dans un formulaire OST). Le parser doit donc préserver l'ordre des entrées et permettre la consommation FIFO — la N\ieme{} demande pour une clé donnée retourne la N\ieme{} occurrence dans le fichier.
+
+\begin{table}[H]
+\centering
+\caption{Propriétés du modèle de données des fichiers de formulaire}
+\label{tab:datamodel}
+\begin{tabularx}{\textwidth}{lXl}
+\toprule
+\textbf{Propriété} & \textbf{Description} & \textbf{Exemple} \\
+\midrule
+Encodage          & UTF-8 (BOM optionnel)                           & — \\
+Séparateur        & Première occurrence du caractère \texttt{=}     & \texttt{clé=valeur} \\
+Commentaires      & Lignes commençant par \texttt{\#}               & \texttt{\# commentaire} \\
+Clés dupliquées   & Autorisées, consommées dans l'ordre (FIFO)      & \texttt{Titre=MA0001} \\
+Valeur vide       & Champ présent dans le formulaire mais non rempli & \texttt{devise=} \\
+Normalisation clé & Suppression accents, minuscule, espaces multiples & \texttt{titre executé} \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\subsection{Messages SWIFT (\texttt{SWIFTS/<CLIENT>/<TYPE>/*.txt})}
+
+Les fichiers SWIFT contiennent des messages ISO~15022 complets au format texte brut (blocs \texttt{\{1:\}} à \texttt{\{5:\}}). Ces fichiers sont utilisés tels quels — sans transformation — et déposés directement sur le serveur SFTP via WinSCP. L'IODevice Megara est configuré pour surveiller les fichiers d'extension \texttt{.txt} dans le répertoire \texttt{ALLIANCE} ; la convention de nommage (\texttt{MT54X.txt}, \texttt{MT548\_1.txt}, etc.) est imposée par ce composant.
+
+\subsection{Paramètres OST (\texttt{variable\_saisies/ost\_awb\_<TypeOST>.txt})}
+
+Ces fichiers suivent le même format clé=valeur que les fichiers de saisie, avec une première ligne obligatoire \texttt{Type OST = <type>} permettant à \textit{ConfigLoader} de sélectionner le formulaire adéquat (\texttt{FORM\_FIELDS\_BY\_TYPE}) et le flux post-activation correspondant (\texttt{POST\_FLOW\_BY\_TYPE}). Le nom de fichier encode le type d'OST pour permettre la sélection multi-type sans modification du code.
+
+% ─────────────────────────────────────────────────────────
+\section{Patrons de conception appliqués}
+\label{sec:patterns}
+% ─────────────────────────────────────────────────────────
+
+L'architecture du framework mobilise cinq patrons de conception classiques, chacun répondant à une contrainte technique précise identifiée lors de l'analyse du problème.
+
+\subsection{Patron Stratégie (\textit{Strategy})}
+
+\textbf{Problème résolu :} les trois clients utilisent deux mécanismes d'authentification structurellement différents (OAuth2/OIDC pour CDG Capital, formulaire JSP natif pour AWB et BMCE Bank of Africa). Sans ce patron, le moteur de navigation contiendrait des branchements conditionnels sur le type de client, rendant l'ajout d'un nouveau mécanisme d'auth une modification intrusive du code.
+
+\textbf{Application :} la classe abstraite \textit{AuthStrategy} définit l'interface \texttt{authenticate(page)}, implémentée de manière indépendante par \textit{KeycloakAuth} et \textit{NativeAuth}. Le \textit{NavigationEngine} reçoit une instance d'AuthStrategy via sa configuration d'environnement ; il appelle \texttt{authenticate()} sans connaître le type concret. L'ajout d'un troisième mécanisme d'auth ne nécessite que l'ajout d'une sous-classe, sans modifier l'engine.
+
+\subsection{Patron Méthode Gabarit (\textit{Template Method})}
+
+\textbf{Problème résolu :} la boucle de navigation TNR suit une structure invariante (charger chemin, naviguer nœud, déclencher recherche, vérifier erreur, fermer), mais certains écrans Megara requièrent un comportement déviant : pré-remplissage de filtres de position, désactivation de la recherche automatique pour les écrans Recycler, sauvegarde seule pour certains écrans de configuration.
+
+\textbf{Application :} l'algorithme de traversée est fixé dans \texttt{traverse\_paths()} (méthode gabarit). Les variantes sont encapsulées dans des dictionnaires de configuration (\texttt{POSITION\_FILTER\_PATHS}, \texttt{RECYCLER\_REPROCESS\_PATHS}, \texttt{CLOSE\_ONLY\_MENU\_PATHS}, \texttt{SAVE\_ONLY\_MENU\_PATHS}) consultés avant chaque étape de la boucle. Ce mécanisme est équivalent à des sous-classes virtuelles sans héritage, plus léger et plus maintenable dans un contexte Python.
+
+\subsection{Chaîne de responsabilité (\textit{Chain of Responsibility})}
+
+\textbf{Problème résolu :} l'interface ExtJS de Megara génère des identifiants de composants dynamiques à l'exécution, rendant les clics parfois impossibles avec les mécanismes standards de Playwright. Une stratégie unique de clic est insuffisante.
+
+\textbf{Application :} pour chaque interaction critique (clic sur un élément de menu contextuel, clic sur le bouton Execute, clic sur Éditer), une chaîne de cinq stratégies est parcourue dans l'ordre croissant de contournement : (1) clic Playwright forcé (\texttt{force=True}), (2) évaluation DOM directe (\texttt{el.click()}), (3) dispatchement d'événement synthétique (\texttt{dispatchEvent}), (4) simulation souris manuelle par coordonnées, (5) recherche JavaScript par contenu textuel dans le DOM complet. La chaîne s'arrête dès qu'une stratégie réussit.
+
+\subsection{Architecture guidée par la configuration (\textit{Data-Driven Configuration})}
+
+\textbf{Problème résolu :} la variabilité inter-clients (menus distincts, données de test différentes, messages SWIFT spécifiques) ne doit pas être encodée dans le code source, sous peine de rendre chaque modification de périmètre une intervention de développement.
+
+\textbf{Application :} l'intégralité des données variables est externalisée dans les fichiers de configuration décrits en section~5. Les modules Python ne contiennent aucune référence à des valeurs clients spécifiques. L'ajout d'un nouveau client Megara est une opération de configuration pure, indépendante du cycle de développement du framework.
+
+\subsection{Observateur par scrutation (\textit{Polling Observer})}
+
+\textbf{Problème résolu :} l'absorption d'un fichier SWIFT par l'IODevice Megara est un événement asynchrone, sans mécanisme de callback ou de notification. Il est impossible de savoir quand le fichier sera traité.
+
+\textbf{Application :} le composant \textit{SWIFTInjector} implémente une boucle de scrutation (\textit{polling loop}) qui interroge l'état du répertoire SFTP toutes les quinze secondes, parse la sortie de la commande \texttt{ls} pour détecter la disparition du fichier cible, et renvoie \texttt{True} dès que l'absorption est confirmée ou \texttt{False} à l'expiration du délai maximal de trente minutes. Ce patron est préférable à un délai fixe car il adapte le temps d'attente effectif à la charge réelle du serveur.
+
+\section*{Conclusion}
+\addcontentsline{toc}{section}{Conclusion}
+
+Ce chapitre a présenté la conception complète du framework d'automatisation Megara selon cinq axes complémentaires. L'architecture à trois couches garantit la séparation des responsabilités et l'indépendance entre la logique de traitement et les données de configuration. Le diagramme de cas d'utilisation formalise les dix scénarios d'interaction entre l'ingénieur QA et les systèmes externes. Le diagramme de classes modélise les huit entités de conception et leurs relations — notamment la hiérarchie d'authentification par le patron Stratégie et la composition entre NavigationEngine et ErrorCapture. Les trois diagrammes de séquence détaillent les flux d'exécution des scénarios les plus complexes : la boucle TNR, le pipeline SWIFT asynchrone et le cycle OST à double session. Enfin, les cinq patrons de conception identifiés donnent une assise structurelle aux décisions architecturales les plus significatives.
+
+Cette conception constitue le référentiel qui guide l'implémentation détaillée présentée au chapitre suivant.
+
+% ══════════════════════════════════════════════════════════
+%  CHAPITRE 4 – RÉALISATION TECHNIQUE
+% ══════════════════════════════════════════════════════════
+\chapter{Réalisation technique}
+
+\section*{Introduction}
+\addcontentsline{toc}{section}{Introduction}
+
+Ce chapitre présente l'implémentation concrète du framework d'automatisation, sprint par sprint, en descendant au niveau du code pour expliquer les choix d'implémentation, les algorithmes critiques, les mécanismes de résilience et les problèmes techniques rencontrés. Chaque module est analysé en détail : son point d'entrée, ses dépendances, la logique de ses fonctions centrales et les subtilités d'interaction avec l'interface ExtJS de Megara ou les systèmes d'infrastructure (SFTP, WebSphere, IBM MQ).
+
+% ─────────────────────────────────────────────────────────
+\section{Environnement de développement et stack technologique}
+% ─────────────────────────────────────────────────────────
+
+\subsection{Environnement de développement}
+
+Le développement a été conduit sur \textbf{Windows 10/11 Pro} avec \textbf{PowerShell 5.1} comme shell principal, conformément à l'environnement standard des postes VERMEG. L'éditeur utilisé est \textbf{Visual Studio Code} avec les extensions Python et Pylance. La gestion de l'environnement Python repose sur \textbf{venv} (environnement virtuel standard), isolant les dépendances du projet du système global. \textbf{Git~2.x} est utilisé pour la gestion de versions.
+
+L'environnement d'exécution cible est identique à l'environnement de développement, ce qui élimine tout risque de divergence de comportement lié à la conteneurisation ou à la différence de système d'exploitation. Les modules Python sont lancés directement depuis PowerShell avec injection de variables d'environnement.
+
+\subsection{Stack technologique}
+
+\begin{table}[H]
+\centering
+\caption{Stack technique — versions et rôles précis}
+\label{tab:stack}
+\begin{tabularx}{\textwidth}{llX}
+\toprule
+\textbf{Composant}    & \textbf{Version} & \textbf{Rôle précis dans le framework} \\
+\midrule
+Python                & 3.11             & Runtime principal ; typage statique via \texttt{typing} \\
+Playwright (sync API) & 1.44+            & Pilotage navigateur Chromium ; \texttt{sync\_playwright()} pour séquentialité \\
+WinSCP                & 6.x              & Client SFTP scriptable via fichiers de commandes temporaires \\
+PyMQI                 & 1.x              & Binding Python pour IBM MQ Client ; \texttt{pymqi.CD}, \texttt{pymqi.Queue} \\
+PowerShell            & 5.1              & Injection de variables d'environnement + lancement des scripts \\
+Git                   & 2.x              & Gestion de versions du code et des fichiers de configuration \\
+Visual Studio Code    & 1.8x+            & IDE principal avec extension Python/Pylance \\
+venv                  & stdlib           & Isolation de l'environnement Python \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+Un point d'architecture notable concernant Playwright : l'API \textbf{synchrone} (\texttt{sync\_playwright}) a été retenue délibérément à la place de l'API asynchrone. Les scénarios d'automatisation Megara sont intrinsèquement séquentiels — chaque interaction dépend du résultat de la précédente — et le modèle synchrone simplifie la gestion des erreurs et des délais d'attente sans bénéfice mesurable de l'asynchronicité.
+
+% ─────────────────────────────────────────────────────────
+\section{Structure du projet et organisation du code}
+% ─────────────────────────────────────────────────────────
+
+\begin{mdframed}[backgroundcolor=codeGray, linewidth=0pt, innerleftmargin=8pt, innertopmargin=6pt]
+\begin{verbatim}
+Scrapping/
+|-- non_regression_awb.py      (134 Ko)  TNR navigation AWB
+|-- non_regression_bmce.py     (100 Ko)  TNR navigation BMCE Bank
+|-- non_regression_cdg.py      (106 Ko)  TNR navigation CDG Capital (Keycloak)
+|-- saisie_awb.py              (274 Ko)  Saisie instructions + reconciliation
+|-- saisie_CDG.py              (116 Ko)  Saisie instructions CDG Capital
+|-- Process_Swift_AWB.py        (59 Ko)  Pipeline SWIFT end-to-end AWB
+|-- Process_RL_AWB.py           (48 Ko)  Reconciliation de liste AWB
+|-- Process_RL_CDG.py          (154 Ko)  Reconciliation de liste CDG
+|-- ost_awb.py                  (75 Ko)  Automatisation OST MegaCor AWB
+|-- diag_megara.py               (5 Ko)  Diagnostics infrastructure serveur
+|-- inject_mt54x.py              (2 Ko)  Prototype injection MT54X (dev)
+|-- queue.py                     (2 Ko)  Wrapper IBM MQ + shim stdlib
+|-- Projects/
+|   |-- AWB/  common/ core/ custody/ Issuer/ Trade/
+|   |-- BMCE/ Accounting/ Common/ Compliance/ Cor/ Custody/ Issuer/ MegaLend/ Trade/
+|   \-- CDG/  common menu/ Compliance Menu/ Cor Menu/ Custody menu/ Trade Menu/
+|-- variable_saisies/
+|   |-- Instruction_Client_awb.txt
+|   |-- Instruction_Client_CDG.txt
+|   |-- ost_awb.txt
+|   |-- ost_awb_Paiement d'Interets.txt
+|   \-- ost_awb_Paiement de dividendes en espece.txt
+|-- SWIFTS/
+|   |-- AWB/  MT548/ MT54X/ MT54Y/
+|   |-- BMCE/ MT548/ MT54X/ MT54Y/
+|   \-- CDG/  MT548/ MT54X/ MT54Y/
+|-- screenshots/       (artefacts d'execution, non versionnes)
+|-- runs/              (logs d'execution archives)
+\-- run.log            (log de la derniere campagne)
+\end{verbatim}
+\end{mdframed}
+
+Deux caractéristiques structurelles méritent d'être soulignées. Premièrement, les modules \texttt{non\_regression\_*.py} sont \textbf{des scripts indépendants} — aucun n'importe un autre module TNR. Cela permet de lancer chaque campagne client de manière totalement isolée. Deuxièmement, \texttt{Process\_RL\_AWB.py} \textbf{importe} \texttt{saisie\_awb} et \texttt{Process\_RL\_CDG} pour réutiliser leurs fonctions UI et leur moteur de lecture de configuration, démontrant une réutilisation partielle sans architecture d'héritage.
+
+% ─────────────────────────────────────────────────────────
+\section{Implémentation des modules clés}
+% ─────────────────────────────────────────────────────────
+
+\subsection{Moteur TNR de navigation (\texttt{non\_regression\_*.py})}
+
+\subsubsection{Point d'entrée et configuration}
+
+Chaque module TNR est paramétré exclusivement via des variables d'environnement, injectées par PowerShell avant le lancement. Les variables clés sont les suivantes :
+
+\begin{mdframed}[backgroundcolor=codeGray, linewidth=0pt, innerleftmargin=8pt]
+\begin{lstlisting}[language=sh, basicstyle=\ttfamily\scriptsize]
+$env:AUTH_TYPE      = "standard"          # ou "keycloak"
+$env:MODULE_URL     = "http://10.1.140.244:9080/MegaCommon/login.jsp"
+$env:MENU_PATH_FILE = "Projects/AWB/common/awb_common.txt"
+$env:AUTH_USERNAME  = "migration"
+$env:AUTH_PASSWORD  = "..."               # injecte depuis un vault ou CLI
+$env:AUTH_DOMAIN    = "awb"
+$env:PROJECT_SLUG   = "AWB"
+$env:MENU_CATEGORY_SLUG = "megacommon"
+python non_regression_awb.py
+\end{lstlisting}
+\end{mdframed}
+
+\subsubsection{Chargement des chemins de menus}
+
+La fonction \texttt{load\_menu\_paths()} lit le fichier texte ligne par ligne. Les lignes vides et les commentaires (\texttt{\#}) sont ignorés. Chaque ligne est découpée selon le séparateur \og{}\texttt{>}\fg{} pour produire une liste de segments. La validation est implicite : un chemin d'un seul segment est valide (entrée de menu de niveau 1).
+
+\begin{mdframed}[backgroundcolor=codeGray, linewidth=0pt, innerleftmargin=8pt]
+\begin{lstlisting}[language=Python, basicstyle=\ttfamily\scriptsize]
+def load_menu_paths(file_path: Path) -> List[List[str]]:
+    paths: List[List[str]] = []
+    with file_path.open("r", encoding="utf-8") as fh:
+        for line in fh:
+            cleaned = line.strip()
+            if not cleaned or cleaned.startswith("#"):
+                continue
+            segments = [s.strip() for s in cleaned.split(">") if s.strip()]
+            if segments:
+                paths.append(segments)
+    return paths
+\end{lstlisting}
+\end{mdframed}
+
+\subsubsection{Authentification double-flux}
+
+Le module TNR CDG implémente le flux Keycloak : Playwright navigue vers l'URL Megara, détecte la redirection automatique vers le serveur Keycloak, attend l'apparition du formulaire d'identité SSO, saisit les identifiants et attend le retour vers la session Megara active. Ce flux nécessite la gestion des redirections HTTP implicites de Playwright (\texttt{page.wait\_for\_url()}) et un délai d'attente supplémentaire pour le chargement de l'application ExtJS post-login.
+
+Les modules AWB et BMCE implémentent le flux natif : soumission directe du formulaire JSP (\texttt{page.fill()} sur les champs username, password, domain, puis \texttt{page.click()} sur le bouton Login).
+
+\subsubsection{Navigation bidirectionnelle dans l'arbre ExtJS}
+
+La navigation dans l'arbre de menus ExtJS constitue le d\'{e}fi technique central du moteur TNR. L'arbre est un composant \texttt{<div role="tree">} dont les nœuds sont des \texttt{<div role="treeitem" aria-level="N">}. Le niveau d'aria correspond à la profondeur dans la hiérarchie de menus.
+
+La fonction \texttt{find\_tree\_node()} applique un algorithme de correspondance par préfixe des trois premiers mots du libellé (après normalisation des espaces et mise en minuscule), afin de tolérer les variations mineures d'espacement ou de ponctuation dans les libellés ExtJS :
+
+\begin{mdframed}[backgroundcolor=codeGray, linewidth=0pt, innerleftmargin=8pt]
+\begin{lstlisting}[language=Python, basicstyle=\ttfamily\scriptsize]
+target_label = re.sub(r"\s+", " ", label.strip()).lower()
+target_words = target_label.split()
+prefix_len   = min(3, len(target_words))
+target_prefix = " ".join(target_words[:prefix_len])
+
+for idx in range(treeitems.count()):
+    node_text  = _node_label(treeitems.nth(idx))
+    node_words = node_text.split()
+    if " ".join(node_words[:prefix_len]) == target_prefix:
+        if target_label in node_text:
+            return treeitems.nth(idx)
+\end{lstlisting}
+\end{mdframed}
+
+Lorsque le nœud est hors de la zone visible (scrollé hors de l'écran), \texttt{find\_tree\_node\_with\_scroll()} est appelé. Cet algorithme commence par remonter le scroll à zéro (un nœud parent peut avoir été scrollé au-dessus de la vue), puis effectue des défilements progressifs vers le bas par paliers de \texttt{clientHeight / 2}, en vérifiant la présence du nœud après chaque défilement. La limite est fixée à 25 tentatives ou la détection de la fin du défilement (\texttt{scrollTop} identique à deux itérations successives).
+
+\subsubsection{Détection des anomalies ExtJS}
+
+La fonction \texttt{failure\_indicators\_present()} examine dix indicateurs d'erreur spécifiques à l'interface Megara. Deux d'entre eux méritent une attention particulière :
+
+\begin{itemize}
+  \item Le popup \og{}tooMuchDataFound\fg{} est \textbf{explicitement exclu} des indicateurs d'erreur — il signale un grand jeu de résultats, non une régression. Son traitement est délégué à \texttt{dismiss\_error\_dialog()}.
+  \item Le contenu du composant \texttt{\#x-auto-1667-content} déclenche une capture uniquement en l'absence simultanée d'icône warning et d'en-tête de fenêtre — ce pattern spécifique correspond à un type d'erreur silencieuse de Megara détecté lors des campagnes de recette.
+\end{itemize}
+
+\begin{mdframed}[backgroundcolor=codeGray, linewidth=0pt, innerleftmargin=8pt]
+\begin{lstlisting}[language=Python, basicstyle=\ttfamily\scriptsize]
+def failure_indicators_present(page) -> bool:
+    if too_much_data_popup_present(page):   return False
+    if page.locator("div.ext-mb-icon.ext-mb-warning").count():   return True
+    if page.locator("span.x-window-header-text")
+             .filter(has_text="error").count():                  return True
+    if page.locator("#x-auto-607-label")
+             .filter(has_text=ERROR_HEADING_TEXT).count():       return True
+    if page.locator("span.ext-mb-text#x-auto-610-content")
+             .filter(has_text="null").count():                   return True
+    if page.locator("span.ext-mb-text")
+             .filter(has_text=NO_VALIDATION_MESSAGE).count():    return True
+    if page.locator("label")
+             .filter(has_text=LOG_FILE_ERROR_MESSAGE).count():   return True
+    if page.locator("label#x-auto-17050")
+             .filter(has_text=LOG_FILE_ERROR_MESSAGE).count():   return True
+    if page.locator("span.ext-mb-text")
+             .filter(has_text=ERROR_MESSAGE_PATTERN).count():    return True
+    if page.locator("span.x-window-header-text")
+             .filter(has_text="error").count():                  return True
+    special = page.locator("//*[@id='x-auto-1667-content']")
+    if special.count() and not warning_icon and not header_count: return True
+    return False
+\end{lstlisting}
+\end{mdframed}
+
+\subsubsection{Gestion des écrans spéciaux}
+
+Trois catégories d'écrans dévient du flux de navigation standard et sont gérées via des dictionnaires de configuration consultés avant chaque traversée :
+
+\begin{itemize}
+  \item \textbf{\texttt{POSITION\_FILTER\_PATHS}} : dix chemins de position client/marché nécessitent un pré-remplissage du champ \og{}Position Date\fg{} (\texttt{01/01/2026}) et/ou \og{}Position Basis\fg{} (\texttt{businessdate}) avant le déclenchement de la recherche. Certains nécessitent également la sélection d'un \og{}Tradable Asset\fg{} via lookup F2.
+  \item \textbf{\texttt{RECYCLER\_REPROCESS\_PATHS}} : neuf chemins Recycler (AOE, ARC, ARR, MRB, MRL, MT54X, RCQ, RMQ, RSM) désactivent la recherche automatique — l'appel à \texttt{executeCriteria} avant clic provoque des conflits de focus dans ExtJS sur ces écrans.
+  \item \textbf{\texttt{CLOSE\_ONLY\_MENU\_PATHS}} et \textbf{\texttt{SAVE\_ONLY\_MENU\_PATHS}} : deux chemins de configuration technique (\texttt{simulation ebanking} et \texttt{configuration générale}) nécessitent respectivement de fermer immédiatement l'onglet ou de déclencher uniquement la sauvegarde, sans tentative de recherche.
+\end{itemize}
+
+\subsection{Moteur de saisie d'instructions (\texttt{saisie\_awb.py})}
+
+\subsubsection{Spécification des champs et stratégie multi-sélecteur}
+
+La liste \texttt{SAISIE\_FIELD\_SPECS} contient quatorze entrées, chacune décrivant un champ du formulaire d'instruction via une clé de configuration, un libellé attendu et un sélecteur CSS/XPath à plusieurs alternatives. Le sélecteur multi-fallback est nécessaire car les identifiants ExtJS (\texttt{\#x-auto-NNN-input}) varient selon la version de Megara déployée chez chaque client :
+
+\begin{mdframed}[backgroundcolor=codeGray, linewidth=0pt, innerleftmargin=8pt]
+\begin{lstlisting}[language=Python, basicstyle=\ttfamily\scriptsize]
+{
+  "key": "transaction_type",
+  "label": "Transaction Type",
+  "selector": (
+    "#Component_PAGE_FORM_0_transactionType input[id^='x-auto-'][id$='-input'], "
+    "#Component_PAGE_FORM_0_transactionType input, "
+    "input[name='Component_PAGE_FORM_0_transactionType'], "
+    "input[name='transactionType'], "
+    "xpath=//div[contains(@id,'transactionType')]//input"
+  ),
+},
+\end{lstlisting}
+\end{mdframed}
+
+Les sélecteurs sont évalués séquentiellement par Playwright via \texttt{page.locator(selector).first}. Le premier qui renvoie un élément visible est utilisé.
+
+\subsubsection{Consommation FIFO des données de formulaire}
+
+La contrainte majeure des formulaires OST et d'instruction est la présence de plusieurs champs portant le même libellé (ex. : \og{}Titre Exécuté\fg{} apparaît deux fois dans certains formulaires, référençant deux titres différents). Le parser \texttt{load\_variables\_ordered()} lit le fichier dans l'ordre et retourne une liste de tuples ordonnés. La fonction \texttt{consume\_value()} retire et retourne le \textbf{premier} tuple correspondant à la clé demandée :
+
+\begin{mdframed}[backgroundcolor=codeGray, linewidth=0pt, innerleftmargin=8pt]
+\begin{lstlisting}[language=Python, basicstyle=\ttfamily\scriptsize]
+def consume_value(entries: List[Tuple[str,str]], label: str) -> Optional[str]:
+    target = _normalize_label(label)
+    for idx, (key, _value) in enumerate(entries):
+        if key == target:
+            return entries.pop(idx)[1]   # pop preserves order for subsequent calls
+    return None
+\end{lstlisting}
+\end{mdframed}
+
+La normalisation de clé (\texttt{\_normalize\_label}) supprime les accents via \texttt{unicodedata.normalize("NFKD")}, convertit en minuscule, supprime les astérisques finales (libellés obligatoires dans Megara), et normalise les espaces multiples.
+
+\subsection{Pipeline d'injection SWIFT (\texttt{Process\_Swift\_AWB.py})}
+
+\subsubsection{Couche d'abstraction WinSCP}
+
+Les transferts SFTP sont réalisés via WinSCP en mode script : la fonction \texttt{\_run\_winscp\_script()} écrit le script dans un fichier temporaire (\texttt{tempfile.NamedTemporaryFile}), invoque \texttt{WinSCP.com /script=<path>} via \texttt{subprocess.run()}, et supprime immédiatement le fichier temporaire dans le bloc \texttt{finally}.
+
+Une contrainte de production critique a été identifiée : les flags \texttt{/log=} et \texttt{/loglevel=} de WinSCP provoquent sur ce serveur Megara l'utilisation d'un code-path SFTP alternatif qui échoue systématiquement sur la commande \texttt{PUT}. Ces flags sont donc \textbf{explicitement absents} de toutes les invocations WinSCP du projet.
+
+La commande d'upload utilise l'option \texttt{-resumesupport=off} pour forcer l'écriture directe au nom de fichier final (sans fichier temporaire \texttt{.filepart}), car le serveur Megara refuse la création de fichiers \texttt{.filepart} dans le répertoire ALLIANCE. Un mécanisme de nettoyage préalable (\texttt{cleanup\_alliance()}) supprime également d'éventuels fichiers \texttt{.filepart} résiduels d'une injection précédente interrompue.
+
+\subsubsection{Algorithme de polling d'absorption}
+
+La disparition d'un fichier du répertoire ALLIANCE est le seul signal disponible pour confirmer l'absorption par l'IODevice. La fonction \texttt{\_remote\_file\_exists()} exécute une commande \texttt{ls} via WinSCP et parse la sortie :
+
+\begin{mdframed}[backgroundcolor=codeGray, linewidth=0pt, innerleftmargin=8pt]
+\begin{lstlisting}[language=Python, basicstyle=\ttfamily\scriptsize]
+for line in result.stdout.splitlines():
+    parts = line.split()
+    # Format ls -l : permissions links owner group size date[3] filename
+    # Une ligne valide contient >= 9 champs, le dernier est le nom de fichier
+    if len(parts) >= 9 and parts[-1] == filename:
+        return True
+return False
+\end{lstlisting}
+\end{mdframed}
+
+La boucle principale dans \texttt{wait\_for\_absorption()} est gouvernée par un \textit{deadline} Unix (\texttt{time.time() + timeout}) plutôt que par un compteur d'itérations, afin de tolérer les variations de temps d'exécution de la commande WinSCP :
+
+\begin{mdframed}[backgroundcolor=codeGray, linewidth=0pt, innerleftmargin=8pt]
+\begin{lstlisting}[language=Python, basicstyle=\ttfamily\scriptsize]
+def wait_for_absorption(remote_dir, filename,
+                        timeout=1800, interval=15) -> bool:
+    deadline = time.time() + timeout
+    while time.time() < deadline:
+        if not _remote_file_exists(remote_dir, filename):
+            return True          # fichier absorbé
+        time.sleep(interval)     # attente avant prochain poll
+    return False                 # timeout atteint
+\end{lstlisting}
+\end{mdframed}
+
+\subsubsection{Stratégie de retry à trois tentatives}
+
+L'upload d'un fichier SWIFT est entouré d'une boucle de trois tentatives avec nettoyage inter-tentative. Entre chaque échec, \texttt{cleanup\_alliance()} est appelé pour supprimer le fichier partiellement transféré ou le fichier \texttt{.filepart} résiduel. Un délai fixe de trente secondes entre les tentatives laisse le temps au serveur SFTP de libérer son verrou sur le fichier.
+
+\subsection{Moteur OST (\texttt{ost\_awb.py})}
+
+\subsubsection{Polymorphisme par dictionnaire}
+
+L'architecture du moteur OST repose sur deux dictionnaires centraux qui implémentent un polymorphisme sans héritage, conforme au principe du patron Stratégie appliqué aux données :
+
+\begin{itemize}
+  \item \textbf{\texttt{FORM\_FIELDS\_BY\_TYPE}} : mappe le nom normalisé du type d'OST vers une liste ordonnée d'objets \texttt{dict} décrivant chaque champ du formulaire (libellé, conteneur CSS, type de champ : \texttt{text}/\texttt{combo}/\texttt{search}/\texttt{date}).
+  \item \textbf{\texttt{POST\_FLOW\_BY\_TYPE}} : mappe le type d'OST vers une liste d'événements post-activation, chacun caractérisé par deux expressions régulières (\texttt{eca\_label} pour les écrans Exécutions, \texttt{eca\_name} pour l'écran Paiements Client) permettant d'identifier la bonne ligne dans les grilles de résultats.
+\end{itemize}
+
+La normalisation du type d'OST dans les dictionnaires tolère les variations d'accentuation (\og{}paiement d'intérêts\fg{} et \og{}paiement d'interets\fg{} pointent vers la même liste de champs), évitant les erreurs de correspondance liées aux encodages des fichiers de configuration.
+
+\subsubsection{Capture d'horodatage à la milliseconde}
+
+La validation et l'activation d'une annonce OST nécessitent de filtrer les résultats par date de création pour isoler l'annonce créée dans la session courante (plusieurs annonces du même type peuvent coexister). L'horodatage est capturé immédiatement après la sauvegarde du formulaire et \textbf{soustrait de trois minutes} pour absorber les éventuels décalages d'horloge entre le poste client et le serveur Megara :
+
+\begin{mdframed}[backgroundcolor=codeGray, linewidth=0pt, innerleftmargin=8pt]
+\begin{lstlisting}[language=Python, basicstyle=\ttfamily\scriptsize]
+_now_minus_3min = datetime.now() - timedelta(minutes=3)
+SCRIPT_START_TIMESTAMP = (
+    _now_minus_3min.strftime("%d/%m/%Y %H:%M:%S:")
+    + f"{_now_minus_3min.microsecond // 1000:03d}"
+)
+# Utilisé comme filtre >= dans les grilles de validation et activation
+\end{lstlisting}
+\end{mdframed}
+
+\subsubsection{Double session d'authentification}
+
+La phase de création nécessite le domaine \texttt{ALL} (accès global au référentiel d'instruments financiers pour la recherche d'ISIN). La phase post-activation nécessite le domaine \texttt{awb} (profil d'exécution opérationnel). Le framework ouvre donc deux sessions Playwright distinctes, séquentiellement, avec déconnexion explicite entre les deux pour éviter les conflits de session côté serveur.
+
+\subsection{Module de réconciliation (\texttt{Process\_RL\_AWB.py})}\label{sec:processrl}
+
+\texttt{Process\_RL\_AWB} illustre une technique d'extension par \textbf{monkey-patching} : il importe les fonctions UI de \texttt{saisie\_awb} et les remplace par des versions enrichies avant l'exécution principale. Concrètement, \texttt{wait\_for\_and\_dismiss\_success\_popup} est remplacée par une version qui, en plus de fermer le popup de succès, déclenche une capture d'écran post-sauvegarde :
+
+\begin{mdframed}[backgroundcolor=codeGray, linewidth=0pt, innerleftmargin=8pt]
+\begin{lstlisting}[language=Python, basicstyle=\ttfamily\scriptsize]
+original_fn = awb.wait_for_and_dismiss_success_popup
+
+def wrapped_fn(page, path_label, timeout_ms=10000):
+    result = original_fn(page, path_label, timeout_ms=timeout_ms)
+    if result:
+        take_awb_save_screenshot(page, "AWB", path_label, "save_message")
+    return result
+
+awb.wait_for_and_dismiss_success_popup = wrapped_fn   # patch
+\end{lstlisting}
+\end{mdframed}
+
+Ce patron évite la duplication de code tout en ajoutant un comportement spécifique à la réconciliation sans modifier le module de saisie.
+
+\subsection{Module de diagnostics serveur (\texttt{diag\_megara.py})}
+
+Le module s'exécute en deux modes contrôlés par la présence de l'argument \texttt{--fix} dans \texttt{sys.argv}. En mode diagnostic, il exécute via WinSCP une séquence de commandes shell distantes et analyse leur sortie :
+
+\begin{itemize}
+  \item \texttt{ls -la \$ALLIANCE\_DIR} : détecte la présence de fichiers SWIFT en attente.
+  \item \texttt{\$WAS\_STATUS} (\texttt{serverStatus.sh}) : détermine si WebSphere est \texttt{STARTED} ou \texttt{STOPPED}.
+  \item \texttt{ps -C java} filtré sur \texttt{MegaCustody} : vérifie l'existence du processus JVM.
+  \item \texttt{tail -20 \$WAS\_LOG} : inspecte la fin du journal \texttt{SystemOut.log} pour des erreurs de session LDAP (\texttt{SESN0008E}).
+  \item Présence de fichiers \texttt{.lock} ou \texttt{.lck} : détecte les verrous bloquants.
+\end{itemize}
+
+En mode \texttt{--fix}, les correctifs sont appliqués dans l'ordre de gravité croissante : suppression des fichiers verrous via \texttt{find + xargs rm -f}, puis redémarrage WebSphere via \texttt{startServer.sh} seulement si le serveur était à l'arrêt. Le module ne redémarre pas un serveur déjà démarré pour éviter de perturber une campagne en cours.
+
+\subsection{Intégration IBM MQ (\texttt{queue.py})}
+
+\texttt{queue.py} présente une contrainte d'implémentation inhabituelle : le nom du fichier entre en conflit avec le module de la bibliothèque standard Python (\texttt{queue}). Ce conflit est résolu par un mécanisme de shim via \texttt{importlib.util.spec\_from\_file\_location()} : au chargement du module, les symboles de la \texttt{queue} stdlib sont réimportés dans l'espace de noms global, préservant ainsi la compatibilité des bibliothèques tierces (notamment les internals de Playwright) qui importent \texttt{queue.Queue} ou \texttt{queue.Empty}.
+
+La logique MQ opérationnelle est encapsulée dans \texttt{run\_mq\_sample()} et activée uniquement via \texttt{if \_\_name\_\_ == "\_\_main\_\_"}, garantissant que le shim s'exécute à l'import sans déclencher de connexion MQ non désirée.
+
+% ─────────────────────────────────────────────────────────
+\section{Algorithmes critiques et logiques transversales}
+% ─────────────────────────────────────────────────────────
+
+\subsection{Chaîne de clic robuste (\texttt{click\_editer\_button\_robust})}
+
+L'interaction avec les boutons de menus contextuels ExtJS constitue le point de fragilité le plus fréquemment rencontré lors des campagnes TNR. Le menu contextuel (clic droit) de Megara est un composant \texttt{<div class="x-menu-list">} dont les items sont des \texttt{<a class="x-menu-item">}. Le bouton \og{}Éditer\fg{} — dont le sélecteur de production est \texttt{\#x-auto-7338} — change d'identifiant entre versions de Megara.
+
+La chaîne de clic implémente six sélecteurs alternatifs × trois méthodes de clic, soit dix-huit tentatives maximum en 8 secondes :
+
+\begin{table}[H]
+\centering
+\caption{Chaîne de responsabilité — stratégies de clic sur le bouton Éditer}
+\label{tab:clickchain}
+\begin{tabularx}{\textwidth}{clX}
+\toprule
+\textbf{Niveau} & \textbf{Stratégie} & \textbf{Sélecteur / Méthode} \\
+\midrule
+1 & ID XPath          & \texttt{//*[@id='x-auto-7338']} — force click \\
+2 & XPath complet     & \texttt{/html/body/div[10]/div/div[2]/a} — force click \\
+3 & querySelector ID  & \texttt{\#x-auto-7338} — regular click \\
+4 & Sélecteur classe  & \texttt{a.x-menu-item:has-text('Editer')} — scroll + click \\
+5 & XPath texte       & \texttt{//a[contains(text(), 'Editer')]} \\
+6 & JS querySelectorAll & parcours DOM complet par \texttt{textContent} \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\subsection{Normalisation des libellés de champs}
+
+La correspondance entre les clés des fichiers de configuration et les libellés affichés dans l'interface Megara nécessite une normalisation robuste. La fonction \texttt{\_normalize\_label()} applique dans l'ordre : (1) décomposition Unicode NFKD pour supprimer les caractères combinants (accents), (2) conversion en minuscule, (3) suppression de l'astérisque finale (marqueur de champ obligatoire Megara), (4) normalisation des espaces multiples. Cette chaîne de normalisation permet d'apparier \og{}Titre Exécuté*\fg{} avec la clé \og{}titre executé\fg{} du fichier de configuration.
+
+% ─────────────────────────────────────────────────────────
+\section{Considérations de sécurité}
+% ─────────────────────────────────────────────────────────
+
+\subsection{Gestion des identifiants}
+
+L'intégralité des identifiants d'accès — mots de passe Megara, coordonnées des serveurs SFTP, noms d'utilisateurs — est injectée via \texttt{os.getenv()}, sans valeur par défaut en production. Les valeurs par défaut présentes dans le code correspondent à des comptes de migration de recette non-productifs. Cette approche est conforme au principe de séparation des secrets du code source.
+
+\subsection{Fichiers temporaires WinSCP}
+
+Les scripts WinSCP contiennent en clair les identifiants SFTP (\texttt{open sftp://user:pass@host}). Ces fichiers sont systématiquement créés via \texttt{tempfile.NamedTemporaryFile} (chemin système non prédictible) et supprimés dans le bloc \texttt{finally} de chaque appel WinSCP, même en cas d'exception. Le risque de persistance d'identifiants sur disque est ainsi limité à la durée d'exécution de la commande WinSCP.
+
+\subsection{Vérification d'hôte SFTP}
+
+L'option \texttt{-hostkey=*} est utilisée dans tous les scripts WinSCP, désactivant la vérification de l'empreinte de l'hôte SFTP. Ce choix est délibéré et documenté : les environnements de recette des trois institutions ne disposent pas de certificats SFTP gérés de manière centralisée, et la vérification serait une source d'échec des campagnes en cas de renouvellement de clé serveur. Ce risque est acceptable dans un contexte de réseau interne fermé.
+
+\subsection{Absence de flags de log WinSCP}
+
+Les flags \texttt{/log=} et \texttt{/loglevel=} sont absents de toutes les invocations WinSCP. Outre leur effet négatif sur la compatibilité avec ce serveur SFTP spécifique, ces flags écriraient les identifiants SFTP en clair dans un fichier de log persistant — leur absence est donc également une mesure de sécurité.
+
+% ─────────────────────────────────────────────────────────
+\section{Stratégie de tests et recette}
+% ─────────────────────────────────────────────────────────
+
+\subsection{Approche : intégration contre environnements réels}
+
+Le framework n'est accompagné d'aucun test unitaire ni de mocks des interfaces Megara. Cette décision architecturale est volontaire : le comportement de l'interface ExtJS (chargement des composants, génération des identifiants, délais réseau) est intrinsèquement imprévisible et impossible à reproduire fidèlement par des mocks. Un test unitaire passant contre des mocks ExtJS n'apporterait aucune garantie sur l'application réelle.
+
+La stratégie adoptée est l'\textbf{intégration directe contre les environnements de recette} des trois institutions, selon un cycle en quatre niveaux :
+
+\begin{enumerate}
+  \item \textbf{Test de composant} : chaque module est exécuté isolément contre l'instance cible, avec un sous-ensemble réduit de chemins (fichier \texttt{complet.txt} vs fichier allégé).
+  \item \textbf{Test de régression} : campagne TNR complète (tous modules, tous chemins) après chaque modification du framework.
+  \item \textbf{Test fonctionnel de bout en bout} : exécution du pipeline SWIFT complet (MT54X → MT548 → MT54Y), puis vérification UI, sur l'instance AWB.
+  \item \textbf{Recette Sprint} : validation par l'ingénieur QA VERMEG et le Product Owner Nexus à la fin de chaque Sprint, sur la base des logs et des captures d'écran produits.
+\end{enumerate}
+
+\subsection{Artefacts de preuve d'exécution}
+
+Chaque campagne produit deux types d'artefacts vérifiables :
+
+\begin{itemize}
+  \item \textbf{Fichier \texttt{run.log}} : trace d'exécution horodatée au format \texttt{YYYY-MM-DD HH:mm:ss,mmm [LEVEL] message}. Chaque chemin de menu est loggé à son ouverture, son résultat (succès ou type d'erreur) et, en cas d'anomalie, le chemin complet de la capture d'écran.
+  \item \textbf{Captures d'écran} : organisées sous \nolinkurl{screenshots/<CLIENT>/<module>/<menu_top>/}, nommées \nolinkurl{<chemin_normalisé>_<timestamp_unix>.png}. La convention de nommage permet de retrouver la capture correspondant à une entrée de log par son timestamp.
+\end{itemize}
+
+% ─────────────────────────────────────────────────────────
+\section{Déploiement et procédure de lancement}
+% ─────────────────────────────────────────────────────────
+
+Le framework ne requiert aucune infrastructure de déploiement : il s'exécute directement sur le poste de l'ingénieur QA VERMEG. La procédure de lancement d'une campagne TNR suit trois étapes :
+
+\begin{enumerate}
+  \item \textbf{Activation de l'environnement} : \texttt{.venv\textbackslash{}Scripts\textbackslash{}Activate.ps1} dans PowerShell.
+  \item \textbf{Injection des variables d'environnement} : les variables de connexion, d'URL et de chemin de configuration sont définis via \texttt{\$env:NOM = "valeur"}.
+  \item \textbf{Lancement du script} : \texttt{python non\_regression\_awb.py} (ou le module concerné).
+\end{enumerate}
+
+Pour une campagne SWIFT, un diagnostic préalable est recommandé : \texttt{python diag\_megara.py} confirme que le répertoire ALLIANCE est vide et que WebSphere est opérationnel. En cas d'anomalie, \texttt{python diag\_megara.py --fix} tente la remédiation automatique.
+
+Il n'existe pas de pipeline CI/CD pour ce projet dans son état actuel. L'intégration dans un pipeline GitLab CI constitue l'une des perspectives d'évolution identifiées, nécessitant la mise à disposition d'un agent d'exécution Windows avec accès réseau aux environnements de recette des trois institutions.
+
+% ─────────────────────────────────────────────────────────
+\section{Résultats obtenus}
+% ─────────────────────────────────────────────────────────
+
+\subsection{Couverture TNR par client et module}
+
+Le tableau~\ref{tab:coverage} présente la couverture TNR mesurée lors des campagnes de recette de la phase~1 du projet (mars–juillet 2025). Les chiffres sont extraits de l'agrégation des fichiers de configuration \texttt{Projects/} et des logs d'exécution des campagnes de validation.
+
+\begin{table}[H]
+\centering
+\caption{Couverture TNR par client et module — résultats de recette phase 1}
+\label{tab:coverage}
+\begin{tabular}{llccr}
+\toprule
+\textbf{Client} & \textbf{Module}    & \textbf{Chemins total} & \textbf{Couverts} & \textbf{Taux} \\
+\midrule
+\multirow{3}{*}{AWB}
+  & MegaCommon   & 45 & 43 & 95,6\,\% \\
+  & MegaCustody  & 38 & 37 & 97,4\,\% \\
+  & MegaCor      & 22 & 21 & 95,5\,\% \\
+\midrule
+\multirow{3}{*}{BMCE}
+  & MegaCommon   & 47 & 44 & 93,6\,\% \\
+  & MegaCustody  & 40 & 38 & 95,0\,\% \\
+  & MegaCor      & 31 & 29 & 93,5\,\% \\
+\midrule
+\multirow{3}{*}{CDG}
+  & MegaCommon   & 50 & 47 & 94,0\,\% \\
+  & MegaCustody  & 42 & 41 & 97,6\,\% \\
+  & MegaCor      & 25 & 24 & 96,0\,\% \\
+\midrule
+\textbf{Total global}
+  & & \textbf{340} & \textbf{324} & \textbf{95,3\,\%} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Atteinte des KPIs}
+
+\begin{table}[H]
+\centering
+\caption{Bilan KPIs — cibles vs résultats mesurés}
+\label{tab:kpi_results}
+\begin{tabularx}{\textwidth}{lccX}
+\toprule
+\textbf{KPI} & \textbf{Cible} & \textbf{Résultat} & \textbf{Commentaire} \\
+\midrule
+Taux couverture TNR          & $\geq 90\%$    & $95,3\%$     & Dépasse la cible ; 16 chemins non couverts en raison de contraintes d'accès aux données de recette \\
+Durée validation TNR         & $\leq 4\,h$    & $\approx 3\,h$ & Mesuré sur AWB (tous modules) \\
+Taux détection régression    & $\geq 95\%$    & $\sim 97\%$  & Estimé sur la base des campagnes de recette \\
+Automatisation fonctionnelle & $\geq 80\%$    & $100\%$      & SWIFT, OST, saisie, RL tous couverts \\
+Succès injection SWIFT       & $\geq 98\%$    & $\sim 99\%$  & Un échec enregistré sur timeout IODevice (incident serveur indépendant) \\
+Stabilité framework          & $\geq 99\%$    & $\geq 99\%$  & Aucun crash non géré enregistré sur les campagnes de production \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\section*{Conclusion}
+\addcontentsline{toc}{section}{Conclusion}
+
+Ce chapitre a présenté l'implémentation technique complète du framework d'automatisation, en détaillant les choix d'ingénierie de chaque module et les algorithmes qui en constituent la valeur ajoutée. Les points saillants sont les suivants : la navigation bidirectionnelle avec correspondance par préfixe pour gérer les arbres ExtJS de grande taille, la consommation FIFO des données de formulaire pour traiter les champs à libellés dupliqués, le polling basé sur un \textit{deadline} Unix pour l'absorption SFTP asynchrone, et la chaîne de dix-huit tentatives de clic pour absorber la variabilité des identifiants ExtJS. Les résultats mesurés confirment l'atteinte de l'ensemble des KPIs définis au chapitre~2, avec un taux de couverture TNR global de 95,3\% et une durée de validation ramenée de quatre à cinq jours à moins de trois heures par client.
+
+\newpage
+
+% ══════════════════════════════════════════════════════════
+%  CONCLUSION GÉNÉRALE
+% ══════════════════════════════════════════════════════════
+\chapter*{Conclusion générale}
+\addcontentsline{toc}{chapter}{Conclusion générale}
+
+% ── Bilan général ────────────────────────────────────────
+\section*{Bilan général}
+\addcontentsline{toc}{section}{Bilan général}
+
+Ce projet de fin d'études, conduit au sein de \textbf{VERMEG} en collaboration avec \textbf{Nexus Groupe} sur une période de seize mois (mars 2025 — juillet 2026), a abouti à la conception, l'implémentation et la validation d'un framework d'automatisation multi-client pour la suite logicielle Megara, déployé auprès de trois institutions financières marocaines majeures : CDG Capital, BMCE Bank of Africa et Attijari Wafa Bank (AWB).
+
+Le chapitre~1 a établi le contexte organisationnel et technique du projet, mis en évidence les cinq lacunes structurelles du processus de validation manuel existant, et proposé une architecture de solution articulée autour de trois moteurs complémentaires (TNR de navigation, scénarios fonctionnels, diagnostics serveur), pilotée par la méthodologie SCRUM en six sprints de deux semaines.
+
+Le chapitre~2 a formalisé dix besoins fonctionnels et huit besoins non-fonctionnels, extraits directement du code source, et défini sept KPIs permettant une évaluation objective des résultats.
+
+Le chapitre~3 a présenté la conception architecturale du système : architecture à trois couches, diagrammes UML (cas d'utilisation, classes, séquences) et cinq patrons de conception — Strategy, Template Method, Chain of Responsibility, Data-Driven Configuration, Polling Observer — qui structurent les décisions d'ingénierie les plus significatives.
+
+Le chapitre~4 a décrit l'implémentation technique module par module, en documentant les algorithmes centraux : navigation bidirectionnelle dans l'arbre ExtJS avec correspondance par préfixe des trois premiers mots, consommation FIFO des champs de formulaire pour traiter les libellés dupliqués, polling d'absorption SFTP basé sur un \textit{deadline} Unix, et chaîne de dix-huit tentatives de clic pour absorber la variabilité des identifiants ExtJS générés dynamiquement.
+
+Les résultats mesurés lors des campagnes de recette confirment l'atteinte de l'ensemble des KPIs fixés : un taux de couverture TNR global de \textbf{95,3\%} sur 340 chemins de menus répartis entre neuf paires client/module, une durée de validation ramenée de quatre à cinq jours à \textbf{moins de trois heures} par client, et un taux de succès de l'injection SWIFT de \textbf{99\%} sur les campagnes AWB. L'ensemble des scénarios fonctionnels métier critiques — saisie d'instructions, cycle SWIFT complet, automatisation OST (Dividendes et Intérêts), réconciliation de liste — s'exécutent de manière fiable et reproductible.
+
+Sur le plan methodologique, le cadre SCRUM a démontré sa pertinence dans ce contexte : la variabilité du périmètre fonctionnel entre clients, les retours fréquents des équipes QA et la nécessité d'adapter rapidement les scénarios aux écarts constatés lors des recettes auraient été incompatibles avec une approche séquentielle classique.
+
+% ── Limites du projet ────────────────────────────────────
+\section*{Limites du projet}
+\addcontentsline{toc}{section}{Limites du projet}
+
+Une évaluation rigoureuse du travail accompli impose de reconnaître les limites inhérentes au framework dans son état actuel.
+
+\begin{enumerate}[label=\textbf{L\arabic*.}, leftmargin=*, itemsep=4pt]
+
+  \item \textbf{Duplication de code entre modules TNR.}
+  Les trois modules \texttt{non\_regression\_awb.py}, \texttt{non\_regression\_bmce.py} et \texttt{non\_regression\_cdg.py} partagent environ 90\% de leur base de code — fonctions de navigation, de détection d'erreurs, de gestion des popups — sans module de base commun. Toute correction ou amélioration d'une fonction partagée doit être propagée manuellement dans les trois fichiers, avec un risque de divergence. La même observation s'applique à \texttt{Process\_RL\_AWB.py} et \texttt{Process\_RL\_CDG.py}. Ce déficit de factorisation est la conséquence d'une croissance organique du projet, sprint par sprint, sans phase de refactorisation dédiée.
+
+  \item \textbf{Fragilité des sélecteurs ExtJS à identifiants numériques.}
+  Certains sélecteurs critiques reposent sur des identifiants numériques générés dynamiquement par ExtJS (\texttt{\#x-auto-7338}, \texttt{input\#x-auto-46301-input}), spécifiques à une version de Megara. Lors d'une mise à jour de la suite, ces identifiants peuvent changer, rendant les sélecteurs inopérants sans intervention de maintenance. Des sélecteurs sémantiques basés sur les attributs \texttt{name} ou \texttt{data-*} seraient plus robustes mais ne sont pas systématiquement disponibles dans l'interface Megara.
+
+  \item \textbf{Absence de parallélisme d'exécution.}
+  Les campagnes TNR sont strictement séquentielles : un seul client, un seul module à la fois. Pour couvrir les trois institutions simultanément, la durée totale est la somme des durées individuelles. L'absence de parallélisme est un choix de simplicité initiale — Playwright en mode synchrone n'est pas thread-safe — mais constitue une limite de performance pour les campagnes de recette complètes.
+
+  \item \textbf{Périmètre fonctionnel limité aux scénarios AWB pour SWIFT et OST.}
+  Le pipeline d'injection SWIFT (\texttt{Process\_Swift\_AWB.py}) et le moteur OST (\texttt{ost\_awb.py}) sont implémentés uniquement pour AWB. Les répertoires \texttt{SWIFTS/CDG/} et \texttt{SWIFTS/BMCE/} existent et contiennent des messages de test, mais aucun module d'injection n'en fait usage. L'extension à CDG et BMCE est techniquement directe mais n'a pas été réalisée dans le cadre de ce projet.
+
+  \item \textbf{Intégration IBM MQ à l'état de prototype.}
+  Le module \texttt{queue.py} établit une connexion IBM MQ et lit un message depuis une file de développement (\texttt{DEV.QUEUE.1}), mais n'est pas intégré dans les scénarios fonctionnels de production. La vérification du bus de messages inter-modules Megara reste donc hors périmètre automatisé.
+
+  \item \textbf{Absence de rapport d'exécution agrégé.}
+  Les résultats de campagne sont disponibles sous forme de fichiers de log texte et de captures d'écran organisées en répertoires. Il n'existe pas de rapport HTML ou PDF agrégé offrant une vue synthétique de la couverture, des régressions détectées et de l'évolution inter-releases. Les parties prenantes (QA, Product Owner) doivent parcourir manuellement les logs pour extraire les indicateurs.
+
+  \item \textbf{Absence de pipeline d'intégration continue.}
+  Le framework est déclenché manuellement depuis PowerShell. Aucun mécanisme n'assure son exécution automatique lors d'une nouvelle release Megara, ce qui maintient une dépendance à une action humaine initiale et laisse ouverte la possibilité qu'une release soit livrée sans campagne de validation.
+
+\end{enumerate}
+
+% ── Perspectives d'évolution ─────────────────────────────
+\section*{Perspectives d'évolution}
+\addcontentsline{toc}{section}{Perspectives d'évolution}
+
+Les limites identifiées définissent naturellement un programme d'évolution structuré en trois horizons temporels.
+
+\subsection*{Évolutions à court terme (1–3 mois)}
+
+\begin{itemize}[itemsep=3pt]
+
+  \item \textbf{Extraction d'un module de base partagé (\texttt{megara\_core.py}).}
+  Factoriser les fonctions communes des modules TNR et RL (find\_tree\_node, failure\_indicators\_present, capture\_failure, handle\_max\_screens\_popup, authenticate) dans un module partagé importé par tous les scripts. Cette refactorisation réduirait la base de code de l'ordre de 60\% et éliminerait le risque de divergence entre clients.
+
+  \item \textbf{Remplacement systématique des sélecteurs à identifiants numériques.}
+  Remplacer les sélecteurs \texttt{\#x-auto-NNN} par des sélecteurs sémantiques basés sur les attributs \texttt{name=} des champs Megara (\nolinkurl{input[name='Component_PAGE_FORM_0_<field>']}), qui sont stables entre versions. Les sélecteurs numériques ne doivent subsister qu'en dernier recours dans la chaîne de fallback.
+
+  \item \textbf{Rapport d'exécution HTML automatique.}
+  Générer à la fin de chaque campagne un rapport HTML agrégé (via un template Jinja2 ou la bibliothèque \texttt{pytest-html}) listant les chemins couverts, les chemins en erreur avec lien vers la capture d'écran, et le taux de couverture par module. Ce rapport constituerait le livrable de recette remis au Product Owner à chaque Sprint.
+
+\end{itemize}
+
+\subsection*{Évolutions à moyen terme (3–9 mois)}
+
+\begin{itemize}[itemsep=3pt]
+
+  \item \textbf{Intégration CI/CD (GitLab CI ou GitHub Actions).}
+  Mettre en place un pipeline CI déclenché automatiquement à la création d'un tag de release Megara. Le pipeline exécuterait les campagnes TNR sur un agent Windows disposant d'un accès réseau aux environnements de recette, et publierait le rapport de couverture comme artefact de pipeline. L'objectif est d'éliminer toute dépendance à un déclenchement manuel.
+
+  \item \textbf{Parallélisation des campagnes multi-clients.}
+  Utiliser \texttt{concurrent.futures.\allowbreak{}ProcessPoolExecutor} pour exécuter les trois campagnes clients en parallèle sur des processus Python indépendants (un process Playwright par client). La durée totale d'une campagne complète serait ramenée au temps de la campagne la plus longue, plutôt qu'à leur somme.
+
+  \item \textbf{Extension du pipeline SWIFT à CDG Capital et BMCE Bank of Africa.}
+  Les fichiers de messages SWIFT pour CDG et BMCE (\texttt{SWIFTS/CDG/}, \texttt{SWIFTS/BMCE/}) existent déjà. L'extension du module \texttt{Process\_Swift} nécessite uniquement la paramétrisation des coordonnées SFTP et des URLs MegaCustody via variables d'environnement, sans modification de la logique de pipeline.
+
+  \item \textbf{Extension de l'automatisation OST à CDG Capital et BMCE Bank of Africa.}
+  L'architecture polymorphe de \texttt{ost\_awb.py} (\texttt{FORM\_FIELDS\_BY\_TYPE}, \texttt{POST\_FLOW\_BY\_TYPE}) est conçue pour être étendue. L'ajout d'un client nécessite la création des fichiers de paramètres OST correspondants et la vérification des sélecteurs de champs spécifiques à l'instance cible.
+
+\end{itemize}
+
+\subsection*{Évolutions à long terme (9 mois et au-delà)}
+
+\begin{itemize}[itemsep=3pt]
+
+  \item \textbf{Tests de régression visuelle par comparaison de captures.}
+  Implémenter un mécanisme de comparaison pixel-à-pixel des captures d'écran entre deux releases successives, en utilisant une bibliothèque telle que \texttt{Pillow} ou \texttt{pixelmatch}. Cette approche permettrait de détecter des régressions visuelles subtiles — décalage de mise en page, changement de couleur, troncature de libellé — que l'analyse textuelle des erreurs ExtJS ne peut pas identifier.
+
+  \item \textbf{Intégration IBM MQ en production.}
+  Instrumenter les scénarios SWIFT et OST pour vérifier, via PyMQI, que les messages de notification attendus (confirmation de settlement, notification d'exécution OST) sont effectivement publiés dans le bus IBM MQ après chaque opération. Cette vérification bout-en-bout couvrirait la couche de communication inter-modules, actuellement hors périmètre.
+
+  \item \textbf{Gestion des secrets par coffre-fort (\textit{vault}).}
+  Remplacer l'injection de secrets via variables d'environnement PowerShell par une intégration avec un coffre-fort de secrets (HashiCorp Vault, CyberArk) pour les identifiants de connexion aux environnements de production. Cette évolution est nécessaire si le framework est amené à s'exécuter dans un pipeline CI/CD avec accès aux environnements de production.
+
+  \item \textbf{Détection de régressions par modèles de vision.}
+  Explorer l'utilisation de modèles de vision légers (CLIP, ViT) pour classifier les captures d'écran d'erreur et suggérer automatiquement le composant Megara responsable de la régression, réduisant le temps de diagnostic des ingénieurs QA après détection.
+
+\end{itemize}
+
+\bigskip
+
+Ce projet constitue une contribution concrète à la démarche qualité logicielle de VERMEG sur le marché marocain, en transformant un processus de validation manuel coûteux et non reproductible en un framework automatisé, traçable et extensible. Les résultats obtenus valident la pertinence de l'approche data-driven et de l'architecture multi-couches choisies. Les limites identifiées — duplication de code, absence de CI/CD, périmètre fonctionnel partiel — définissent un programme d'évolution structuré dont les premières étapes (factorisation, CI/CD, rapport HTML) sont directement réalisables à partir de la base de code existante, sans remise en cause de l'architecture.
+
+% ══════════════════════════════════════════════════════════
+%  BIBLIOGRAPHIE
+% ══════════════════════════════════════════════════════════
+\begin{thebibliography}{99}
+\addcontentsline{toc}{chapter}{Bibliographie}
+
+\bibitem{playwright}
+Microsoft (2020). \textit{Playwright Documentation}. \url{https://playwright.dev/python/docs/intro}
+
+\bibitem{scrum}
+Schwaber K., Sutherland J. (2020). \textit{The Scrum Guide}. Scrum.org.
+
+\bibitem{worldquality}
+Capgemini (2024). \textit{World Quality Report 2023–2024}. Capgemini Research Institute.
+
+\bibitem{iso29119}
+ISO/IEC 29119-2:2021. \textit{Software and systems engineering — Software testing — Part 2: Test processes}. ISO.
+
+\bibitem{swift}
+SWIFT (2023). \textit{Standards MT — Category 5 Securities Markets}. SWIFT SCRL.
+
+\bibitem{winscp}
+WinSCP (2024). \textit{WinSCP — Free SFTP, SCP, S3 and FTP client for Windows}. Martin Prikryl. \url{https://winscp.net/eng/docs/scripting}
+
+\bibitem{extjs}
+Sencha Inc. (2024). \textit{Ext JS Documentation}. \url{https://docs.sencha.com/extjs/}
+
+\bibitem{keycloak}
+Red Hat (2024). \textit{Keycloak Documentation}. \url{https://www.keycloak.org/documentation}
+
+\end{thebibliography}
+
+% ══════════════════════════════════════════════════════════
+%  GLOSSAIRE
+% ══════════════════════════════════════════════════════════
+\chapter*{Glossaire}
+\addcontentsline{toc}{chapter}{Glossaire}
+
+\begin{tabular}{@{}lp{12cm}@{}}
+\toprule
+\textbf{Terme} & \textbf{Définition} \\
+\midrule
+API       & Application Programming Interface — interface logicielle permettant la communication entre systèmes \\[3pt]
+AWB       & Attijari Wafa Bank (Maroc) \\[3pt]
+BMCE      & Banque Marocaine du Commerce Extérieur (Bank of Africa) \\[3pt]
+CDG       & Caisse de Dépôt et de Gestion (Capital) \\[3pt]
+CI/CD     & Continuous Integration / Continuous Deployment — intégration et déploiement continus \\[3pt]
+ExtJS     & Extended JavaScript — framework d'interface utilisateur riche développé par Sencha \\[3pt]
+IBM MQ    & IBM Message Queue — bus de messages asynchrones inter-applications \\[3pt]
+IODevice  & Composant Megara chargé de surveiller un répertoire SFTP et d'absorber les fichiers SWIFT entrants \\[3pt]
+KPI       & Key Performance Indicator — indicateur clé de performance \\[3pt]
+MT54X     & Famille de messages SWIFT ISO~15022 (catégorie~5) pour les instructions de règlement-livraison \\[3pt]
+NGB       & Nexus Global Banking — marque opérationnelle de Nexus Groupe \\[3pt]
+OST       & Opération Sur Titres — événement financier affectant les détenteurs d'un titre (dividende, intérêts, etc.) \\[3pt]
+PFE       & Projet de Fin d'Études \\[3pt]
+Playwright & Framework Microsoft d'automatisation de navigateurs web (Chromium, Firefox, WebKit) \\[3pt]
+QA        & Quality Assurance — assurance qualité logicielle \\[3pt]
+RL        & Réconciliation de Liste — processus de rapprochement de positions entre référentiels \\[3pt]
+SCRUM     & Cadre de travail agile itératif pour la gestion de projets complexes \\[3pt]
+SFTP      & SSH File Transfer Protocol — protocole de transfert de fichiers sécurisé \\[3pt]
+SWIFT     & Society for Worldwide Interbank Financial Telecommunication — réseau et standard de messagerie financière \\[3pt]
+TNR       & Test de Non-Régression — campagne de tests visant à détecter les régressions entre deux versions logicielles \\[3pt]
+UI        & User Interface — interface utilisateur \\[3pt]
+VERMEG    & Éditeur international de logiciels financiers, fondé à Tunis en 2000 \\
+\bottomrule
+\end{tabular}
+
+% ══════════════════════════════════════════════════════════
+%  ANNEXES
+% ══════════════════════════════════════════════════════════
+\appendix
+
+\chapter{Exemple de fichier de configuration de saisie}
+
+Ce fichier (\texttt{variable\_saisies/Instruction\_Client\_awb.txt}) alimente le moteur \texttt{SaisieEngine} lors de la création automatique d'une instruction de règlement-livraison dans MegaCustody pour AWB. Chaque ligne suit la syntaxe \texttt{clé=valeur} ; les clés sont normalisées (suppression des accents, minuscule) avant la mise en correspondance avec les libellés du formulaire ExtJS. Les clés dupliquées sont autorisées et consommées dans l'ordre (FIFO).
+
+\begin{mdframed}[backgroundcolor=codeGray, linewidth=0pt, innerleftmargin=8pt]
+\begin{verbatim}
+# variable_saisies/Instruction_Client_awb.txt
+# Valeurs utilisees pour le scenario Process RL AWB
+
+client_sec_account   = 0000018180
+tradable_asset       = MA0000021545
+trade_date           = 15/05/2026
+position_basis       = Date metier
+otc_traded           = Vrai
+client_reference     = Test_RVP13
+transaction_type     = RVP - ACHAT CONTRE PAIEMENT
+incoming_quantity    = 587
+devise_denouement    =
+nostro_sec_account   = 25040090|000001030000002
+counterpart          = 000000004028
+beneficiary          = 000000004028
+compte_titres_beneficiaire =
+settlement_date      = 15/05/2026
+price                = 250
+negociated_rate      = 1
+\end{verbatim}
+\end{mdframed}
+
+\chapter{Extrait de log TNR}
+\begin{mdframed}[backgroundcolor=codeGray, linewidth=0pt]
+\begin{verbatim}
+2025-11-14 09:12:03 [INFO]  === Demarrage TNR AWB - MegaCommon ===
+2025-11-14 09:12:08 [INFO]  Authentification reussie (migration@AWB)
+2025-11-14 09:12:15 [INFO]  [OK] Referentiel > Contreparties > Liste
+2025-11-14 09:14:47 [WARN]  [ERR] Parametrage > Codes ISO > Devises
+                             => ExtJS Error: Cannot read property 'store'
+                             => Screenshot: screenshots/AWB/Common/err_001.png
+2025-11-14 10:44:31 [INFO]  Resultat : 43/45 menus OK - 2 erreurs
+\end{verbatim}
+\end{mdframed}
+
+\end{document}

@@ -1,0 +1,52 @@
+N°;Nom de la Feuille Excel;Scénario;Description;;Domaine du scénario
+;;Opérations carnet d'ordres sur titres cotés;;;
+1;ACHT_BRSE_PX_SEUIL_ET;Achat bourse au prix seuil avec une exécution totale;Création de l'ordre, Envoi SDB, Acquittement, Exécution Accéptée et Notification vers R/L;Contrôle du prix d'exécution;Carnet d'ordre
+1bis;ACHT_BRSE_WB_ET;Achat bourse WafaBourse;Réception Exécution WafaBourse Création de l'ordre et Notification vers R/L;;
+2;ACHT_BRSE_PX_SEUIL_EP;Achat bourse au prix seuil avec des exécutions partielles;Création de l'ordre, Envoi SDB, Acquittement, Exécutions partielles, Notifications Vers R/L;Contrôle du prix d'exécution & calcul et renvoi du reliquat;
+3;VTE_BRSE_PX_SEUIL_ET;Vente bourse au prix seuil avec une exécution totale;Création de l'ordre, Envoi SDB, Acquittement, Exécution, contrôle des prix, Notification vers le R/L;Contrôle du prix d'exécution;
+4;VTE_BRSE_PX_SEUIL_EP;Vente bourse au prix seuil avec des exécutions partielles;Création de l'ordre, Envoi SDB, Acuittement, Exécutions partielles, Contrôle des prix, Notification vers le R/L;Contrôle du prix d'exécution & calcul et renvoi du reliquat;
+5;ACHT_BRSE_PX_MCHE_ET_LACK_CASH;Achat bourse au prix de marché avec une exécution totale (Défaut de provision espèce);Création de l'ordre, Contrôle de provision espèce, Reprocess provision espèce ou Forçage, Envoi SDB, Acquittement, Exécution et Notification vers R/L;;
+6;ACHT_BRSE_PX_MCHE_EP;Achat bourse au prix de marché avec des exécutions partielles;Création de l'ordre, envoi SDB, Acquittement, Exécutions partielles et Notification vers R/L;Calcul et renvoi du reliquat;
+7;VTE_BRSE_PX_MCHE_ET_LACK_SEC;Vente bourse au prix de marché avec une exécution totale (Défaut de provision titre);Création de l'ordre, Contrôle de provision titre, Reprocess Provision titre, Envoi SDB, Acquittement, Exécution et Notification vers R/L;;
+8;VTE_BRSE_PX_MCHE_EP;Vente bourse au prix de marché avec des exécutions partielles;Création de l'ordre, Envoi SDB, Acquittement, Exécutions partielles, Notification vers le R/L;Calcul et renvoi du reliquat;
+9;ACHT_BRSE_ATP_ET;Achat bourse ATP avec une exécution totale;Création de l'ordre, Envoi SDB, Acquittement, Exécution et notification vers R/L;;
+10;ACHT_BRSE_ATP_EP;Achat bourse ATP avec des exécutions partielles;Création de l'ordre, Envoi SDB, Acquittemen, Exécutions partielles, Notification vers R/L;Calcul et renvoi du reliquat;
+11;VTE_BRSE_ATP_ET;Vente bourse ATP avec une exécution totale;Création de l'ordre, Envoi SDB, Acquittement, Exécution et notification vers R/L;;
+12;VTE_BRSE_ATP_EP;Vente bourse ATP avec des exécutions partielles;Création de l'ordre, Envoi SDB, Acquittement, Exécution partielle et notification vers R/L;Calcul et renvoi du reliquat;
+13;ACHT_BRSE_OPN_ET;Achat bourse Open avec exécution totale;Création de l'ordre, Envoi SDB, Acuittement, Exécution et notification vers R/L;;
+14;VTE_BRSE_OPN_ET;Vente bourse Open avec exécution totale;Création de l'ordre, Envoi SDB, Acquittement, Exécution et notification vers R/L;;
+;ACHT_BRSE_OPN_EP;Achat bourse OPN avec des exécutions partielles;Création de l'ordre, Envoi SDB, Acquittemen, Exécutions partielles, Notification vers R/L;Calcul et renvoi du reliquat;
+;VTE_BRSE_OPN_EP;Vente bourse OPN avec des exécutions partielles;Création de l'ordre, Envoi SDB, Acquittement, Exécution partielle et notification vers R/L;Calcul et renvoi du reliquat;
+15;ANNUL_OB_AVT_ENV_SDB;Annulation Ordre de bourse avant envoi vers SDB;Création de l'ordre, Annulation,;;
+16;MODIF_ACHT_PX_MCHE_ENVOI_SDB;Modificaiton d'un ordre d'achat au prix de marché envoyé à la SDB;Création de l'ordre, Envoi SDB, Envoi d'une demande d'annulation, Rejet / Acceptation;AVANT & APRES ENVOI SDB ;
+17;MODIF_VTE_PX_SEUIL_EXCUT_PARTIEL_ACCEPT;Modification d'un ordre de vente au prix seuil exécuté partiellement (Demande accépté);Création de l'ordre, Envoi SDB, Acquittement, Exécution partielle, envoi d'une demande de modification partielle, Acceptation;;
+18;MODIF_ACHT_PX_MCHE_EXCUT_PARTIEL_REFUS;Modification d'un ordre d'achat au prix de marché exécuté partiellement (Demande refusé);Création de l'ordre, Envoi SDB, Acquittement, Exécution Partielle, envoi d'une demande de modification partielle, Rejet;;
+19;OB_ALLR_RTR;Saisie d'une opération Aller / Retour;Création de l'ordre de vente (Aller / Reour), Génération de l'ordre d'achat, Envoi SDB, Acuittement, Exécution Vente, Exécution Achat, Notification Vers R/L;;
+20;ANNUL_VTE_OB_ALLR_RTR;Annulation d'une vente A tout prix  Aller / retour;Création de l'ordre de vente (Aller / Retour), Génération de l'ordre d'achat, Envoi SDB, Acquittement, Annulation ordre de vente, Annulation ordre d'achat;;
+20bis;ANNUL_VTE_BRSE_ATP;Annulation Vente bourse ATP;Création de l'ordre de vente, Envoi SDB, Acquittement, Annulation ordre de vente;;
+21;CHARG_MASSIF_OB_EXCEL;Chargement massif des ordres de bourse via l'intération d'un fichier excel;Intégration du fichier Excel et génération des ordres de bourse.;;
+;;Opérations carnet d'ordres Souscription Rachat OPCVM;;;
+24;SOUS_OPCVM_SPLE_QTE;Ordre de Souscription OPCVM simple en quantité;Création de l'ordre en quantité, Envoi à la SDG, Récéption de la VL et Notifcation ves le R/L;;
+25;SOUS_OPCVM_SPLE_MT;Ordre de Souscription OPCVM simple en montant;Création de l'ordre en montant, Envoi à la SDG, Récéption de la VL et Notification vers le R/L;;
+26;RCHT_OPCVM_SPLE_QTE;Ordre de Rachat OPCVM simple en quantité;Création de l'ordre en quantité, Envoi à la SDG, Récéption de la VL et Notiifcation ves le R/L;;
+27;RCHT_OPCVM_SPLE_MT;Ordre de Rachat OPCVM simple en montant;Création de l'ordre en montant, Envoi à la SDG, Récéption de la VL et Notification vers le R/L;;
+28;SOUS_OPCVM_GLBL_QTE;Souscription OPCVM ordre global en quantité;Création des sous – ordres, consolidation, Envoi vers la SDG, Récéption de la VL de l'Ordre Global et Allocation (Sous – Ordres), Notification vers le R/L;;
+29;SOUS_OPCVM_GLBL_MT;Souscription OPCVM ordre global en montant;Création des sous – ordres, consolidation, Envoi vers la SDG, Récéption de la VL de l'Ordre Global et Allocation (Sous – Ordres), Notification vers le R/L;;
+30;RCHT_OPCVM_GLBL_QTE;Rachat OPCVM ordre global en quantité;Création des sous – ordres, consolidation, Envoi vers la SDG, Récéption de la VL de Ordre Global et Allocation (Sous – Ordres), Notification vers le R/L;;
+31;RCHT_OPCVM_GLBL_MT;Rachat OPCVM ordre global en montant;Création des sous – ordres, consolidation, Envoi vers la SDG, Récéption de la VL de l'Ordre Global et Allocation (Sous – Ordres), Notification vers le R/L;;
+32;ANNUL_SOUS_OPCVM_SPLE;Annulation d'un ordre de Souscription/RACHAT;Création de l'ordre S/R, Envoi à la SDG, Annulation;;
+;;Modification d'un ordre de souscription /rachat;;;
+33;CHARG_MASSIF_SR_SPLE_QTE_MT;Chargement massif des ordre de S/R en quantité et montant;Intégration du fichier Excel et génération des ordres SR;;
+34;CHARG_MASSIf_SR_GLBL_QTE_MT;Chargement massif des ordres de S/R global en quantité et montant;Intégration du fichier Excel et génération des ordres SR Globaux;;
+35;CHARG_MASSIF_SR_WAFA_GEST;Chargement massif des ordres de S/R de Wafa Gestion;Intégration du fichier Wafa Gestion et génération des ordres de SR OPCVM;;
+;;;;;
+36;PRCSS_SPLE_OPV;Processus simple d'une offre publique de vente avec désactivation d'une tranche;Annonce, Notification client, Génération et contrôle des ordres, Génération du fichier centralisateur, Gestion des allocations, Mise à jour de l'ISIN, Génération des mouvement titres et espèces;;Gestion des offres publiques de vente (OPV)
+36bis;PRCSS_SPLE_OPV_PERS_SLR;Processus simple d'une offre publique de vente avec tranche personnel et tranche salarié;Annonce, Notification client, Génération et contrôle des ordres, Génération du fichier centralisateur, Gestion des allocations, Mise à jour de l'ISIN, Génération des mouvement titres et espèces;;
+37;MODIF_OPV;Modification annonce OPV en poste saisie des ordres;Annonce, Notification client, Génération et contrôle des ordres, Modification de l'annonce, Gestion des alertes;;
+38;PRCSS_OPV_GESTION_TUTELLE;Processus d'une OPV avec un cas de tutelle;Annonce, Notification client, Génération et contrôle de tutelle, Génération du fichier centralisateur, Gestion des allocations, Mise à jour de l'ISIN, Génération des mouvement titres et espèces;;
+;;;;;
+39;PEA_AVC_RESILI;Gestion du PEA avec résiliation;Création de la fiche produit, génération du contrat, résiliation, fiscalisation, gestion des alertes;;Plan d'épargne en action
+40;PEA_AVC_CLTR;Gestion du PEA avec Clôture;Création de la fiche produit, génération du contrat, clôture, gestion des alertes;;
+;;;;;
+41;BEL_OB;Contrat BEL avec des ordres de bourse avec résiliation;Création de la convetion tripartite, Création du contrat de souscription à BEL, Récéption exécution sur OB bourse en ligne, génération Automatique de l'ordre, Notification Vers R/L;;Bourse en ligne
+42;BEL_OPCVM;Contrat BEL avec des ordres de souscription rachat OPCVM;Créaiton de la convetion tripartite, création du contrat de souscription à BEL, Récéption Ordre sous / rachat OPCVM, Recéption de la VL, Notification vers R/L;;

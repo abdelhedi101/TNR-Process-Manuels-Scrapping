@@ -1,0 +1,40 @@
+Comptabilité>Audit
+Comptabilité>Audit>Bilan
+Comptabilité>Audit>Monitoring  Messages Comptables
+Comptabilité>Monitoring Entrées Comptables
+Comptabilité>Monitoring Entrées Comptables>Comptabilité Titres
+Comptabilité>Monitoring Entrées Comptables>Comptabilité Titres>Balance Comptable
+Comptabilité>Monitoring Entrées Comptables>Comptabilité Titres>Entrées comptables
+Comptabilité>Monitoring Entrées Comptables>Comptabilité Titres>Entrées élémentaires
+Comptabilité>Monitoring Entrées Comptables>Comptabilité Titres>Impacter Entrée comptable
+Comptabilité>Monitoring Entrées Comptables>Comptabilité Titres>Revérifier Entrée comptable
+Comptabilité>Monitoring Entrées Comptables>Messages Comptables
+Comptabilité>Operations manuelles
+Comptabilité>Operations manuelles>Inversement Entrées comptables
+Comptabilité>Operations manuelles>Inversement Messages Comptables
+Comptabilité>Operations manuelles>Réenvoi Entrées Comptables
+Comptabilité>Operations manuelles>Réparation Message comptable
+Comptabilité>Operations manuelles>Saisie manuelle
+Paramétrage>Configuration
+Paramétrage>Configuration> Type d'opération
+Paramétrage>Configuration>Clés comptables
+Paramétrage>Configuration>Clés comptables>Clés comptables
+Paramétrage>Configuration>Clés comptables>Clés de Segregation
+Paramétrage>Configuration>Clés comptables>Free Key Value 1
+Paramétrage>Configuration>Clés comptables>Free Key Value 2
+Paramétrage>Configuration>Clés comptables>Free Key Value 3
+Paramétrage>Configuration>Nom Montant
+Paramétrage>Configuration>Nom Quantité
+Paramétrage>Configuration>Schema
+Paramétrage>Configuration>Schema>Régles Debit / Credit
+Paramétrage>Configuration>Schema>Schemas Espèces
+Paramétrage>Configuration>Schema>Schemas Titres
+Paramétrage>Referentiel
+Paramétrage>Referentiel>Charte interne
+Paramétrage>Referentiel>Comptes
+Paramétrage>Referentiel>Entité Comptable
+Paramétrage>Referentiel>Profile Comptable
+Paramétrage>Referentiel>SLA Reference
+Paramétrage>Referentiel>Standards Comptables
+Paramétrage>Technique
+Paramétrage>Technique>Class dispatcher

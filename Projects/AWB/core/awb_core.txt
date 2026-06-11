@@ -1,0 +1,431 @@
+Consultation>Messages
+Consultation>Messages>Messages Entrants
+Consultation>Messages>Messages Sortants
+Consultation>Messages>Notification MT564
+Consultation>Messages>Notification MT565
+Consultation>Messages>Notification MT566
+Consultation>Messages>Notification MT568
+Consultation>Messages>Re-traitement des Messages Sortants
+Consultation>Messages>Re-traitement des Messages Sortants>Confirmation
+Consultation>Messages>Re-traitement des Messages Sortants>Instruction
+Consultation>Messages>Re-traitement des Messages Sortants>Notification
+Consultation>Messages>Re-traitement des Messages Sortants>Status and Processing Advice
+Consultation>Messages>Valider Messages Sortants
+Consultation>Position Eligible par OST
+Consultation>Position Eligible par OST>Client
+Consultation>Position Eligible par OST>Marché
+Consultation>Vue globale par annonce
+Consultation>Vue globale par annonce>Vue Globale
+Exécutions>Client
+Exécutions>Client>Annulation
+Exécutions>Client>Calcul
+Exécutions>Client>Calcul>OST Optionnelle
+Exécutions>Client>Calcul>OST d'Office
+Exécutions>Client>Consultation Exe Client
+Exécutions>Client>Consultation Mvt Client
+Exécutions>Client>Mise à jour
+Exécutions>Client>Mise à jour>Accepter Rejet exécutions
+Exécutions>Client>Mise à jour>Accepter/Rejecter Brouillon
+Exécutions>Client>Mise à jour>Mise à jour Exécution
+Exécutions>Client>Mise à jour>Mise à jour Nostro
+Exécutions>Client>Mise à jour>Mise à jour Nostro En Masse
+Exécutions>Client>Mise à jour>Prix Fraction
+Exécutions>Client>Mise à jour>Prix des Rompus
+Exécutions>Client>Mise à jour>Rejeter exécutions
+Exécutions>Client>Mise à jour>Rejeter exécutions Agence
+Exécutions>Client>Mise à jour>Rejeter exécutions Directeur Agence
+Exécutions>Client>Mise à jour>Tax Break Down
+Exécutions>Client>Mise à jour>Taxation price
+Exécutions>Client>Mise à jour>Valider exécutions
+Exécutions>Client>Mise à jour>Valider exécutions Agence
+Exécutions>Client>Mise à jour>Valider exécutions Directeur Agence
+Exécutions>Fichier Centralisateur
+Exécutions>Fichier Centralisateur>Envoi des instructions à MegaIssuer
+Exécutions>Fichier Centralisateur>Fichier Centralisateur autre que AWB
+Exécutions>Marché
+Exécutions>Marché>Annulation
+Exécutions>Marché>Calcul
+Exécutions>Marché>Calcul>OST Optionnelle
+Exécutions>Marché>Calcul>OST d'Office
+Exécutions>Marché>Consultation Exe. Marché
+Exécutions>Marché>Exécutions Marché Reçues
+Exécutions>Marché>Exécutions Marché Reçues>Exécutions Marché Reçues
+Exécutions>Marché>Exécutions Marché Reçues>Exécutions Marché Reçues>Annuler Exécution Espèce
+Exécutions>Marché>Exécutions Marché Reçues>Exécutions Marché Reçues>Annuler Exécution Titre
+Exécutions>Marché>Exécutions Marché Reçues>Exécutions Marché Reçues>Consulter Exécutions Reçues
+Exécutions>Marché>Exécutions Marché Reçues>Reconcilier Exécutions Reçues
+Exécutions>Marché>Exécutions Marché Reçues>Reconcilier Exécutions Reçues>Annuler Rec. Exécution Espèce
+Exécutions>Marché>Exécutions Marché Reçues>Reconcilier Exécutions Reçues>Annuler Rec. Exécution Titre
+Exécutions>Marché>Exécutions Marché Reçues>Reconcilier Exécutions Reçues>Reconcilier Exécution Espèce
+Exécutions>Marché>Exécutions Marché Reçues>Reconcilier Exécutions Reçues>Reconcilier Exécution Titre
+Exécutions>Marché>Mise à jour
+Exécutions>Marché>Mise à jour>Accepter/Rejecter Brouillon
+Exécutions>Marché>Mise à jour>Mise à jour Exécution
+Exécutions>Marché>Mise à jour>Mise à jour PM Reference
+Exécutions>Marché>Mise à jour>Prix Fraction
+Exécutions>Marché>Mise à jour>Prix des Rompus
+Exécutions>Mise à jour prix d'Exécution
+Exécutions>Réclamations
+Exécutions>Réclamations>Annulation
+Exécutions>Réclamations>Annulation>Annuler Espece
+Exécutions>Réclamations>Annulation>Annuler Titre
+Exécutions>Réclamations>Compensation
+Exécutions>Réclamations>Confirmation
+Exécutions>Réclamations>Confirmation>Confirmer Espèce
+Exécutions>Réclamations>Confirmation>Confirmer Titre
+Exécutions>Réclamations>Consulter
+Exécutions>Réclamations>Consulter>Réclamation Espèce
+Exécutions>Réclamations>Consulter>Réclamation Titres
+Exécutions>Réclamations>Générer
+Exécutions>Réclamations>Late Trade
+Exécutions>Réclamations>Late Trade>Détecter les Late Trades
+Exécutions>Réclamations>Late Trade>Générer réclamation sur Late Trade détécté
+Exécutions>Réclamations>Mettre à jour
+Exécutions>Réclamations>Notifications
+Exécutions>Réclamations>Notifications>Générer Notification
+Exécutions>Réclamations>Notifications>Lister Les Notifications
+Exécutions>Réclamations>Réparer
+Exécutions>Réclamations>Réparer>Réparer Espece
+Exécutions>Réclamations>Réparer>Réparer Titre
+Instructions>Client
+Instructions>Client>Consultation Inst Client
+Instructions>Client>Consultation Inst Client Agence
+Instructions>Client>Création
+Instructions>Client>Création>Génération Instructions Standing/Default
+Instructions>Client>Création>Saisie par compte
+Instructions>Client>Création>Saisie par masse
+Instructions>Client>Traitement des Instructions
+Instructions>Client>Traitement des Instructions>Accepter aprés deadline
+Instructions>Client>Traitement des Instructions>Annuler
+Instructions>Client>Traitement des Instructions>Consolider
+Instructions>Client>Traitement des Instructions>Déblocage Positions 
+Instructions>Client>Traitement des Instructions>Lister les Lock
+Instructions>Client>Traitement des Instructions>Recycler
+Instructions>Client>Traitement des Instructions>Rejecter
+Instructions>Client>Traitement des Instructions>Valider
+Instructions>Marché
+Instructions>Marché>Annulation
+Instructions>Marché>Consultation Inst Marché
+Instructions>Marché>Envoi des instructions
+Instructions>Messages MT565 Entrants / Sortants
+Instructions>Messages MT565 Entrants / Sortants>MT567 :Statut des instructions
+Instructions>Messages MT565 Entrants / Sortants>Messages Instruction Reçu
+Instructions>Messages MT565 Entrants / Sortants>Messages Instruction sortants
+Instructions>Messages MT565 Entrants / Sortants>Notification des Ordres Achat/Vente
+Opérations sur titres>Annonces
+Opérations sur titres>Annonces>Activation
+Opérations sur titres>Annonces>Annulation
+Opérations sur titres>Annonces>Clôture
+Opérations sur titres>Annonces>Consultation Des Annonces Clôturées
+Opérations sur titres>Annonces>Consultation des annonces
+Opérations sur titres>Annonces>Création
+Opérations sur titres>Annonces>Création>OST Marché Etranger
+Opérations sur titres>Annonces>Création>OST Marché Local
+Opérations sur titres>Annonces>Duplication des OST DVCA et DVOP
+Opérations sur titres>Annonces>Mise à jour
+Opérations sur titres>Annonces>Mise à jour>Accepter/Rejeter Brouillon
+Opérations sur titres>Annonces>Mise à jour>Code Coupon
+Opérations sur titres>Annonces>Mise à jour>OST Marché Local
+Opérations sur titres>Annonces>Mise à jour>OST Marché étranger
+Opérations sur titres>Annonces>Mise à jour>Utilisateur en charge
+Opérations sur titres>Annonces>Validation
+Opérations sur titres>Data Cleansing
+Opérations sur titres>Data Cleansing>Flux
+Opérations sur titres>Data Cleansing>Flux>Lister Data CA
+Opérations sur titres>Data Cleansing>Flux>Reprocesser Données manquantes
+Opérations sur titres>Data Cleansing>Golden Record
+Opérations sur titres>Data Cleansing>Golden Record>Comparer CADataFeed
+Opérations sur titres>Data Cleansing>Golden Record>Fermer Groupe
+Opérations sur titres>Data Cleansing>Golden Record>Lister CADataFeed
+Opérations sur titres>Data Cleansing>Golden Record>Lister Golden Record
+Opérations sur titres>Data Cleansing>Golden Record>Lister Groupe
+Opérations sur titres>Notifications
+Opérations sur titres>Notifications>Consultation des notifications
+Opérations sur titres>Notifications>Global
+Opérations sur titres>Notifications>Global>Envoi global
+Opérations sur titres>Notifications>Global>Génération globale
+Opérations sur titres>Notifications>Par OST
+Opérations sur titres>Notifications>Par OST>Envoi des Rappels
+Opérations sur titres>Notifications>Par OST>Envoi par OST
+Opérations sur titres>Notifications>Par OST>Génération par OST
+Paiements>Allocation
+Paiements>Allocation>Annulation
+Paiements>Allocation>Annulation>Espèce
+Paiements>Allocation>Annulation>Titre
+Paiements>Allocation>Manuelle
+Paiements>Allocation>Manuelle>Espèce Brut
+Paiements>Allocation>Manuelle>Espèce Net
+Paiements>Allocation>Manuelle>Titre
+Paiements>Allocation>Simulation
+Paiements>Allocation>Simulation>Espèce
+Paiements>Allocation>Simulation>Titre
+Paiements>Messages Entrants / Sortants
+Paiements>Messages Entrants / Sortants>CRO
+Paiements>Messages Entrants / Sortants>Messages Envoyés
+Paiements>Messages Entrants / Sortants>Messages Reçus
+Paiements>Paiements Client
+Paiements>Paiements Client>Annuler
+Paiements>Paiements Client>Annuler>Annulation massive par annonce
+Paiements>Paiements Client>Annuler>Annulation massive par evenements
+Paiements>Paiements Client>Annuler>Annulation massive par event
+Paiements>Paiements Client>Annuler>Espèce
+Paiements>Paiements Client>Annuler>Paiement Confirmé
+Paiements>Paiements Client>Annuler>Titre
+Paiements>Paiements Client>Consultation Paie. Client
+Paiements>Paiements Client>Création
+Paiements>Paiements Client>Création>Forçage
+Paiements>Paiements Client>Création>Forçage>Espèce
+Paiements>Paiements Client>Création>Forçage>Titre
+Paiements>Paiements Client>Création>Paiement Actuel
+Paiements>Paiements Client>Création>Paiement Contractuel
+Paiements>Paiements Client>Envoyer Confirmation
+Paiements>Paiements Client>Mise à jour
+Paiements>Paiements Client>Mise à jour>Mise à jour FX
+Paiements>Paiements Client>Mise à jour>Mise à jour de la Taxe
+Paiements>Paiements Client>Validation
+Paiements>Paiements Client>Validation>Paiements Espéces
+Paiements>Paiements Marché
+Paiements>Paiements Marché>Annuler
+Paiements>Paiements Marché>Annuler>Espèce
+Paiements>Paiements Marché>Annuler>Titre
+Paiements>Paiements Marché>Consultation Paie. Marché
+Paiements>Paiements Marché>Créer
+Paiements>Paiements Marché>Créer>Créer
+Paiements>Paiements Marché>Créer>Générer Ad-hoc
+Paiements>Reconciliation
+Paiements>Reconciliation>Annulation
+Paiements>Reconciliation>Annulation>Espèce
+Paiements>Reconciliation>Annulation>Titre
+Paiements>Reconciliation>Manuelle
+Paiements>Reconciliation>Manuelle>Espèce
+Paiements>Reconciliation>Manuelle>Forcage Reconciliation
+Paiements>Reconciliation>Manuelle>Titre
+Paiements>Reconciliation>Résultats de Réconciliation
+Paiements>Reconciliation>Résultats de Réconciliation>Espéce
+Paiements>Reconciliation>Résultats de Réconciliation>Titre
+Paiements>Reconciliation>Simulation
+Paiements>Reconciliation>Simulation>Espèce
+Paiements>Reconciliation>Simulation>Titre
+Rapports>Autres Rapports
+Rapports>Autres Rapports>Attestation De Prelevement IR sur Revenus Des Actions
+Rapports>Autres Rapports>Etat Mensuel Des Prelevements
+Rapports>Autres Rapports>Releve Des Revenus Sur Titres
+Rapports>Autres Rapports>Relevé des revenus titres
+Rapports>Autres Rapports>Récapitulatif des montants prélevés par type de taxe et par client sur les OST
+Rapports>Rapports Clientèle
+Rapports>Rapports Clientèle>Avis et Attestations
+Rapports>Rapports Clientèle>Avis et Attestations>Attestation De Blocage
+Rapports>Rapports Clientèle>Avis et Attestations>Attestation De Blocage - Assemblee Generale
+Rapports>Rapports Clientèle>Avis et Attestations>Attestation de prélèvement de l'impôt retenu à la source sur paiment des intérêts
+Rapports>Rapports Clientèle>Avis et Attestations>Avis de paiement des dividendes
+Rapports>Rapports Clientèle>Avis et Attestations>RejetAcceptation Instruction
+Rapports>Rapports Clientèle>Avis et Attestations>RéclamationOST
+Rapports>Rapports Clientèle>Rapports de Confirmation de paiement
+Rapports>Rapports Clientèle>Rapports de Confirmation de paiement>Confirmation du paiement - BONU
+Rapports>Rapports Clientèle>Rapports de Confirmation de paiement>Confirmation du paiement - BONUW
+Rapports>Rapports Clientèle>Rapports de Confirmation de paiement>Confirmation du paiement - CHAN
+Rapports>Rapports Clientèle>Rapports de Confirmation de paiement>Confirmation du paiement - CONV
+Rapports>Rapports Clientèle>Rapports de Confirmation de paiement>Confirmation du paiement - DECR
+Rapports>Rapports Clientèle>Rapports de Confirmation de paiement>Confirmation du paiement - DVCA
+Rapports>Rapports Clientèle>Rapports de Confirmation de paiement>Confirmation du paiement - DVOP
+Rapports>Rapports Clientèle>Rapports de Confirmation de paiement>Confirmation du paiement - INTR
+Rapports>Rapports Clientèle>Rapports de Confirmation de paiement>Confirmation du paiement - MRGR
+Rapports>Rapports Clientèle>Rapports de Confirmation de paiement>Confirmation du paiement - MRGRC
+Rapports>Rapports Clientèle>Rapports de Confirmation de paiement>Confirmation du paiement - PARI
+Rapports>Rapports Clientèle>Rapports de Confirmation de paiement>Confirmation du paiement - PRED
+Rapports>Rapports Clientèle>Rapports de Confirmation de paiement>Confirmation du paiement - REDM
+Rapports>Rapports Clientèle>Rapports de Confirmation de paiement>Confirmation du paiement - RHTS
+Rapports>Rapports Clientèle>Rapports de Confirmation de paiement>Confirmation du paiement - SPLF
+Rapports>Rapports Clientèle>Rapports de Confirmation de paiement>ConfirmationReportBONUW
+Rapports>Rapports Clientèle>Rapports de Confirmation de paiement>ConfirmationReportOPA
+Rapports>Rapports Clientèle>Rapports de Confirmation de paiement>ConfirmationReportOPR
+Rapports>Rapports Clientèle>Rapports de Notification client
+Rapports>Rapports Clientèle>Rapports de Notification client>Annonce de L'OST Assimilation
+Rapports>Rapports Clientèle>Rapports de Notification client>Annonce de L'OST Attribution gratuite avec rompus
+Rapports>Rapports Clientèle>Rapports de Notification client>Annonce de L'OST Attribution gratuite sans rompus
+Rapports>Rapports Clientèle>Rapports de Notification client>Annonce de L'OST Augmentation de Capital en numeraire
+Rapports>Rapports Clientèle>Rapports de Notification client>Annonce de L'OST Augmentation du capital en numeraire
+Rapports>Rapports Clientèle>Rapports de Notification client>Annonce de L'OST Changement de denomination
+Rapports>Rapports Clientèle>Rapports de Notification client>Annonce de L'OST Conversion des obligations
+Rapports>Rapports Clientèle>Rapports de Notification client>Annonce de L'OST Division de la valeur nominale
+Rapports>Rapports Clientèle>Rapports de Notification client>Annonce de L'OST Fusion Absorption
+Rapports>Rapports Clientèle>Rapports de Notification client>Annonce de L'OST Fusion absorption avec rompus
+Rapports>Rapports Clientèle>Rapports de Notification client>Annonce de L'OST Fusion absorption sans rompus
+Rapports>Rapports Clientèle>Rapports de Notification client>Annonce de L'OST Offre Publique De Retrait
+Rapports>Rapports Clientèle>Rapports de Notification client>Annonce de L'OST Offre Publique d Achat
+Rapports>Rapports Clientèle>Rapports de Notification client>Annonce de L'OST Paiement De Dividendes
+Rapports>Rapports Clientèle>Rapports de Notification client>Annonce de L'OST Paiement De Dividendes Optionnels
+Rapports>Rapports Clientèle>Rapports de Notification client>Annonce de L'OST Paiement d Interets
+Rapports>Rapports Clientèle>Rapports de Notification client>Annonce de L'OST Reduction De Capital
+Rapports>Rapports Clientèle>Rapports de Notification client>Annonce de L'OST Remboursement Du Capital
+Rapports>Rapports Clientèle>Rapports de Notification client>Annonce de L'OST Remboursement Partiel
+Rapports>Rapports Clientèle>Rapports de Notification client>Annonce de L'OST Souscription D Obligations Convertibles En Actions
+Rapports>Rapports Reglementaires
+Rapports>Rapports Reglementaires>AUGMENTATION DE CAPITAL
+Rapports>Rapports Reglementaires>Attestation Paiement Dividendes
+Rapports>Rapports Reglementaires>Attestation Paiements Interets XLS
+Rapports>Rapports Reglementaires>AttestationPaiementInterets
+Rapports>Rapports Reglementaires>Declaration TPA
+Rapports>Rapports Reglementaires>Declaration TPA Marché Etranger
+Rapports>Rapports Reglementaires>Declaration TPA Marché local
+Rapports>Rapports Reglementaires>PAIEMENT DE DIVIDENDES
+Paramétrage>Advanced>Cash Config>Cash Context
+Paramétrage>Advanced>Cash Config>Min Balance SLA
+Paramétrage>Advanced>Incoming Routing>Address Setup
+Paramétrage>Advanced>Incoming Routing>MCNotificationImpactSLA
+Paramétrage>Advanced>Incoming Routing>Routing SLA
+Paramétrage>Advanced>Incoming Routing>Swift Rule
+Paramétrage>Advanced>Internal Parameters>Constraint Instantiation SLA
+Paramétrage>Advanced>Other Configs>Class Dipatcher
+Paramétrage>Advanced>Other Configs>Massive Load
+Paramétrage>Advanced>Other Configs>Search Caches
+Paramétrage>Advanced>Other Configs>Update BusinessDate
+Paramétrage>Advanced>Outgoing Routing>Channel Configuration
+Paramétrage>Advanced>Outgoing Routing>Jasper Report Driver Configuration
+Paramétrage>Advanced>Outgoing Routing>Notification Type
+Paramétrage>Advanced>Outgoing Routing>Scripting Configuration
+Paramétrage>Advanced>Outgoing Routing>Scripting Configuration>Scripting Config
+Paramétrage>Advanced>Outgoing Routing>Scripting Configuration>Scripting Driver Config
+Paramétrage>Advanced>Outgoing Routing>Swift Driver Configuration
+Paramétrage>Advanced>Technical Config>Chargement des configurations
+Paramétrage>Advanced>Technical Config>Excel Driver
+Paramétrage>Advanced>Technical Config>Excel Driver>Config
+Paramétrage>Advanced>Technical Config>Excel Driver>IOExcelGConfig
+Paramétrage>Advanced>Technical Config>Presentation
+Paramétrage>Advanced>Technical Config>Presentation>Next To Do Actions
+Paramétrage>Alertes>Alertes MegaCommon
+Paramétrage>Alertes>Alertes OST
+Paramétrage>Alertes>SLA Gestion
+Paramétrage>Alertes>SLA Gestion OST
+Paramétrage>Anciens liens>Corrections Data CA
+Paramétrage>Anciens liens>Création
+Paramétrage>Anciens liens>MT567>Générer Ad hoc MT 567 pour MEET/ XMET
+Paramétrage>Anciens liens>MT567>Générer MT567 Ad Hoc
+Paramétrage>Anciens liens>MT568>Envoyer MT568
+Paramétrage>Anciens liens>MT568>Fill MT568
+Paramétrage>Anciens liens>MT568>Lister
+Paramétrage>Anciens liens>MT568>MT568
+Paramétrage>Anciens liens>OST sans Brouillon
+Paramétrage>Anciens liens>Paiement Confirmé
+Paramétrage>Anciens liens>Réconciliation>Consultation
+Paramétrage>Anciens liens>Réconciliation>Réconcilier
+Paramétrage>Anciens liens>Vue Globale ALL
+Paramétrage>Autre>Reports>AckedOutgoingSwifts
+Paramétrage>Autre>Reports>IncomingSwiftErrors
+Paramétrage>Autre>Reports>Task To Do
+Paramétrage>Autre>Reports>TotalIncomingSwift
+Paramétrage>Autre>Reports>TotalOutgoingSwift
+Paramétrage>Autre>Reports>TotalSwift
+Paramétrage>Autre>Reports>Uninstructed Balance
+Paramétrage>Autre>Web Access>Client Informations>Accounts>Client Cash Account
+Paramétrage>Autre>Web Access>Client Informations>Accounts>Client Securities Account
+Paramétrage>Autre>Web Access>Client Informations>Entities>Organizations
+Paramétrage>Autre>Web Access>Client Informations>Entities>Physical Clients
+Paramétrage>Autre>Web Access>Client Position>Cash Position>Client Balance
+Paramétrage>Autre>Web Access>Client Position>Cash Position>Client Pending Movements
+Paramétrage>Autre>Web Access>Client Position>Client Eligible Position
+Paramétrage>Autre>Web Access>Client Position>Security Position>Client Pending Movements
+Paramétrage>Autre>Web Access>Client Position>Security Position>Client Position
+Paramétrage>Autre>Web Access>List Client Entitlements
+Paramétrage>Autre>Web Access>List Client Instructions
+Paramétrage>Autre>Web Access>List Client Notifications
+Paramétrage>Autre>Web Access>List Client Payments>List Cash Payments
+Paramétrage>Autre>Web Access>List Client Payments>List Confirmation Message
+Paramétrage>Autre>Web Access>List Client Payments>List Security Payments
+Paramétrage>Autre>Web Access>List Corporate Action
+Paramétrage>CGC>CGC Caller SLA
+Paramétrage>CGC>CGC Position Impact Setup
+Paramétrage>CGC>Cost Amount SLA
+Paramétrage>CGC>Fungibility Keys Setup
+Paramétrage>CGC>MegaCor CGC Impact Setup
+Paramétrage>CGC>Ordering Method Setup
+Paramétrage>CGC>Transaction Ordering Keys
+Paramétrage>Commissions>Créer/Afficher Règle de Commissionnement
+Paramétrage>Commissions>SLA Commission d'Intermédiation
+Paramétrage>Commissions>SLA Commissions de Bourse
+Paramétrage>Commissions>SLA Règles de Commissionnement MegaCor
+Paramétrage>Comptabilité>SLA de comptabilité
+Paramétrage>Configuration CRA>Config Allocation
+Paramétrage>Configuration CRA>Config Consolidation
+Paramétrage>Configuration CRA>Config Réconciliation
+Paramétrage>Dépendance des champs
+Paramétrage>Echéancier>Configuration OST générées depuis l'Echéancier
+Paramétrage>Exécutions>SLA Calcul Fraction
+Paramétrage>Exécutions>SLA Configuration Workflow
+Paramétrage>Exécutions>SLA Gestion Espèce
+Paramétrage>Exécutions>SLA Methode de Calcul
+Paramétrage>Exécutions>SLA Nostro pour calcul d'exécutions
+Paramétrage>Exécutions>SLA éligibilité Compte espèce 
+Paramétrage>Golden Record>Configuration Data Cleansing
+Paramétrage>Golden Record>Configuration On Bloor
+Paramétrage>Golden Record>Modifications de la Configuration
+Paramétrage>Golden Record>SLA Tâches à Faire
+Paramétrage>Instruction>Config Process Individuel
+Paramétrage>Instruction>Freeze Configuration 
+Paramétrage>Instruction>SLA Date Limite Client
+Paramétrage>Instruction>SLA Forex
+Paramétrage>Instruction>SLA Instruction par Défaut
+Paramétrage>Jobs Automatiques>Config Activation Automatique de l'OST
+Paramétrage>Jobs Automatiques>Config Job Automatique
+Paramétrage>Notification>Cible de notification
+Paramétrage>Notification>Données à Notifier
+Paramétrage>Notification>Profil de Reporting
+Paramétrage>Notification>SLA Date de Rappel
+Paramétrage>Notification>SLA Notification
+Paramétrage>Notification>SLA Notification par Défaut
+Paramétrage>Notification>SLA Reporting Claims Marché
+Paramétrage>Notification>SLA Reporting Client 
+Paramétrage>Notification>SLA Reporting Nostro
+Paramétrage>Operation Log>List Operation Log
+Paramétrage>Operation Log>Operation Log Config
+Paramétrage>Paiement>SLA Contractual Payment
+Paramétrage>Paiement>SLA Génération de Comptabilité
+Paramétrage>Paiement>SLA Validation Postage Comptabilité
+Paramétrage>Position>Eligible Account>Eligible Cash Account
+Paramétrage>Position>Eligible Account>Eligible Nostro Cash 
+Paramétrage>Position>Eligible Position Set Up
+Paramétrage>Position>Eligible Position Set Up>Block Position SLA
+Paramétrage>Position>Eligible Position Set Up>Eligible Position Date
+Paramétrage>Position>Eligible Position Set Up>Eligible date config
+Paramétrage>Position>Eligible Position Set Up>Find / Create Eligible Position Setup
+Paramétrage>Position>Security Position Config>Ordering Configuration
+Paramétrage>Position>Security Position Config>OwnerShip Date SLA
+Paramétrage>Position>Security Position Config>PendingMvt Config
+Paramétrage>Position>Security Position Config>PendingMvt Config> Security Context
+Paramétrage>Position>Security Position Config>PendingMvt Config>Mvt Status
+Paramétrage>Position>Security Position Config>PendingMvt Config>SPMvtStatusSLA
+Paramétrage>Position>Security Position Config>Position Config
+Paramétrage>Position>Security Position Config>Position Config>FungibleKeys
+Paramétrage>Position>Security Position Config>Position Config>Impact By event SLA
+Paramétrage>Position>Security Position Config>Position Config>Impact On Position
+Paramétrage>Position>Security Position Config>Position Config>KeyConfig
+Paramétrage>Position>Security Position Config>Position Config>Position Nature
+Paramétrage>Position>Security Position Config>Position Config>SP Impact On Position SLA
+Paramétrage>Position>Security Position Config>Position Depo SLA
+Paramétrage>Position>Security Position Config>TransactionIndicatorSLA
+Paramétrage>RealMainEntity
+Paramétrage>Réclamations>Claim Management SLA
+Paramétrage>Réclamations>Claim Reporting SLA
+Paramétrage>Régles de Contrôle>CA status Config
+Paramétrage>Régles de Contrôle>His Rule Config
+Paramétrage>Régles de Contrôle>Incomplete State Config
+Paramétrage>SLA Référence
+Paramétrage>Taxe>Configuration>Créer/Afficher Catégorie Fiscale
+Paramétrage>Taxe>Configuration>Créer/Afficher Nature Fiscale
+Paramétrage>Taxe>Configuration>Créer/Afficher Profil Fiscal
+Paramétrage>Taxe>Configuration>Créer/Afficher SLA Execption de Taxe
+Paramétrage>Taxe>Configuration>Créer/Afficher SLA Exonération de Taxe
+Paramétrage>Taxe>Configuration>Créer/Afficher SLA Règle Fiscale
+Paramétrage>Taxe>Configuration>Créer/Afficher Traité Bilatéral
+Paramétrage>Taxe>Référentiel>Créer/Afficher Autorité Fiscale
+Paramétrage>Taxe>Référentiel>Créer/Afficher Crédit de Taxe
+Paramétrage>Taxe>Référentiel>Créer/Afficher Exercice Fiscal
+Paramétrage>Taxe>Référentiel>Créer/Afficher Nom Classification Fiscale
+Paramétrage>Taxe>Référentiel>Créer/Afficher Règle de Calcul de Taxe
+Paramétrage>Taxe>Référentiel>Créer/Afficher Type de Taxation
+Paramétrage>Transaction Fees>Find/Create Bill By Process
+Paramétrage>Transaction Fees>Find/Create Transaction Fees
+Paramétrage>Transaction Fees>Find/Create Transaction Fees Job
+Paramétrage>Transaction Fees>Find/Create Transaction Fees Profile
+Paramétrage>Transaction Fees>Find/Create Transaction Fees SLA
+Paramétrage>Transaction Fees>Manual Transaction Fees Process

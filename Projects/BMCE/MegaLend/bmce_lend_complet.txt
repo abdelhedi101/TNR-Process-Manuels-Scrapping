@@ -1,0 +1,225 @@
+Facture>Transaction Fees
+Facture>Transaction Fees>  Transaction Fees Job
+Facture>Transaction Fees>  Transaction Fees Profile
+Facture>Transaction Fees>  Transaction Fees SLA
+Facture>Transaction Fees> Transaction Fees
+Facture>Transaction Fees>Compute Transaction Fees
+Facture>Transaction Fees>Report
+Facture>Transaction Fees>Report>CommissionAPayer
+Facture>Transaction Fees>Report>Confirmation de l'emprunteur
+Facture>Transaction Fees>Report>Confirmation du preteur
+Facture>Transaction Fees>Report>Interet de l'emprunteur
+Facture>Transaction Fees>Report>Interet du preteur
+Facture>Transaction Fees>Report>Interet sur loyer
+Facture>Transaction Fees>Report>Loyer de la valeur
+Facture>Transaction Fees>Report>Notification D'ajustement
+Facture>Transaction Fees>Report>Prorogation
+Facture>Transaction Fees>Report>Recherche des contrats
+Facture>Transaction Fees>Report>TitrePreterEmpruntes
+Facture>Transaction Fees>Report>lendableSecurity
+Facture>Transaction Fees>Transaction Fees
+Facture>Transaction Fees>Transaction Fees Job
+Facture>Transaction Fees>Transaction Fees Profile
+Facture>Transaction Fees>Transaction Fees SLA
+Intérêt et Commissions> Afficher les Intérêt
+Intérêt et Commissions> Monitoring
+Intérêt et Commissions>Afficher les Intérêt
+Intérêt et Commissions>Afficher les commissions
+Intérêt et Commissions>Afficher les commissions
+Intérêt et Commissions>Monitoring
+Notifications>Chargement opérations PE
+Notifications>Messages
+Notifications>Messaging Setup
+Notifications>Messaging Setup> Channel Configuration
+Notifications>Messaging Setup> Client Reporting SLA
+Notifications>Messaging Setup> Liste Des Notification 548
+Notifications>Messaging Setup> Liste Des Notifications 54X et 54Y
+Notifications>Messaging Setup> Market Reporting SLA
+Notifications>Messaging Setup> Notification Type
+Notifications>Messaging Setup>Channel Configuration
+Notifications>Messaging Setup>Client Reporting SLA
+Notifications>Messaging Setup>Liste Des Notification 548
+Notifications>Messaging Setup>Liste Des Notifications 54X et 54Y
+Notifications>Messaging Setup>Market Reporting SLA
+Notifications>Messaging Setup>Notification Type
+Position>Megalend Position
+Position>Megalend Position>MLCash Position
+Position>Megalend Position>MLSecurity Position
+Position>Position
+Position>Position>Main Entity Position
+Position>Position>Main Entity Transaction
+Position>Position>Sec Account Record
+Position>Position>Sec Account Transaction
+Position>Stock Transfer Event
+Position>Valorization
+Position>Valorization>Valorization Methods
+Position>cash Position
+Position>cash Position>Cash Balance
+Position>cash Position>cash Movement
+Position>recheck Security Position
+Report>CommissionAPayer
+Report>Confirmation de l'emprunteur
+Report>Confirmation du preteur
+Report>Interet de l'emprunteur
+Report>Interet du preteur
+Report>InteretSurLoyer
+Report>Interêt sur Loyer
+Report>Loyer de la valeur
+Report>Notification D'ajustement
+Report>Prorogation
+Report>Recherche des contrats
+Report>TitrePreterEmpruntes
+Report>lendableSecurity
+Setup>Client SLA
+Setup>Client SLA>Client Cash Acc Proxy SLA
+Setup>Client SLA>Client Sec Acc Proxy SLA
+Setup>Client SLA>Eligible Client Cash Acc SLA
+Setup>Client SLA>Preferred Client Cash Account SLA
+Setup>Collateral Constraints SLA
+Setup>Collateral Constraints SLA>SLA Currency Haircut
+Setup>Collateral Constraints SLA>SLA Eligible Currencies
+Setup>Collateral Constraints SLA>SLA Eligible Securities
+Setup>Collateral Constraints SLA>SLA Security Haircut
+Setup>Custodian SLA
+Setup>Custodian SLA>Custodian SLA
+Setup>Custodian SLA>Eligible Custodian
+Setup>Custodian SLA>Eligible Nostro Cash Account
+Setup>Custodian SLA>Eligible Nostro SLA
+Setup>Custodian SLA>Nostro Sec SLA
+Setup>Custodian SLA>Prefered Nostro Cash Account SLA
+Setup>Fees SLA
+Setup>Fees SLA>SLABorrower
+Setup>Fees SLA>SLABorrower
+Setup>Fees SLA>SLALenderFee
+Setup>Fees SLA>SLALenderFee
+Setup>Position Configuration
+Setup>Position Configuration>Contract events SLA
+Setup>Position Configuration>Hold Position Configuration
+Setup>Position Configuration>Impact On Position SLA
+Setup>Position Configuration>Impact on position
+Setup>Position Configuration>PositionDepoSLA
+Setup>Position Configuration>Transaction Indicator SLA
+Setup>Referential
+Setup>Referential>Client & Accounts
+Setup>Referential>Client & Accounts>Client Cash Acc
+Setup>Referential>Client & Accounts>Client Sec Account
+Setup>Referential>Client & Accounts>Eligible Custodians
+Setup>Referential>Client & Accounts>Eligible Nostro Cash Accounts
+Setup>Referential>Client & Accounts>Nostro Cash Account
+Setup>Referential>Client & Accounts>Nostro Sec Account
+Setup>Referential>Cross Parity
+Setup>Referential>Data Flow
+Setup>Referential>Data Flow>Rating Evaluation
+Setup>Referential>Entities
+Setup>Referential>Entities>Client Group
+Setup>Referential>Entities>Several Entity Roles
+Setup>Referential>Entities>Individual
+Setup>Referential>Entities>Main Entity
+Setup>Referential>Entities>Organizations
+Setup>Referential>Entities>Entity Roles
+Setup>Referential>Entities>Entity Roles>Asset Manager
+Setup>Referential>Entities>Entity Roles>Bank
+Setup>Referential>Entities>Entity Roles>Borrower
+Setup>Referential>Entities>Entity Roles>Branch
+Setup>Referential>Entities>Entity Roles>Broker
+Setup>Referential>Entities>Entity Roles>CSD
+Setup>Referential>Entities>Entity Roles>Central Bank
+Setup>Referential>Entities>Entity Roles>Clearing House
+Setup>Referential>Entities>Entity Roles>Client
+Setup>Referential>Entities>Entity Roles>Codification Source
+Setup>Referential>Entities>Entity Roles>Correspondent
+Setup>Referential>Entities>Entity Roles>Counterpart
+Setup>Referential>Entities>Entity Roles>Custodian
+Setup>Referential>Entities>Entity Roles>Custodian By International Broker
+Setup>Referential>Entities>Entity Roles>Fiscal Authority
+Setup>Referential>Entities>Entity Roles>Fund Distributor
+Setup>Referential>Entities>Entity Roles>Fund Manager
+Setup>Referential>Entities>Entity Roles>Guarantor
+Setup>Referential>Entities>Entity Roles>Intermediary
+Setup>Referential>Entities>Entity Roles>Issuer
+Setup>Referential>Entities>Entity Roles>Issuer Agent
+Setup>Referential>Entities>Entity Roles>Lender
+Setup>Referential>Entities>Entity Roles>Paying Agent
+Setup>Referential>Entities>Entity Roles>Provider
+Setup>Referential>Entities>Entity Roles>Proxy
+Setup>Referential>Entities>Entity Roles>Registrar
+Setup>Referential>Entities>Entity Roles>Stock Exchange
+Setup>Referential>Financial Instrument
+Setup>Referential>Financial Instrument>Security
+Setup>Referential>Financial Instrument>Security By Market
+Setup>Referential>Generic Data
+Setup>Referential>Generic Data>Account Category
+Setup>Referential>Generic Data>Calendars
+Setup>Referential>Generic Data>Calendars>Country Calendar
+Setup>Referential>Generic Data>Calendars>Currency Calendar
+Setup>Referential>Generic Data>Calendars>Holiday
+Setup>Referential>Generic Data>Calendars>Holiday>Exceptional Holiday
+Setup>Referential>Generic Data>Calendars>Holiday>Permanent Holiday
+Setup>Referential>Generic Data>Calendars>Holiday>Weekly Holiday
+Setup>Referential>Generic Data>Calendars>Main Entity BC
+Setup>Referential>Generic Data>Country
+Setup>Referential>Generic Data>Currency
+Setup>Referential>Generic Data>Entity Sector
+Setup>Referential>Generic Data>Market
+Setup>Referential>Generic Data>VAT Configuration
+Setup>Referential>His Rule Config
+Setup>Referential>Price Data
+Setup>Referential>Price Data>Alternative Code
+Setup>Referential>Price Data>Price Set
+Setup>Referential>Price Data>Provider
+Setup>Referential>Rating
+Setup>Referential>Rating>Rating
+Setup>Referential>Rating>Rating Agency
+Setup>Referential>Rating>Rating Class
+Setup>Referential>Rating>Rating Definition
+Setup>Referential>Rating>Rating Evaluation
+Setup>SLA Reference
+Setup>Technical Configuration
+Setup>Technical Configuration>Class Dispatche
+Setup>Technical Configuration>Monitoring SLA
+Setup>Technical Configuration>SystemConfig
+Setup>Technical Configuration>Test Tool
+Type de contrat>Chargement massif
+Type de contrat>Confirmer les Mouvements
+Type de contrat>Contrat modèle/Contrat cadre
+Type de contrat>Contrat modèle/Contrat cadre> Contract modèle
+Type de contrat>Contrat modèle/Contrat cadre> Contrat cadre
+Type de contrat>Contrat modèle/Contrat cadre>Clôturer Contrat cadre
+Type de contrat>Contrat modèle/Contrat cadre>Contract modèle
+Type de contrat>Contrat modèle/Contrat cadre>Contrat cadre
+Type de contrat>Contrat modèle/Contrat cadre>Type du contrat cadre
+Type de contrat>Contrat modèle/Contrat cadre>Valider contrat cadre
+Type de contrat>Contrat modèle/Contrat cadre>Valider contrat modèle
+Type de contrat>Contrat simple manuel
+Type de contrat>Contrat simple manuel>prét-emprunt
+Type de contrat>Contrat simple manuel>prét-emprunt> Monitoring des contrats de prét-emprunts
+Type de contrat>Contrat simple manuel>prét-emprunt>Ajustement
+Type de contrat>Contrat simple manuel>prét-emprunt>Ajustement>Ajuster
+Type de contrat>Contrat simple manuel>prét-emprunt>Ajustement>Envoie pour dénouement
+Type de contrat>Contrat simple manuel>prét-emprunt>Ajustement>MarketToMarket
+Type de contrat>Contrat simple manuel>prét-emprunt>Ajustement>Repair
+Type de contrat>Contrat simple manuel>prét-emprunt>Ajustement>Valider les Ajustements
+Type de contrat>Contrat simple manuel>prét-emprunt>Annulation
+Type de contrat>Contrat simple manuel>prét-emprunt>Initiation
+Type de contrat>Contrat simple manuel>prét-emprunt>Initiation>Envoie pour dénouement
+Type de contrat>Contrat simple manuel>prét-emprunt>Initiation>Recheck
+Type de contrat>Contrat simple manuel>prét-emprunt>Initiation>Saisie
+Type de contrat>Contrat simple manuel>prét-emprunt>Modifier
+Type de contrat>Contrat simple manuel>prét-emprunt>Modifier  la date de clôture
+Type de contrat>Contrat simple manuel>prét-emprunt>Monitoring des contrats de prét-emprunts
+Type de contrat>Contrat simple manuel>prét-emprunt>Repair
+Type de contrat>Contrat simple manuel>prét-emprunt>Retour
+Type de contrat>Contrat simple manuel>prét-emprunt>Retour>Envoie pour dénouement
+Type de contrat>Contrat simple manuel>prét-emprunt>Retour>Repair
+Type de contrat>Contrat simple manuel>prét-emprunt>Retour>Retour
+Type de contrat>Contrat simple manuel>prét-emprunt>Retour>Valider les Retours
+Type de contrat>Contrat simple manuel>prét-emprunt>Résiliation
+Type de contrat>Contrat simple manuel>prét-emprunt>Résiliation>Création
+Type de contrat>Contrat simple manuel>prét-emprunt>substitution
+Type de contrat>Contrat simple manuel>prét-emprunt>substitution>Envoie pour dénouement
+Type de contrat>Contrat simple manuel>prét-emprunt>substitution>Repair
+Type de contrat>Contrat simple manuel>prét-emprunt>substitution>Substituter
+Type de contrat>Contrat simple manuel>prét-emprunt>substitution>Valider les Substitutions
+Type de contrat>Force Check Titre
+Type de contrat>Monitoring  des contract P/E
+Type de contrat>Valider les contrats

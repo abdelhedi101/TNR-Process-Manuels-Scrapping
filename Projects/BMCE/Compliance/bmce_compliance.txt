@@ -1,0 +1,169 @@
+Configuration Système>Autres Configurations>Cash Position Configuration
+Configuration Système>Autres Configurations>ColouredEntity
+Configuration Système>Autres Configurations>ExpandedSla
+Configuration Système>Autres Configurations>Main Screen Config
+Configuration Système>Autres Configurations>Notification Configuration
+Configuration Système>Autres Configurations>Notification Configuration>Client Setup
+Configuration Système>Autres Configurations>Notification Configuration>Client Setup>Client Notification SLA
+Configuration Système>Autres Configurations>Notification Configuration>Market Setup
+Configuration Système>Autres Configurations>Notification Configuration>Market Setup>Market Notification SLA
+Configuration Système>Autres Configurations>Notification Setup>Notification In Configuration
+Configuration Système>Autres Configurations>Notification Setup>Notification In Configuration>Routing SLA
+Configuration Système>Autres Configurations>Notification Setup>Notification Out Configuration
+Configuration Système>Autres Configurations>Notification Setup>Notification Out Configuration>Channel Configuration
+Configuration Système>Autres Configurations>Pricing Configuration
+Configuration Système>Autres Configurations>Runnable Jobs>Bill Runnable Jobs
+Configuration Système>Autres Configurations>Runnable Jobs>Holding Fees Runnable Jobs
+Configuration Système>Autres Configurations>Runnable Jobs>MT535 Runnable Jobs
+Configuration Système>Autres Configurations>Runnable Jobs>MT536 Runnable Jobs
+Configuration Système>Autres Configurations>Runnable Jobs>MT537 Runnable Jobs
+Configuration Système>Autres Configurations>Securities Position Configuration
+Configuration Système>Autres Configurations>Securities Position Configuration>Load Position Config
+Configuration Système>Autres Configurations>Securities Position Configuration>Profile By Valorization Purpose
+Configuration Système>Autres Configurations>Securities Position Configuration>Securities Position
+Configuration Système>Autres Configurations>System Parmeters
+Configuration Système>Autres Configurations>Technical Configuration>Clean Config
+Configuration Système>Autres Configurations>Technical Configuration>Excel Driver
+Configuration Système>Autres Configurations>Technical Configuration>Excel Driver>Config
+Configuration Système>Autres Configurations>Technical Configuration>Excel Driver>IO Config
+Configuration Système>Autres Configurations>Technical Configuration>Import Data
+Configuration Système>Autres Configurations>Technical Configuration>Import Data>Import From Excel
+Configuration Système>Autres Configurations>Technical Configuration>Import Data>Import From Text
+Configuration Système>Autres Configurations>Technical Configuration>Import Data>Load Static Data
+Configuration Système>Autres Configurations>Technical Configuration>Monitor Dynamic Join Configuration
+Configuration Système>Autres Configurations>Technical Configuration>Notification Setup>Notification In Configuration
+Configuration Système>Autres Configurations>Technical Configuration>Notification Setup>Notification In Configuration> Impact Configuration
+Configuration Système>Autres Configurations>Technical Configuration>Notification Setup>Notification In Configuration> Impact Configuration>Impacts
+Configuration Système>Autres Configurations>Technical Configuration>Notification Setup>Notification In Configuration> Impact Configuration>MT535 Impact SLA
+Configuration Système>Autres Configurations>Technical Configuration>Notification Setup>Notification In Configuration> Impact Configuration>MT536 Impact SLA
+Configuration Système>Autres Configurations>Technical Configuration>Notification Setup>Notification In Configuration> Impact Configuration>MT537 Impact SLA
+Configuration Système>Autres Configurations>Technical Configuration>Notification Setup>Notification In Configuration> Impact Configuration>Request Security Statement Impact SLA 
+Configuration Système>Autres Configurations>Technical Configuration>Notification Setup>Notification In Configuration>Routing SLA
+Configuration Système>Autres Configurations>Technical Configuration>Notification Setup>Notification Out Configuration
+Configuration Système>Autres Configurations>Technical Configuration>Notification Setup>Notification Out Configuration>Channel Configuration
+Configuration Système>Autres Configurations>Technical Configuration>Notification Setup>Notification Out Configuration>Notification Types
+Configuration Système>Autres Configurations>Technical Configuration>Presentation >ActionsSuggestions
+Configuration Système>Autres Configurations>Technical Configuration>Presentation >ActionsSuggestions>Current To Do Actions
+Configuration Système>Autres Configurations>Technical Configuration>Presentation >ActionsSuggestions>Next To Do Actions
+Configuration Système>Autres Configurations>Technical Configuration>Presentation >Homepage
+Configuration Système>Autres Configurations>Technical Configuration>Presentation >Report Template
+Configuration Système>Autres Configurations>Technical Configuration>Presentation >Screen Generator
+Configuration Système>Autres Configurations>Technical Configuration>Process Monitoring> Log Configuration
+Configuration Système>Autres Configurations>Technical Configuration>Process Monitoring> Log Configuration>Monitor Log Configuration
+Configuration Système>Autres Configurations>Technical Configuration>Process Monitoring>Monitor Process Logs
+Configuration Système>Autres Configurations>Technical Configuration>Process Monitoring>Monitoring SLA
+Configuration Système>Autres Configurations>Technical Configuration>Process Monitoring>Purge Process Log
+Configuration Système>Autres Configurations>Technical Configuration>Scripting Config
+Configuration Système>Autres Configurations>Technical Configuration>TestFeatures>Appointments Created
+Configuration Système>Autres Configurations>Technical Configuration>TestFeatures>Test Tool
+Configuration Système>Autres Configurations>Technical Configuration>TestFeatures>TestCurrentAction
+Configuration Système>Autres Configurations>Technical Configuration>TestFeatures>TestPeriodicity
+Configuration Système>Autres Configurations>Technical Configuration>Text Driver>Config
+Configuration Système>Autres Configurations>Technical Configuration>Text Driver>IO Config
+Configuration Système>Autres Configurations>Valuation Configuration
+Configuration Système>Autres Configurations>classDispatcher
+Configuration Système>Chargement des configurations
+Configuration Système>Configuration De la Réconciliation>Configuration des Cas d'utilisation
+Configuration Système>Configuration De la Réconciliation>Configuration des Critères de Réconciliation
+Configuration Système>Configuration Des Ratios>Catégories des ratios
+Configuration Système>Configuration Des Ratios>Consultation des Ratios
+Configuration Système>Configuration Des Ratios>Consultation des Ratios>Politiques d'investissement
+Configuration Système>Configuration Des Ratios>Consultation des Ratios>Règles prudentielles limites
+Configuration Système>Configuration Des Ratios>Consultation des Ratios>Règles prudentielles recommandations
+Configuration Système>Configuration Des Ratios>Création des Ratios
+Configuration Système>Configuration Des Ratios>Packages des ratios
+Configuration Système>Configuration Des Ratios>SLARatio
+Configuration Système>Configuration Des Ratios>Versions des ratios
+Configuration Système>Configuration Des Sections>Autres
+Configuration Système>Configuration Des Sections>Autres>Clés de Regroupement
+Configuration Système>Configuration Des Sections>Autres>Expression
+Configuration Système>Configuration Des Sections>Autres>Formules
+Configuration Système>Configuration Des Sections>Autres>GrossAsset
+Configuration Système>Configuration Des Sections>Autres>Inventory
+Configuration Système>Configuration Des Sections>Autres>Ratio
+Configuration Système>Configuration Des Sections>Autres>Résultat des Sections
+Configuration Système>Configuration Des Sections>Autres>Sous Expression
+Configuration Système>Configuration Des Sections>Configuration des Détails des Sections
+Configuration Système>Configuration Des Sections>Configuration des Sections
+Configuration Système>Configuration Des Sections>Configuration des Tables
+Configuration Système>Configuration du Capital Minimum>Règles de Contrôle du Capital Minimum
+Configuration Système>Configuration générale>Interfaces à charger
+Configuration Système>Configuration générale>Interfaces à réconcilier
+Configuration Système>Configuration générale>Sociétés de gestion à contrôler
+Interfaces>Interfaces>Fichiers Externes>ASFIM
+Interfaces>Interfaces>Fichiers Externes>Chargement File
+Interfaces>Interfaces>Fichiers Externes>MASI
+Interfaces>Interfaces>Fichiers Externes>Maroclear
+Interfaces>Interfaces>Fichiers Externes>sensibility
+Interfaces>Interfaces>Interfaces Dépositaire>Charger les interfaces
+Interfaces>Interfaces>Interfaces Dépositaire>Cumul des frais de gestion
+Interfaces>Interfaces>Interfaces Dépositaire>Dividendes
+Interfaces>Interfaces>Interfaces Dépositaire>Frais de gestion
+Interfaces>Interfaces>Interfaces Dépositaire>Frais de gestion payés
+Interfaces>Interfaces>Interfaces Dépositaire>Instruction Interest
+Interfaces>Interfaces>Interfaces Dépositaire>Instructions
+Interfaces>Interfaces>Interfaces Dépositaire>Instructions R/S
+Interfaces>Interfaces>Interfaces Dépositaire>Instuctions P/E
+Interfaces>Interfaces>Interfaces Dépositaire>Intérêts créditeurs/débiteurs
+Interfaces>Interfaces>Interfaces Dépositaire>Mouvements espèces
+Interfaces>Interfaces>Interfaces Dépositaire>Nombre de parts
+Interfaces>Interfaces>Interfaces Dépositaire>Positions valorisées
+Interfaces>Interfaces>Interfaces Dépositaire>Positions valorisées empruntées
+Interfaces>Interfaces>Interfaces Dépositaire>Positions valorisées mise en pensions
+Interfaces>Interfaces>Interfaces Dépositaire>Positions valorisées prise en pensions
+Interfaces>Interfaces>Interfaces Dépositaire>Positions valorisées prêtées
+Interfaces>Interfaces>Interfaces Dépositaire>Produit en cours
+Interfaces>Interfaces>Interfaces Dépositaire>Soldes bancaires après R/S du jour
+Interfaces>Interfaces>Interfaces Dépositaire>Soldes bancaires avant R/S du jour
+Interfaces>Interfaces>Interfaces SDG avec erreurs>Frais de gestion/SDG
+Interfaces>Interfaces>Interfaces SDG avec erreurs>Mouvements espèces/SDG
+Interfaces>Interfaces>Interfaces SDG avec erreurs>Nombre de parts/SDG
+Interfaces>Interfaces>Interfaces SDG avec erreurs>Opérations Repo/RvRepo
+Interfaces>Interfaces>Interfaces SDG avec erreurs>Positions valorisées/SDG
+Interfaces>Interfaces>Interfaces SDG avec erreurs>Registre nominatif/SDG
+Interfaces>Interfaces>Interfaces SDG avec erreurs>Soldes bancaires/SDG
+Interfaces>Interfaces>Interfaces SDG avec erreurs>Valeur liquidative/SDG
+Interfaces>Interfaces>Interfaces SDG>Frais de gestion/SDG
+Interfaces>Interfaces>Interfaces SDG>Mouvements espèces/SDG
+Interfaces>Interfaces>Interfaces SDG>Nombre de parts/SDG
+Interfaces>Interfaces>Interfaces SDG>Opérations Repo/RvRepo
+Interfaces>Interfaces>Interfaces SDG>Positions valorisées/SDG
+Interfaces>Interfaces>Interfaces SDG>Soldes bancaires/SDG
+Interfaces>Interfaces>Interfaces SDG>Valeur liquidative/SDG
+Processus de supervision>Inventaire et VL>Consultation>Consulter Actif Brut
+Processus de supervision>Inventaire et VL>Consultation>Consulter Actif Net
+Processus de supervision>Inventaire et VL>Consultation>Consulter Inventaire
+Processus de supervision>Inventaire et VL>Consultation>Consulter VL
+Processus de supervision>Reconciliations>Monitoring Reconciliation De La VL
+Processus de supervision>Reconciliations>Monitoring Reconciliations globales
+Processus de supervision>Reconciliations>Monitoring des reconciliation des frais de gestion
+Processus de supervision>Suivi des Ratios>Résultats>Conformité des ratios
+Processus de supervision>Suivi des Ratios>Résultats>Conformité des ratios par catégories
+Rapports>Rapports Réglementaires>AMMC
+Rapports>Rapports Réglementaires>Actif Brut
+Rapports>Rapports Réglementaires>Registre Nominatif Consolidé
+Rapports>Rapports Réglementaires>Registre Nominatif Défalqué
+Rapports>Rapports Réglementaires>TCB11 : Inventaire des actifs 
+Rapports>Rapports Réglementaires>TCB9 : Rapport de contrôle des OPCVMs
+Supervision des fonds>Annulation>Annulation de calcul d'atif Net
+Supervision des fonds>Annulation>Annulation de calcul de l'actif brut
+Supervision des fonds>Annulation>Annulation de calcul des ratios
+Supervision des fonds>Annulation>Annulation de la réconciliation de la VL
+Supervision des fonds>Annulation>Annulation de reconciliation de l'actif
+Supervision des fonds>Annulation>Annulation de reconciliation des frais de gestion
+Supervision des fonds>Annulation>Annulation de validation de l'actif brut
+Supervision des fonds>Annulation>Retour au chargement des interfaces
+Supervision des fonds>Gestion des processus>Calcul de l'actif brut
+Supervision des fonds>Gestion des processus>Calcul de l'actif net
+Supervision des fonds>Gestion des processus>Calcul des ratios
+Supervision des fonds>Gestion des processus>MAJ de l'actif brut
+Supervision des fonds>Gestion des processus>Réconciliation de l'actif
+Supervision des fonds>Gestion des processus>Réconciliation de la VL
+Supervision des fonds>Gestion des processus>Réconciliation des frais de gestion
+Supervision des fonds>Gestion des processus>Validation de l'actif brut
+Supervision des fonds>Tableaux de bord
+Supervision des fonds>Traitement des écarts >Acceptation des écarts en masse
+Supervision des fonds>Traitement des écarts >Actifs non réconciliés
+Supervision des fonds>Traitement des écarts >Frais de gestion non réconciliés
+Supervision des fonds>Traitement des écarts >Ratios non respectés
+Supervision des fonds>Traitement des écarts >VL non réconciliées

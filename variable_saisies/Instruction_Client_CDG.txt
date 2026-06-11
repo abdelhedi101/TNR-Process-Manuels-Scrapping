@@ -1,0 +1,13 @@
+# Valeurs modifiables pour le menu Saisie Instruction Client
+O TC Traded=Vrai
+Client Reference=testrourou2
+Transaction Type=RVP - ACHAT CONTRE PAIEMENT
+Tradable Asset=MA0000011140
+Incoming Quantity=150
+Client Sec Account=1410000224511
+Counterpart=2358
+Beneficiary=13280
+Trade Date=10/06/2026
+Price=1500
+Effective Value Date=10/06/2026
+Negociated Rate=1

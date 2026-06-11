@@ -1,0 +1,13 @@
+Type OST = Paiement de dividendes en espèce
+Source d'Information* =000000000001 - ATTIJARIWAFA BANK
+OST Référence Marché = test_DVCA
+Agent Payeur* =000000000001 - ATTIJARIWAFA BANK
+Titre Exécuté*=MA0000012460
+Date de détachement bourse =08/05/2026
+Titre* = MA0003994555
+Date d'expiration* =19/08/2026
+Titre Exécuté* = MA0003994555
+Type de Dividende=Dividendes Réguliers
+Prix* = 10
+Devise* =MAD
+Titre* =MA0003994555 

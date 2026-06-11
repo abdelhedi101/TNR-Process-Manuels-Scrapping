@@ -1,0 +1,256 @@
+$env:AUTH_TYPE="standard"
+>> $env:MODULE_URL="http://10.1.140.244:9080/MegaCommon/login.jsp"
+>> $env:MENU_PATH_FILE="C:\Users\aabdelhedi_ct\Desktop\Megara\Qualimetry\Scrapping\Projects\AWB\common\awb_common.txt"
+>> python non_regression_awb.py
+2026-03-31 22:00:35,171 INFO Loaded 93 menu paths from C:\Users\aabdelhedi_ct\Desktop\Megara\Qualimetry\Scrapping\Projects\AWB\common\awb_common.txt
+2026-03-31 22:00:36,111 INFO Navigating to login entry point
+2026-03-31 22:00:37,635 INFO Selected domain awb
+2026-03-31 22:00:43,585 INFO Login submitted (auth=standard, module=http://10.1.140.244:9080/MegaCommon/login.jsp)
+2026-03-31 22:00:43,619 WARNING Top level tab #Référentiel not found
+2026-03-31 22:00:43,705 INFO #Traversing path Position > Titres > Gestion de la Position CLient > Consultation
+2026-03-31 22:00:52,413 INFO Search clicked for Position > Titres > Gestion de la Position CLient > Consultation
+2026-03-31 22:00:53,081 WARNING Detected error dialog for Position > Titres > Gestion de la Position CLient > Consultation
+2026-03-31 22:00:53,375 WARNING Captured screenshot for Position / Position > Titres > Gestion de la Position CLient > Consultation at screenshots\awb\megacommon\position\position___titres___gestion_de_la_position_client___consultation_1774990853.png
+2026-03-31 22:00:58,790 INFO Skipping screenshot for Position / Position > Titres > Gestion de la Position CLient > Consultation because no error indicators were found
+2026-03-31 22:00:59,486 INFO #Traversing path Position > Titres > Gestion de la Position CLient > Consultation Position Titre
+2026-03-31 22:01:08,179 INFO Search clicked for Position > Titres > Gestion de la Position CLient > Consultation Position Titre
+2026-03-31 22:01:08,901 WARNING Detected error dialog for Position > Titres > Gestion de la Position CLient > Consultation Position Titre
+2026-03-31 22:01:09,168 WARNING Captured screenshot for Position / Position > Titres > Gestion de la Position CLient > Consultation Position Titre at screenshots\awb\megacommon\position\position___titres___gestion_de_la_position_client___consultation_position_titre_1774990869.png
+2026-03-31 22:01:14,599 INFO Skipping screenshot for Position / Position > Titres > Gestion de la Position CLient > Consultation Position Titre because no error indicators were found
+2026-03-31 22:01:15,289 INFO #Traversing path Position > Titres > Gestion de la Position CLient > Consultation Des Positions Fermes
+2026-03-31 22:01:23,803 INFO Search clicked for Position > Titres > Gestion de la Position CLient > Consultation Des Positions Fermes
+2026-03-31 22:01:24,505 WARNING Detected error dialog for Position > Titres > Gestion de la Position CLient > Consultation Des Positions Fermes
+2026-03-31 22:01:24,674 WARNING Captured screenshot for Position / Position > Titres > Gestion de la Position CLient > Consultation Des Positions Fermes at screenshots\awb\megacommon\position\position___titres___gestion_de_la_position_client___consultation_des_positions_fermes_1774990884.png
+2026-03-31 22:01:29,988 INFO Skipping screenshot for Position / Position > Titres > Gestion de la Position CLient > Consultation Des Positions Fermes because no error indicators were found
+2026-03-31 22:01:30,688 INFO #Traversing path Position > Titres > Gestion de la Position CLient > Consultation avancée des Positions
+2026-03-31 22:01:39,112 INFO Search clicked for Position > Titres > Gestion de la Position CLient > Consultation avancée des Positions
+2026-03-31 22:01:40,688 INFO Skipping screenshot for Position / Position > Titres > Gestion de la Position CLient > Consultation avancée des Positions because no error indicators were found
+2026-03-31 22:01:41,400 INFO #Traversing path Position > Titres > Gestion de la Position CLient > Historique Mouvement Client
+2026-03-31 22:01:49,996 INFO Search clicked for Position > Titres > Gestion de la Position CLient > Historique Mouvement Client
+2026-03-31 22:01:51,554 INFO Skipping screenshot for Position / Position > Titres > Gestion de la Position CLient > Historique Mouvement Client because no error indicators were found
+2026-03-31 22:01:52,262 INFO #Traversing path Position > Titres > Gestion de la Position CLient > Mouvement en cours Client
+2026-03-31 22:02:00,811 INFO Search clicked for Position > Titres > Gestion de la Position CLient > Mouvement en cours Client
+2026-03-31 22:02:02,444 INFO Skipping screenshot for Position / Position > Titres > Gestion de la Position CLient > Mouvement en cours Client because no error indicators were found
+2026-03-31 22:02:03,143 INFO #Traversing path Position > Titres > Gestion de la Position CLient > Position Disponible
+2026-03-31 22:02:11,679 INFO Search clicked for Position > Titres > Gestion de la Position CLient > Position Disponible
+2026-03-31 22:02:13,293 INFO Skipping screenshot for Position / Position > Titres > Gestion de la Position CLient > Position Disponible because no error indicators were found
+2026-03-31 22:02:14,018 INFO #Traversing path Position > Titres > Gestion de la Position CLient > Position Détaillée Par Période
+2026-03-31 22:02:22,621 INFO Search clicked for Position > Titres > Gestion de la Position CLient > Position Détaillée Par Période
+2026-03-31 22:02:24,045 INFO Skipping screenshot for Position / Position > Titres > Gestion de la Position CLient > Position Détaillée Par Période because no error indicators were found
+2026-03-31 22:02:30,931 INFO #Traversing path Position > Titres > Gestion de la Position CLient > Consultation des relevés
+2026-03-31 22:02:39,551 INFO Search clicked for Position > Titres > Gestion de la Position CLient > Consultation des relevés
+2026-03-31 22:02:41,856 INFO 🔍 Searching for OK popup for Position > Titres > Gestion de la Position CLient > Consultation des relevés (will retry for up to 6 seconds)
+2026-03-31 22:02:42,903 INFO ✅✅ OK popup dismissed (JavaScript scan) for Position > Titres > Gestion de la Position CLient > Consultation des relevés
+2026-03-31 22:02:43,731 INFO Searching for first row to right-click for Position > Titres > Gestion de la Position CLient > Consultation des relevés
+2026-03-31 22:02:44,188 INFO Right-click done after execute for Position > Titres > Gestion de la Position CLient > Consultation des relevés (selector=xpath=/html/body/div[2]/div/div[3]/div[2]/div/div[2]/div[2]/div[1]/div/div/div[2]/div[1]/div/div[1]/div[1]/div[2]/div/div[1]/table/tbody/tr, attempt=1)
+2026-03-31 22:02:49,891 INFO First visible row selected and right-clicked for Position > Titres > Gestion de la Position CLient > Consultation des relevés
+2026-03-31 22:02:51,069 INFO Edit option exists: True for Position > Titres > Gestion de la Position CLient > Consultation des relevés
+2026-03-31 22:02:51,069 INFO Edit available. Using full workflow (View+Edit) for Position > Titres > Gestion de la Position CLient > Consultation des relevés
+2026-03-31 22:02:51,125 INFO 🔍 Attempting to click menu option for Position > Titres > Gestion de la Position CLient > Consultation des relevés (retry for up to 6 seconds)
+2026-03-31 22:02:51,699 INFO ✅✅ Menu option clicked (force click) for Position > Titres > Gestion de la Position CLient > Consultation des relevés
+2026-03-31 22:02:52,436 INFO View clicked for Position > Titres > Gestion de la Position CLient > Consultation des relevés
+2026-03-31 22:02:53,811 INFO Return clicked for Position > Titres > Gestion de la Position CLient > Consultation des relevés
+2026-03-31 22:02:55,581 INFO Right-click after return done for Position > Titres > Gestion de la Position CLient > Consultation des relevés
+2026-03-31 22:02:57,001 INFO Context menu appeared after return for Position > Titres > Gestion de la Position CLient > Consultation des relevés
+2026-03-31 22:02:57,001 INFO 🔍 Attempting to click Editer for Position > Titres > Gestion de la Position CLient > Consultation des relevés
+2026-03-31 22:02:57,009 INFO Direct XPath not found, trying robust methods for Position > Titres > Gestion de la Position CLient > Consultation des relevés
+2026-03-31 22:02:57,009 INFO 🔍 SUPER ROBUST: Attempting to click Editer by ALL means for Position > Titres > Gestion de la Position CLient > Consultation des relevés
+2026-03-31 22:02:57,639 INFO ✅✅ Editer clicked via class selector (force click)
+2026-03-31 22:02:57,640 INFO Free plan: save/edit is locked for Position > Titres > Gestion de la Position CLient > Consultation des relevés. Upgrade to Pro.
+2026-03-31 22:02:58,282 INFO Tab closed after Edit for Position > Titres > Gestion de la Position CLient > Consultation des relevés
+2026-03-31 22:02:59,218 INFO #Traversing path Position > Titres > Gestion de la Position Marché > Consultation
+2026-03-31 22:03:07,742 INFO Search clicked for Position > Titres > Gestion de la Position Marché > Consultation
+2026-03-31 22:03:08,427 WARNING Detected error dialog for Position > Titres > Gestion de la Position Marché > Consultation
+2026-03-31 22:03:08,666 WARNING Captured screenshot for Position / Position > Titres > Gestion de la Position Marché > Consultation at screenshots\awb\megacommon\position\position___titres___gestion_de_la_position_marché___consultation_1774990988.png
+2026-03-31 22:03:14,027 INFO Skipping screenshot for Position / Position > Titres > Gestion de la Position Marché > Consultation because no error indicators were found
+2026-03-31 22:03:14,737 INFO #Traversing path Position > Titres > Gestion de la Position Marché > Mouvement Suspens Marché
+2026-03-31 22:03:23,174 INFO Search clicked for Position > Titres > Gestion de la Position Marché > Mouvement Suspens Marché
+2026-03-31 22:03:24,589 INFO Skipping screenshot for Position / Position > Titres > Gestion de la Position Marché > Mouvement Suspens Marché because no error indicators were found
+2026-03-31 22:03:25,275 INFO #Traversing path Position > Titres > Gestion de la Position Marché > Position Marché Disponible
+2026-03-31 22:03:33,766 INFO Search clicked for Position > Titres > Gestion de la Position Marché > Position Marché Disponible
+2026-03-31 22:03:35,151 INFO Skipping screenshot for Position / Position > Titres > Gestion de la Position Marché > Position Marché Disponible because no error indicators were found
+2026-03-31 22:03:35,857 INFO #Traversing path Position > Titres > Gestion de la Position Marché > Position Marché Détaillée  Par Période
+2026-03-31 22:03:44,196 INFO Skipping screenshot for Position / Position > Titres > Gestion de la Position Marché > Position Marché Détaillée  Par Période because no error indicators were found
+2026-03-31 22:03:44,890 INFO #Traversing path Position > Titres > Gestion de la Position Marché > Position Marché Disponible Par Actif
+2026-03-31 22:03:53,379 INFO Skipping screenshot for Position / Position > Titres > Gestion de la Position Marché > Position Marché Disponible Par Actif because no error indicators were found
+2026-03-31 22:03:54,980 INFO #Traversing path Position > Titres > Impact Manuel de la Position
+2026-03-31 22:04:01,110 INFO Search clicked for Position > Titres > Impact Manuel de la Position
+2026-03-31 22:04:02,615 INFO Skipping screenshot for Position / Position > Titres > Impact Manuel de la Position because no error indicators were found
+2026-03-31 22:04:03,312 INFO #Traversing path Position > Titres > Réconciliation marché étranger MT535
+2026-03-31 22:04:09,286 INFO Search clicked for Position > Titres > Réconciliation marché étranger MT535
+2026-03-31 22:04:11,556 INFO 🔍 Searching for OK popup for Position > Titres > Réconciliation marché étranger MT535 (will retry for up to 6 seconds)
+2026-03-31 22:04:12,624 INFO ✅✅ OK popup dismissed (JavaScript scan) for Position > Titres > Réconciliation marché étranger MT535
+2026-03-31 22:04:13,458 INFO Searching for first row to right-click for Position > Titres > Réconciliation marché étranger MT535
+2026-03-31 22:04:13,880 INFO Right-click done after execute for Position > Titres > Réconciliation marché étranger MT535 (selector=xpath=/html/body/div[2]/div/div[3]/div[2]/div/div[2]/div[2]/div[1]/div/div/div[2]/div[1]/div/div[1]/div[1]/div[2]/div/div[1]/table/tbody/tr, attempt=1)
+2026-03-31 22:04:19,595 INFO First visible row selected and right-clicked for Position > Titres > Réconciliation marché étranger MT535
+2026-03-31 22:04:20,811 INFO Edit option exists: True for Position > Titres > Réconciliation marché étranger MT535
+2026-03-31 22:04:20,811 INFO Edit available. Using full workflow (View+Edit) for Position > Titres > Réconciliation marché étranger MT535
+2026-03-31 22:04:20,851 INFO 🔍 Attempting to click menu option for Position > Titres > Réconciliation marché étranger MT535 (retry for up to 6 seconds)
+2026-03-31 22:04:21,440 INFO ✅✅ Menu option clicked (force click) for Position > Titres > Réconciliation marché étranger MT535
+2026-03-31 22:04:22,195 INFO View clicked for Position > Titres > Réconciliation marché étranger MT535
+2026-03-31 22:04:23,754 INFO Return clicked for Position > Titres > Réconciliation marché étranger MT535
+2026-03-31 22:04:25,484 INFO Right-click after return done for Position > Titres > Réconciliation marché étranger MT535
+2026-03-31 22:04:26,821 INFO Context menu appeared after return for Position > Titres > Réconciliation marché étranger MT535
+2026-03-31 22:04:26,822 INFO 🔍 Attempting to click Editer for Position > Titres > Réconciliation marché étranger MT535
+2026-03-31 22:04:26,855 INFO Direct XPath not found, trying robust methods for Position > Titres > Réconciliation marché étranger MT535
+2026-03-31 22:04:26,859 INFO 🔍 SUPER ROBUST: Attempting to click Editer by ALL means for Position > Titres > Réconciliation marché étranger MT535
+2026-03-31 22:04:27,490 INFO ✅✅ Editer clicked via class selector (force click)
+2026-03-31 22:04:27,490 INFO Free plan: save/edit is locked for Position > Titres > Réconciliation marché étranger MT535. Upgrade to Pro.
+2026-03-31 22:04:28,052 INFO Tab closed after Edit for Position > Titres > Réconciliation marché étranger MT535
+2026-03-31 22:04:28,101 INFO #Traversing path Position > Titres > Reprocess La réconciliation MT535
+2026-03-31 22:04:34,301 INFO Search clicked for Position > Titres > Reprocess La réconciliation MT535
+2026-03-31 22:04:36,583 INFO 🔍 Searching for OK popup for Position > Titres > Reprocess La réconciliation MT535 (will retry for up to 6 seconds)
+2026-03-31 22:04:37,617 INFO ✅✅ OK popup dismissed (JavaScript scan) for Position > Titres > Reprocess La réconciliation MT535
+2026-03-31 22:04:38,427 INFO Searching for first row to right-click for Position > Titres > Reprocess La réconciliation MT535
+2026-03-31 22:04:38,796 INFO Right-click done after execute for Position > Titres > Reprocess La réconciliation MT535 (selector=xpath=/html/body/div[2]/div/div[3]/div[2]/div/div[2]/div[2]/div[1]/div/div/div[2]/div[1]/div/div[1]/div[1]/div[2]/div/div[1]/table/tbody/tr, attempt=1)
+2026-03-31 22:04:44,368 INFO First visible row selected and right-clicked for Position > Titres > Reprocess La réconciliation MT535
+2026-03-31 22:04:45,473 INFO Edit option exists: True for Position > Titres > Reprocess La réconciliation MT535
+2026-03-31 22:04:45,473 INFO Edit available. Using full workflow (View+Edit) for Position > Titres > Reprocess La réconciliation MT535
+2026-03-31 22:04:45,482 INFO 🔍 Attempting to click menu option for Position > Titres > Reprocess La réconciliation MT535 (retry for up to 6 seconds)
+2026-03-31 22:04:46,026 INFO ✅✅ Menu option clicked (force click) for Position > Titres > Reprocess La réconciliation MT535
+2026-03-31 22:04:46,700 INFO View clicked for Position > Titres > Reprocess La réconciliation MT535
+2026-03-31 22:04:48,019 INFO Return clicked for Position > Titres > Reprocess La réconciliation MT535
+2026-03-31 22:04:49,612 INFO Right-click after return done for Position > Titres > Reprocess La réconciliation MT535
+2026-03-31 22:04:50,937 INFO Context menu appeared after return for Position > Titres > Reprocess La réconciliation MT535
+2026-03-31 22:04:50,937 INFO 🔍 Attempting to click Editer for Position > Titres > Reprocess La réconciliation MT535
+2026-03-31 22:04:50,947 INFO Direct XPath not found, trying robust methods for Position > Titres > Reprocess La réconciliation MT535
+2026-03-31 22:04:50,947 INFO 🔍 SUPER ROBUST: Attempting to click Editer by ALL means for Position > Titres > Reprocess La réconciliation MT535
+2026-03-31 22:04:51,498 INFO ✅✅ Editer clicked via class selector (force click)
+2026-03-31 22:04:51,498 INFO Free plan: save/edit is locked for Position > Titres > Reprocess La réconciliation MT535. Upgrade to Pro.
+2026-03-31 22:04:52,051 INFO Tab closed after Edit for Position > Titres > Reprocess La réconciliation MT535
+2026-03-31 22:04:52,931 INFO #Traversing path Position > Réconciliation Marché étranger > Messages Reçus > Réconciliation marché étranger MT535
+2026-03-31 22:05:01,513 INFO Search clicked for Position > Réconciliation Marché étranger > Messages Reçus > Réconciliation marché étranger MT535
+2026-03-31 22:05:03,792 INFO 🔍 Searching for OK popup for Position > Réconciliation Marché étranger > Messages Reçus > Réconciliation marché étranger MT535 (will retry for up to 6 seconds)
+2026-03-31 22:05:04,854 INFO ✅✅ OK popup dismissed (JavaScript scan) for Position > Réconciliation Marché étranger > Messages Reçus > Réconciliation marché étranger MT535
+2026-03-31 22:05:05,668 INFO Searching for first row to right-click for Position > Réconciliation Marché étranger > Messages Reçus > Réconciliation marché étranger MT535
+2026-03-31 22:05:06,063 INFO Right-click done after execute for Position > Réconciliation Marché étranger > Messages Reçus > Réconciliation marché étranger MT535 (selector=xpath=/html/body/div[2]/div/div[3]/div[2]/div/div[2]/div[2]/div[1]/div/div/div[2]/div[1]/div/div[1]/div[1]/div[2]/div/div[1]/table/tbody/tr, attempt=1)
+2026-03-31 22:05:11,856 INFO First visible row selected and right-clicked for Position > Réconciliation Marché étranger > Messages Reçus > Réconciliation marché étranger MT535
+2026-03-31 22:05:13,131 INFO Edit option exists: True for Position > Réconciliation Marché étranger > Messages Reçus > Réconciliation marché étranger MT535
+2026-03-31 22:05:13,131 INFO Edit available. Using full workflow (View+Edit) for Position > Réconciliation Marché étranger > Messages Reçus > Réconciliation marché étranger MT535
+2026-03-31 22:05:13,171 INFO 🔍 Attempting to click menu option for Position > Réconciliation Marché étranger > Messages Reçus > Réconciliation marché étranger MT535 (retry for up to 6 seconds)
+2026-03-31 22:05:13,744 INFO ✅✅ Menu option clicked (force click) for Position > Réconciliation Marché étranger > Messages Reçus > Réconciliation marché étranger MT535
+2026-03-31 22:05:14,464 INFO View clicked for Position > Réconciliation Marché étranger > Messages Reçus > Réconciliation marché étranger MT535
+2026-03-31 22:05:15,789 INFO Return clicked for Position > Réconciliation Marché étranger > Messages Reçus > Réconciliation marché étranger MT535
+2026-03-31 22:05:17,547 INFO Right-click after return done for Position > Réconciliation Marché étranger > Messages Reçus > Réconciliation marché étranger MT535
+2026-03-31 22:05:19,040 INFO Context menu appeared after return for Position > Réconciliation Marché étranger > Messages Reçus > Réconciliation marché étranger MT535
+2026-03-31 22:05:19,041 INFO 🔍 Attempting to click Editer for Position > Réconciliation Marché étranger > Messages Reçus > Réconciliation marché étranger MT535
+2026-03-31 22:05:19,061 INFO Direct XPath not found, trying robust methods for Position > Réconciliation Marché étranger > Messages Reçus > Réconciliation marché étranger MT535
+2026-03-31 22:05:19,063 INFO 🔍 SUPER ROBUST: Attempting to click Editer by ALL means for Position > Réconciliation Marché étranger > Messages Reçus > Réconciliation marché étranger MT535
+2026-03-31 22:05:19,711 INFO ✅✅ Editer clicked via class selector (force click)
+2026-03-31 22:05:19,712 INFO Free plan: save/edit is locked for Position > Réconciliation Marché étranger > Messages Reçus > Réconciliation marché étranger MT535. Upgrade to Pro.
+2026-03-31 22:05:20,306 INFO Tab closed after Edit for Position > Réconciliation Marché étranger > Messages Reçus > Réconciliation marché étranger MT535
+2026-03-31 22:05:20,393 INFO #Traversing path Position > Réconciliation Marché étranger > Messages Reçus > Reprocess La réconciliation MT535
+2026-03-31 22:05:28,870 INFO Search clicked for Position > Réconciliation Marché étranger > Messages Reçus > Reprocess La réconciliation MT535
+2026-03-31 22:05:31,054 INFO 🔍 Searching for OK popup for Position > Réconciliation Marché étranger > Messages Reçus > Reprocess La réconciliation MT535 (will retry for up to 6 seconds)
+2026-03-31 22:05:32,100 INFO ✅✅ OK popup dismissed (JavaScript scan) for Position > Réconciliation Marché étranger > Messages Reçus > Reprocess La réconciliation MT535
+2026-03-31 22:05:32,916 INFO Searching for first row to right-click for Position > Réconciliation Marché étranger > Messages Reçus > Reprocess La réconciliation MT535
+2026-03-31 22:05:33,244 INFO Right-click done after execute for Position > Réconciliation Marché étranger > Messages Reçus > Reprocess La réconciliation MT535 (selector=xpath=/html/body/div[2]/div/div[3]/div[2]/div/div[2]/div[2]/div[1]/div/div/div[2]/div[1]/div/div[1]/div[1]/div[2]/div/div[1]/table/tbody/tr, attempt=1)
+2026-03-31 22:05:38,690 INFO First visible row selected and right-clicked for Position > Réconciliation Marché étranger > Messages Reçus > Reprocess La réconciliation MT535
+2026-03-31 22:05:39,800 INFO Edit option exists: True for Position > Réconciliation Marché étranger > Messages Reçus > Reprocess La réconciliation MT535
+2026-03-31 22:05:39,801 INFO Edit available. Using full workflow (View+Edit) for Position > Réconciliation Marché étranger > Messages Reçus > Reprocess La réconciliation MT535
+2026-03-31 22:05:39,813 INFO 🔍 Attempting to click menu option for Position > Réconciliation Marché étranger > Messages Reçus > Reprocess La réconciliation MT535 (retry for up to 6 seconds)
+2026-03-31 22:05:40,371 INFO ✅✅ Menu option clicked (force click) for Position > Réconciliation Marché étranger > Messages Reçus > Reprocess La réconciliation MT535
+2026-03-31 22:05:41,064 INFO View clicked for Position > Réconciliation Marché étranger > Messages Reçus > Reprocess La réconciliation MT535
+2026-03-31 22:05:42,389 INFO Return clicked for Position > Réconciliation Marché étranger > Messages Reçus > Reprocess La réconciliation MT535
+2026-03-31 22:05:43,918 INFO Right-click after return done for Position > Réconciliation Marché étranger > Messages Reçus > Reprocess La réconciliation MT535
+2026-03-31 22:05:45,210 INFO Context menu appeared after return for Position > Réconciliation Marché étranger > Messages Reçus > Reprocess La réconciliation MT535
+2026-03-31 22:05:45,211 INFO 🔍 Attempting to click Editer for Position > Réconciliation Marché étranger > Messages Reçus > Reprocess La réconciliation MT535
+2026-03-31 22:05:45,219 INFO Direct XPath not found, trying robust methods for Position > Réconciliation Marché étranger > Messages Reçus > Reprocess La réconciliation MT535
+2026-03-31 22:05:45,220 INFO 🔍 SUPER ROBUST: Attempting to click Editer by ALL means for Position > Réconciliation Marché étranger > Messages Reçus > Reprocess La réconciliation MT535
+2026-03-31 22:05:45,779 INFO ✅✅ Editer clicked via class selector (force click)
+2026-03-31 22:05:45,779 INFO Free plan: save/edit is locked for Position > Réconciliation Marché étranger > Messages Reçus > Reprocess La réconciliation MT535. Upgrade to Pro.
+2026-03-31 22:05:46,311 INFO Tab closed after Edit for Position > Réconciliation Marché étranger > Messages Reçus > Reprocess La réconciliation MT535
+2026-03-31 22:05:46,369 INFO #Traversing path Position > Réconciliation Marché étranger > Messages Reçus > Réconciliation Marché étranger MT536
+2026-03-31 22:05:54,330 INFO Search clicked for Position > Réconciliation Marché étranger > Messages Reçus > Réconciliation Marché étranger MT536
+2026-03-31 22:05:56,557 INFO 🔍 Searching for OK popup for Position > Réconciliation Marché étranger > Messages Reçus > Réconciliation Marché étranger MT536 (will retry for up to 6 seconds)
+2026-03-31 22:05:57,579 INFO ✅✅ OK popup dismissed (JavaScript scan) for Position > Réconciliation Marché étranger > Messages Reçus > Réconciliation Marché étranger MT536
+2026-03-31 22:05:58,401 INFO Searching for first row to right-click for Position > Réconciliation Marché étranger > Messages Reçus > Réconciliation Marché étranger MT536
+2026-03-31 22:05:58,715 INFO Right-click done after execute for Position > Réconciliation Marché étranger > Messages Reçus > Réconciliation Marché étranger MT536 (selector=xpath=/html/body/div[2]/div/div[3]/div[2]/div/div[2]/div[2]/div[1]/div/div/div[2]/div[1]/div/div[1]/div[1]/div[2]/div/div[1]/table/tbody/tr, attempt=1)
+2026-03-31 22:06:04,186 INFO First visible row selected and right-clicked for Position > Réconciliation Marché étranger > Messages Reçus > Réconciliation Marché étranger MT536
+2026-03-31 22:06:05,306 INFO Edit option exists: True for Position > Réconciliation Marché étranger > Messages Reçus > Réconciliation Marché étranger MT536
+2026-03-31 22:06:05,306 INFO Edit available. Using full workflow (View+Edit) for Position > Réconciliation Marché étranger > Messages Reçus > Réconciliation Marché étranger MT536
+2026-03-31 22:06:05,315 WARNING No menu item matching pattern (?:voir|view) found for Position > Réconciliation Marché étranger > Messages Reçus > Réconciliation Marché étranger MT536
+2026-03-31 22:06:05,315 WARNING View option not available for Position > Réconciliation Marché étranger > Messages Reçus > Réconciliation Marché étranger MT536
+2026-03-31 22:06:05,702 INFO Skipping screenshot for Position / Position > Réconciliation Marché étranger > Messages Reçus > Réconciliation Marché étranger MT536 because no error indicators were found
+2026-03-31 22:06:06,401 INFO #Traversing path Position > Réconciliation Marché étranger > Messages Reçus > Reprocess MT536 IN
+2026-03-31 22:06:14,330 INFO Search clicked for Position > Réconciliation Marché étranger > Messages Reçus > Reprocess MT536 IN
+2026-03-31 22:06:16,596 INFO 🔍 Searching for OK popup for Position > Réconciliation Marché étranger > Messages Reçus > Reprocess MT536 IN (will retry for up to 6 seconds)
+2026-03-31 22:06:17,621 INFO ✅✅ OK popup dismissed (JavaScript scan) for Position > Réconciliation Marché étranger > Messages Reçus > Reprocess MT536 IN
+2026-03-31 22:06:18,436 INFO Searching for first row to right-click for Position > Réconciliation Marché étranger > Messages Reçus > Reprocess MT536 IN
+2026-03-31 22:06:18,784 INFO Right-click done after execute for Position > Réconciliation Marché étranger > Messages Reçus > Reprocess MT536 IN (selector=xpath=/html/body/div[2]/div/div[3]/div[2]/div/div[2]/div[2]/div[1]/div/div/div[2]/div[1]/div/div[1]/div[1]/div[2]/div/div[1]/table/tbody/tr, attempt=1)
+2026-03-31 22:06:24,293 INFO First visible row selected and right-clicked for Position > Réconciliation Marché étranger > Messages Reçus > Reprocess MT536 IN
+2026-03-31 22:06:25,389 INFO Edit option exists: True for Position > Réconciliation Marché étranger > Messages Reçus > Reprocess MT536 IN
+2026-03-31 22:06:25,390 INFO Edit available. Using full workflow (View+Edit) for Position > Réconciliation Marché étranger > Messages Reçus > Reprocess MT536 IN
+2026-03-31 22:06:25,398 INFO 🔍 Attempting to click menu option for Position > Réconciliation Marché étranger > Messages Reçus > Reprocess MT536 IN (retry for up to 6 seconds)
+2026-03-31 22:06:25,936 INFO ✅✅ Menu option clicked (force click) for Position > Réconciliation Marché étranger > Messages Reçus > Reprocess MT536 IN
+2026-03-31 22:06:26,607 INFO View clicked for Position > Réconciliation Marché étranger > Messages Reçus > Reprocess MT536 IN
+2026-03-31 22:06:27,939 INFO Return clicked for Position > Réconciliation Marché étranger > Messages Reçus > Reprocess MT536 IN
+2026-03-31 22:06:29,438 INFO Right-click after return done for Position > Réconciliation Marché étranger > Messages Reçus > Reprocess MT536 IN
+2026-03-31 22:06:30,742 INFO Context menu appeared after return for Position > Réconciliation Marché étranger > Messages Reçus > Reprocess MT536 IN
+2026-03-31 22:06:30,742 INFO 🔍 Attempting to click Editer for Position > Réconciliation Marché étranger > Messages Reçus > Reprocess MT536 IN
+2026-03-31 22:06:30,746 INFO Direct XPath not found, trying robust methods for Position > Réconciliation Marché étranger > Messages Reçus > Reprocess MT536 IN
+2026-03-31 22:06:30,746 INFO 🔍 SUPER ROBUST: Attempting to click Editer by ALL means for Position > Réconciliation Marché étranger > Messages Reçus > Reprocess MT536 IN
+2026-03-31 22:06:31,292 INFO ✅✅ Editer clicked via class selector (force click)
+2026-03-31 22:06:31,292 INFO Free plan: save/edit is locked for Position > Réconciliation Marché étranger > Messages Reçus > Reprocess MT536 IN. Upgrade to Pro.
+2026-03-31 22:06:31,836 INFO Tab closed after Edit for Position > Réconciliation Marché étranger > Messages Reçus > Reprocess MT536 IN
+2026-03-31 22:06:31,876 INFO #Traversing path Position > Réconciliation Marché étranger > Messages Reçus > Réconciliation Marché étranger MT537
+2026-03-31 22:06:39,843 INFO Search clicked for Position > Réconciliation Marché étranger > Messages Reçus > Réconciliation Marché étranger MT537
+2026-03-31 22:06:42,005 INFO 🔍 Searching for OK popup for Position > Réconciliation Marché étranger > Messages Reçus > Réconciliation Marché étranger MT537 (will retry for up to 6 seconds)
+2026-03-31 22:06:43,031 INFO ✅✅ OK popup dismissed (JavaScript scan) for Position > Réconciliation Marché étranger > Messages Reçus > Réconciliation Marché étranger MT537
+2026-03-31 22:06:43,846 INFO Searching for first row to right-click for Position > Réconciliation Marché étranger > Messages Reçus > Réconciliation Marché étranger MT537
+2026-03-31 22:06:44,159 INFO Right-click done after execute for Position > Réconciliation Marché étranger > Messages Reçus > Réconciliation Marché étranger MT537 (selector=xpath=/html/body/div[2]/div/div[3]/div[2]/div/div[2]/div[2]/div[1]/div/div/div[2]/div[1]/div/div[1]/div[1]/div[2]/div/div[1]/table/tbody/tr, attempt=1)
+2026-03-31 22:06:49,603 INFO First visible row selected and right-clicked for Position > Réconciliation Marché étranger > Messages Reçus > Réconciliation Marché étranger MT537
+2026-03-31 22:06:50,710 INFO Edit option exists: True for Position > Réconciliation Marché étranger > Messages Reçus > Réconciliation Marché étranger MT537
+2026-03-31 22:06:50,710 INFO Edit available. Using full workflow (View+Edit) for Position > Réconciliation Marché étranger > Messages Reçus > Réconciliation Marché étranger MT537
+2026-03-31 22:06:50,721 WARNING No menu item matching pattern (?:voir|view) found for Position > Réconciliation Marché étranger > Messages Reçus > Réconciliation Marché étranger MT537
+2026-03-31 22:06:50,721 WARNING View option not available for Position > Réconciliation Marché étranger > Messages Reçus > Réconciliation Marché étranger MT537
+2026-03-31 22:06:51,112 INFO Skipping screenshot for Position / Position > Réconciliation Marché étranger > Messages Reçus > Réconciliation Marché étranger MT537 because no error indicators were found
+2026-03-31 22:06:51,797 INFO #Traversing path Position > Réconciliation Marché étranger > Messages Reçus > Reprocess MT537 IN
+2026-03-31 22:06:59,727 INFO Search clicked for Position > Réconciliation Marché étranger > Messages Reçus > Reprocess MT537 IN
+2026-03-31 22:07:01,980 INFO 🔍 Searching for OK popup for Position > Réconciliation Marché étranger > Messages Reçus > Reprocess MT537 IN (will retry for up to 6 seconds)
+2026-03-31 22:07:03,002 INFO ✅✅ OK popup dismissed (JavaScript scan) for Position > Réconciliation Marché étranger > Messages Reçus > Reprocess MT537 IN
+2026-03-31 22:07:03,821 INFO Searching for first row to right-click for Position > Réconciliation Marché étranger > Messages Reçus > Reprocess MT537 IN
+2026-03-31 22:07:04,148 INFO Right-click done after execute for Position > Réconciliation Marché étranger > Messages Reçus > Reprocess MT537 IN (selector=xpath=/html/body/div[2]/div/div[3]/div[2]/div/div[2]/div[2]/div[1]/div/div/div[2]/div[1]/div/div[1]/div[1]/div[2]/div/div[1]/table/tbody/tr, attempt=1)
+2026-03-31 22:07:09,609 INFO First visible row selected and right-clicked for Position > Réconciliation Marché étranger > Messages Reçus > Reprocess MT537 IN
+2026-03-31 22:07:10,722 INFO Edit option exists: True for Position > Réconciliation Marché étranger > Messages Reçus > Reprocess MT537 IN
+2026-03-31 22:07:10,722 INFO Edit available. Using full workflow (View+Edit) for Position > Réconciliation Marché étranger > Messages Reçus > Reprocess MT537 IN
+2026-03-31 22:07:10,735 INFO 🔍 Attempting to click menu option for Position > Réconciliation Marché étranger > Messages Reçus > Reprocess MT537 IN (retry for up to 6 seconds)
+2026-03-31 22:07:11,296 INFO ✅✅ Menu option clicked (force click) for Position > Réconciliation Marché étranger > Messages Reçus > Reprocess MT537 IN
+2026-03-31 22:07:11,974 INFO View clicked for Position > Réconciliation Marché étranger > Messages Reçus > Reprocess MT537 IN
+2026-03-31 22:07:13,289 INFO Return clicked for Position > Réconciliation Marché étranger > Messages Reçus > Reprocess MT537 IN
+2026-03-31 22:07:14,834 INFO Right-click after return done for Position > Réconciliation Marché étranger > Messages Reçus > Reprocess MT537 IN
+2026-03-31 22:07:16,131 INFO Context menu appeared after return for Position > Réconciliation Marché étranger > Messages Reçus > Reprocess MT537 IN
+2026-03-31 22:07:16,131 INFO 🔍 Attempting to click Editer for Position > Réconciliation Marché étranger > Messages Reçus > Reprocess MT537 IN
+2026-03-31 22:07:16,136 INFO Direct XPath not found, trying robust methods for Position > Réconciliation Marché étranger > Messages Reçus > Reprocess MT537 IN
+2026-03-31 22:07:16,137 INFO 🔍 SUPER ROBUST: Attempting to click Editer by ALL means for Position > Réconciliation Marché étranger > Messages Reçus > Reprocess MT537 IN
+2026-03-31 22:07:16,676 INFO ✅✅ Editer clicked via class selector (force click)
+2026-03-31 22:07:16,676 INFO Free plan: save/edit is locked for Position > Réconciliation Marché étranger > Messages Reçus > Reprocess MT537 IN. Upgrade to Pro.
+2026-03-31 22:07:17,219 INFO Tab closed after Edit for Position > Réconciliation Marché étranger > Messages Reçus > Reprocess MT537 IN
+2026-03-31 22:07:18,084 INFO #Traversing path Position > Réconciliation Marché étranger > Messages Out > Génération des MT535
+2026-03-31 22:07:26,017 INFO Search clicked for Position > Réconciliation Marché étranger > Messages Out > Génération des MT535
+2026-03-31 22:07:27,298 INFO Skipping screenshot for Position / Position > Réconciliation Marché étranger > Messages Out > Génération des MT535 because no error indicators were found
+2026-03-31 22:07:27,975 INFO #Traversing path Position > Réconciliation Marché étranger > Messages Out > Consultation des MT 535
+2026-03-31 22:07:35,973 INFO Search clicked for Position > Réconciliation Marché étranger > Messages Out > Consultation des MT 535
+2026-03-31 22:07:37,257 INFO Skipping screenshot for Position / Position > Réconciliation Marché étranger > Messages Out > Consultation des MT 535 because no error indicators were found
+Traceback (most recent call last):
+  File "C:\Users\aabdelhedi_ct\Desktop\Megara\Qualimetry\Scrapping\non_regression_awb.py", line 2214, in <module>
+    main()
+  File "C:\Users\aabdelhedi_ct\Desktop\Megara\Qualimetry\Scrapping\non_regression_awb.py", line 2205, in main
+    traverse_menu_paths(page, menu_paths)
+  File "C:\Users\aabdelhedi_ct\Desktop\Megara\Qualimetry\Scrapping\non_regression_awb.py", line 1765, in traverse_menu_paths
+    button.click()
+  File "C:\Users\aabdelhedi_ct\Desktop\Megara\Qualimetry\Scrapping\.venv\lib\site-packages\playwright\sync_api\_generated.py", line 14764, in click
+    self._sync(
+  File "C:\Users\aabdelhedi_ct\Desktop\Megara\Qualimetry\Scrapping\.venv\lib\site-packages\playwright\_impl\_sync_base.py", line 113, in _sync
+    return task.result()
+  File "C:\Users\aabdelhedi_ct\Desktop\Megara\Qualimetry\Scrapping\.venv\lib\site-packages\playwright\_impl\_locator.py", line 153, in click
+    return await self._frame.click(self._selector, strict=True, **params)
+  File "C:\Users\aabdelhedi_ct\Desktop\Megara\Qualimetry\Scrapping\.venv\lib\site-packages\playwright\_impl\_frame.py", line 488, in click
+    await self._channel.send("click", locals_to_params(locals()))
+  File "C:\Users\aabdelhedi_ct\Desktop\Megara\Qualimetry\Scrapping\.venv\lib\site-packages\playwright\_impl\_connection.py", line 59, in send
+    return await self._connection.wrap_api_call(
+  File "C:\Users\aabdelhedi_ct\Desktop\Megara\Qualimetry\Scrapping\.venv\lib\site-packages\playwright\_impl\_connection.py", line 509, in wrap_api_call
+    return await cb()
+  File "C:\Users\aabdelhedi_ct\Desktop\Megara\Qualimetry\Scrapping\.venv\lib\site-packages\playwright\_impl\_connection.py", line 97, in inner_send
+    result = next(iter(done)).result()
+playwright._impl._errors.TimeoutError: Timeout 30000ms exceeded.

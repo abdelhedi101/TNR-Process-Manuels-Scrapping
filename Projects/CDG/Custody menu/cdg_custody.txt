@@ -1,0 +1,260 @@
+Règlement/Livraison>Instructions Clients Marché Local>Monitoring Instructions Client
+Règlement/Livraison>Instructions Clients Marché Local>Monitoring Instructions Clients
+Règlement/Livraison>Instructions Clients Marché Local>ABB Monitoring Instructions Client
+Règlement/Livraison>Instructions Clients Marché Local>ABB Monitoring Instructions Clients
+Règlement/Livraison>Instructions Clients Marché Local>Monitoring Instructions OPCVM
+Règlement/Livraison>Instructions Clients Marché Local>Monitoring Instructions OPCVMS
+Règlement/Livraison>Instructions Clients Marché Local>Modifier Instruction Client
+Règlement/Livraison>Instructions Clients Marché Local>Modifier Instructions OPCVM
+Règlement/Livraison>Instructions Clients Marché Local>Saisie Instruction Client
+Règlement/Livraison>Instructions Clients Marché Local>Saisie Apport de Titres
+Règlement/Livraison>Instructions Clients Marché Local>Saisie Instruction OPCVM
+Règlement/Livraison>Instructions Clients Marché Local>Validation Instruction Client
+Règlement/Livraison>Instructions Clients Marché Local>Validation des modifications
+Règlement/Livraison>Instructions Clients Marché Local>Dénouement Interne
+Règlement/Livraison>Instructions Clients Marché Local>Dénouement Instruction Client
+Règlement/Livraison>Instructions Clients Marché Local>Annulation des Instructions Non Validées
+Règlement/Livraison>Instructions Clients Marché Local>Annulation des Instructions Internes
+Règlement/Livraison>Instructions Clients Marché Local>Annulation Des Instructions Clients
+Règlement/Livraison>Instructions Clients Marché Local>Annulation
+Règlement/Livraison>Instructions Clients Marché Local>Rejet
+Règlement/Livraison>Instructions Clients Marché Local>Chargement Fichier IRL
+Règlement/Livraison>Instructions Clients Marché Local>Appariement interne -Apport de Titres Externe
+Règlement/Livraison>Instructions Clients Marché Local>Validation Instruction Clients
+Règlement/Livraison>Instructions Clients Marché Local>Gestion des contrats Repo>Modification de la jambe Aller
+Règlement/Livraison>Instructions Clients Marché Local>Gestion des contrats Repo>Modification de la jambe Retour
+Règlement/Livraison>Instructions Clients Marché Local>Gestion des opérations OPCVM>Gestion du soulte
+Règlement/Livraison>Instructions Clients Marché Local>Gestion des opérations OPCVM>Monitoring des soultes espèces
+Règlement/Livraison>Instructions Clients Marché Local>Gestion des opérations OPCVM>Monitoring des soultes titres
+Règlement/Livraison>Instructions Marché>Monitoring Instructions Marché
+Règlement/Livraison>Instructions Marché>Appariement
+Règlement/Livraison>Instructions Marché>Dénouement
+Règlement/Livraison>Instructions Marché>Annulation
+Règlement/Livraison>Instructions Marché>Rejet
+Règlement/Livraison>Instructions Marché>Dénouement Partiel
+Règlement/Livraison>Instrcuctions clients Marché Etranger>Monitoring Instruction ME
+Règlement/Livraison>Instrcuctions clients Marché Etranger>Monitoring Instruction OPCVM ME
+Règlement/Livraison>Instrcuctions clients Marché Etranger>Saisie Instruction ME
+Règlement/Livraison>Instrcuctions clients Marché Etranger>Saisie Instruction OPCVM ME
+Règlement/Livraison>Instruction Globale>Monitoring Instructions Globales
+Règlement/Livraison>Instruction Globale>Monitoring Instructions Globales OPCVM
+Règlement/Livraison>Instruction Globale>Saisie Instruction Globale
+Règlement/Livraison>Instruction Globale>Validation Instruction Globale
+Règlement/Livraison>OST individuelles>Transfert>Monitoring Transfert Compte à Compte
+Règlement/Livraison>OST individuelles>Transfert>Saisie Transfert compte à compte
+Règlement/Livraison>OST individuelles>Transfert>Saisie Transfert de Portefeuille
+Règlement/Livraison>OST individuelles>Transfert>Validation Transfert Compte à Compte
+Règlement/Livraison>OST individuelles>Transfert>Validation des modifications transfert
+Règlement/Livraison>OST individuelles>Nantissement>Nantissement>Monitoring Demandes de Nantissement
+Règlement/Livraison>OST individuelles>Nantissement>Nantissement>Saisie Demandes de Nantissement
+Règlement/Livraison>OST individuelles>Nantissement>Nantissement>Validation Demande de Nantissement
+Règlement/Livraison>OST individuelles>Nantissement>Nantissement>Réparation Demande de Nantissement
+Règlement/Livraison>OST individuelles>Nantissement>Nantissement>Annulation Demande de Nantissement
+Règlement/Livraison>OST individuelles>Nantissement>Nantissement>Rejet Demande de Nantissement
+Règlement/Livraison>OST individuelles>Nantissement>Nantissement>Vérification de la position Titres
+Règlement/Livraison>OST individuelles>Nantissement>Levée de Nantissement>Monitoring Levée de Nantissement
+Règlement/Livraison>OST individuelles>Nantissement>Levée de Nantissement>Saisie Levée de Nantissement
+Règlement/Livraison>OST individuelles>Nantissement>Levée de Nantissement>Validation Levée de Nantissement
+Règlement/Livraison>OST individuelles>Nantissement>Levée de Nantissement>Réparation Levée de Nantissement
+Règlement/Livraison>OST individuelles>Blocage>Demande de Blocage>Annulation Levée de Nantissement
+Règlement/Livraison>OST individuelles>Blocage>Demande de Blocage>Monitoring Demandes de Blocage
+Règlement/Livraison>OST individuelles>Blocage>Demande de Blocage>Saisie Demande de Blocage
+Règlement/Livraison>OST individuelles>Blocage>Demande de Blocage>Validation Demande de Blocage
+Règlement/Livraison>OST individuelles>Blocage>Demande de Blocage>Réparation Demande de Blocage
+Règlement/Livraison>OST individuelles>Blocage>Demande de Blocage>Vérification de la position Titres
+Règlement/Livraison>OST individuelles>Blocage>Demande de Blocage>Annualtion Demande de Blocage
+Règlement/Livraison>OST individuelles>Blocage>Demande de Blocage>Rejet Demande de Blocage
+Règlement/Livraison>OST individuelles>Blocage>Demande de Déblocage>Monitoring Demande de Déblocage
+Règlement/Livraison>OST individuelles>Blocage>Demande de Déblocage>Saisie Demande de Déblocage
+Règlement/Livraison>OST individuelles>Blocage>Demande de Déblocage>Validation Demande de Déblocage
+Règlement/Livraison>OST individuelles>Blocage>Demande de Déblocage>Réparation Demande de Déblocage
+Règlement/Livraison>OST individuelles>Blocage>Demande de Déblocage>Annulation Demande de Déblocage
+Règlement/Livraison>OST individuelles>Conversion>Saisie Conversion
+Règlement/Livraison>OST individuelles>Conversion>Monitoring Conversions
+Règlement/Livraison>Ajustement>Ajustement Automatique
+Règlement/Livraison>Ajustement>Ajustement Manuel
+Règlement/Livraison>Retour Sur>Retour sur Ajustement
+Règlement/Livraison>Retour Sur>Retour sur Dénouement
+Règlement/Livraison>Retour Sur>Retour Sur Opérations Internes>Retour sur Dénouement
+Règlement/Livraison>Retour Sur>Retour Sur Opérations Internes>Retour Sur Ajustement
+Position>Consultation de la position Titre Client
+Notification>Swifts>MT54X
+Notification>Swifts>MT548
+Notification>Notifications Maroclear>Notification Repo
+Notification>Notifications Maroclear>Avis d'opéré>Monitoring AOE
+Notification>Notifications Maroclear>Avis d'opéré>Chargement AOE
+Notification>Notifications Maroclear>Avis d'opéré>AOC
+Notification>Notifications Maroclear>Avis d'opéré>AOR
+Notification>Notifications Maroclear>Avis d'opéré>ARC
+Notification>Notifications Maroclear>Avis d'opéré>ARR
+Notification>Notifications Maroclear>Documents Comptables>MRB
+Notification>Notifications Maroclear>Documents Comptables>MRL
+Notification>Notifications Maroclear>Documents Comptables>RMQ
+Notification>Notifications Maroclear>Documents Comptables>RCQ
+Notification>Notifications Maroclear>Documents Comptables>RSM
+Notification>Notifications Maroclear>Documents Comptables>PONA
+Notification>Notifications Maroclear>Documents Comptables>Types d'opération Maroclear
+Notification>Notifications Maroclear>Documents Comptables>Configuration Reconciliation interne via RSM
+Notification>Notifications Maroclear>Documents Comptables>Résultat de la  Reconciliation de Position
+Notification>Notifications Maroclear>Documents Comptables>Résultats de la Reconciliation de comptabilité
+Notification>Notifications Maroclear>Documents Comptables>RMQ élémentaires
+Notification>Notifications Maroclear>Documents Comptables>RCQ élémentaires
+Notification>Notifications Maroclear>Documents Comptables>RSM élémentaires
+Notification>KTP
+Notification>Reprocess>Recycler MT54X
+Notification>Reprocess>Recycler MRL
+Notification>Reprocess>Recycler MRB
+Notification>Reprocess>Recycler AOE
+Notification>Reprocess>Recycler ARC
+Notification>Reprocess>Recycler ARR
+Notification>Reprocess>Recycler RSM
+Notification>Reprocess>Recycler RCQ
+Notification>Reprocess>Recycler RMQ
+Notification>Reprocess>MT54X
+Notification>Reprocess>MT548
+Notification>Messages
+Notification>Recycler Message
+Notification>NotificationOracleGL
+Notification>Monitoring CRO
+Notification>Monitoring CRO ABB
+Notification>Cro Request Trace
+Paramètrage>Configuration Générale
+Paramètrage>Process Setup>Configuration des références
+Paramètrage>Process Setup>Paramètres de système
+Paramètrage>Process Setup>Configuration des modifications
+Paramètrage>Process Setup>Configuration des critères d'ajustement
+Paramètrage>Process Setup>SLA Fenêtre de dénouement
+Paramètrage>Process Setup>SLA Chaîne de dénouement
+Paramètrage>Process Setup>SLA Expression de la quantité
+Paramètrage>Process Setup>Raisons de nantissement
+Paramètrage>Process Setup>SLA de Comptabilité
+Paramètrage>Process Setup>SLA instanciation
+Paramètrage>Process Setup>Chargement des configurations
+Paramètrage>Configuration des Régles de validation>Configuration des données obligatoires
+Paramètrage>Configuration des Régles de validation>Configuration des régles Métier
+Paramètrage>Configuration de types de  Transaction>Type de Transactions
+Paramètrage>Configuration de types de  Transaction>SLA Type de Transaction
+Paramètrage>Configuration Client>SLA Notifications Client
+Paramètrage>Configuration Client>SLA Date limite Client
+Paramètrage>Configuration Client>SLA Mondataire Compte Titres Client
+Paramètrage>Configuration Client>SLA Marge de tolèrance Client
+Paramètrage>Configuration Client>SLA Date Valeur
+Paramètrage>Configuration Client>SLA Réservation Espèces
+Paramètrage>Configuration Client>SLA Type de Transaction Eligible
+Paramètrage>Configuration Client>SLA Levée de réservation Espèces
+Paramètrage>Configuration Client>SLA Demande d'emprunt
+Paramètrage>Configuration Client>Demandes d'emprunt
+Paramètrage>Configuration Client>SLA Black List
+Paramètrage>Configuration Client>Règles CCF SLA
+Paramètrage>Configuration Marché>SLA Notifications Marché
+Paramètrage>Configuration Marché>SLA Date limite marché
+Paramètrage>Configuration Marché>SLA Marge de tolérance Marché
+Paramètrage>Configuration des Messages>Notifications En entrée>SLA Routing
+Paramètrage>Configuration des Messages>Notifications En entrée>Impacts
+Paramètrage>Configuration des Messages>Notifications En entrée>SLA MT54X Impact
+Paramètrage>Configuration des Messages>Notifications En entrée>SLA MT548 Impact
+Paramètrage>Configuration des Messages>Notifications En entrée>SLA Maroclear Impact
+Paramètrage>Configuration des Messages>Notifications En entrée>SLA Accounting Document Impact
+Paramètrage>Configuration des Messages>Notifications En entrée>SLA Fichier Ktp Impact
+Paramètrage>Configuration des Messages>Notifications En entrée>Régles Swift
+Paramètrage>Configuration des Messages>Notifications En sortie>Types de Notification
+Paramètrage>Configuration des Messages>Notifications En sortie>Configuration des canales
+Paramètrage>Configuration des Messages>Notifications En sortie>Configuration Bloc 3
+Paramètrage>Configuration des Messages>Notifications En sortie>AOR Raisons de Refus
+Paramètrage>Configuration des Messages>Configuration MT548>Qualificateurs Statut
+Paramètrage>Configuration des Messages>Configuration MT548>Codes Status
+Paramètrage>Configuration des Messages>Configuration MT548>Qualificateurs Raisons
+Paramètrage>Configuration des Messages>Configuration MT548>Codes Raisons
+Paramètrage>Configuration des Messages>Configuration MT548>Configuration Détails MT548
+Paramètrage>Configuration des Messages>Configuration des drivers>Configuration MT54X Driver
+Paramètrage>Configuration des Messages>Configuration des drivers>Configuration Scripting
+Paramètrage>Configuration des frais>Régles de Frais
+Paramètrage>Configuration des frais>SLA Frais de transaction
+Paramètrage>Configuration des frais>SLA Commission de courtage
+Paramètrage>Configuration des frais>SLA Impôt de bourse
+Paramètrage>Configuration des frais>SLA Frais d'annulation
+Paramètrage>Configuration des frais>SLA Frais de rejet
+Paramètrage>Configuration des frais>SLA Frais de réparation manuelle
+Paramètrage>Configuration des frais>SLA Frais de modification
+Paramètrage>Configuration des frais>SLA Montant Dû
+Paramètrage>Configuration des frais>Configuration générale des frais
+Paramètrage>Configuration des frais>Frais de Transaction>Calculer Frais de Transaction
+Paramètrage>Configuration des frais>Frais de Transaction>Afficher  Frais de Transaction
+Paramètrage>Configuration des frais>Frais de Transaction>Afficher Job Frais de Transaction
+Paramètrage>Configuration des frais>Frais de Transaction>Afficher/Créer Profile de Transaction
+Paramètrage>Configuration des frais>Frais de Transaction>Afficher/Créer SLA Frais de Transaction
+Paramètrage>Configuration des frais>Frais de Transaction>Afficher Facture par Process
+Paramètrage>Configuration des frais>Frais de Transaction>Annuler Process frais de Transaction
+Paramètrage>Configuration des frais>Frais de Transaction>Extraction des Sujet a frais de transactions
+Paramètrage>Configuration des taxes>SLA Catégorie Fiscale
+Paramètrage>Configuration de la Position Titres>SLA de verification de position titres
+Paramètrage>Configuration de la Position Titres>Context controle Position
+Paramètrage>Configuration de la Position Titres>Statuts des Mouvements
+Paramètrage>Configuration de la Position Titres>SLA statuts des mouvements
+Paramètrage>Configuration de la Position Titres>Nature de position
+Paramètrage>Configuration de la Position Titres>SLA dépositaire de position
+Paramètrage>Configuration de la Position Titres>SLA Impact Position
+Paramètrage>Configuration de la Position Titres>Impacts Position
+Paramètrage>Configuration de la Position Titres>Configuration des clés
+Paramètrage>Configuration de la Position Titres>Clés fongibles
+Paramètrage>Configuration de la Position Titres>SLA Indicateur des Transactions
+Paramètrage>Configuration de la Position Titres>Configuration de l'ordre
+Paramètrage>Configuration de la Position Titres>SLA Evénement
+Paramètrage>Configuration de la Position Titres>SLA de Comptabilité
+Paramètrage>Configuration de la Position Titres>Impact CGC
+Paramètrage>Configuration de la Position Espèces>Context Espèces
+Paramètrage>Configuration de la Reconciliation>Maching Setup
+Paramètrage>Configuration de la Reconciliation>Market Position To Int Market Rec
+Paramètrage>Configuration de la Reconciliation>Market Statement To Ext Marker Rec
+Paramètrage>Retrocession>SLA Retrocession
+Paramètrage>Retrocession>Job Retrocession
+Paramètrage>Configuration Technique>Excel Driver>Configuration
+Paramètrage>Configuration Technique>Excel Driver>IOExcelGConfig
+Paramètrage>Configuration Technique>Excel Driver>Excel Enumerations des Convertisseurs
+Paramètrage>Configuration Technique>Monitoring SLA
+Paramètrage>Configuration Technique>Test Tool
+Paramètrage>Configuration Technique>Effacer cache
+Paramètrage>Configuration Technique>Class  Dispatcher
+Paramètrage>Configuration Technique>Simulation Ebanking
+Paramètrage>Configuration Technique>Dynamic Join Configuration
+Paramètrage>Configuration Technique>LCRunner
+Paramètrage>Configuration Technique>Chargement des configurationq
+Rapports>TCB5: Souscriptions et Rachats d'OPCVM
+Rapports>TCB7: Transactions Boursières
+Rapports>Avis De Prélèvement De Commission De Règlement Livraison
+Rapports>Avis de Reglement Livraison Bourse
+Rapports>Avis de Reglement Livraison Ferme
+Rapports>Avis Reglement Livraison Pension
+Rapports>Avis Reglement Livraison Souscription OPCVM
+Rapports>Avis Reglement Livraison Rachat OPCVM
+Rapports>Avis operation denouement marche etranger
+Rapports>Avis Transferts Emis
+Rapports>Avis Transferts Recus
+Rapports>Avis operation denouement hors Maroclear
+Rapports>Avis de Rejet IRL
+Rapports>Avis Operation de blocage
+Rapports>Avis Operation de Nantissement
+Rapports>Avis Annulation IRL
+Rapports>Avis Operation titres conversion de forme
+Rapports>Releve Mouvements Sur Titres
+Rapports>Etat des transferts des titres recus
+Rapports>Etat des transferts des titres emis
+Rapports>Attestation de blocage
+Rapports>Attestation de prelevement retenu a la source
+Rapports>Attestation de nantissement
+Rapports>Notification Operations Pension
+Rapports>Notification Operations Fermes
+Rapports>Commission Forced
+Rapports>volumes des operations par type dinstrument
+Rapports>Confirmation de statut
+Rapports>Encours Titres
+Rapports>Audit Instruction
+Rapports>Operation avec forcage de position titre
+Rapports>Liste des résiliations d'opérations de cession temporaire
+Rapports>Grand Livre
+Rapports>Etat BAM
+Rapports>Ecarts relevés lors des rapprochements des avoirs conservés avec DC
+Rapports>Déclaration Maroclear
+CompteurTVA>Générer Compteur TVA
+Report>Avis ope titres conversion de forme
+Report>Ordre de virement pour les soultesespeces

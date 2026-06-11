@@ -1,0 +1,92 @@
+Setup>Referential>Entities>Entity Roles>Fiscal Authority
+Setup>Referential>Entities>Entity Roles>Fund Distributor
+Setup>Referential>Entities>Entity Roles>Fund Manager
+Setup>Referential>Entities>Entity Roles>Guarantor
+Setup>Referential>Entities>Entity Roles>Intermediary
+Setup>Referential>Entities>Entity Roles>Issuer
+Setup>Referential>Entities>Entity Roles>Issuer Agent
+Setup>Referential>Entities>Entity Roles>Lender
+Setup>Referential>Entities>Entity Roles>Paying Agent
+Setup>Referential>Entities>Entity Roles>Provider
+Setup>Referential>Entities>Entity Roles>Proxy
+Setup>Referential>Entities>Entity Roles>Registrar
+Setup>Referential>Entities>Entity Roles>Stock Exchange
+Setup>Referential>Financial Instrument
+Setup>Referential>Financial Instrument>Security
+Setup>Referential>Financial Instrument>Security By Market
+Setup>Referential>Generic Data
+Setup>Referential>Generic Data>Account Category
+Setup>Referential>Generic Data>Calendars
+Setup>Referential>Generic Data>Calendars>Country Calendar
+Setup>Referential>Generic Data>Calendars>Currency Calendar
+Setup>Referential>Generic Data>Calendars>Holiday
+Setup>Referential>Generic Data>Calendars>Holiday>Exceptional Holiday
+Setup>Referential>Generic Data>Calendars>Holiday>Permanent Holiday
+Setup>Referential>Generic Data>Calendars>Holiday>Weekly Holiday
+Setup>Referential>Generic Data>Calendars>Main Entity BC
+Setup>Referential>Generic Data>Country
+Setup>Referential>Generic Data>Currency
+Setup>Referential>Generic Data>Entity Sector
+Setup>Referential>Generic Data>Market
+Setup>Referential>Generic Data>VAT Configuration
+Setup>Referential>His Rule Config
+Setup>Referential>Price Data
+Setup>Referential>Price Data>Alternative Code
+Setup>Referential>Price Data>Price Set
+Setup>Referential>Price Data>Provider
+Setup>Referential>Rating
+Setup>Referential>Rating>Rating
+Setup>Referential>Rating>Rating Agency
+Setup>Referential>Rating>Rating Class
+Setup>Referential>Rating>Rating Definition
+Setup>Referential>Rating>Rating Evaluation
+Setup>SLA Reference
+Setup>Technical Configuration
+Setup>Technical Configuration>Class Dispatche
+Setup>Technical Configuration>Monitoring SLA
+Setup>Technical Configuration>SystemConfig
+Setup>Technical Configuration>Test Tool
+Type de contrat>Chargement massif
+Type de contrat>Confirmer les Mouvements
+Type de contrat>Contrat modèle/Contrat cadre
+Type de contrat>Contrat modèle/Contrat cadre> Contract modèle
+Type de contrat>Contrat modèle/Contrat cadre> Contrat cadre
+Type de contrat>Contrat modèle/Contrat cadre>Clôturer Contrat cadre
+Type de contrat>Contrat modèle/Contrat cadre>Contract modèle
+Type de contrat>Contrat modèle/Contrat cadre>Contrat cadre
+Type de contrat>Contrat modèle/Contrat cadre>Type du contrat cadre
+Type de contrat>Contrat modèle/Contrat cadre>Valider contrat cadre
+Type de contrat>Contrat modèle/Contrat cadre>Valider contrat modèle
+Type de contrat>Contrat simple manuel
+Type de contrat>Contrat simple manuel>prét-emprunt
+Type de contrat>Contrat simple manuel>prét-emprunt> Monitoring des contrats de prét-emprunts
+Type de contrat>Contrat simple manuel>prét-emprunt>Ajustement
+Type de contrat>Contrat simple manuel>prét-emprunt>Ajustement>Ajuster
+Type de contrat>Contrat simple manuel>prét-emprunt>Ajustement>Envoie pour dénouement
+Type de contrat>Contrat simple manuel>prét-emprunt>Ajustement>MarketToMarket
+Type de contrat>Contrat simple manuel>prét-emprunt>Ajustement>Repair
+Type de contrat>Contrat simple manuel>prét-emprunt>Ajustement>Valider les Ajustements
+Type de contrat>Contrat simple manuel>prét-emprunt>Annulation
+Type de contrat>Contrat simple manuel>prét-emprunt>Initiation
+Type de contrat>Contrat simple manuel>prét-emprunt>Initiation>Envoie pour dénouement
+Type de contrat>Contrat simple manuel>prét-emprunt>Initiation>Recheck
+Type de contrat>Contrat simple manuel>prét-emprunt>Initiation>Saisie
+Type de contrat>Contrat simple manuel>prét-emprunt>Modifier
+Type de contrat>Contrat simple manuel>prét-emprunt>Modifier  la date de clôture
+Type de contrat>Contrat simple manuel>prét-emprunt>Monitoring des contrats de prét-emprunts
+Type de contrat>Contrat simple manuel>prét-emprunt>Repair
+Type de contrat>Contrat simple manuel>prét-emprunt>Retour
+Type de contrat>Contrat simple manuel>prét-emprunt>Retour>Envoie pour dénouement
+Type de contrat>Contrat simple manuel>prét-emprunt>Retour>Repair
+Type de contrat>Contrat simple manuel>prét-emprunt>Retour>Retour
+Type de contrat>Contrat simple manuel>prét-emprunt>Retour>Valider les Retours
+Type de contrat>Contrat simple manuel>prét-emprunt>Résiliation
+Type de contrat>Contrat simple manuel>prét-emprunt>Résiliation>Création
+Type de contrat>Contrat simple manuel>prét-emprunt>substitution
+Type de contrat>Contrat simple manuel>prét-emprunt>substitution>Envoie pour dénouement
+Type de contrat>Contrat simple manuel>prét-emprunt>substitution>Repair
+Type de contrat>Contrat simple manuel>prét-emprunt>substitution>Substituter
+Type de contrat>Contrat simple manuel>prét-emprunt>substitution>Valider les Substitutions
+Type de contrat>Force Check Titre
+Type de contrat>Monitoring  des contract P/E
+Type de contrat>Valider les contrats

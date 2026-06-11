@@ -1,0 +1,234 @@
+Configurations>Confguration Métier 
+Marché Etranger>Exécution Ordres De Bourse
+Marché Etranger>Exécution Ordres De Bourse>Monitoring exécutions marché
+Marché Etranger>Exécution Ordres De Bourse>Rapprochement OB  et exécutions marché
+Marché Etranger>Exécution Ordres De Bourse>Recyclage des exécutions 
+Marché Etranger>Exécution Ordres De Bourse>Saisie exécution marché
+Marché Etranger>Exécution Ordres De Bourse>Validation des Exécutions
+Marché Etranger>Ordres de Bourse Simple
+Marché Etranger>Ordres de Bourse Simple>Annulation des OB
+Marché Etranger>Ordres de Bourse Simple>Chargement massive
+Marché Etranger>Ordres de Bourse Simple>Envoi Ordres de bourse
+Marché Etranger>Ordres de Bourse Simple>Modification des OB
+Marché Etranger>Ordres de Bourse Simple>Monitoring des OB Etrangers
+Marché Etranger>Ordres de Bourse Simple>Ordres de bourse non envoyés
+Marché Etranger>Ordres de Bourse Simple>Recyclage des OB
+Marché Etranger>Ordres de Bourse Simple>Réception Acceptation/Rejet
+Marché Etranger>Ordres de Bourse Simple>Saisie manuelle des OB Etrangers
+Marché Etranger>Ordres de Bourse Simple>Validation de Modification
+Marché Etranger>Ordres de Bourse Simple>Validation des OB
+Module OPV>Exécution des ordres OPV
+Module OPV>Exécution des ordres OPV>Monitoring exécutions marchés OPV
+Module OPV>Exécution des ordres OPV>Rapprochement Ordre OPV et Exécution Marché
+Module OPV>Exécution des ordres OPV>Recyclage des exécutions OPV
+Module OPV>Exécution des ordres OPV>Saisie Exécution ordres OPV
+Module OPV>Exécution des ordres OPV>Validation des exécutions marché OPV
+Module OPV>Exécution des ordres OPV>Validation/Rejet des exécutions OPV
+Module OPV>Ordres OPV
+Module OPV>Ordres OPV>Annulation des Ordres OPV
+Module OPV>Ordres OPV>Déveresment IRL
+Module OPV>Ordres OPV>Envoi des Ordres OPV
+Module OPV>Ordres OPV>Forçage Espèce des ordres OPV
+Module OPV>Ordres OPV>Mise à jour de l'ISIN
+Module OPV>Ordres OPV>Modification des Ordres OPV invalides
+Module OPV>Ordres OPV>Monitoring des ordres OPV
+Module OPV>Ordres OPV>Rejet des Ordres OPV
+Module OPV>Ordres OPV>Relevé de souscription IPO
+Module OPV>Ordres OPV>Saisie ISIN
+Module OPV>Ordres OPV>Saisie Ordre OPV
+Module OPV>Ordres OPV>Validation ISIN
+Module OPV>Ordres OPV>Validation des ordres OPV
+Module OPV>Ordres OPV>ValidationWorkFlowBOT
+Module OPV>Traitement des OPVs
+Module OPV>Traitement des OPVs>Monitoring OPV
+Module OPV>Traitement des OPVs>Monitoring Tranche de Souscripteurs
+Module OPV>Traitement des OPVs>Saisie OPV
+Module OPV>Traitement des OPVs>Validation OPV
+Notifications>Cours VL
+Notifications>IPO Notifications
+Notifications>Les fichiers d 'Exécution
+Notifications>Les fichiers de rejet
+Notifications>Les fichiers des ordres 
+Notifications>Les messages
+Notifications>Les raisons de rejets
+Notifications>MT54X
+Notifications>Monitoring CRO
+Notifications>Notification Ordre de bourse
+Notifications>Ordres sous/rachat
+Ordres De Bourse>Exécution Ordres De Bourse
+Ordres De Bourse>Exécution Ordres De Bourse>Monitoring exécutions
+Ordres De Bourse>Exécution Ordres De Bourse>Monitoring exécutions marché
+Ordres De Bourse>Exécution Ordres De Bourse>Rapprochement OB  et exécutions marché
+Ordres De Bourse>Exécution Ordres De Bourse>Saisie exécution marché
+Ordres De Bourse>Exécution Ordres De Bourse>Validation des Exécutions
+Ordres De Bourse>Ordres de Bourse Groupé
+Ordres De Bourse>Ordres de Bourse Groupé>Annulation des OB
+Ordres De Bourse>Ordres de Bourse Groupé>Envoi Ordres de bourse
+Ordres De Bourse>Ordres de Bourse Groupé>Gestion de Provision des Ordres
+Ordres De Bourse>Ordres de Bourse Groupé>Modification des OB
+Ordres De Bourse>Ordres de Bourse Groupé>Monitoring des ordres de bourse
+Ordres De Bourse>Ordres de Bourse Groupé>Ordres de bourse groupés non envoyés 
+Ordres De Bourse>Ordres de Bourse Groupé>Recyclage des OB
+Ordres De Bourse>Ordres de Bourse Groupé>Réception Acceptation/Rejet
+Ordres De Bourse>Ordres de Bourse Groupé>Saisie manuelle des OB 
+Ordres De Bourse>Ordres de Bourse Groupé>Validation Workflow BOT Ordres de bourse groupés
+Ordres De Bourse>Ordres de Bourse Groupé>Validation de Modification
+Ordres De Bourse>Ordres de Bourse Groupé>Validation des OB
+Ordres De Bourse>Ordres de Bourse Groupé>Validation des sous ordres
+Ordres De Bourse>Ordres de bourse
+Ordres De Bourse>Ordres de bourse>Accepter le rejet Workflow
+Ordres De Bourse>Ordres de bourse>Annulation des OB
+Ordres De Bourse>Ordres de bourse>Envoi Ordres de Bourse
+Ordres De Bourse>Ordres de bourse>Forçage espèce des Ordres de Bourse
+Ordres De Bourse>Ordres de bourse>Géneration Duplicata Ordre de Bourse
+Ordres De Bourse>Ordres de bourse>Génération des rapports
+Ordres De Bourse>Ordres de bourse>Modification des OB invalides
+Ordres De Bourse>Ordres de bourse>Pilotage Ordre de bourse
+Ordres De Bourse>Ordres de bourse>Pilotage des Ordres de Bourse
+Ordres De Bourse>Ordres de bourse>Rejet Workflow
+Ordres De Bourse>Ordres de bourse>Rejet des Ordres de Bourse
+Ordres De Bourse>Ordres de bourse>Saisie  des Ordes de Bourse
+Ordres De Bourse>Ordres de bourse>Saisie  des Ordes de Bourse Agence
+Ordres De Bourse>Ordres de bourse>Signature des rapports
+Ordres De Bourse>Ordres de bourse>Validation Workflow sous ordres
+Ordres De Bourse>Ordres de bourse>Validation des OB
+Ordres De Bourse>Ordres de bourse>Validation des Ordres de Bourse
+Ordres De Bourse>Ordres de bourse>ValidationWorflowBOT
+Ordres Souscription/Rachat OPCI>Exécution des ordres
+Ordres Souscription/Rachat OPCI>Exécution des ordres>Execution des ordres
+Ordres Souscription/Rachat OPCI>Exécution des ordres>Monitoring des exécutions
+Ordres Souscription/Rachat OPCI>Ordres Souscription Rachat OPCI
+Ordres Souscription/Rachat OPCI>Ordres Souscription Rachat OPCI>Accepter Rejet Workflow
+Ordres Souscription/Rachat OPCI>Ordres Souscription Rachat OPCI>Annulation des Ordre OPCI Agence
+Ordres Souscription/Rachat OPCI>Ordres Souscription Rachat OPCI>Annulation des Ordres OPCI
+Ordres Souscription/Rachat OPCI>Ordres Souscription Rachat OPCI>Envoi des ordres à WG
+Ordres Souscription/Rachat OPCI>Ordres Souscription Rachat OPCI>Envoi des ordres à la SDG
+Ordres Souscription/Rachat OPCI>Ordres Souscription Rachat OPCI>Forçage espèce des ordres OPCI
+Ordres Souscription/Rachat OPCI>Ordres Souscription Rachat OPCI>Génération Duplicata Ordre OPCI
+Ordres Souscription/Rachat OPCI>Ordres Souscription Rachat OPCI>Génération des rapports
+Ordres Souscription/Rachat OPCI>Ordres Souscription Rachat OPCI>Modification des ordres
+Ordres Souscription/Rachat OPCI>Ordres Souscription Rachat OPCI>Modification des ordres invalides
+Ordres Souscription/Rachat OPCI>Ordres Souscription Rachat OPCI>Pilotage des ordres
+Ordres Souscription/Rachat OPCI>Ordres Souscription Rachat OPCI>Pilotage ordre
+Ordres Souscription/Rachat OPCI>Ordres Souscription Rachat OPCI>Rejet Workflow
+Ordres Souscription/Rachat OPCI>Ordres Souscription Rachat OPCI>Rejet des ordres Agence
+Ordres Souscription/Rachat OPCI>Ordres Souscription Rachat OPCI>Rejet des ordres OPCI
+Ordres Souscription/Rachat OPCI>Ordres Souscription Rachat OPCI>Saisie des ordres
+Ordres Souscription/Rachat OPCI>Ordres Souscription Rachat OPCI>Saisie des ordres Agence
+Ordres Souscription/Rachat OPCI>Ordres Souscription Rachat OPCI>Signature des rapports
+Ordres Souscription/Rachat OPCI>Ordres Souscription Rachat OPCI>Validation WorkFlow BOT
+Ordres Souscription/Rachat OPCI>Ordres Souscription Rachat OPCI>Validation des ordres
+Ordres Souscription/Rachat OPCI>Ordres Souscription Rachat OPCI>Validation des ordres
+Ordres Souscription/Rachat OPCI>Ordres Souscription Rachat OPCI>Validation des sous ordres OPCI
+Ordres Souscription/Rachat OPCVM
+Ordres Souscription/Rachat OPCVM>Exécution des ordres
+Ordres Souscription/Rachat OPCVM>Exécution des ordres>Execution des ordres
+Ordres Souscription/Rachat OPCVM>Exécution des ordres>Monitoring des exécutions
+Ordres Souscription/Rachat OPCVM>Ordres S/R Groupés
+Ordres Souscription/Rachat OPCVM>Ordres S/R Groupés>Annulation des ordres SR groupés
+Ordres Souscription/Rachat OPCVM>Ordres S/R Groupés>Annulation des sous Ordres
+Ordres Souscription/Rachat OPCVM>Ordres S/R Groupés>Consolidation des sous ordres
+Ordres Souscription/Rachat OPCVM>Ordres S/R Groupés>Envoi des ordres SR groupés
+Ordres Souscription/Rachat OPCVM>Ordres S/R Groupés>Modification des sous Ordres
+Ordres Souscription/Rachat OPCVM>Ordres S/R Groupés>Monitoring des ordres SR Groupés
+Ordres Souscription/Rachat OPCVM>Ordres S/R Groupés>Monitoring des sous ordres SR
+Ordres Souscription/Rachat OPCVM>Ordres S/R Groupés>Recyclage des sous Ordres 
+Ordres Souscription/Rachat OPCVM>Ordres S/R Groupés>Saisie manuelle des ordres SR
+Ordres Souscription/Rachat OPCVM>Ordres S/R Groupés>Validation des sous ordres SR
+Ordres Souscription/Rachat OPCVM>Ordres Souscription Rachat OPCVM
+Ordres Souscription/Rachat OPCVM>Ordres Souscription Rachat OPCVM>Accepter Rejet Workflow
+Ordres Souscription/Rachat OPCVM>Ordres Souscription Rachat OPCVM>Annulation des Ordre OPCVM Agence
+Ordres Souscription/Rachat OPCVM>Ordres Souscription Rachat OPCVM>Annulation des Ordres OPCVM
+Ordres Souscription/Rachat OPCVM>Ordres Souscription Rachat OPCVM>Envoi des ordres à WG
+Ordres Souscription/Rachat OPCVM>Ordres Souscription Rachat OPCVM>Envoi des ordres à la SDG
+Ordres Souscription/Rachat OPCVM>Ordres Souscription Rachat OPCVM>Forçage espèce des ordres OPCVM
+Ordres Souscription/Rachat OPCVM>Ordres Souscription Rachat OPCVM>Génération Duplicata Ordre OPCVM
+Ordres Souscription/Rachat OPCVM>Ordres Souscription Rachat OPCVM>Génération des rapports
+Ordres Souscription/Rachat OPCVM>Ordres Souscription Rachat OPCVM>Modification des ordres
+Ordres Souscription/Rachat OPCVM>Ordres Souscription Rachat OPCVM>Modification des ordres invalides
+Ordres Souscription/Rachat OPCVM>Ordres Souscription Rachat OPCVM>Pilotage des ordres
+Ordres Souscription/Rachat OPCVM>Ordres Souscription Rachat OPCVM>Pilotage ordre
+Ordres Souscription/Rachat OPCVM>Ordres Souscription Rachat OPCVM>Rejet Workflow
+Ordres Souscription/Rachat OPCVM>Ordres Souscription Rachat OPCVM>Rejet des ordres Agence
+Ordres Souscription/Rachat OPCVM>Ordres Souscription Rachat OPCVM>Rejet des ordres OPCVM
+Ordres Souscription/Rachat OPCVM>Ordres Souscription Rachat OPCVM>Saisie des ordres
+Ordres Souscription/Rachat OPCVM>Ordres Souscription Rachat OPCVM>Saisie des ordres Agence
+Ordres Souscription/Rachat OPCVM>Ordres Souscription Rachat OPCVM>Signature des rapports
+Ordres Souscription/Rachat OPCVM>Ordres Souscription Rachat OPCVM>Validation WorkFlow BOT
+Ordres Souscription/Rachat OPCVM>Ordres Souscription Rachat OPCVM>Validation des ordres
+Ordres Souscription/Rachat OPCVM>Ordres Souscription Rachat OPCVM>Validation des ordres
+Ordres Souscription/Rachat OPCVM>Ordres Souscription Rachat OPCVM>Validation des sous ordres OPCVM
+Rapports>ConfirmationReportIPO
+Rapports>Reporting Clientèle : Avis De Confirmation De Execution
+Rapports>Reporting Clientèle : Bulletin Rachat
+Rapports>Reporting Clientèle : Bulletin Souscription
+Rapports>Reporting Clientèle : Orde achat en Bourse
+Rapports>Reporting Clientèle : OrderAchatEnBourse
+Rapports>Reporting Clientèle : Ordre de Rachat
+Rapports>Reporting Clientèle : Ordre de souscription
+Rapports>Reporting Clientèle : Ordre de vente en Bourse
+Rapports>Reporting Clientèle : OrdreVenteEnBourse
+Rapports>Reporting Interne de gestion : Etat des souscriptions cumulé
+Rapports>Reporting Interne de gestion :Etat de souscriptions journalieres par agence
+Rapports>Reporting clientèle :Compte rendu de souscription  en IPO
+Referentiel>Consultation de la Position Client
+Referentiel>Consultation de la position client 
+Referentiel>Cours des Titres 
+Configurations>Confguration Métier >Config Client BlackListé
+Configurations>Confguration Métier >Config Contexte De La Réservation
+Configurations>Confguration Métier >Config Date De Dénoument
+Configurations>Confguration Métier >Config Nombre De Jours De Validité
+Configurations>Confguration Métier >Config contrôle Fin de validité OB
+Configurations>Confguration Métier >Configuration De L'Heure Limite
+Configurations>Confguration Métier >Configuration De L'Heure Limite>Heure Limite d'annulation
+Configurations>Confguration Métier >Configuration De L'Heure Limite>Heure Limite d'envoi des SR
+Configurations>Confguration Métier >Configuration De L'Heure Limite>Heure limite d'envoi des OB
+Configurations>Confguration Métier >Configuration De L'Heure Limite>Heure limite de réception
+Configurations>Confguration Métier >Configuration Des Frais
+Configurations>Confguration Métier >Configuration Des Frais>Agent Collecte d'ordre SLA
+Configurations>Confguration Métier >Configuration Des Frais>Commission Réseau Placeur SLA
+Configurations>Confguration Métier >Configuration Des Frais>Config Frais OB
+Configurations>Confguration Métier >Configuration Des Frais>Config Frais OB>Config Comission SDB
+Configurations>Confguration Métier >Configuration Des Frais>Config Frais OB>Config Impôt De Bourse
+Configurations>Confguration Métier >Configuration Des Frais>Régles De Frais
+Configurations>Confguration Métier >Configuration Taux De Couverture
+Configurations>Confguration Métier >Configuration Taux De Couverture>SLA Couverture risque de variation de la VL
+Configurations>Confguration Métier >Configuration Taux De Couverture>SLA Couverture risque de variation des frais
+Configurations>Confguration Métier >Configuration Taux De Couverture>SLA Couverture risque de variation des prix
+Configurations>Confguration Métier >Configuration des comptes litigieux
+Configurations>Confguration Métier >Les Contrôles Fonctionnels
+Configurations>Confguration Métier >Notification Client
+Configurations>Confguration Métier >Notification Marché
+Configurations>Confguration Métier >SLA Coverage Fees Risk
+Configurations>Confguration Métier >SLA Coverage Price Risk
+Configurations>Confguration Métier >SLA Routage des ordres
+Configurations>Confguration Métier >SLA Réservation espéces
+Configurations>Confguration Métier >SLA Société de bourse
+Configurations>Confguration Métier >SLA Société de gestion
+Configurations>Confguration Métier >WorkFlow / Pouvoir de signature
+Configurations>Confguration Métier >WorkFlow / Pouvoir de signature>SLA Configuration Workflow
+Configurations>Confguration Métier >WorkFlow / Pouvoir de signature>SLA Configuration pouvoir de signature
+Configurations>Confguration Métier >chaine de dénoument
+Configurations>Configurations Techniques
+Configurations>Configurations Techniques>Allocation setup
+Configurations>Configurations Techniques>Chargement des configurations
+Configurations>Configurations Techniques>Class despatcher
+Configurations>Configurations Techniques>Configuration De La Consolidation
+Configurations>Configurations Techniques>Configuration Notification
+Configurations>Configurations Techniques>Configuration Notification>Config Impact MT502
+Configurations>Configurations Techniques>Configuration Notification>Config Impact MT515
+Configurations>Configurations Techniques>Configuration Notification>Configuration Des Drivers SMS
+Configurations>Configurations Techniques>Configuration Notification>Configuration SMS
+Configurations>Configurations Techniques>Configuration Notification>Find / Create Channel Configuration
+Configurations>Configurations Techniques>Configuration Notification>Impact
+Configurations>Configurations Techniques>Configuration Notification>Journalisation out
+Configurations>Configurations Techniques>Configuration Notification>Routage
+Configurations>Configurations Techniques>Configuration Notification>Swift Driver Config
+Configurations>Configurations Techniques>Configuration Notification>Type De Notification
+Configurations>Configurations Techniques>Configuration de l'allocation SLA
+Configurations>Configurations Techniques>Configuration des Jobs
+Configurations>Configurations Techniques>Configuration des Références
+Configurations>Configurations Techniques>DynamicJoinCondition
+Configurations>Configurations Techniques>EntityExtractor
+Configurations>Configurations Techniques>Systeme parameters 
+Configurations>Configurations Techniques>dynamique join configuration

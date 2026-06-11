@@ -1,0 +1,5 @@
+Fiscalité>Revenue
+Fiscalité>Compteur du revenu
+Fiscalité>Compteur Fiscal
+Fiscalité>Plus/Moins Value>Opérations
+Fiscalité>Plus/Moins Value>Opérations>Consultation

@@ -1,0 +1,377 @@
+Referentiel>Donnees Generiques>Zones Geographiques
+Referentiel>Donnees Generiques>Pays
+Referentiel>Donnees Generiques>localites
+Referentiel>Donnees Generiques>Marches
+Referentiel>Donnees Generiques>Devises
+Referentiel>Donnees Generiques>Taux de Reference
+Referentiel>Donnees Generiques>les Calendriers>Calendrier de l'Entite Principale
+Referentiel>Donnees Generiques>les Calendriers>Calendrier de Devise
+Referentiel>Donnees Generiques>les Calendriers>Calendrier du Pays
+Referentiel>Donnees Generiques>les Calendriers>Vacances hebdomadaires
+Referentiel>Donnees Generiques>les Calendriers>Vacances permanentes
+Referentiel>Donnees Generiques>les Calendriers>vacances exceptionnelles
+Referentiel>Donnees Generiques>Referentiel TVA>Classification de la TVA
+Referentiel>Donnees Generiques>Referentiel TVA>Configuration de la TVA
+Referentiel>Entites>Consulter l'Entite Principale
+Referentiel>Entites>Creer/Afficher les Entites
+Referentiel>Entites>Affecter les Roles des Entites
+Referentiel>Entites>Creer/Afficher les Agences
+Referentiel>Entites>Creer/Afficher les Groupes de Clients
+Referentiel>Entites>Creer/Afficher les Sous Groupes de Clients
+Referentiel>Entites>Creer/Afficher les Cotitulaires de Comptes
+Referentiel>Entites>Afficher les Roles Entites>Societes de Bourse
+Referentiel>Entites>Afficher les Roles Entites>Banques Centrales
+Referentiel>Entites>Afficher les Roles Entites>Banque
+Referentiel>Entites>Afficher les Roles Entites>Chambre De Compensation
+Referentiel>Entites>Afficher les Roles Entites>Etablissement de credit
+Referentiel>Entites>Afficher les Roles Entites>Codification Sources
+Referentiel>Entites>Afficher les Roles Entites>Contreparties
+Referentiel>Entites>Afficher les Roles Entites>Correspondants
+Referentiel>Entites>Afficher les Roles Entites>Autorites Fiscales
+Referentiel>Entites>Afficher les Roles Entites>Emetteur
+Referentiel>Entites>Afficher les Roles Entites>Depositaire
+Referentiel>Entites>Afficher les Roles Entites>Source d'information
+Referentiel>Entites>Afficher les Roles Entites>Depositaires Centrales
+Referentiel>Entites>Afficher les Roles Entites>Mandataires
+Referentiel>Entites>Afficher les Roles Entites>Autorite
+Referentiel>Entites>Afficher les Roles Entites>Distributeur de Fond
+Referentiel>Entites>Afficher les Roles Entites>Intermediare
+Referentiel>Entites>Afficher les Roles Entites>Registreurs
+Referentiel>Entites>Afficher les Roles Entites>Garants
+Referentiel>Entites>Afficher les Roles Entites>Clients
+Referentiel>Entites>Afficher les Roles Entites>GIE
+Referentiel>Entites>Afficher les Roles Entites>Porteur de Part
+Referentiel>Entites>Afficher les Roles Entites>Depositaire de Fond
+Referentiel>Entites>Afficher les Roles Entites>Gestionnaires de Fond
+Referentiel>Entites>Afficher les Roles Entites>Centralisateur
+Referentiel>Entites>Afficher les Roles Entites>Agent de Paiement
+Referentiel>Entites>Afficher les Roles Entites>Preteur
+Referentiel>Entites>Afficher les Roles Entites>Emprunteur
+Referentiel>Entites>Afficher les Roles Entites>Transfer Agent
+Referentiel>Entites>Autres Donnees>Creer/Afficher les Liens d'apparente avec CDG Capital
+Referentiel>Entites>Autres Donnees>Creer/Afficher Categories Socioprofessionelles
+Referentiel>Entites>Autres Donnees>Creer/Afficher les Categories des Agents Economiques
+Referentiel>Entites>Autres Donnees>Creer/Afficher les Statuts de Residence
+Referentiel>Entites>Autres Donnees>Creer/Afficher les Formes Juridiques
+Referentiel>Entites>Autres Donnees>Creer/Afficher les Activites
+Referentiel>Entites>Autres Donnees>Creer/Afficher les Sous-Activites
+Referentiel>Entites>Autres Donnees>Creer/Afficher les Sous-Branches d'Activite
+Referentiel>Entites>Autres Donnees>Creer/Afficher les Professions
+Referentiel>Entites>Autres Donnees>Creer/Afficher Segment Commercial
+Referentiel>Entites>Autres Donnees>Creer/Afficher Status Legal
+Referentiel>Entites>Autres Donnees>Creer/Afficher Categorie de Risque d'emission
+Referentiel>Entites>Autres Donnees>Creer/Afficher code tribunal
+Referentiel>Entites>Autres Donnees>Creer/Afficher Contrepartie externe
+Referentiel>Comptes>Creer un Compte
+Referentiel>Comptes>Afficher les Comptes>Compte Espece Client
+Referentiel>Comptes>Afficher les Comptes>Compte Titre Client
+Referentiel>Comptes>Afficher les Comptes>Compte Espece Nostro
+Referentiel>Comptes>Afficher les Comptes>Compte Titre Nostro
+Referentiel>Comptes>Afficher les Comptes>Compte Espece Externe
+Referentiel>Comptes>Autres Donnees>Qualite du Compte
+Referentiel>Comptes>Autres Donnees>Types de Comptes
+Referentiel>Comptes>Autres Donnees>Nature du Compte
+Referentiel>Comptes>Autres Donnees>Masse de Segregation
+Referentiel>Instruments Financiers>Creer les Instruments Financiers>Action
+Referentiel>Instruments Financiers>Creer les Instruments Financiers>Obligation
+Referentiel>Instruments Financiers>Creer les Instruments Financiers>TCN
+Referentiel>Instruments Financiers>Creer les Instruments Financiers>Droit
+Referentiel>Instruments Financiers>Creer les Instruments Financiers>Fond etape 2
+Referentiel>Instruments Financiers>Creer les Instruments Financiers>Fond etape 1
+Referentiel>Instruments Financiers>Afficher les Instruments Financiers>Actions
+Referentiel>Instruments Financiers>Afficher les Instruments Financiers>Obligations
+Referentiel>Instruments Financiers>Afficher les Instruments Financiers>TCNs
+Referentiel>Instruments Financiers>Afficher les Instruments Financiers>Droits
+Referentiel>Instruments Financiers>Afficher les Instruments Financiers>Fond etape 2
+Referentiel>Instruments Financiers>Afficher les Instruments Financiers>Fond etape 1
+Referentiel>Instruments Financiers>Afficher les Instruments Financiers>Instruments Financiers
+Referentiel>Instruments Financiers>Procedure d'Urgence>Obligation
+Referentiel>Instruments Financiers>Procedure d'Urgence>Fond
+Referentiel>Instruments Financiers>Procedure d'Urgence>Action
+Referentiel>Instruments Financiers>Procedure d'Urgence>TCN
+Referentiel>Instruments Financiers>Procedure d'Urgence>Unite
+Referentiel>Instruments Financiers>Autres Donnees>Risque Metier
+Referentiel>Instruments Financiers>Autres Donnees>Nature Fiscale
+Referentiel>Instruments Financiers>Autres Donnees>Secteur du Titre
+Referentiel>Instruments Financiers>Autres Donnees>Groupe de Cotation
+Referentiel>Instruments Financiers>Autres Donnees>Maturite du Titre
+Referentiel>Instruments Financiers>Autres Donnees>Forme de Detention>Forme de Detention Fixe
+Referentiel>Instruments Financiers>Autres Donnees>Forme de Detention>Forme de Detention Variable
+Referentiel>Instruments Financiers>Autres Donnees>Classification des Titres>Classification des Actions
+Referentiel>Instruments Financiers>Autres Donnees>Classification des Titres>Classification des Obligations
+Referentiel>Instruments Financiers>Autres Donnees>Classification des Titres>Classification des TCNs
+Referentiel>Instruments Financiers>Autres Donnees>Classification des Titres>Classification des Droits
+Referentiel>Instruments Financiers>Autres Donnees>Classification des Titres>Clasification des Fonds
+Referentiel>Cours>les parites croisees
+Referentiel>Cours>Creer Prix>Cours de Change
+Referentiel>Cours>Creer Prix>Cours des Titres
+Referentiel>Cours>Creer Prix>Taux de Reference
+Referentiel>Cours>Rechercher Prix>Cours de Change
+Referentiel>Cours>Rechercher Prix>Taux de Reference
+Referentiel>Cours>Rechercher Prix>Cours des Titres
+Referentiel>Cours>Rechercher Prix>Prime de risque par SDG
+Referentiel>Cours>ASFIM>Les Fichiers ASFIM
+Referentiel>Cours>ASFIM>Reprocess des entrees ASFIM
+Referentiel>Indice>Chargement fichiers BAM
+Referentiel>Indice>Courbe des Taux In Fine et ZC
+Referentiel>Notation>Agence de notation
+Referentiel>Notation>Classe de notation
+Referentiel>Notation>Notation
+Referentiel>Notation>Definition de la notation
+Referentiel>Notation>Evaluation de la notation
+Referentiel>Validation / Rejet>Entites
+Referentiel>Validation / Rejet>Groupe de Clients
+Referentiel>Validation / Rejet>Sous Groupe de Clients
+Referentiel>Validation / Rejet>Les Agences
+Referentiel>Validation / Rejet>Cotitulaires de Comptes
+Referentiel>Validation / Rejet>Donnees Generiques>Zones Geographiques
+Referentiel>Validation / Rejet>Donnees Generiques>Pays
+Referentiel>Validation / Rejet>Donnees Generiques>Localite
+Referentiel>Validation / Rejet>Donnees Generiques>Marches
+Referentiel>Validation / Rejet>Donnees Generiques>Devises
+Referentiel>Validation / Rejet>Donnees Generiques>Taux de change
+Referentiel>Validation / Rejet>Roles>Societes de Bourse
+Referentiel>Validation / Rejet>Roles>Banques Centrales
+Referentiel>Validation / Rejet>Roles>Banques
+Referentiel>Validation / Rejet>Roles>Chambres de compensation
+Referentiel>Validation / Rejet>Roles>Etablissement de credit
+Referentiel>Validation / Rejet>Roles>Contreparties
+Referentiel>Validation / Rejet>Roles>Correspondants
+Referentiel>Validation / Rejet>Roles>Autorites Fiscales
+Referentiel>Validation / Rejet>Roles>Emetteur
+Referentiel>Validation / Rejet>Roles>Depositaire
+Referentiel>Validation / Rejet>Roles>Source d'informations
+Referentiel>Validation / Rejet>Roles>Depositaires Centrales
+Referentiel>Validation / Rejet>Roles>Mandataires
+Referentiel>Validation / Rejet>Roles>Autorite
+Referentiel>Validation / Rejet>Roles>Distributeurs de Fonds
+Referentiel>Validation / Rejet>Roles>Apporteurs d'Affaire
+Referentiel>Validation / Rejet>Roles>Registreurs
+Referentiel>Validation / Rejet>Roles>Garants
+Referentiel>Validation / Rejet>Roles>Clients
+Referentiel>Validation / Rejet>Roles>GIE
+Referentiel>Validation / Rejet>Roles>Porteurs de Parts
+Referentiel>Validation / Rejet>Roles>Depositaires de Fond
+Referentiel>Validation / Rejet>Roles>Gestionnaires de Fond
+Referentiel>Validation / Rejet>Roles>Agent de Paiement
+Referentiel>Validation / Rejet>Roles>Intermediaire
+Referentiel>Validation / Rejet>Instruments Financiers>Actions
+Referentiel>Validation / Rejet>Instruments Financiers>Obligations
+Referentiel>Validation / Rejet>Instruments Financiers>TCN
+Referentiel>Validation / Rejet>Instruments Financiers>Droits
+Referentiel>Validation / Rejet>Instruments Financiers>Unites
+Referentiel>Validation / Rejet>Instruments Financiers>Fonds
+Referentiel>Validation / Rejet>Comptes>Compte Titres Client
+Referentiel>Validation / Rejet>Comptes>Compte espece Client
+Referentiel>Validation / Rejet>Comptes>Compte Titre Nostro
+Referentiel>Validation / Rejet>Comptes>Compte Espece Nostro
+Referentiel>Validation / Rejet>Comptes>Compte Espece externe
+Position>Titres>Gestion de la Position CLient>Consultation
+Position>Titres>Gestion de la Position CLient>Consultation Des Positions Fermes
+Position>Titres>Gestion de la Position CLient>Consultation avancee des Positions
+Position>Titres>Gestion de la Position CLient>Mouvement en cours Client
+Position>Titres>Gestion de la Position CLient>Position Disponible
+Position>Titres>Gestion de la Position CLient>Position Detaillee Par Periode
+Position>Titres>Gestion de la Position CLient>Consultation des releves
+Position>Titres>Gestion de la Position Marche>Transfer de Nostro
+Position>Titres>Gestion de la Position Marche>Consultation
+Position>Titres>Gestion de la Position Marche>Mouvement Suspens Marche
+Position>Titres>Gestion de la Position Marche>Position Marche Disponible
+Position>Titres>Gestion de la Position Marche>Position Marche Detaillee  Par Periode
+Position>Titres>Gestion de la Position Marche>Position Marche Disponible Par Actif
+Position>Titres>Impact Manuel de la Position
+Position>Espece>interrogation Espece>Consultation Solde Espece
+Position>Espece>interrogation Espece>Consultation Des Mouvements Especes
+Position>Espece>Gestion de la Balance Client>Balance Client
+Position>Espece>Gestion de la Balance Client>Mouvements Client Suspens
+Position>Espece>Gestion de la Balance Client>Balance Detaillee Par Periode
+Position>Espece>Gestion de la Balance Client>Projection de la Balance
+Position>Espece>Gestion de la Balance Marche>Balance Marche
+Position>Espece>Gestion de la Balance Marche>Mouvement Marche suspens
+Position>Espece>Gestion de la Balance Marche>Balance Detaillee par Period
+Position>Espece>Impact Manuel de la Balance
+Position>Reconciliation Marche etranger>Messages Recus>Reconciliation marche etranger MT535
+Position>Reconciliation Marche etranger>Messages Recus>Reprocess La reconciliation MT535
+Position>Rapprochement>Reconciliation RSM - Position Marche
+Position>Rapprochement>Reconciliation RSM - Position Client
+Position>Rapprochement>Consultation RSM - Position Client
+Position>Gestion des MT53X>Génération du MT535
+Facturation>Frais de Conservation>Calculer les Frais de Conservation
+Facturation>Frais de Conservation>Afficher le Process des Frais de Conservation
+Facturation>Frais de Conservation>Afficher Facture par Processus
+Facturation>Frais de Conservation>Annuler le Process des Frais de Conservation
+Facturation>Frais Depositaire>Calculer la commission depositaire
+Facturation>Frais Depositaire>Afficher le Process de la commission depositaire
+Facturation>Frais Depositaire>Annuler le Process de la commission depositaire
+Facturation>Frais Depositaire>SLA de la commission depositaire
+Facturation>Frais Depositaire>Job de la commission depositaire
+Facturation>Facture>Generer une Facture
+Facturation>Facture>Afficher les Factures
+Facturation>Facture>Valider une Facture
+Facturation>Facture>Envoyer une Facture
+Facturation>Facture>Recevoir un Paiement
+Facturation>Facture>Annuler une Facture
+Facturation>Frais De Gestion>Calcul les Frais de gestion
+Facturation>Frais De Gestion>Annuler les frais de gestion
+Facturation>Frais De Gestion>Afficher les frais de gestion
+Facturation>Frais De Gestion>SLA des frais de gestion
+Facturation>Frais De Gestion>Job des frais de gestion
+Facturation>Facture MaroClear>Generer une Facture
+Facturation>Facture MaroClear>Afficher Les Factures
+Facturation>Facture MaroClear>Annuler une Facture
+Facturation>Facture MaroClear>Monitoring des Positions Valiroses par Factures
+Facturation>Facture MaroClear>Afficher le detail des avoirs par Facture
+Facturation>Facture MaroClear>Afficher le detail des mouvements par Facture
+Facturation>CDVM>SLA de la Commission CDVM
+Facturation>CDVM>Job de la Commission CDVM
+Facturation>CDVM>Afficher la Commission CDVM
+Facturation>CDVM>Calculer la Commission CDVM
+Facturation>CDVM>Annuler la Commission CDVM
+Facturation>Actif Brut>Actif Brut
+Facturation>Frais Additionnels>Categories des Frais additionnels
+Facturation>Frais Additionnels>Configurer les Frais additionnels
+Fiscalite>Revenue
+Fiscalite>Compteur du revenu
+Fiscalite>Compteur Fiscal
+Fiscalite>Plus/Moins Value>Operations>Consultation
+Fiscalite>Plus/Moins Value>Operations>Annulation
+Fiscalite>Plus/Moins Value>Positions>Impact Manuel
+Fiscalite>Plus/Moins Value>Positions>Positions
+Fiscalite>Plus/Moins Value>Configuration>Configuration impact position CGC
+Fiscalite>Plus/Moins Value>Configuration>Configuration Cout Moyen Pondere
+Fiscalite>Plus/Moins Value>Configuration>Configuration du Declenchement du CGC
+Fiscalite>Plus/Moins Value>Configuration>Configuration Criteres De Regroupement
+Fiscalite>Plus/Moins Value>Configuration>Methode D'ordonnancement
+Fiscalite>Plus/Moins Value>Configuration>Cles d'ordonnancement Des Operations
+Fiscalite>Plus/Moins Value>Travaux Fin de Periode>SimulationParComptesTitres
+Fiscalite>Plus/Moins Value>Travaux Fin de Periode>SimulationParCathegorieFiscale
+Fiscalite>Plus/Moins Value>Travaux Fin de Periode>Consultation
+Fiscalite>Referentiel Fiscalite>Creer/ Afficher  Exercice Fiscal
+Fiscalite>Referentiel Fiscalite>Creer/ Afficher  Authorite Fiscal
+Fiscalite>Referentiel Fiscalite>Creer/ Afficher Classification Fiscal
+Fiscalite>Referentiel Fiscalite>Creer/ Afficher  les Regles de calcul des taxes
+Fiscalite>Referentiel Fiscalite>Creer/ Afficher  les Types des taxes
+Fiscalite>Referentiel Fiscalite>Creer / Afficher credit de taxe
+Fiscalite>Configuration>Creer / Afficher  Natures Fiscal
+Fiscalite>Configuration>Creer / Afficher SLA Categorie Fiscal
+Fiscalite>Configuration>Creer / Afficher Profile Fiscal
+Fiscalite>Configuration>Creer / Afficher  SLA Regle Fiscal
+Fiscalite>Configuration>Creer / Afficher  SLA Exception Taxe
+Fiscalite>Configuration>Creer / Afficher SLA exemption Taxe
+Parametrage>Configuration de l'Ecran Principal
+Parametrage>Configuration des prix
+Parametrage>Configuration de La valorisation
+Parametrage>Configuration de La Facturation
+Parametrage>Comptabilite>Parametrage>Referentiel>Entite Comptable
+Parametrage>Comptabilite>Parametrage>Referentiel>Standards Comptables
+Parametrage>Comptabilite>Parametrage>Referentiel>Profile Comptable
+Parametrage>Comptabilite>Parametrage>Referentiel>Charte interne
+Parametrage>Comptabilite>Parametrage>Referentiel>Comptes
+Parametrage>Comptabilite>Parametrage>Configuration>Schema>Schemas Titres
+Parametrage>Comptabilite>Parametrage>Configuration>Schema>Schemas Especes
+Parametrage>Comptabilite>Parametrage>Configuration>Schema>Regles Debit / Credit
+Parametrage>Comptabilite>Parametrage>Configuration>Cles comptables>Cles comptables
+Parametrage>Comptabilite>Parametrage>Configuration>Cles comptables>Free Key Value 1
+Parametrage>Comptabilite>Parametrage>Configuration>Cles comptables>Free Key Value 2
+Parametrage>Comptabilite>Parametrage>Configuration>Cles comptables>Free Key Value 3
+Parametrage>Comptabilite>Parametrage>Configuration>Cles comptables>Cles de Segregation
+Parametrage>Comptabilite>Parametrage>Configuration>Type d'operation
+Parametrage>Comptabilite>Parametrage>Configuration>Nom Quantite
+Parametrage>Comptabilite>Parametrage>Configuration>Nom Montant
+Parametrage>Comptabilite>SLA de Comptabilite
+Parametrage>Comptabilite>Monitoring Entrees Comptables>Messages Comptables
+Parametrage>Comptabilite>Monitoring Entrees Comptables>Comptabilite Cash>Entrees comptables
+Parametrage>Comptabilite>Monitoring Entrees Comptables>Comptabilite Cash>Entrees elementaires
+Parametrage>Comptabilite>Monitoring Entrees Comptables>Comptabilite Cash>Balance Comptable
+Parametrage>Comptabilite>Monitoring Entrees Comptables>Comptabilite Titres>Entrees comptables
+Parametrage>Comptabilite>Monitoring Entrees Comptables>Comptabilite Titres>Entrees elementaires
+Parametrage>Comptabilite>Monitoring Entrees Comptables>Comptabilite Titres>Impacter Entree comptable
+Parametrage>Comptabilite>Operations manuelles>Saisie manuelle
+Parametrage>Comptabilite>Operations manuelles>Reparation Message comptable
+Parametrage>Comptabilite>Operations manuelles>Inversement Entrees comptables
+Parametrage>Comptabilite>Operations manuelles>Reenvoi Entrees Comptables
+Parametrage>Comptabilite>Audit>Monitoring  Messages Comptables
+Parametrage>Configuration de la Position Titre>Position Titres
+Parametrage>Configuration de la Position Titre>Configuration des Chargement des Positions
+Parametrage>Configuration de la Position Espece
+Parametrage>Configuration Notification>Configuration Marche>SLA Notification Marche
+Parametrage>Configuration Notification>Configuration Client>SLA Notification Client
+Parametrage>Configuration Technique>Presentation>ActionsSuggestions>Next To Do Actions
+Parametrage>Configuration Technique>Presentation>ActionsSuggestions>Current To Do Actions
+Parametrage>Configuration Technique>Presentation>Report Template
+Parametrage>Configuration Technique>Presentation>Homepage
+Parametrage>Configuration Technique>Presentation>Screen Generator
+Parametrage>Configuration Technique>Process Monitoring>Monitoring SLA
+Parametrage>Configuration Technique>Process Monitoring>Purge Process Log
+Parametrage>Configuration Technique>Process Monitoring>Monitor Process Logs
+Parametrage>Configuration Technique>Process Monitoring>Log Configuration>Monitor Log Configuration
+Parametrage>Configuration Technique>Excel Driver>Config
+Parametrage>Configuration Technique>Excel Driver>IO Config
+Parametrage>Configuration Technique>Text Driver>Config
+Parametrage>Configuration Technique>Text Driver>IO Config
+Parametrage>Configuration Technique>Clean Config
+Parametrage>Configuration Technique>Monitor Dynamic Join Configuration
+Parametrage>Configuration Technique>TestFeatures>TestCurrentAction
+Parametrage>Configuration Technique>TestFeatures>TestPeriodicity
+Parametrage>Configuration Technique>TestFeatures>Appointments Created
+Parametrage>Configuration Technique>TestFeatures>Test Tool
+Parametrage>Configuration Technique>Importer des Donnees>Load Static Data
+Parametrage>Configuration Technique>Importer des Donnees>Import From Excel
+Parametrage>Configuration Technique>Importer des Donnees>Import From Text
+Parametrage>Configuration Technique>Notification Setup>Notification Out Configuration>Notification Types
+Parametrage>Configuration Technique>Notification Setup>Notification Out Configuration>Channel Configuration
+Parametrage>Configuration Technique>Notification Setup>Notification In Configuration>Routing SLA
+Parametrage>Configuration Technique>Notification Setup>Notification In Configuration>Impact Configuration>Impacts
+Parametrage>Configuration Technique>Notification Setup>Notification In Configuration>Impact Configuration>MT535 Impact SLA
+Parametrage>Configuration Technique>Notification Setup>Notification In Configuration>Impact Configuration>MT536 Impact SLA
+Parametrage>Configuration Technique>Notification Setup>Notification In Configuration>Impact Configuration>MT537 Impact SLA
+Parametrage>Configuration Technique>Notification Setup>Notification In Configuration>Impact Configuration>Request Security Statement Impact SLA
+Parametrage>Configuration Technique>Scripting Config
+Parametrage>Configuration Technique>Chargement des configurations
+Parametrage>Referentiel & Autre Configuration
+Parametrage>Les taches Periodiques>Frais De Conservation
+Parametrage>Les taches Periodiques>Factures
+Parametrage>SLA Mondataire Compte Titres Client
+Parametrage>Parametrage Calcule des prix>Formule de calcule
+Parametrage>Systeme de configuration>Chercher/Creer Processus
+Parametrage>Systeme de configuration>Suivi Execution Processus
+Parametrage>Systeme de configuration>Importer Valeur
+Parametrage>Consultation des utilisateurs connectés
+RapportTCB6: Indicateur D'activite
+RapportTCB 7: Liste des titres detenues par les etrangers et MRE
+RapportTCB10: Repartition Des Souscripteurs Actions Ou Parts OPCVM
+RapportTCB11: Repartition des Avoirs Conserves
+RapportEtat BAM :Repartition Du Portefeuille Des Bons Du Tresor
+RapportReleve titres avec plus moins valuesl latentes
+RapportReleve titres sans plus moins values latentes
+RapportAttestationPrelevementIRSurProduitsDeCession
+RapportAttestation du solde compte
+RapportBilan Titre
+RapportImpot retenue a  La Source
+RapportRapport d'activite de la conservation d'actifs
+RapportAttestation De Solde Titre
+RapportAvis De Prelevement Des Droits De Garde / Frais De Gestion
+RapportAvis De Prelevement Reglement Livraison
+RapportFiche Instrument Financier
+RapportReleve Des Commissions Et Releve Sur Titres
+RapportListe Des Mises A Jour CMP
+RapportListe Comptes Intermediares Non Residents
+RapportListe Des Comptes Insuffisamment Preleves
+RapportReleveFiscalCompensationPlusMoinsValuesAutomatique
+RapportReleve Fiscal Compensation Plus et Moins Values sur Cession de Valeur Mobilieres
+RapportTCB4: Rapprochement de stock
+RapportAttestation de solde compte
+RapportReleve Fiscal des Impots Retenus A La Source
+RapportLa liste des detenteurs de titres
+RapportInformations statistiques sur la repartition de l?actif global conserve
+RapportFacture MaroClear
+Rapportliste des menus par utilisateurs inclus
+Rapportliste des menus par utilisateurs exclus
+RapportSecurity Statement
+Report>ListeMiseAJourCMP
+Report>AttestationPrelevementIRSurProduitsDeCession
+Report>Courbe DesTaux
+Report>Facture Depositaire
+Report>CourbeDesTaux
+Report>FactureDepositaire
+Report>Etat Statuts des Operations et des Mouvements

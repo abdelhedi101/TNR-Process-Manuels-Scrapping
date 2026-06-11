@@ -1,0 +1,142 @@
+Ordres De Bourse>Ordres de Bourse Simple>Saisie manuelle des OB
+Ordres De Bourse>Ordres de Bourse Simple>Monitoring des OB
+Ordres De Bourse>Ordres de Bourse Simple>Recyclage des OB
+Ordres De Bourse>Ordres de Bourse Simple>Force Check OB
+Ordres De Bourse>Ordres de Bourse Simple>Validation des OB
+Ordres De Bourse>Ordres de Bourse Simple>Génération des rapports
+Ordres De Bourse>Ordres de Bourse Simple>Monitoring des OB
+Ordres De Bourse>Ordres de Bourse Simple>Ordres de bourse non envoyés
+Ordres De Bourse>Ordres de Bourse Simple>Modification des OB non envoyes
+Ordres De Bourse>Ordres de Bourse Simple>Validation de Modification
+Ordres De Bourse>Ordres de Bourse Simple>Annulation des OB
+Ordres De Bourse>Ordres de Bourse Simple>Envoi Ordres de bourse
+Ordres De Bourse>Ordres de Bourse Simple>Chargement Fichier de Rejet
+Ordres De Bourse>Ordres de Bourse Simple>Réception Acceptation/Rejet
+Ordres De Bourse>Ordres de Bourse Simple>Chargement massive
+Ordres De Bourse>Ordres de Bourse Simple>Retour Sur Annulation
+Ordres De Bourse>Ordres de Bourse Simple>Validation d'Annulation
+Ordres De Bourse>Ordres de Bourse Groupé>Saisie manuelle des OB
+Ordres De Bourse>Ordres de Bourse Groupé>Validation des OB
+Ordres De Bourse>Ordres de Bourse Groupé>Ordres de bourse groupés non envoyés
+Ordres De Bourse>Ordres de Bourse Groupé>Monitoring des ordres de bourse
+Ordres De Bourse>Ordres de Bourse Groupé>Recyclage des OB
+Ordres De Bourse>Ordres de Bourse Groupé>Gestion de Provision des Ordres
+Ordres De Bourse>Ordres de Bourse Groupé>Modification des OB
+Ordres De Bourse>Ordres de Bourse Groupé>Validation de Modification
+Ordres De Bourse>Ordres de Bourse Groupé>Annulation des OB
+Ordres De Bourse>Ordres de Bourse Groupé>Envoi Ordres de bourse
+Ordres De Bourse>Ordres de Bourse Groupé>Réception Acceptation/Rejet
+Ordres De Bourse>Exécution Ordres De Bourse>Saisie exécution marché
+Ordres De Bourse>Exécution Ordres De Bourse>Monitoring exécutions marché
+Ordres De Bourse>Exécution Ordres De Bourse>Chargement Fichier d'exécution
+Ordres De Bourse>Exécution Ordres De Bourse>Rapprochement OB  et exécutions marché
+Ordres De Bourse>Exécution Ordres De Bourse>Validation des Exécutions
+Ordres De Bourse>Exécution Ordres De Bourse>Recyclage des exécutions
+Ordres De Bourse>Exécution Ordres De Bourse>Rejet des exécutions>Rejeter les exécutions
+Ordres De Bourse>Exécution Ordres De Bourse>Rejet des exécutions>Send execution rejection File
+Ordres De Bourse>Exécution Ordres De Bourse>Rejet des exécutions>Valider rejet des exécutions
+Ordres De Souscription Rachat>Marché Local>Ordres de Souscription Rachat Simple>Saisie manuelle des ordres SR
+Ordres De Souscription Rachat>Marché Local>Ordres de Souscription Rachat Simple>Monitoring des ordres SR
+Ordres De Souscription Rachat>Marché Local>Ordres de Souscription Rachat Simple>Recyclage des ordres SR
+Ordres De Souscription Rachat>Marché Local>Ordres de Souscription Rachat Simple>Force Check SR
+Ordres De Souscription Rachat>Marché Local>Ordres de Souscription Rachat Simple>Validation des ordres SR
+Ordres De Souscription Rachat>Marché Local>Ordres de Souscription Rachat Simple>Ordres SR non envoyés
+Ordres De Souscription Rachat>Marché Local>Ordres de Souscription Rachat Simple>Chargement Fichier SDG
+Ordres De Souscription Rachat>Marché Local>Ordres de Souscription Rachat Simple>Modification des ordres SR
+Ordres De Souscription Rachat>Marché Local>Ordres de Souscription Rachat Simple>Validation Modification Ordres SR
+Ordres De Souscription Rachat>Marché Local>Ordres de Souscription Rachat Simple>Génération des rapports
+Ordres De Souscription Rachat>Marché Local>Ordres de Souscription Rachat Simple>Envoi Ordres de soucription/Rachat
+Ordres De Souscription Rachat>Marché Local>Ordres de Souscription Rachat Simple>Annulation des ordres SR
+Ordres De Souscription Rachat>Marché Local>Ordres de Souscription Rachat Groupé>Saisie manuelle des ordres SR
+Ordres De Souscription Rachat>Marché Local>Ordres de Souscription Rachat Groupé>Recyclage des sous Ordres
+Ordres De Souscription Rachat>Marché Local>Ordres de Souscription Rachat Groupé>Validation des sous ordres SR
+Ordres De Souscription Rachat>Marché Local>Ordres de Souscription Rachat Groupé>Monitoring des sous ordres SR
+Ordres De Souscription Rachat>Marché Local>Ordres de Souscription Rachat Groupé>Consolidation des sous ordres
+Ordres De Souscription Rachat>Marché Local>Ordres de Souscription Rachat Groupé>Annulation des sous Ordres
+Ordres De Souscription Rachat>Marché Local>Ordres de Souscription Rachat Groupé>Modification des sous Ordres
+Ordres De Souscription Rachat>Marché Local>Ordres de Souscription Rachat Groupé>Validation Modification Ordres SR
+Ordres De Souscription Rachat>Marché Local>Ordres de Souscription Rachat Groupé>Envoi des ordres SR groupés
+Ordres De Souscription Rachat>Marché Local>Ordres de Souscription Rachat Groupé>Monitoring des ordres SR Groupés
+Ordres De Souscription Rachat>Marché Local>Ordres de Souscription Rachat Groupé>Annulation des ordres SR groupés
+Ordres De Souscription Rachat>Marché Local>Ordres de Souscription Rachat Groupé>Validation annulation des ordres SR groupés
+Ordres De Souscription Rachat>Marché Local>Exécution Des Orders SR>Saisie exécution SR
+Ordres De Souscription Rachat>Marché Local>Exécution Des Orders SR>Monitoring exécutions ordres SR
+Ordres De Souscription Rachat>Marché Local>Exécution Des Orders SR>Rapprochement ordres Exécution
+Ordres De Souscription Rachat>Marché Local>Exécution Des Orders SR>Validation des Exécutions
+Ordres De Souscription Rachat>Marché Etranger>Ordres Souscriptions Rachats>Saisie manuelle des ordres SR
+Ordres De Souscription Rachat>Marché Etranger>Ordres Souscriptions Rachats>Monitoring des ordres SR
+Ordres De Souscription Rachat>Marché Etranger>Ordres Souscriptions Rachats>Envoi Ordres de soucription/Rachat
+Ordres De Souscription Rachat>Marché Etranger>Ordres Souscriptions Rachats>Recyclage des ordres SR
+Ordres De Souscription Rachat>Marché Etranger>Ordres Souscriptions Rachats>Validation des ordres SR
+Ordres De Souscription Rachat>Marché Etranger>Ordres Souscriptions Rachats>Annulation des ordres SR
+Ordres De Souscription Rachat>Marché Etranger>Execution Des Ordres>Saisie exécution SR
+Ordres De Souscription Rachat>Marché Etranger>Execution Des Ordres>Monitoring exécutions ordres SR
+Position>Consultation de la position Titre Client
+Module IPO>Traitement des IPOs>Saisie IPO
+Module IPO>Traitement des IPOs>Monitoring IPO
+Module IPO>Ordres IPO>Saisie Ordre IPO
+Module IPO>Ordres IPO>Validation des ordres IPO
+Module IPO>Ordres IPO>Monitoring des ordres IPO
+Module IPO>Ordres IPO>Envoi des ordres IPO
+Module IPO>Ordres IPO>Mise à Jour ISIN
+Module IPO>Ordres IPO>Deversement IRL
+Module IPO>Ordres IPO>Modification des Ordres IPO Invalides
+Module IPO>Ordres IPO>Annulation des Ordres IPO
+Module IPO>Ordres IPO>Validation d'Annulation Ordre non envoyé
+Module IPO>Ordres IPO>Validation d'annulation Ordre envoyé
+Module IPO>Ordres IPO>Génération des rapports
+Module IPO>Exécution des ordres IPO>Monitoring exécutions marchés IPO
+Notifications>Les fichiers d 'Exécution
+Notifications>Les fichiers de rejet
+Notifications>Les raisons de rejets
+Notifications>Les fichiers des ordres
+Notifications>Les messages
+Notifications>MT54X
+Configurations Métiers>Configuration Des Frais>Régles De Frais
+Configurations Métiers>Configuration Des Frais>Config Frais OB>Config Comission SDB
+Configurations Métiers>Configuration Des Frais>Config Frais OB>Config Impôt De Bourse
+Configurations Métiers>Configuration Des Frais>Agent Collecte d'ordre SLA
+Configurations Métiers>Configuration Des Frais>Commission Réseau Placeur SLA
+Configurations Métiers>Configuration De L'Heure Limite>Heure limite de réception
+Configurations Métiers>Configuration De L'Heure Limite>Heure limite d'envoi des OB
+Configurations Métiers>Configuration De L'Heure Limite>Heure Limite d'envoi des SR
+Configurations Métiers>Configuration Taux De Couverture>SLA Couverture risque de variation des frais
+Configurations Métiers>Configuration Taux De Couverture>SLA Couverture risque de variation des prix
+Configurations Métiers>Configuration Taux De Couverture>SLA Couverture risque de variation de la VL
+Configurations Métiers>Config contrôle Fin de validité OB
+Configurations Métiers>Config Nombre De Jours De Validité
+Configurations Métiers>Les Contrôles Fonctionnels
+Configurations Métiers>SLA Réservation espéces
+Configurations Métiers>SLA Routage des ordres
+Configurations Métiers>Config Date De Dénoument
+Configurations Métiers>Config Client BlackListé
+Configurations Métiers>chaine de dénoument
+Configurations Métiers>Config Contexte De La Réservation
+Configurations Métiers>Notification Marché
+Configurations Métiers>Notification Client
+Configurations Techniques>Configuration De La Consolidation
+Configurations Techniques>Configuration de l'allocation SLA
+Configurations Techniques>Allocation setup
+Configurations Techniques>Configuration des Jobs
+Configurations Techniques>Systeme parameters
+Configurations Techniques>Class despatcher
+Configurations Techniques>DynamicJoinCondition
+Configurations Techniques>dynamique join configuration
+Configurations Techniques>Configuration des Références
+Configurations Techniques>Configuration Notification>Type De Notification
+Configurations Techniques>Configuration Notification>Swift Driver Config
+Configurations Techniques>Configuration Notification>Find / Create Channel Configuration
+Configurations Techniques>Configuration Notification>Routage
+Configurations Techniques>Configuration Notification>Impact
+Configurations Techniques>Configuration Notification>Config Impact MT502
+Configurations Techniques>Configuration Notification>Config Impact MT515
+Configurations Techniques>Configuration Notification>Configuration SMS
+Configurations Techniques>Configuration Notification>Configuration Des Drivers SMS
+Rapports>Ordres de bourse - Clientèle banque privée
+Rapports>ConfirmationReportIPO
+Rapports>OPA OPR Report
+Rapports>Ordre de vente en Bourse
+Rapports>Orde achat en Bourse
+Rapports>Bulletin Rachat
+Rapports>Bulletin Souscription
+Rapports>Ordre sous OPCVM pour les clients de CDG Capital

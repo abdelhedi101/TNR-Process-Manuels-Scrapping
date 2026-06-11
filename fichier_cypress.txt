@@ -1,0 +1,918 @@
+from typing import List, Tuple
+import io
+import re
+import zipfile
+import streamlit as st
+
+# ---------------- CONFIG ----------------
+st.set_page_config(
+    page_title="Qualinova",
+    page_icon="⚙️",
+    layout="wide",
+)
+
+# ---------------- STYLE GLOBAL ----------------
+st.markdown("""
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Manrope:wght@400;500;600&display=swap');
+:root {
+    --bg: #030712;
+    --panel: #0e1727;
+    --border: rgba(255, 255, 255, 0.12);
+    --text: #e1e8ff;
+    --muted: rgba(255, 255, 255, 0.68);
+    --accent: #facc15;
+    font-family: 'Space Grotesk', 'Manrope', sans-serif;
+}
+body {
+    background: radial-gradient(circle at top right, rgba(252, 161, 63, 0.14), transparent 40%),
+        radial-gradient(circle at bottom left, rgba(99, 102, 241, 0.25), transparent 45%),
+        var(--bg);
+    color: var(--text);
+    font-family: 'Space Grotesk', 'Manrope', sans-serif;
+}
+.block-container {
+    padding: 2.8rem 3.5rem;
+    border-radius: 28px;
+    background: rgba(14, 23, 39, 0.82);
+    box-shadow: 0 30px 80px rgba(7, 10, 25, 0.65);
+}
+ .project-wrapper {
+    position: relative;
+    height: 2.9rem;
+    margin-top: -0.25rem;
+}
+.project-wrapper .stSelectbox>div,
+.project-wrapper .stSelectbox>div>div,
+.project-wrapper .stSelectbox>div>div>div,
+.project-wrapper .stSelectbox>div>div>label {
+    opacity: 0;
+    height: 0;
+    margin: 0;
+    padding: 0;
+}
+.project-display {
+    position: absolute;
+    inset: 0;
+    border-radius: 22px;
+    background: linear-gradient(135deg, rgba(14, 23, 39, 0.8), rgba(62, 76, 146, 0.6));
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1.4rem;
+    font-weight: 600;
+    font-size: 1.15rem;
+    letter-spacing: 0.08em;
+    color: var(--text);
+    pointer-events: none;
+    box-shadow: 0 15px 30px rgba(5, 8, 20, 0.6);
+}
+.project-display::after {
+    content: '';
+    width: 0.65rem;
+    height: 0.65rem;
+    border-right: 2px solid rgba(255, 255, 255, 0.8);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.8);
+    transform: rotate(45deg);
+    margin-left: 0.8rem;
+}
+
+/* HEADER ANIMATION */
+.header-animate {
+    animation: fadeSlide 0.8s ease-in-out;
+}
+@keyframes fadeSlide {
+    from {opacity: 0; transform: translateY(-10px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+.header-animate {
+    background: linear-gradient(125deg, #111b32, #0b1224 65%, #111b32);
+    border-radius: 30px;
+    padding: 3rem 3rem 2.5rem;
+    margin-bottom: 30px;
+    box-shadow: 0 40px 90px rgba(9, 12, 23, 0.65);
+}
+.header-animate div > div:first-child {
+    color: var(--accent);
+    font-size: 4.8rem;
+    letter-spacing: 0.5rem;
+    font-weight: 700;
+    line-height: 1;
+}
+.header-animate div > div:nth-child(2) {
+    color: var(--muted);
+    font-size: 2.1rem;
+    letter-spacing: 0.4rem;
+    margin-top: 0.35rem;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+/* PANELS & INPUTS */
+.stTextArea textarea,
+.stTextInput>div>div>input,
+.stNumberInput>div>label>div>input,
+.stSelectbox>div>div>div>div {
+    background: var(--panel) !important;
+    border-radius: 18px !important;
+    border: 1px solid var(--border) !important;
+    color: var(--text) !important;
+    font-size: 1.1rem !important;
+    line-height: 1.6 !important;
+    padding: 1rem 1.2rem !important;
+    min-height: 240px;
+    letter-spacing: -0.02em;
+}
+.stSelectbox>div>div>div>div {
+    min-height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.6rem;
+    padding: 0.75rem 1.8rem 0.75rem 1.5rem;
+    border-radius: 22px;
+    background: linear-gradient(135deg, rgba(14, 23, 39, 0.75), rgba(30, 51, 101, 0.55));
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.08), 0 20px 45px rgba(7, 10, 25, 0.65);
+    position: relative;
+    color: var(--text) !important;
+}
+.stTextArea textarea {
+    min-height: 220px;
+    padding: 1.35rem 1.4rem !important;
+}
+.stButton>button {
+    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+    color: white;
+    border-radius: 18px;
+    font-weight: 600;
+    padding: 0.85rem 2.3rem;
+    letter-spacing: 0.05em;
+    box-shadow: 0 15px 40px rgba(99, 102, 241, 0.25);
+}
+.stDownloadButton>button {
+    background: linear-gradient(135deg, #22c55e, #16a34a);
+    color: white;
+    border-radius: 18px;
+    font-weight: 600;
+}
+.stRadio>div>label>div {
+    font-size: 1rem;
+}
+.stCaption, .stMarkdown p {
+    color: var(--muted);
+    line-height: 1.7;
+    font-size: 1.05rem;
+}
+.menu-caption {
+    font-size: 1.15rem;
+    line-height: 1.7;
+    letter-spacing: 0.02em;
+    color: var(--muted);
+}
+.instruction-box {
+    width: 100%;
+    margin-bottom: 0.65rem;
+    padding: 0.85rem 1rem 0.95rem;
+    border-radius: 18px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    background: rgba(15, 23, 42, 0.85);
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.04);
+    letter-spacing: 0.05em;
+}
+.instruction-box p {
+    margin: 0;
+    font-size: 0.95rem;
+}
+.instruction-left,
+.instruction-right {
+    width: 100%;
+}
+.instruction-left {
+    text-align: center;
+}
+.instruction-right {
+    text-align: center;
+}
+.menu-input-area {
+    border: 0;
+    border-radius: 0;
+    padding: 0;
+    background: transparent;
+    box-shadow: none;
+    margin-top: -0.75rem;
+}
+.section-label {
+    font-size: 1.3rem;
+    letter-spacing: 0.28rem;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 0.05rem;
+    font-weight: 600;
+}
+.section-label.small {
+    font-size: 1.1rem;
+    letter-spacing: 0.22rem;
+    color: var(--muted);
+}
+.section-block {
+    margin-bottom: 0.9rem;
+}
+.stMarkdown h2 {
+    color: var(--text);
+}
+.app-credit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25rem;
+    margin-top: 2rem;
+    font-size: 0.95rem;
+    letter-spacing: 0.3rem;
+    color: var(--muted);
+    text-transform: uppercase;
+}
+.credit-line {
+    font-size: 0.95rem;
+    letter-spacing: 0.35rem;
+}
+@media (max-width: 800px) {
+    .block-container {
+        padding: 1.8rem 1.5rem;
+    }
+    .header-animate {
+        padding: 2rem;
+    }
+}
+</style>
+""", unsafe_allow_html=True)
+
+# ---------------- HEADER ----------------
+st.markdown("""
+<div class="header-animate" style="
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background: linear-gradient(90deg, #1f2937, #111827);
+    border-radius: 20px;
+    padding: 25px;
+    margin-bottom: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+">
+    <div style="text-align:center;">
+        <div style="
+            color:#facc15;
+            font-size:48px;
+            font-weight:700;
+            letter-spacing:6px;
+        ">
+            QUALINOVA
+        </div>
+        <div style="
+            color:#cbd5e1;
+            font-size:22px;
+            letter-spacing:3px;
+            margin-top:8px;
+        ">
+            AUTOMATED MENU SCRIPT BUILDER
+        </div>
+        <div class="header-credit" style="
+            margin-top:0.75rem;
+            font-size:0.85rem;
+            letter-spacing:0.4rem;
+            color: rgba(203, 213, 225, 0.85);
+            text-transform: uppercase;
+            display:flex;
+            flex-direction:column;
+            gap:0.15rem;
+        ">
+            <span style="letter-spacing:0.25rem;">Developed by : BILEL BEN SAID</span>
+            <span style="letter-spacing:0.5rem;">AHMED ABDELHEDI</span>
+        </div>
+    </div>
+</div>
+""", unsafe_allow_html=True)
+
+# ---------------- LOGIN BLOCKS ----------------
+
+
+CDG_LOGIN_BLOCK_TEMPLATE = """describe('MegaCustody OIDC Login and Logout Test', () => {
+    it('should login through OIDC authentication and logout successfully', () => {
+        // Navigate to the Keycloak authentication page    
+ cy.visit(Cypress.env('AUTH_URL')); 
+
+// Enter username in the login form   
+    cy.get('#username').clear();   
+    cy.get('#username').type(Cypress.env('USERNAME')); 
+
+// Enter password in the login form   
+    cy.get('#password').clear();   
+    cy.get('#password').type(Cypress.env('PASSWORD')); 
+
+ // Click the submit button to login 
+ cy.get('#kc-u2f-login-form input[type="submit"]').click(); 
+    
+// Force authenticated application load after OIDC login
+ cy.visit(Cypress.env('BASE_URL'));   
+ cy.reload(); 
+// Wait for the dashboard to load after login
+    cy.wait({wait_ms});
+"""
+
+BMCE_LOGIN_BLOCK_TEMPLATE = """describe('MegaCustody Login and Navigation Test', () => {
+  it('should login and navigate to Monitoring Execution Patio', () => {
+    // Navigate to the application login page
+    cy.visit(Cypress.env('BASE_URL'));
+
+    // Click on the username input field
+    cy.get('input[name="j_username"]').click();
+
+    // Enter username
+    cy.get('input[name="j_username"]').clear();
+    cy.get('input[name="j_username"]').type(Cypress.env('USERNAME'));
+    cy.wait(3000);
+
+    // Click on the ASP input field
+    cy.get('input[name="j_asp"]').click();
+
+    // Enter ASP value
+    cy.get('input[name="j_asp"]').clear();
+    cy.get('input[name="j_asp"]').type(Cypress.env('DOMAIN'));
+    cy.wait(3000);
+
+    // Click on the password input field
+    cy.get('input[name="j_password"]').click();
+
+    // Enter password
+    cy.get('input[name="j_password"]').clear();
+    cy.get('input[name="j_password"]').type(Cypress.env('PASSWORD'));
+    cy.wait(3000);
+
+    // Click the login submit button
+    cy.get('input[name="submit"]').click();
+
+    // Wait for dashboard to load after login
+    cy.wait(3000);
+"""
+
+DEFAULT_LOGIN_BLOCK_TEMPLATE = BMCE_LOGIN_BLOCK_TEMPLATE
+
+
+def get_login_block(project: str, wait_ms: int) -> str:
+    if project == 'CDG':
+        template = CDG_LOGIN_BLOCK_TEMPLATE
+    else:
+        template = BMCE_LOGIN_BLOCK_TEMPLATE
+    return template.replace("{wait_ms}", str(wait_ms))
+
+
+def sanitize_menu_label(label: str) -> str:
+    normalized = label.replace("’", "'").replace("‘", "'").replace("“", '"').replace("”", '"')
+    normalized = normalized.strip()
+    normalized = re.sub(r"^[\s·•\u2022\-\*#\d']+", "", normalized)
+    cleaned = re.sub(r"[^A-Za-zÀ-ÖØ-öø-ÿ0-9 _\-/@:>'\"\?&]", " ", normalized)
+    cleaned = re.sub(r"\s+", " ", cleaned).strip()
+    cleaned = re.sub(r"^S ", "", cleaned)
+    return cleaned or label.strip()
+
+
+def sanitize_lines(lines: List[str]) -> List[str]:
+    sanitized: List[str] = []
+    for line in lines:
+        cleaned = sanitize_menu_label(line)
+        if cleaned:
+            sanitized.append(cleaned)
+    return sanitized
+
+
+def parse_menu_paths(lines: List[str]) -> List[List[str]]:
+    paths: List[List[str]] = []
+    for line in lines:
+        if not line.strip():
+            continue
+        segments = [segment.strip() for segment in line.split(">") if segment.strip()]
+        if segments:
+            paths.append(segments)
+    return paths
+
+
+def escape_js_label(label: str) -> str:
+    return label.replace("'", "\\'")
+
+
+def chunk_menu_paths(paths: List[List[str]], chunk_size: int) -> List[List[List[str]]]:
+    return [paths[i : i + chunk_size] for i in range(0, len(paths), chunk_size)]
+
+WAIT_CALL_PATTERN = re.compile(r"cy\.wait\((\d+)\)")
+
+def sum_wait_durations(source: str) -> int:
+    return sum(int(match.group(1)) for match in WAIT_CALL_PATTERN.finditer(source))
+
+WAIT_SUM_DEFAULT_MS = 895000
+LEAF_CRITERIA_WAIT_UNITS = 5
+LEAF_POST_EXECUTION_WAIT_UNITS = 2  # close tab + collapse leaf
+
+def enforce_wait_limit_on_chunks(
+    chunks: List[List[List[str]]],
+    wait: int,
+    limit_ms: int,
+    login_wait_ms: int,
+) -> Tuple[List[List[List[str]]], List[List[str]]]:
+    enforced_chunks: List[List[List[str]]] = []
+    overflow_paths: List[List[str]] = []
+    for chunk in chunks:
+        if not chunk:
+            continue
+        chunk_parent_prefixes = build_parent_prefixes(chunk)
+        sub_chunks, sub_overflow = chunk_menu_paths_by_wait(
+            chunk, wait, limit_ms, chunk_parent_prefixes, login_wait_ms
+        )
+        enforced_chunks.extend(sub_chunks)
+        overflow_paths.extend(sub_overflow)
+    return enforced_chunks, overflow_paths
+
+
+def merge_overflow_paths(
+    existing: List[List[str]], new_paths: List[List[str]]
+) -> List[List[str]]:
+    seen: set[Tuple[str, ...]] = set()
+    merged: List[List[str]] = []
+    for path in existing + new_paths:
+        key = tuple(path)
+        if key in seen:
+            continue
+        seen.add(key)
+        merged.append(path)
+    return merged
+
+
+def chunk_wait_sum(
+    chunk: List[List[str]],
+    wait: int,
+    parent_prefixes: set[Tuple[str, ...]],
+    login_wait_ms: int,
+) -> int:
+    if not chunk:
+        return 0
+    return login_wait_ms + sum(calculate_path_wait_duration(path, wait, parent_prefixes) for path in chunk)
+
+
+def merge_small_chunks(
+    chunks: List[List[List[str]]],
+    wait: int,
+    parent_prefixes: set[Tuple[str, ...]],
+    limit_ms: int,
+    login_wait_ms: int,
+) -> List[List[List[str]]]:
+    index = 0
+    while index < len(chunks):
+        chunk = chunks[index]
+        if len(chunk) != 1:
+            index += 1
+            continue
+
+        singleton_path = chunk[0]
+        singleton_wait = calculate_path_wait_duration(singleton_path, wait, parent_prefixes)
+        merged = False
+
+        # try to merge with the next chunk
+        if index + 1 < len(chunks):
+            next_sum = chunk_wait_sum(chunks[index + 1], wait, parent_prefixes, login_wait_ms)
+            if next_sum + singleton_wait <= limit_ms:
+                chunks[index + 1].insert(0, singleton_path)
+                merged = True
+
+        # otherwise, try to merge with the previous chunk
+        if not merged and index > 0:
+            prev_sum = chunk_wait_sum(chunks[index - 1], wait, parent_prefixes, login_wait_ms)
+            if prev_sum + singleton_wait <= limit_ms:
+                chunks[index - 1].append(singleton_path)
+                merged = True
+
+        if merged:
+            chunks.pop(index)
+            continue
+
+        index += 1
+
+    return chunks
+
+def chunk_wait_total(
+    paths: List[List[str]], wait: int, login_wait_ms: int
+) -> int:
+    if not paths:
+        return 0
+    parent_prefixes = build_parent_prefixes(paths)
+    total = login_wait_ms
+    for path in paths:
+        total += calculate_path_wait_duration(path, wait, parent_prefixes)
+    return total
+
+
+def try_shift_last_menu(
+    previous_chunk: List[List[str]],
+    current_chunk: List[List[str]],
+    wait: int,
+    limit_ms: int,
+    login_wait_ms: int,
+) -> bool:
+    if len(previous_chunk) <= 1:
+        return False
+    candidate = previous_chunk[-1]
+    tentative_prev = previous_chunk[:-1]
+    tentative_curr = [candidate] + current_chunk
+    if chunk_wait_total(tentative_prev, wait, login_wait_ms) > limit_ms:
+        return False
+    if chunk_wait_total(tentative_curr, wait, login_wait_ms) > limit_ms:
+        return False
+    previous_chunk.pop()
+    current_chunk.insert(0, candidate)
+    return True
+
+
+def balance_chunk_distribution(
+    chunks: List[List[List[str]]],
+    wait: int,
+    limit_ms: int,
+    login_wait_ms: int,
+) -> List[List[List[str]]]:
+    total_menus = sum(len(chunk) for chunk in chunks)
+    active_chunks = [chunk for chunk in chunks if chunk]
+    if len(active_chunks) <= 1 or total_menus == 0:
+        return active_chunks
+    target = max(1, math.ceil(total_menus / len(active_chunks)))
+    iterations = len(active_chunks)
+    while iterations > 0:
+        made_change = False
+        for idx in range(1, len(active_chunks)):
+            while len(active_chunks[idx]) < target and len(active_chunks[idx - 1]) > target:
+                if not try_shift_last_menu(
+                    active_chunks[idx - 1],
+                    active_chunks[idx],
+                    wait,
+                    limit_ms,
+                    login_wait_ms,
+                ):
+                    break
+                made_change = True
+        if not made_change:
+            break
+        iterations -= 1
+    return [chunk for chunk in active_chunks if chunk]
+
+def calculate_path_wait_duration(path: List[str], wait: int, parent_prefixes: set[Tuple[str, ...]]) -> int:
+    if not path:
+        return 0
+
+    wait_units = 1  # after the initial top-level click
+    expanded_nodes: set[Tuple[str, ...]] = set()
+
+    for child_index in range(1, len(path)):
+        prefix = tuple(path[: child_index + 1])
+        node_is_leaf = prefix not in parent_prefixes
+        if not node_is_leaf and prefix in expanded_nodes:
+            wait_units += 1
+            continue
+
+        wait_units += 1
+        if not node_is_leaf:
+            expanded_nodes.add(prefix)
+
+    if tuple(path) not in parent_prefixes:
+        # Leaf node triggers the criteria workflow waits plus the tab close & collapse waits
+        wait_units += LEAF_CRITERIA_WAIT_UNITS + LEAF_POST_EXECUTION_WAIT_UNITS
+        if len(path) >= 2:
+            wait_units += 1  # extra wait to collapse the level-2 parent
+
+    return wait_units * wait
+
+
+def chunk_menu_paths_by_wait(
+    paths: List[List[str]],
+    wait: int,
+    limit_ms: int,
+    parent_prefixes: set[Tuple[str, ...]],
+    login_wait_ms: int,
+) -> Tuple[List[List[List[str]]], List[List[str]]]:
+    chunks: List[List[List[str]]] = []
+    overflow_paths: List[List[str]] = []
+    current_chunk: List[List[str]] = []
+    current_sum = 0
+
+    # Split only between complete menu paths so each script covers a menu end-to-end.
+
+    for path in paths:
+        path_wait = calculate_path_wait_duration(path, wait, parent_prefixes)
+        path_assigned = False
+
+        while True:
+            prospective_sum = current_sum + path_wait
+            if not current_chunk:
+                prospective_sum += login_wait_ms
+
+            if prospective_sum <= limit_ms:
+                break
+
+            if not current_chunk:
+                overflow_paths.append(path)
+                chunks.append([path])
+                path_assigned = True
+                break
+
+            chunks.append(current_chunk)
+            current_chunk = []
+            current_sum = 0
+
+        if path_assigned:
+            continue
+
+        if not current_chunk:
+            current_sum += login_wait_ms
+
+        current_chunk.append(path)
+        current_sum += path_wait
+
+    if current_chunk:
+        chunks.append(current_chunk)
+
+    return chunks, overflow_paths
+
+
+def build_parent_prefixes(paths: List[List[str]]) -> set[Tuple[str, ...]]:
+    prefixes: set[Tuple[str, ...]] = set()
+    for path in paths:
+        for depth in range(1, len(path)):
+            prefixes.add(tuple(path[:depth]))
+    return prefixes
+
+
+def generate_full_test_script(paths: List[List[str]], wait_time: int, login_block: str) -> str:
+    sanitized_paths = [path for path in paths if path]
+    if not sanitized_paths:
+        return ""
+
+    login_block = login_block or DEFAULT_LOGIN_BLOCK_TEMPLATE.replace("{wait_ms}", str(wait_time))
+    parent_prefixes = build_parent_prefixes(sanitized_paths)
+    nav_lines: List[str] = []
+    expanded_nodes: set[Tuple[str, ...]] = set()
+
+    for path in sanitized_paths:
+        path_expanded_stack: List[Tuple[Tuple[str, ...], str]] = []
+        safe_path_name = escape_js_label(' > '.join(path))
+        nav_lines.append(f"    // Navigate the menu path '{safe_path_name}'")
+
+        top_level = escape_js_label(path[0])
+        nav_lines.append(
+            f"    cy.get('button.x-btn-text').filter(`:contains(\"{top_level}\")`).click({{ force: true }});"
+        )
+        nav_lines.append(f"    cy.wait({wait_time});")
+
+        for child_index, segment in enumerate(path[1:], start=1):
+            safe_segment = escape_js_label(segment)
+            level = child_index + 1
+            prefix = tuple(path[: child_index + 1])
+            node_is_leaf = prefix not in parent_prefixes
+            action = 'click' if node_is_leaf else 'dblclick'
+
+            if not node_is_leaf and prefix in expanded_nodes:
+                nav_lines.append(
+                    f"    // Skip reopening '{safe_segment}' because it's already expanded"
+                )
+                nav_lines.append(f"    cy.wait({wait_time});")
+                continue
+
+            nav_lines.append(
+                f"    cy.contains('div[role=\"treeitem\"][aria-level=\"{level}\"]', '{safe_segment}').scrollIntoView().{action}({{ force: true }});"
+            )
+            nav_lines.append(f"    cy.wait({wait_time});")
+
+            if not node_is_leaf:
+                if prefix not in expanded_nodes:
+                    path_expanded_stack.append((prefix, safe_segment))
+                expanded_nodes.add(prefix)
+
+        path_prefix = tuple(path)
+        path_is_leaf = path_prefix not in parent_prefixes
+        if path_is_leaf:
+            nav_lines.append("    // Optionally execute criteria flow before closing")
+            nav_lines.append("    cy.get('body').then($body => {")
+            nav_lines.append("      const executeBtn = $body.find('#Component_PAGE_FORM_0_executeCriteria_null');")
+            nav_lines.append("      if (!executeBtn.length) {")
+            nav_lines.append("        return;")
+            nav_lines.append("      }")
+            nav_lines.append("      cy.wrap(executeBtn).click({ force: true });")
+            nav_lines.append("      // Wait for criteria dialog to open")
+            nav_lines.append(f"    cy.wait({wait_time});")
+            nav_lines.append("      // Optionally confirm criteria")
+            nav_lines.append("      cy.get('body').then($body => {")
+            nav_lines.append("        const okButton = $body.find('button:contains(\"' + Cypress.env('BUTTON_OK') + '\")');")
+            nav_lines.append("        if (okButton.length) {")
+            nav_lines.append("          cy.wrap(okButton).click({ force: true });")
+            nav_lines.append("        }")
+            nav_lines.append("      });")
+            nav_lines.append("      // Wait for results to load")
+            nav_lines.append(f"    cy.wait({wait_time});")
+            nav_lines.append("      // Select grid row and open context menu if grid exists")
+            nav_lines.append("      cy.get('body').then($body => {")
+            nav_lines.append("        const grid = $body.find('[id$=\"PalmyraGrid_0\"]');")
+            nav_lines.append("        if (!grid.length) {")
+            nav_lines.append("          return;")
+            nav_lines.append("        }")
+            nav_lines.append("        cy.wrap(grid).click({ force: true });")
+            nav_lines.append("        cy.wrap(grid).rightclick({ force: true });")
+            nav_lines.append(f"    cy.wait({wait_time});")
+            nav_lines.append("        // Click the first option in the context menu")
+            nav_lines.append("        const viewOption = $body.find('.x-menu-list .x-menu-item').filter((_, el) => /(Voir|View)/.test(el.innerText));")
+            nav_lines.append("        if (viewOption.length) {")
+            nav_lines.append("          cy.wrap(viewOption.first()).click();")
+            nav_lines.append("        }")
+            nav_lines.append(f"    cy.wait({wait_time});")
+            nav_lines.append("      });")
+            nav_lines.append("    });")
+            nav_lines.append("    // Close the active tab after navigation")
+            nav_lines.append("    cy.get('a.x-tab-strip-close').first().click({ force: true });")
+            nav_lines.append(f"    cy.wait({wait_time});")
+            if len(path) > 2:
+                nav_lines.append("    // Collapse the leaf node once the tab is closed")
+                nav_lines.append(
+                    f"    cy.contains('div[role=\"treeitem\"][aria-level=\"{level}\"]', '{safe_segment}').scrollIntoView().dblclick({{ force: true }})"
+                )
+                nav_lines.append(f"    cy.wait({wait_time})")
+                if path_expanded_stack:
+                    nav_lines.append("    // Collapse ancestors opened via double-click down to level 3")
+                    for ancestor_prefix, ancestor_label in reversed(path_expanded_stack):
+                        ancestor_level = len(ancestor_prefix)
+                        if ancestor_level <= 2:
+                            break
+                        nav_lines.append(
+                            f"    cy.contains('div[role=\"treeitem\"][aria-level=\"{ancestor_level}\"]', '{ancestor_label}').scrollIntoView().dblclick({{ force: true }});"
+                        )
+                        nav_lines.append(f"    cy.wait({wait_time})")
+                        expanded_nodes.discard(ancestor_prefix)
+        nav_lines.append("")
+
+    nav_section = "\n".join(nav_lines).rstrip()
+    footer = "  });\n});"
+
+    return login_block + "\n" + nav_section + "\n" + footer
+
+
+
+manual_labels: List[str] = []
+manual_paths: List[List[str]] = []
+scripts_result: List[Tuple[int, int, str, int]] = []
+caption_text = ""
+parent_prefixes: set[Tuple[str, ...]] = set()
+
+left, right = st.columns([1, 1])
+
+with left:
+    st.markdown('<div class="instruction-box instruction-left"><p>Paste the menu names in the order you want to traverse them, using > to separate nested levels</p></div>', unsafe_allow_html=True)
+    st.markdown('<div class="menu-input-area">', unsafe_allow_html=True)
+    st.subheader("📁 Menu hierarchy")
+    st.markdown("Enter each path on its own line and mark children with `>` so the hierarchy is preserved.")
+    menu_input = st.text_area(
+        "Menu list (one entry per line in the desired navigation order)",
+        placeholder="Report>Ordre de virement pour les soultesespeces\nReport>Avis ope titres conversion de forme",
+        height=260,
+        key="menu_input",
+    )
+
+    manual_labels = sanitize_lines(menu_input.splitlines())
+    manual_paths = parse_menu_paths(manual_labels)
+    parent_prefixes = build_parent_prefixes(manual_paths)
+    if not manual_labels:
+        st.info("Add at least one menu path (use `>` to separate levels).")
+    st.markdown('</div>', unsafe_allow_html=True)
+
+
+with right:
+    st.markdown('<div class="instruction-box instruction-right"><p>Use the settings on the right to tune the wait time between clicks and then copy the generated block into your Cypress spec.</p></div>', unsafe_allow_html=True)
+    st.markdown('<div class="section-block">', unsafe_allow_html=True)
+    st.markdown('<div class="section-label">Wait time between clicks (ms)</div>', unsafe_allow_html=True)
+    wait_time = st.number_input(
+        "", min_value=250, max_value=6000, value=2000, step=250, label_visibility="collapsed"
+    )
+    st.markdown('</div>', unsafe_allow_html=True)
+
+    st.markdown('<div class="section-block">', unsafe_allow_html=True)
+    st.markdown('<div class="section-label">Projet</div>', unsafe_allow_html=True)
+    st.markdown('<div class="project-wrapper">', unsafe_allow_html=True)
+    project = st.selectbox("", ["CDG", "BMCE", "AWB"], index=0, label_visibility="collapsed")
+    st.markdown(f'<div class="project-display">{project}</div></div>', unsafe_allow_html=True)
+    st.markdown('</div>', unsafe_allow_html=True)
+    login_block = get_login_block(project, wait_time)
+    login_wait_ms = sum_wait_durations(login_block)
+
+    st.markdown('<div class="section-block">', unsafe_allow_html=True)
+    st.markdown('<div class="section-label">Découpage des scripts</div>', unsafe_allow_html=True)
+    chunk_strategy = st.radio(
+        "",
+        ["Menus par script", "Somme des waits"],
+        index=0,
+        help="Découpez par nombre fixe de menus ou dès que la somme cumulative des waits dépasse le seuil configuré (par défaut 895000 ms).",
+        label_visibility="collapsed",
+    )
+    st.markdown('</div>', unsafe_allow_html=True)
+
+    chunk_size = 10
+    wait_sum_limit = WAIT_SUM_DEFAULT_MS
+    if chunk_strategy == "Menus par script":
+        st.markdown('<div class="section-block">', unsafe_allow_html=True)
+        st.markdown('<div class="section-label small">Menus par script</div>', unsafe_allow_html=True)
+        chunk_size = st.slider("", 1, 1000, 10, label_visibility="collapsed")
+        st.markdown('</div>', unsafe_allow_html=True)
+    else:
+        max_full_cycles = max(1, WAIT_SUM_DEFAULT_MS // wait_time)
+        wait_limit_default = min(WAIT_SUM_DEFAULT_MS, wait_time * max_full_cycles)
+        wait_sum_limit = st.number_input(
+            "Somme des waits max (ms)",
+            min_value=0,
+            max_value=WAIT_SUM_DEFAULT_MS,
+            value=wait_limit_default,
+            step=wait_time,
+            help="Découpe les scripts lorsque la somme cumulée des waits dépasse ce seuil (par incréments de wait_time).",
+        )
+        st.caption(
+            f"Somme des waits par script : {wait_sum_limit} ms ({wait_sum_limit // wait_time} clics) sans dépasser {WAIT_SUM_DEFAULT_MS} ms."
+        )
+
+    generate = st.button("🚀 Générer les scripts")
+
+    if generate:
+        if not manual_paths:
+            st.warning("List at least one menu path on the left before generating the navigation script.")
+        else:
+            overflow_paths: List[List[str]] = []
+            if chunk_strategy == "Menus par script":
+                chunked_paths = chunk_menu_paths(manual_paths, chunk_size)
+                caption_text = f"Each group of {chunk_size} menus produces one Cypress script block."
+            else:
+                chunked_paths, overflow_paths = chunk_menu_paths_by_wait(
+                    manual_paths, wait_time, wait_sum_limit, parent_prefixes, login_wait_ms
+                )
+                caption_text = (
+                    f"Each script keeps entire menus intact and stops before surpassing {wait_sum_limit} ms."
+                )
+
+            chunked_paths, enforced_overflow = enforce_wait_limit_on_chunks(
+                chunked_paths, wait_time, wait_sum_limit, login_wait_ms
+            )
+            overflow_paths = merge_overflow_paths(overflow_paths, enforced_overflow)
+            chunked_paths = merge_small_chunks(
+                chunked_paths, wait_time, parent_prefixes, wait_sum_limit, login_wait_ms
+            )
+            if overflow_paths:
+                st.warning(
+                    "Certain menu paths demand more wait time than the configured ceiling, so they are emitted alone. "
+                    "Increase the `Somme des waits max` if possible."
+                )
+            scripts_result = []
+            for index, chunk in enumerate(chunked_paths, start=1):
+                chunk_script = generate_full_test_script(chunk, wait_time, login_block)
+                if chunk_script:
+                    script_wait_ms = sum_wait_durations(chunk_script)
+                    scripts_result.append((index, len(chunk), chunk_script, script_wait_ms))
+            if not scripts_result:
+                st.warning("No navigation steps could be built from the submitted paths.")
+    
+if scripts_result:
+    base_limit = wait_sum_limit if chunk_strategy == "Somme des waits" else WAIT_SUM_DEFAULT_MS
+    active_limit = base_limit + login_wait_ms
+    with st.container():
+        st.caption(caption_text)
+        archive_buffer = io.BytesIO()
+        with zipfile.ZipFile(archive_buffer, "w", zipfile.ZIP_DEFLATED) as archive:
+            for index, menu_count, script, _ in scripts_result:
+                archive.writestr(
+                    f"scripts/script_{index:02d}_{menu_count}_menus.txt",
+                    script,
+                )
+        archive_buffer.seek(0)
+        st.download_button(
+            "Télécharger tous les scripts",
+            archive_buffer.getvalue(),
+            file_name="cypress_menu_scripts.zip",
+            mime="application/zip",
+        )
+        for index, menu_count, script, wait_total in scripts_result:
+            with st.expander(f"Script {index} — {menu_count} menus"):
+                limit_exceeded = wait_total > active_limit
+                st.caption(
+                    f"cy.wait total: {wait_total} ms (limit: {active_limit} ms)"
+                )
+                if limit_exceeded:
+                    st.warning(
+                        "This script still exceeds the configured wait budget; split the menu path further or raise the wait sum limit."
+                    )
+                st.code(script, language="javascript")
+        st.markdown("Copiez le bloc ci-dessus dans votre spec Cypress une fois que les niveaux aria sont figés.")
+
+st.markdown(
+    '<div class="app-credit">'
+    '<span class="credit-line">Developed by : BILEL BEN SAID</span>'
+    '<span class="credit-line">AHMED ABDELHEDI</span>'
+    '</div>',
+    unsafe_allow_html=True,
+)

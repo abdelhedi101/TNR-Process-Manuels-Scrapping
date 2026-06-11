@@ -1,0 +1,623 @@
+
+May 17, 2026 10:58:35:574 |Palmyra : ERROR |default-[Thread-84]: MegaCommon: the source folder /Megara/IODevices/MegaCommon/IN/MARKETDATA/opc does not exist.
+com.palmyra.arch.devices.input.InputDeviceException: the source folder /Megara/IODevices/MegaCommon/IN/MARKETDATA/opc does not exist.
+	at com.palmyra.arch.devices.input.file.InputDeviceFileConsumer.A(Unknown Source)
+	at com.palmyra.arch.devices.input.file.InputFilePrivilegedExceptionAction.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(AccessController.java:488)
+	at javax.security.auth.Subject.doAs(Subject.java:573)
+	at com.palmyra.arch.security.SecurityManager.A(Unknown Source)
+	at com.palmyra.arch.security.SecurityManager.runAs(Unknown Source)
+	at com.palmyra.arch.devices.input.file.InputDeviceFileConsumer.run(Unknown Source)
+May 17, 2026 10:58:40:574 |Palmyra : ERROR |default-[Thread-84]: MegaCommon: the source folder /Megara/IODevices/MegaCommon/IN/MARKETDATA/opc does not exist.
+com.palmyra.arch.devices.input.InputDeviceException: the source folder /Megara/IODevices/MegaCommon/IN/MARKETDATA/opc does not exist.
+	at com.palmyra.arch.devices.input.file.InputDeviceFileConsumer.A(Unknown Source)
+	at com.palmyra.arch.devices.input.file.InputFilePrivilegedExceptionAction.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(AccessController.java:488)
+	at javax.security.auth.Subject.doAs(Subject.java:573)
+	at com.palmyra.arch.security.SecurityManager.A(Unknown Source)
+	at com.palmyra.arch.security.SecurityManager.runAs(Unknown Source)
+	at com.palmyra.arch.devices.input.file.InputDeviceFileConsumer.run(Unknown Source)
+May 17, 2026 10:58:45:575 |Palmyra : ERROR |default-[Thread-84]: MegaCommon: the source folder /Megara/IODevices/MegaCommon/IN/MARKETDATA/opc does not exist.
+com.palmyra.arch.devices.input.InputDeviceException: the source folder /Megara/IODevices/MegaCommon/IN/MARKETDATA/opc does not exist.
+	at com.palmyra.arch.devices.input.file.InputDeviceFileConsumer.A(Unknown Source)
+	at com.palmyra.arch.devices.input.file.InputFilePrivilegedExceptionAction.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(AccessController.java:488)
+	at javax.security.auth.Subject.doAs(Subject.java:573)
+	at com.palmyra.arch.security.SecurityManager.A(Unknown Source)
+	at com.palmyra.arch.security.SecurityManager.runAs(Unknown Source)
+	at com.palmyra.arch.devices.input.file.InputDeviceFileConsumer.run(Unknown Source)
+May 17, 2026 10:58:50:575 |Palmyra : ERROR |default-[Thread-84]: MegaCommon: the source folder /Megara/IODevices/MegaCommon/IN/MARKETDATA/opc does not exist.
+com.palmyra.arch.devices.input.InputDeviceException: the source folder /Megara/IODevices/MegaCommon/IN/MARKETDATA/opc does not exist.
+	at com.palmyra.arch.devices.input.file.InputDeviceFileConsumer.A(Unknown Source)
+	at com.palmyra.arch.devices.input.file.InputFilePrivilegedExceptionAction.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(AccessController.java:488)
+	at javax.security.auth.Subject.doAs(Subject.java:573)
+	at com.palmyra.arch.security.SecurityManager.A(Unknown Source)
+	at com.palmyra.arch.security.SecurityManager.runAs(Unknown Source)
+	at com.palmyra.arch.devices.input.file.InputDeviceFileConsumer.run(Unknown Source)
+May 17, 2026 10:58:53:673 |Palmyra : INFO |default-[WebContainer : 7]: MegaCommon: ********** isAuthenticated. Request path is: /templates/palmyra/images/login/body-bg.png
+May 17, 2026 10:58:53:673 |Palmyra : INFO |default-[WebContainer : 7]: MegaCommon: ********** authenticat. principal is: null
+May 17, 2026 10:58:53:673 |Palmyra : INFO |default-[WebContainer : 7]: MegaCommon: ********** authenticat. asp is: ALL
+May 17, 2026 10:58:54:233 |Palmyra : INFO |default-[WebContainer : 3]: MegaCommon: ********** isAuthenticated. Request path is: /WebApp.jspnull
+May 17, 2026 10:58:54:233 |Palmyra : INFO |default-[WebContainer : 3]: MegaCommon: ********** authenticat. principal is: migration
+May 17, 2026 10:58:54:233 |Palmyra : INFO |default-[WebContainer : 3]: MegaCommon: ********** authenticat. asp is: AWB
+May 17, 2026 10:58:54:233 |Palmyra : INFO |default-[WebContainer : 3]: MegaCommon: ********** authenticat. user id is: migration@AWB
+May 17, 2026 10:58:54:234 |Palmyra : WARN |default-[WebContainer : 3]: MegaCommon: Data Source: DataSource
+May 17, 2026 10:58:54:234 |Palmyra : WARN |default-[WebContainer : 3]: MegaCommon: 
+The query after setting its parameters: 
+select T_.creatorUserId_, T_.updatorUserId_, T_.updateDate_, T_.mainEntityId_, T_.type_, T_.name_, T_.securityId_, T_.pk_, T_.accessPoint_, T_.creationDate_ from data_SecurityItem_ T_ where ((T_.securityId_ = 'migration') and ((T_.mainEntityId_ = 'ALL') or (T_.mainEntityId_ = 'AWB')))
+May 17, 2026 10:58:54:235 |Palmyra : WARN |default-[WebContainer : 3]: MegaCommon: Result Size: 1
+May 17, 2026 10:58:54:510 |Palmyra : INFO |default-[WebContainer : 3]: MegaCommon: ********** isAuthenticated. Request path is: /webapp/0AD8CA0A46ADAAC64CDC8BDA89EAB995.cache.html
+May 17, 2026 10:58:55:173 |Palmyra : INFO |default-[WebContainer : 3]: MegaCommon: ********** isAuthenticated. Request path is: /webapp/applicationServicenull
+May 17, 2026 10:58:55:182 |Palmyra : INFO |default-[WebContainer : 5]: MegaCommon: ********** isAuthenticated. Request path is: /webapp/applicationServicenull
+May 17, 2026 10:58:55:183 |Palmyra : WARN |default-[WebContainer : 3]: MegaCommon: Data Source: DataSource
+May 17, 2026 10:58:55:183 |Palmyra : INFO |default-[WebContainer : 0]: MegaCommon: ********** isAuthenticated. Request path is: /webapp/applicationServicenull
+May 17, 2026 10:58:55:183 |Palmyra : WARN |default-[WebContainer : 0]: MegaCommon: AlertServices.executeAction
+May 17, 2026 10:58:55:183 |Palmyra : WARN |default-[WebContainer : 3]: MegaCommon: 
+The query after setting its parameters: 
+select distinct T_.updatorUserId_, T_execludedTasks_task_.controllerName_, T_execludedTasks_task_.name_, T_execludedTasks_task_.accessPoint_, T_execludedTasks_task_.entityName_, T_execludedTasks_task_.node$code_, T_execludedTasks_task_.creatorUserId_, T_execludedTasks_task_.updateDate_, T_execludedTasks_task_.orderByKeys_, T_execludedTasks_task_.condition_, T_execludedTasks_task_.node$pk_, T_execludedTasks_task_.conditionDescription_, T_execludedTasks_task_.cConditionDescription_, T_execludedTasks_task_.updatorUserId_, T_execludedTasks_task_.node$order_, T_execludedTasks_task_.creationDate_, T_execludedTasks_task_.context_, T_execludedTasks_task_.mainEntityId_, T_execludedTasks_task_.descending_, T_execludedTasks_task_.useCaseConfig_, T_execludedTasks_task_.type_, T_execludedTasks_task_.pk_, T_execludedTasks_task_.criticalCondition_, T_execludedTasks_.updatorUserId_, T_execludedTasks_.ownerExecludedTasks$pk_, T_execludedTasks_.toDate_, T_execludedTasks_.ownerAdditionalTasks$pk_, T_execludedTasks_.task$code_, T_execludedTasks_.accessPoint_, T_execludedTasks_.creationDate_, T_execludedTasks_.creatorUserId_, T_execludedTasks_.updateDate_, T_execludedTasks_.mainEntityId_, T_execludedTasks_.fromDate_, T_execludedTasks_.ownerExecludedTasks$code_, T_execludedTasks_.type_, T_execludedTasks_.task$pk_, T_execludedTasks_.pk_, T_execludedTasks_.condition_, T_execludedTasks_.ownerAdditionalTasks$code_, T_additionalTasks_task_.controllerName_, T_additionalTasks_task_.name_, T_additionalTasks_task_.accessPoint_, T_additionalTasks_task_.entityName_, T_additionalTasks_task_.node$code_, T_additionalTasks_task_.creatorUserId_, T_additionalTasks_task_.updateDate_, T_additionalTasks_task_.orderByKeys_, T_additionalTasks_task_.condition_, T_additionalTasks_task_.node$pk_, T_additionalTasks_task_.conditionDescription_, T_additionalTasks_task_.cConditionDescription_, T_additionalTasks_task_.updatorUserId_, T_additionalTasks_task_.node$order_, T_additionalTasks_task_.creationDate_, T_additionalTasks_task_.context_, T_additionalTasks_task_.mainEntityId_, T_additionalTasks_task_.descending_, T_additionalTasks_task_.useCaseConfig_, T_additionalTasks_task_.type_, T_additionalTasks_task_.pk_, T_additionalTasks_task_.criticalCondition_, T_additionalTasks_.updatorUserId_, T_additionalTasks_.ownerExecludedTasks$pk_, T_additionalTasks_.toDate_, T_additionalTasks_.ownerAdditionalTasks$pk_, T_additionalTasks_.task$code_, T_additionalTasks_.accessPoint_, T_additionalTasks_.creationDate_, T_additionalTasks_.creatorUserId_, T_additionalTasks_.updateDate_, T_additionalTasks_.mainEntityId_, T_additionalTasks_.fromDate_, T_additionalTasks_.ownerExecludedTasks$code_, T_additionalTasks_.type_, T_additionalTasks_.task$pk_, T_additionalTasks_.pk_, T_additionalTasks_.condition_, T_additionalTasks_.ownerAdditionalTasks$code_, TC_dashBoardByUser_dashBoard_.pk_, TC_dashBoardByUser_.pk_, T_.name_, T_.accessPoint_, T_.creationDate_, T_.defaultNode$code_, T_.creatorUserId_, T_dashBoardByUser_.creatorUserId_, T_dashBoardByUser_dashBoard_.creatorUserId_, T_dashBoardByUser_dashBoard_.updatorUserId_, T_dashBoardByUser_dashBoard_.mainEntityId_, T_dashBoardByUser_dashBoard_.updateDate_, T_dashBoardByUser_dashBoard_.type_, T_dashBoardByUser_dashBoard_.pk_, T_dashBoardByUser_dashBoard_.name_, T_dashBoardByUser_dashBoard_.accessPoint_, T_dashBoardByUser_dashBoard_.creationDate_, T_dashBoardByUser_dashBoard_.evaluator_, T_dashBoardByUser_.updatorUserId_, T_dashBoardByUser_.mainEntityId_, T_dashBoardByUser_.updateDate_, T_dashBoardByUser_.type_, T_dashBoardByUser_.pk_, T_dashBoardByUser_.accessPoint_, T_dashBoardByUser_.creationDate_, T_.mainEntityId_, T_.updateDate_, TC_additionalTasks_task_.pk_, TC_additionalTasks_.pk_, TC_execludedTasks_task_.pk_, TC_execludedTasks_.pk_, T_.type_, T_.isGroupAdmin_, T_.pk_, T_.defaultNode$pk_ from bdashBoard_User_ T_ left join bdashBoard_DBException_ T_execludedTasks_ on (T_.pk_ = T_execludedTasks_.ownerExecludedTasks$pk_) left join bdashBoard_Task_ T_execludedTasks_task_ on (T_execludedTasks_.task$pk_ = T_execludedTasks_task_.pk_) left join bdashBoard_DBException_ T_additionalTasks_ on (T_.pk_ = T_additionalTasks_.ownerAdditionalTasks$pk_) left join bdashBoard_Task_ T_additionalTasks_task_ on (T_additionalTasks_.task$pk_ = T_additionalTasks_task_.pk_) left join bdashBoard_DashBoardByUser_ TC_dashBoardByUser_ on (T_.pk_ = TC_dashBoardByUser_.user$pk_) left join bdashBoard_DashBoard_ TC_dashBoardByUser_dashBoard_ on (TC_dashBoardByUser_.dashBoard$pk_ = TC_dashBoardByUser_dashBoard_.pk_) left join bdashBoard_DashBoardByUser_ T_dashBoardByUser_ on (T_.pk_ = T_dashBoardByUser_.user$pk_) left join bdashBoard_DashBoard_ T_dashBoardByUser_dashBoard_ on (T_dashBoardByUser_.dashBoard$pk_ = T_dashBoardByUser_dashBoard_.pk_) left join bdashBoard_DBException_ TC_additionalTasks_ on (T_.pk_ = TC_additionalTasks_.ownerAdditionalTasks$pk_) left join bdashBoard_Task_ TC_additionalTasks_task_ on (TC_additionalTasks_.task$pk_ = TC_additionalTasks_task_.pk_) left join bdashBoard_DBException_ TC_execludedTasks_ on (T_.pk_ = TC_execludedTasks_.ownerExecludedTasks$pk_) left join bdashBoard_Task_ TC_execludedTasks_task_ on (TC_execludedTasks_.task$pk_ = TC_execludedTasks_task_.pk_) where ((T_.name_ = 'migration@AWB') and ((((((((T_.pk_ = T_.pk_) and ((T_.mainEntityId_ = 'ALL') or (T_.mainEntityId_ = 'AWB'))) and ((TC_execludedTasks_.pk_ = TC_execludedTasks_.pk_) or (TC_execludedTasks_.pk_ is null))) and ((TC_execludedTasks_task_.pk_ = TC_execludedTasks_task_.pk_) or (TC_execludedTasks_task_.pk_ is null))) and ((TC_dashBoardByUser_.pk_ = TC_dashBoardByUser_.pk_) or (TC_dashBoardByUser_.pk_ is null))) and ((TC_dashBoardByUser_dashBoard_.pk_ = TC_dashBoardByUser_dashBoard_.pk_) or (TC_dashBoardByUser_dashBoard_.pk_ is null))) and ((TC_additionalTasks_.pk_ = TC_additionalTasks_.pk_) or (TC_additionalTasks_.pk_ is null))) and ((TC_additionalTasks_task_.pk_ = TC_additionalTasks_task_.pk_) or (TC_additionalTasks_task_.pk_ is null)))) order by T_.pk_ asc
+May 17, 2026 10:58:55:184 |Palmyra : WARN |default-[WebContainer : 3]: MegaCommon: Result Size: 0
+May 17, 2026 10:58:55:184 |Palmyra : WARN |default-[WebContainer : 0]: MegaCommon: Data Source: DataSource
+May 17, 2026 10:58:55:185 |Palmyra : WARN |default-[WebContainer : 0]: MegaCommon: 
+The query after setting its parameters: 
+select T_.updatorUserId_, T_.message_, T_.causeRef_, T_.accessPoint_, T_.creationDate_, T_.processed_, T_.context_, T_.creatorUserId_, T_.label_, T_.userName_, T_.mainEntityId_, T_.updateDate_, T_.useCaseConfig_, T_.type_, T_.pk_, T_.freeParameter_ from btype_Alert_ T_ where (((T_.userName_ = 'migration@AWB') and (T_.processed_ = 'false')) and ((T_.pk_ = T_.pk_) and ((T_.mainEntityId_ = 'ALL') or (T_.mainEntityId_ = 'AWB')))) order by T_.creationDate_ desc
+May 17, 2026 10:58:55:185 |Palmyra : WARN |default-[WebContainer : 0]: MegaCommon: Result Size: 0
+May 17, 2026 10:58:55:185 |Palmyra : WARN |default-[WebContainer : 3]: MegaCommon: Data Source: DataSource
+May 17, 2026 10:58:55:186 |Palmyra : WARN |default-[WebContainer : 3]: MegaCommon: 
+The query after setting its parameters: 
+select distinct T_.updatorUserId_, T_execludedTasks_task_.controllerName_, T_execludedTasks_task_.name_, T_execludedTasks_task_.accessPoint_, T_execludedTasks_task_.entityName_, T_execludedTasks_task_.node$code_, T_execludedTasks_task_.creatorUserId_, T_execludedTasks_task_.updateDate_, T_execludedTasks_task_.orderByKeys_, T_execludedTasks_task_.condition_, T_execludedTasks_task_.node$pk_, T_execludedTasks_task_.conditionDescription_, T_execludedTasks_task_.cConditionDescription_, T_execludedTasks_task_.updatorUserId_, T_execludedTasks_task_.node$order_, T_execludedTasks_task_.creationDate_, T_execludedTasks_task_.context_, T_execludedTasks_task_.mainEntityId_, T_execludedTasks_task_.descending_, T_execludedTasks_task_.useCaseConfig_, T_execludedTasks_task_.type_, T_execludedTasks_task_.pk_, T_execludedTasks_task_.criticalCondition_, T_execludedTasks_.updatorUserId_, T_execludedTasks_.ownerExecludedTasks$pk_, T_execludedTasks_.toDate_, T_execludedTasks_.ownerAdditionalTasks$pk_, T_execludedTasks_.task$code_, T_execludedTasks_.accessPoint_, T_execludedTasks_.creationDate_, T_execludedTasks_.creatorUserId_, T_execludedTasks_.updateDate_, T_execludedTasks_.mainEntityId_, T_execludedTasks_.fromDate_, T_execludedTasks_.ownerExecludedTasks$code_, T_execludedTasks_.type_, T_execludedTasks_.task$pk_, T_execludedTasks_.pk_, T_execludedTasks_.condition_, T_execludedTasks_.ownerAdditionalTasks$code_, T_additionalTasks_task_.controllerName_, T_additionalTasks_task_.name_, T_additionalTasks_task_.accessPoint_, T_additionalTasks_task_.entityName_, T_additionalTasks_task_.node$code_, T_additionalTasks_task_.creatorUserId_, T_additionalTasks_task_.updateDate_, T_additionalTasks_task_.orderByKeys_, T_additionalTasks_task_.condition_, T_additionalTasks_task_.node$pk_, T_additionalTasks_task_.conditionDescription_, T_additionalTasks_task_.cConditionDescription_, T_additionalTasks_task_.updatorUserId_, T_additionalTasks_task_.node$order_, T_additionalTasks_task_.creationDate_, T_additionalTasks_task_.context_, T_additionalTasks_task_.mainEntityId_, T_additionalTasks_task_.descending_, T_additionalTasks_task_.useCaseConfig_, T_additionalTasks_task_.type_, T_additionalTasks_task_.pk_, T_additionalTasks_task_.criticalCondition_, T_additionalTasks_.updatorUserId_, T_additionalTasks_.ownerExecludedTasks$pk_, T_additionalTasks_.toDate_, T_additionalTasks_.ownerAdditionalTasks$pk_, T_additionalTasks_.task$code_, T_additionalTasks_.accessPoint_, T_additionalTasks_.creationDate_, T_additionalTasks_.creatorUserId_, T_additionalTasks_.updateDate_, T_additionalTasks_.mainEntityId_, T_additionalTasks_.fromDate_, T_additionalTasks_.ownerExecludedTasks$code_, T_additionalTasks_.type_, T_additionalTasks_.task$pk_, T_additionalTasks_.pk_, T_additionalTasks_.condition_, T_additionalTasks_.ownerAdditionalTasks$code_, TC_dashBoardByUser_dashBoard_.pk_, TC_dashBoardByUser_.pk_, T_.name_, T_.accessPoint_, T_.creationDate_, T_.defaultNode$code_, T_.creatorUserId_, T_dashBoardByUser_.creatorUserId_, T_dashBoardByUser_dashBoard_.creatorUserId_, T_dashBoardByUser_dashBoard_.updatorUserId_, T_dashBoardByUser_dashBoard_.mainEntityId_, T_dashBoardByUser_dashBoard_.updateDate_, T_dashBoardByUser_dashBoard_.type_, T_dashBoardByUser_dashBoard_.pk_, T_dashBoardByUser_dashBoard_.name_, T_dashBoardByUser_dashBoard_.accessPoint_, T_dashBoardByUser_dashBoard_.creationDate_, T_dashBoardByUser_dashBoard_.evaluator_, T_dashBoardByUser_.updatorUserId_, T_dashBoardByUser_.mainEntityId_, T_dashBoardByUser_.updateDate_, T_dashBoardByUser_.type_, T_dashBoardByUser_.pk_, T_dashBoardByUser_.accessPoint_, T_dashBoardByUser_.creationDate_, T_.mainEntityId_, T_.updateDate_, TC_additionalTasks_task_.pk_, TC_additionalTasks_.pk_, TC_execludedTasks_task_.pk_, TC_execludedTasks_.pk_, T_.type_, T_.isGroupAdmin_, T_.pk_, T_.defaultNode$pk_ from bdashBoard_User_ T_ left join bdashBoard_DBException_ T_execludedTasks_ on (T_.pk_ = T_execludedTasks_.ownerExecludedTasks$pk_) left join bdashBoard_Task_ T_execludedTasks_task_ on (T_execludedTasks_.task$pk_ = T_execludedTasks_task_.pk_) left join bdashBoard_DBException_ T_additionalTasks_ on (T_.pk_ = T_additionalTasks_.ownerAdditionalTasks$pk_) left join bdashBoard_Task_ T_additionalTasks_task_ on (T_additionalTasks_.task$pk_ = T_additionalTasks_task_.pk_) left join bdashBoard_DashBoardByUser_ TC_dashBoardByUser_ on (T_.pk_ = TC_dashBoardByUser_.user$pk_) left join bdashBoard_DashBoard_ TC_dashBoardByUser_dashBoard_ on (TC_dashBoardByUser_.dashBoard$pk_ = TC_dashBoardByUser_dashBoard_.pk_) left join bdashBoard_DashBoardByUser_ T_dashBoardByUser_ on (T_.pk_ = T_dashBoardByUser_.user$pk_) left join bdashBoard_DashBoard_ T_dashBoardByUser_dashBoard_ on (T_dashBoardByUser_.dashBoard$pk_ = T_dashBoardByUser_dashBoard_.pk_) left join bdashBoard_DBException_ TC_additionalTasks_ on (T_.pk_ = TC_additionalTasks_.ownerAdditionalTasks$pk_) left join bdashBoard_Task_ TC_additionalTasks_task_ on (TC_additionalTasks_.task$pk_ = TC_additionalTasks_task_.pk_) left join bdashBoard_DBException_ TC_execludedTasks_ on (T_.pk_ = TC_execludedTasks_.ownerExecludedTasks$pk_) left join bdashBoard_Task_ TC_execludedTasks_task_ on (TC_execludedTasks_.task$pk_ = TC_execludedTasks_task_.pk_) where ((T_.name_ = 'migration@AWB') and ((((((((T_.pk_ = T_.pk_) and ((T_.mainEntityId_ = 'ALL') or (T_.mainEntityId_ = 'AWB'))) and ((TC_execludedTasks_.pk_ = TC_execludedTasks_.pk_) or (TC_execludedTasks_.pk_ is null))) and ((TC_execludedTasks_task_.pk_ = TC_execludedTasks_task_.pk_) or (TC_execludedTasks_task_.pk_ is null))) and ((TC_dashBoardByUser_.pk_ = TC_dashBoardByUser_.pk_) or (TC_dashBoardByUser_.pk_ is null))) and ((TC_dashBoardByUser_dashBoard_.pk_ = TC_dashBoardByUser_dashBoard_.pk_) or (TC_dashBoardByUser_dashBoard_.pk_ is null))) and ((TC_additionalTasks_.pk_ = TC_additionalTasks_.pk_) or (TC_additionalTasks_.pk_ is null))) and ((TC_additionalTasks_task_.pk_ = TC_additionalTasks_task_.pk_) or (TC_additionalTasks_task_.pk_ is null)))) order by T_.pk_ asc
+May 17, 2026 10:58:55:186 |Palmyra : WARN |default-[WebContainer : 3]: MegaCommon: Result Size: 0
+May 17, 2026 10:58:55:194 |Palmyra : INFO |default-[WebContainer : 3]: MegaCommon: ********** isAuthenticated. Request path is: /webapp/applicationServicenull
+May 17, 2026 10:58:55:195 |Palmyra : WARN |default-[WebContainer : 3]: MegaCommon: AlertRefreshTimeService.executeAction
+May 17, 2026 10:58:55:202 |Palmyra : INFO |default-[WebContainer : 3]: MegaCommon: ********** isAuthenticated. Request path is: /webapp/applicationServicenull
+May 17, 2026 10:58:55:210 |Palmyra : INFO |default-[WebContainer : 3]: MegaCommon: ********** isAuthenticated. Request path is: /webapp/applicationServicenull
+May 17, 2026 10:58:55:210 |Palmyra : INFO |default-[WebContainer : 0]: MegaCommon: ********** isAuthenticated. Request path is: /webapp/applicationServicenull
+May 17, 2026 10:58:55:211 |Palmyra : WARN |default-[WebContainer : 3]: MegaCommon: Data Source: DataSource
+May 17, 2026 10:58:55:211 |Palmyra : WARN |default-[WebContainer : 3]: MegaCommon: 
+The query after setting its parameters: 
+select count(*) from bmenu_Menu_ T_ where (T_.name_ = 'ConfigurationMenu')
+May 17, 2026 10:58:55:212 |Palmyra : WARN |default-[WebContainer : 3]: MegaCommon: Result Size: 1
+May 17, 2026 10:58:55:227 |Palmyra : INFO |default-[WebContainer : 0]: MegaCommon: ********** isAuthenticated. Request path is: /webapp/applicationServicenull
+May 17, 2026 10:58:55:227 |Palmyra : INFO |default-[WebContainer : 5]: MegaCommon: ********** isAuthenticated. Request path is: /webapp/resources/blue.png
+May 17, 2026 10:58:55:239 |Palmyra : INFO |default-[WebContainer : 5]: MegaCommon: ********** isAuthenticated. Request path is: /webapp/resources/red.png
+May 17, 2026 10:58:55:256 |Palmyra : INFO |default-[WebContainer : 5]: MegaCommon: ********** isAuthenticated. Request path is: /webapp/resources/org.png
+May 17, 2026 10:58:55:266 |Palmyra : INFO |default-[WebContainer : 5]: MegaCommon: ********** isAuthenticated. Request path is: /webapp/resources/green.png
+May 17, 2026 10:58:55:302 |Palmyra : INFO |default-[WebContainer : 5]: MegaCommon: ********** isAuthenticated. Request path is: /webapp/resources/red/images/panel/panel-tl.png
+May 17, 2026 10:58:55:303 |Palmyra : INFO |default-[WebContainer : 0]: MegaCommon: ********** isAuthenticated. Request path is: /webapp/resources/red/images/panel/panel-tr.png
+May 17, 2026 10:58:55:303 |Palmyra : INFO |default-[WebContainer : 8]: MegaCommon: ********** isAuthenticated. Request path is: /webapp/resources/red/images/panel/panel-tc.png
+May 17, 2026 10:58:55:303 |Palmyra : INFO |default-[WebContainer : 5]: MegaCommon: ********** isAuthenticated. Request path is: /webapp/resources/red/images/panel/tools-sprites-trans_red.png
+May 17, 2026 10:58:55:304 |Palmyra : INFO |default-[WebContainer : 1]: MegaCommon: ********** isAuthenticated. Request path is: /webapp/resources/red/images/panel/panel-bc.png
+May 17, 2026 10:58:55:353 |Palmyra : INFO |default-[WebContainer : 4]: MegaCommon: ********** isAuthenticated. Request path is: /webapp/resources/red/images/panel/panel-ml.png
+May 17, 2026 10:58:55:362 |Palmyra : INFO |default-[WebContainer : 4]: MegaCommon: ********** isAuthenticated. Request path is: /webapp/resources/red/images/panel/panel-mc.png
+May 17, 2026 10:58:55:362 |Palmyra : INFO |default-[WebContainer : 1]: MegaCommon: ********** isAuthenticated. Request path is: /webapp/resources/red/images/panel/panel-mr.png
+May 17, 2026 10:58:55:363 |Palmyra : INFO |default-[WebContainer : 4]: MegaCommon: ********** isAuthenticated. Request path is: /webapp/resources/red/images/panel/panel-bl.png
+May 17, 2026 10:58:55:393 |Palmyra : INFO |default-[WebContainer : 4]: MegaCommon: ********** isAuthenticated. Request path is: /webapp/resources/red/images/panel/panel-br.png
+May 17, 2026 10:58:55:402 |Palmyra : INFO |default-[WebContainer : 4]: MegaCommon: ********** isAuthenticated. Request path is: /webapp/resources/red/images/form/trigger.png
+May 17, 2026 10:58:55:575 |Palmyra : ERROR |default-[Thread-84]: MegaCommon: the source folder /Megara/IODevices/MegaCommon/IN/MARKETDATA/opc does not exist.
+com.palmyra.arch.devices.input.InputDeviceException: the source folder /Megara/IODevices/MegaCommon/IN/MARKETDATA/opc does not exist.
+	at com.palmyra.arch.devices.input.file.InputDeviceFileConsumer.A(Unknown Source)
+	at com.palmyra.arch.devices.input.file.InputFilePrivilegedExceptionAction.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(AccessController.java:488)
+	at javax.security.auth.Subject.doAs(Subject.java:573)
+	at com.palmyra.arch.security.SecurityManager.A(Unknown Source)
+	at com.palmyra.arch.security.SecurityManager.runAs(Unknown Source)
+	at com.palmyra.arch.devices.input.file.InputDeviceFileConsumer.run(Unknown Source)
+May 17, 2026 10:58:55:597 |Palmyra : WARN |default-[WebContainer : 3]: MegaCommon: Data Source: DataSource
+May 17, 2026 10:58:55:597 |Palmyra : WARN |default-[WebContainer : 3]: MegaCommon: 
+The query after setting its parameters: 
+select T_.isActive_, T_1_.creatorUserId_, T_.lastConnectionDate_, T_1_.updatorUserId_, T_1_.mainEntityId_, T_1_.updateDate_, T_1_.type_, T_1_.securityId_, T_.pk_, T_1_.name_, T_1_.accessPoint_, T_1_.creationDate_ from data_SecurityUser_ T_ join data_SecurityItem_ T_1_ on (T_.pk_ = T_1_.pk_) where ((T_1_.securityId_ = 'migration') and ((T_1_.mainEntityId_ = 'ALL') or (T_1_.mainEntityId_ = 'AWB')))
+May 17, 2026 10:58:55:598 |Palmyra : WARN |default-[WebContainer : 3]: MegaCommon: Result Size: 1
+May 17, 2026 10:58:55:714 |Palmyra : INFO |default-[WebContainer : 4]: MegaCommon: ********** isAuthenticated. Request path is: /webapp/resources/red/images/layout/logo.png
+May 17, 2026 10:58:55:722 |Palmyra : INFO |default-[WebContainer : 1]: MegaCommon: ********** isAuthenticated. Request path is: /webapp/resources/red/images/menu/btn-menu-on-mc.png
+May 17, 2026 10:58:55:722 |Palmyra : INFO |default-[WebContainer : 4]: MegaCommon: ********** isAuthenticated. Request path is: /webapp/resources/red/images/menu/btn-menu-on-ml.png
+May 17, 2026 10:58:55:723 |Palmyra : INFO |default-[WebContainer : 5]: MegaCommon: ********** isAuthenticated. Request path is: /webapp/resources/red/images/menu/btn-menu-on-mr.png
+May 17, 2026 10:58:55:723 |Palmyra : INFO |default-[WebContainer : 8]: MegaCommon: ********** isAuthenticated. Request path is: /webapp/resources/red/images/menu/btn-menu-ml.png
+May 17, 2026 10:58:55:723 |Palmyra : INFO |default-[WebContainer : 8]: MegaCommon: ********** isAuthenticated. Request path is: /webapp/resources/red/images/menu/btn-menu-mc.png
+May 17, 2026 10:58:55:762 |Palmyra : INFO |default-[WebContainer : 8]: MegaCommon: ********** isAuthenticated. Request path is: /webapp/resources/red/images/menu/btn-menu-mr.png
+May 17, 2026 10:58:55:763 |Palmyra : INFO |default-[WebContainer : 5]: MegaCommon: ********** isAuthenticated. Request path is: /webapp/531192300F631317B97BEDDCB2CC48E8.cache.png
+May 17, 2026 10:58:57:662 |Palmyra : INFO |default-[WebContainer : 5]: MegaCommon: ********** isAuthenticated. Request path is: /webapp/resources/red/images/tabs/tab-l.png
+May 17, 2026 10:58:57:662 |Palmyra : INFO |default-[WebContainer : 1]: MegaCommon: ********** isAuthenticated. Request path is: /webapp/resources/red/images/tabs/tab-r.png
+May 17, 2026 10:58:57:663 |Palmyra : INFO |default-[WebContainer : 8]: MegaCommon: ********** isAuthenticated. Request path is: /webapp/resources/red/images/tabs/tab-m.png
+May 17, 2026 10:58:57:664 |Palmyra : INFO |default-[WebContainer : 8]: MegaCommon: ********** isAuthenticated. Request path is: /webapp/applicationServicenull
+May 17, 2026 10:58:57:664 |Palmyra : INFO |default-[WebContainer : 8]: MegaCommon: *************
+May 17, 2026 10:58:57:664 |Palmyra : INFO |default-[WebContainer : 8]: MegaCommon: [useCase=menu, inCollection=false, className=null, actionType=submission, parameter=FiscalitÃ©>Revenue, userProperty=null]
+May 17, 2026 10:58:57:664 |Palmyra : INFO |default-[WebContainer : 8]: MegaCommon: The action handler that will be executed is 'com.palmyra.arch.presentation.flavors.actions.ActionCallService'
+May 17, 2026 10:58:57:664 |Palmyra : INFO |default-[WebContainer : 8]: MegaCommon: *************
+May 17, 2026 10:58:57:665 |Palmyra : INFO |default-[WebContainer : 8]: MegaCommon: the page data 372 has been removed
+May 17, 2026 10:58:57:665 |Palmyra : INFO |default-[WebContainer : 8]: MegaCommon: *************
+May 17, 2026 10:58:57:665 |Palmyra : INFO |default-[WebContainer : 5]: MegaCommon: ********** isAuthenticated. Request path is: /webapp/resources/red/images/tabs/tab-on-r.png
+May 17, 2026 10:58:57:665 |Palmyra : INFO |default-[WebContainer : 8]: MegaCommon: [useCase=searchInput, inCollection=false, className=com.vermeg.services.taxCore.Revenue, actionType=technical, parameter=create, userProperty=null]
+May 17, 2026 10:58:57:665 |Palmyra : INFO |default-[WebContainer : 1]: MegaCommon: ********** isAuthenticated. Request path is: /webapp/resources/red/images/tabs/tab-on-l.png
+May 17, 2026 10:58:57:665 |Palmyra : INFO |default-[WebContainer : 8]: MegaCommon: The action handler that will be executed is 'com.palmyra.arch.presentation.flavors.actions.ActionCreateSearchInput'
+May 17, 2026 10:58:57:665 |Palmyra : INFO |default-[WebContainer : 8]: MegaCommon: *************
+May 17, 2026 10:58:57:670 |Palmyra : WARN |default-[WebContainer : 8]: MegaCommon: Data Source: DataSource
+May 17, 2026 10:58:57:670 |Palmyra : WARN |default-[WebContainer : 8]: MegaCommon: 
+The query after setting its parameters: 
+select count(*) from acc_ClientSecAccount_ T_ where (((T_.isValid_ = 'true') and ((T_.pk_ = T_.pk_) and ((T_.mainEntityId_ = 'ALL') or (T_.mainEntityId_ = 'AWB')))) and (T_.isValid_ = 'true'))
+May 17, 2026 10:58:57:702 |Palmyra : INFO |default-[WebContainer : 1]: MegaCommon: ********** isAuthenticated. Request path is: /webapp/resources/red/images/tabs/tab-on-m.png
+May 17, 2026 10:58:57:729 |Palmyra : WARN |default-[WebContainer : 8]: MegaCommon: Result Size: 1
+May 17, 2026 10:58:57:732 |Palmyra : WARN |default-[WebContainer : 8]: MegaCommon: Data Source: DataSource
+May 17, 2026 10:58:57:732 |Palmyra : WARN |default-[WebContainer : 8]: MegaCommon: 
+The query after setting its parameters: 
+select count(*) from fi_TradableAsset_ T_ where (((T_.isValid_ = 'true') and ((T_.pk_ = T_.pk_) and ((T_.mainEntityId_ = 'ALL') or (T_.mainEntityId_ = 'AWB')))) and (T_.isValid_ = 'true'))
+May 17, 2026 10:58:57:733 |Palmyra : WARN |default-[WebContainer : 8]: MegaCommon: Result Size: 1
+May 17, 2026 10:58:57:735 |Palmyra : WARN |default-[WebContainer : 8]: MegaCommon: Data Source: DataSource
+May 17, 2026 10:58:57:735 |Palmyra : WARN |default-[WebContainer : 8]: MegaCommon: 
+The query after setting its parameters: 
+select count(*) from lon_FiscalNature_ T_ where ((T_.pk_ = T_.pk_) and ((T_.mainEntityId_ = 'ALL') or (T_.mainEntityId_ = 'AWB')))
+May 17, 2026 10:58:57:736 |Palmyra : WARN |default-[WebContainer : 8]: MegaCommon: Result Size: 1
+May 17, 2026 10:58:57:737 |Palmyra : WARN |default-[WebContainer : 8]: MegaCommon: Data Source: DataSource
+May 17, 2026 10:58:57:737 |Palmyra : WARN |default-[WebContainer : 8]: MegaCommon: 
+The query after setting its parameters: 
+select count(*) from lon_FiscalNature_ T_ where ((T_.pk_ = T_.pk_) and ((T_.mainEntityId_ = 'ALL') or (T_.mainEntityId_ = 'AWB')))
+May 17, 2026 10:58:57:738 |Palmyra : WARN |default-[WebContainer : 8]: MegaCommon: Result Size: 1
+May 17, 2026 10:58:57:740 |Palmyra : WARN |default-[WebContainer : 8]: MegaCommon: Data Source: DataSource
+May 17, 2026 10:58:57:740 |Palmyra : WARN |default-[WebContainer : 8]: MegaCommon: 
+The query after setting its parameters: 
+select T_.pk_ from lon_FiscalNature_ T_ where ((T_.pk_ = T_.pk_) and ((T_.mainEntityId_ = 'ALL') or (T_.mainEntityId_ = 'AWB'))) order by T_.pk_ asc
+May 17, 2026 10:58:57:740 |Palmyra : WARN |default-[WebContainer : 8]: MegaCommon: Result Size: 6
+May 17, 2026 10:58:57:741 |Palmyra : WARN |default-[WebContainer : 8]: MegaCommon: Data Source: DataSource
+May 17, 2026 10:58:57:741 |Palmyra : WARN |default-[WebContainer : 8]: MegaCommon: 
+The query after setting its parameters: 
+select T_.pk_ from lon_FiscalNature_ T_ where ((T_.pk_ = T_.pk_) and ((T_.mainEntityId_ = 'ALL') or (T_.mainEntityId_ = 'AWB'))) order by T_.pk_ asc
+May 17, 2026 10:58:57:742 |Palmyra : WARN |default-[WebContainer : 8]: MegaCommon: Result Size: 6
+May 17, 2026 10:58:57:743 |Palmyra : WARN |default-[WebContainer : 8]: MegaCommon: Data Source: DataSource
+May 17, 2026 10:58:57:743 |Palmyra : WARN |default-[WebContainer : 8]: MegaCommon: 
+The query after setting its parameters: 
+select T_.creatorUserId_, T_.updatorUserId_, T_.updateDate_, T_.mainEntityId_, T_.identifier_, T_.type_, T_.pk_, T_.accessPoint_, T_.creationDate_ from lon_FiscalNature_ T_ where (((((((T_.pk_ = 341256735828) or (T_.pk_ = 341256735829)) or (T_.pk_ = 341256735830)) or (T_.pk_ = 341256735831)) or (T_.pk_ = 676853094080)) or (T_.pk_ = 2265559161552)) and ((T_.pk_ = T_.pk_) and ((T_.mainEntityId_ = 'ALL') or (T_.mainEntityId_ = 'AWB')))) order by T_.pk_ asc
+May 17, 2026 10:58:57:743 |Palmyra : WARN |default-[WebContainer : 8]: MegaCommon: Result Size: 6
+May 17, 2026 10:58:57:747 |Palmyra : WARN |default-[WebContainer : 8]: MegaCommon: Data Source: DataSource
+May 17, 2026 10:58:57:747 |Palmyra : WARN |default-[WebContainer : 8]: MegaCommon: 
+The query after setting its parameters: 
+select count(*) from taxCore_Discount_ T_ where ((T_.pk_ = T_.pk_) and ((T_.mainEntityId_ = 'ALL') or (T_.mainEntityId_ = 'AWB')))
+May 17, 2026 10:58:57:747 |Palmyra : WARN |default-[WebContainer : 8]: MegaCommon: Result Size: 1
+May 17, 2026 10:58:57:748 |Palmyra : WARN |default-[WebContainer : 8]: MegaCommon: Data Source: DataSource
+May 17, 2026 10:58:57:749 |Palmyra : WARN |default-[WebContainer : 8]: MegaCommon: 
+The query after setting its parameters: 
+select count(*) from taxCore_TaxCredit_ T_ where ((T_.pk_ = T_.pk_) and ((T_.mainEntityId_ = 'ALL') or (T_.mainEntityId_ = 'AWB')))
+May 17, 2026 10:58:57:749 |Palmyra : WARN |default-[WebContainer : 8]: MegaCommon: Result Size: 1
+May 17, 2026 10:58:57:750 |Palmyra : WARN |default-[WebContainer : 8]: MegaCommon: Data Source: DataSource
+May 17, 2026 10:58:57:750 |Palmyra : WARN |default-[WebContainer : 8]: MegaCommon: 
+The query after setting its parameters: 
+select count(*) from taxCore_TaxationType_ T_ where ((T_.pk_ = T_.pk_) and ((T_.mainEntityId_ = 'ALL') or (T_.mainEntityId_ = 'AWB')))
+May 17, 2026 10:58:57:750 |Palmyra : WARN |default-[WebContainer : 8]: MegaCommon: Result Size: 1
+May 17, 2026 10:58:57:751 |Palmyra : WARN |default-[WebContainer : 8]: MegaCommon: Data Source: DataSource
+May 17, 2026 10:58:57:752 |Palmyra : WARN |default-[WebContainer : 8]: MegaCommon: 
+The query after setting its parameters: 
+select count(*) from taxCore_Discount_ T_ where ((T_.pk_ = T_.pk_) and ((T_.mainEntityId_ = 'ALL') or (T_.mainEntityId_ = 'AWB')))
+May 17, 2026 10:58:57:752 |Palmyra : WARN |default-[WebContainer : 8]: MegaCommon: Result Size: 1
+May 17, 2026 10:58:57:753 |Palmyra : WARN |default-[WebContainer : 8]: MegaCommon: Data Source: DataSource
+May 17, 2026 10:58:57:753 |Palmyra : WARN |default-[WebContainer : 8]: MegaCommon: 
+The query after setting its parameters: 
+select count(*) from taxCore_TaxCredit_ T_ where ((T_.pk_ = T_.pk_) and ((T_.mainEntityId_ = 'ALL') or (T_.mainEntityId_ = 'AWB')))
+May 17, 2026 10:58:57:753 |Palmyra : WARN |default-[WebContainer : 8]: MegaCommon: Result Size: 1
+May 17, 2026 10:58:57:754 |Palmyra : WARN |default-[WebContainer : 8]: MegaCommon: Data Source: DataSource
+May 17, 2026 10:58:57:754 |Palmyra : WARN |default-[WebContainer : 8]: MegaCommon: 
+The query after setting its parameters: 
+select count(*) from taxCore_TaxationType_ T_ where ((T_.pk_ = T_.pk_) and ((T_.mainEntityId_ = 'ALL') or (T_.mainEntityId_ = 'AWB')))
+May 17, 2026 10:58:57:754 |Palmyra : WARN |default-[WebContainer : 8]: MegaCommon: Result Size: 1
+May 17, 2026 10:58:57:755 |Palmyra : WARN |default-[WebContainer : 8]: MegaCommon: Data Source: DataSource
+May 17, 2026 10:58:57:755 |Palmyra : WARN |default-[WebContainer : 8]: MegaCommon: 
+The query after setting its parameters: 
+select T_.pk_ from taxCore_Discount_ T_ where ((T_.pk_ = T_.pk_) and ((T_.mainEntityId_ = 'ALL') or (T_.mainEntityId_ = 'AWB'))) order by T_.pk_ asc
+May 17, 2026 10:58:57:756 |Palmyra : WARN |default-[WebContainer : 8]: MegaCommon: Result Size: 0
+May 17, 2026 10:58:57:756 |Palmyra : WARN |default-[WebContainer : 8]: MegaCommon: Data Source: DataSource
+May 17, 2026 10:58:57:756 |Palmyra : WARN |default-[WebContainer : 8]: MegaCommon: 
+The query after setting its parameters: 
+select T_.pk_ from taxCore_Discount_ T_ where ((T_.pk_ = T_.pk_) and ((T_.mainEntityId_ = 'ALL') or (T_.mainEntityId_ = 'AWB'))) order by T_.pk_ asc
+May 17, 2026 10:58:57:757 |Palmyra : WARN |default-[WebContainer : 8]: MegaCommon: Result Size: 0
+May 17, 2026 10:58:57:758 |Palmyra : WARN |default-[WebContainer : 8]: MegaCommon: Data Source: DataSource
+May 17, 2026 10:58:57:758 |Palmyra : WARN |default-[WebContainer : 8]: MegaCommon: 
+The query after setting its parameters: 
+select T_.pk_ from taxCore_TaxCredit_ T_ where ((T_.pk_ = T_.pk_) and ((T_.mainEntityId_ = 'ALL') or (T_.mainEntityId_ = 'AWB'))) order by T_.pk_ asc
+May 17, 2026 10:58:57:758 |Palmyra : WARN |default-[WebContainer : 8]: MegaCommon: Result Size: 0
+May 17, 2026 10:58:57:759 |Palmyra : WARN |default-[WebContainer : 8]: MegaCommon: Data Source: DataSource
+May 17, 2026 10:58:57:759 |Palmyra : WARN |default-[WebContainer : 8]: MegaCommon: 
+The query after setting its parameters: 
+select T_.pk_ from taxCore_TaxCredit_ T_ where ((T_.pk_ = T_.pk_) and ((T_.mainEntityId_ = 'ALL') or (T_.mainEntityId_ = 'AWB'))) order by T_.pk_ asc
+May 17, 2026 10:58:57:759 |Palmyra : WARN |default-[WebContainer : 8]: MegaCommon: Result Size: 0
+May 17, 2026 10:58:57:760 |Palmyra : WARN |default-[WebContainer : 8]: MegaCommon: Data Source: DataSource
+May 17, 2026 10:58:57:760 |Palmyra : WARN |default-[WebContainer : 8]: MegaCommon: 
+The query after setting its parameters: 
+select T_.pk_ from taxCore_TaxationType_ T_ where ((T_.pk_ = T_.pk_) and ((T_.mainEntityId_ = 'ALL') or (T_.mainEntityId_ = 'AWB'))) order by T_.pk_ asc
+May 17, 2026 10:58:57:760 |Palmyra : WARN |default-[WebContainer : 8]: MegaCommon: Result Size: 17
+May 17, 2026 10:58:57:761 |Palmyra : WARN |default-[WebContainer : 8]: MegaCommon: Data Source: DataSource
+May 17, 2026 10:58:57:761 |Palmyra : WARN |default-[WebContainer : 8]: MegaCommon: 
+The query after setting its parameters: 
+select T_.pk_ from taxCore_TaxationType_ T_ where ((T_.pk_ = T_.pk_) and ((T_.mainEntityId_ = 'ALL') or (T_.mainEntityId_ = 'AWB'))) order by T_.pk_ asc
+May 17, 2026 10:58:57:762 |Palmyra : WARN |default-[WebContainer : 8]: MegaCommon: Result Size: 17
+May 17, 2026 10:58:57:763 |Palmyra : WARN |default-[WebContainer : 8]: MegaCommon: Data Source: DataSource
+May 17, 2026 10:58:57:763 |Palmyra : WARN |default-[WebContainer : 8]: MegaCommon: 
+The query after setting its parameters: 
+select T_.creatorUserId_, T_.updatorUserId_, T_.updateDate_, T_.mainEntityId_, T_.identifier_, T_.type_, T_.pk_, T_.accessPoint_, T_.creationDate_ from taxCore_TaxationType_ T_ where ((((((((((((((((((T_.pk_ = 341256771186) or (T_.pk_ = 341256771187)) or (T_.pk_ = 341256771188)) or (T_.pk_ = 341256771189)) or (T_.pk_ = 341256771190)) or (T_.pk_ = 341256771191)) or (T_.pk_ = 341256771192)) or (T_.pk_ = 341260477898)) or (T_.pk_ = 341260511687)) or (T_.pk_ = 672283894460)) or (T_.pk_ = 1030334151309)) or (T_.pk_ = 5670418686750)) or (T_.pk_ = 112333577683180)) or (T_.pk_ = 112333591356262)) or (T_.pk_ = 112448387309743)) or (T_.pk_ = 166137436415148)) or (T_.pk_ = 166138530554199)) and ((T_.pk_ = T_.pk_) and ((T_.mainEntityId_ = 'ALL') or (T_.mainEntityId_ = 'AWB')))) order by T_.pk_ asc
+May 17, 2026 10:58:57:764 |Palmyra : WARN |default-[WebContainer : 8]: MegaCommon: Result Size: 17
+May 17, 2026 10:58:57:766 |Palmyra : WARN |default-[WebContainer : 8]: MegaCommon: Data Source: DataSource
+May 17, 2026 10:58:57:766 |Palmyra : WARN |default-[WebContainer : 8]: MegaCommon: 
+The query after setting its parameters: 
+select T_.creatorUserId_, T_.updatorUserId_, T_.updateDate_, T_.mainEntityId_, T_.identifier_, T_.type_, T_.pk_, T_.accessPoint_, T_.creationDate_ from taxCore_TaxationType_ T_ where ((((((((((((((((((T_.pk_ = 341256771186) or (T_.pk_ = 341256771187)) or (T_.pk_ = 341256771188)) or (T_.pk_ = 341256771189)) or (T_.pk_ = 341256771190)) or (T_.pk_ = 341256771191)) or (T_.pk_ = 341256771192)) or (T_.pk_ = 341260477898)) or (T_.pk_ = 341260511687)) or (T_.pk_ = 672283894460)) or (T_.pk_ = 1030334151309)) or (T_.pk_ = 5670418686750)) or (T_.pk_ = 112333577683180)) or (T_.pk_ = 112333591356262)) or (T_.pk_ = 112448387309743)) or (T_.pk_ = 166137436415148)) or (T_.pk_ = 166138530554199)) and ((T_.pk_ = T_.pk_) and ((T_.mainEntityId_ = 'ALL') or (T_.mainEntityId_ = 'AWB')))) order by T_.pk_ asc
+May 17, 2026 10:58:57:767 |Palmyra : WARN |default-[WebContainer : 8]: MegaCommon: Result Size: 17
+May 17, 2026 10:58:57:769 |Palmyra : WARN |default-[WebContainer : 8]: MegaCommon: Data Source: DataSource
+May 17, 2026 10:58:57:770 |Palmyra : WARN |default-[WebContainer : 8]: MegaCommon: 
+The query after setting its parameters: 
+select count(*) from loc_Country_ T_ where (((T_.isValid_ = 'true') and ((T_.pk_ = T_.pk_) and ((T_.mainEntityId_ = 'ALL') or (T_.mainEntityId_ = 'AWB')))) and (T_.isValid_ = 'true'))
+May 17, 2026 10:58:57:770 |Palmyra : WARN |default-[WebContainer : 8]: MegaCommon: Result Size: 1
+May 17, 2026 10:58:57:810 |Palmyra : INFO |default-[WebContainer : 8]: MegaCommon: ********** isAuthenticated. Request path is: /webapp/resources/red/images/panel/screen-bg.png
+May 17, 2026 10:58:57:818 |Palmyra : INFO |default-[WebContainer : 8]: MegaCommon: ********** isAuthenticated. Request path is: /webapp/resources/red/images/panel/tools-sprites-trans_blanc.png
+May 17, 2026 10:58:57:818 |Palmyra : INFO |default-[WebContainer : 1]: MegaCommon: ********** isAuthenticated. Request path is: /webapp/resources/red/images/button/icon-search.png
+May 17, 2026 10:59:00:150 |Palmyra : INFO |default-[WebContainer : 8]: MegaCommon: ********** isAuthenticated. Request path is: /webapp/applicationServicenull
+May 17, 2026 10:59:00:152 |Palmyra : INFO |default-[WebContainer : 8]: MegaCommon: *************
+May 17, 2026 10:59:00:153 |Palmyra : INFO |default-[WebContainer : 8]: MegaCommon: [useCase=searchInput, inCollection=false, className=com.vermeg.services.taxCore.Revenue, actionType=submission, parameter=executeCriteria, userProperty=null]
+May 17, 2026 10:59:00:153 |Palmyra : INFO |default-[WebContainer : 8]: MegaCommon: The action handler that will be executed is 'com.palmyra.arch.presentation.flavors.actions.ActionExecuteCriteria'
+May 17, 2026 10:59:00:153 |Palmyra : INFO |default-[WebContainer : 8]: MegaCommon: *************
+May 17, 2026 10:59:00:153 |Palmyra : INFO |default-[WebContainer : 8]: MegaCommon: *************
+May 17, 2026 10:59:00:153 |Palmyra : INFO |default-[WebContainer : 8]: MegaCommon: [useCase=searchInput, inCollection=false, className=com.vermeg.services.taxCore.Revenue, actionType=submission, parameter=executeCriteria, userProperty=null]->[useCase=search, inCollection=true, className=com.vermeg.services.taxCore.Revenue, actionType=technical, parameter=search, userProperty=null]
+May 17, 2026 10:59:00:153 |Palmyra : INFO |default-[WebContainer : 8]: MegaCommon: The action handler that will be executed is 'com.palmyra.arch.presentation.flavors.actions.ActionSearch'
+May 17, 2026 10:59:00:153 |Palmyra : INFO |default-[WebContainer : 8]: MegaCommon: *************
+May 17, 2026 10:59:00:154 |Palmyra : WARN |default-[WebContainer : 8]: MegaCommon: Data Source: DataSource
+May 17, 2026 10:59:00:155 |Palmyra : WARN |default-[WebContainer : 8]: MegaCommon: 
+The query after setting its parameters: 
+select T_.pk_ from taxCore_Revenue_ T_ where ((T_.pk_ = T_.pk_) and ((T_.mainEntityId_ = 'ALL') or (T_.mainEntityId_ = 'AWB'))) order by T_.pk_ desc
+May 17, 2026 10:59:00:576 |Palmyra : ERROR |default-[Thread-84]: MegaCommon: the source folder /Megara/IODevices/MegaCommon/IN/MARKETDATA/opc does not exist.
+com.palmyra.arch.devices.input.InputDeviceException: the source folder /Megara/IODevices/MegaCommon/IN/MARKETDATA/opc does not exist.
+	at com.palmyra.arch.devices.input.file.InputDeviceFileConsumer.A(Unknown Source)
+	at com.palmyra.arch.devices.input.file.InputFilePrivilegedExceptionAction.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(AccessController.java:488)
+	at javax.security.auth.Subject.doAs(Subject.java:573)
+	at com.palmyra.arch.security.SecurityManager.A(Unknown Source)
+	at com.palmyra.arch.security.SecurityManager.runAs(Unknown Source)
+	at com.palmyra.arch.devices.input.file.InputDeviceFileConsumer.run(Unknown Source)
+May 17, 2026 10:59:00:945 |Palmyra : WARN |default-[WebContainer : 8]: MegaCommon: Result Size: 10001
+May 17, 2026 10:59:01:023 |Palmyra : WARN |default-[WebContainer : 8]: MegaCommon: Data Source: DataSource
+May 17, 2026 10:59:01:024 |Palmyra : WARN |default-[WebContainer : 8]: MegaCommon: 
+The query after setting its parameters: 
+select count(*) from taxCore_Revenue_ T_ where ((T_.pk_ = T_.pk_) and ((T_.mainEntityId_ = 'ALL') or (T_.mainEntityId_ = 'AWB')))
+May 17, 2026 10:59:01:382 |Palmyra : INFO |default-[WebContainer : 5]: MegaCommon: ********** isAuthenticated. Request path is: /webapp/applicationServicenull
+May 17, 2026 10:59:01:385 |Palmyra : INFO |default-[WebContainer : 5]: MegaCommon: *************
+May 17, 2026 10:59:01:385 |Palmyra : INFO |default-[WebContainer : 5]: MegaCommon: [useCase=searchInput, inCollection=false, className=com.vermeg.services.taxCore.Revenue, actionType=submission, parameter=executeCriteria, userProperty=null]->[useCase=search, inCollection=true, className=com.vermeg.services.taxCore.Revenue, actionType=submission, parameter=return, userProperty=null]
+May 17, 2026 10:59:01:385 |Palmyra : INFO |default-[WebContainer : 5]: MegaCommon: The action handler that will be executed is 'com.palmyra.arch.presentation.flavors.actions.ActionReturnSearch'
+May 17, 2026 10:59:01:385 |Palmyra : INFO |default-[WebContainer : 5]: MegaCommon: *************
+May 17, 2026 10:59:01:385 |Palmyra : INFO |default-[WebContainer : 5]: MegaCommon: the page data 374 has been removed
+May 17, 2026 10:59:01:385 |Palmyra : INFO |default-[WebContainer : 5]: MegaCommon: *************
+May 17, 2026 10:59:01:385 |Palmyra : INFO |default-[WebContainer : 5]: MegaCommon: [useCase=searchInput, inCollection=false, className=com.vermeg.services.taxCore.Revenue, actionType=null, parameter=null, userProperty=null]
+May 17, 2026 10:59:01:385 |Palmyra : INFO |default-[WebContainer : 5]: MegaCommon: *************
+May 17, 2026 10:59:01:385 |Palmyra : INFO |default-[WebContainer : 5]: MegaCommon: *************
+May 17, 2026 10:59:01:385 |Palmyra : INFO |default-[WebContainer : 5]: MegaCommon: [useCase=searchInput, inCollection=false, className=com.vermeg.services.taxCore.Revenue, actionType=submission, parameter=executeCriteria, userProperty=null]
+May 17, 2026 10:59:01:385 |Palmyra : INFO |default-[WebContainer : 5]: MegaCommon: The action handler that will be executed is 'com.palmyra.arch.presentation.flavors.actions.ActionExecuteCriteria'
+May 17, 2026 10:59:01:385 |Palmyra : INFO |default-[WebContainer : 5]: MegaCommon: *************
+May 17, 2026 10:59:01:385 |Palmyra : INFO |default-[WebContainer : 5]: MegaCommon: *************
+May 17, 2026 10:59:01:385 |Palmyra : INFO |default-[WebContainer : 5]: MegaCommon: [useCase=searchInput, inCollection=false, className=com.vermeg.services.taxCore.Revenue, actionType=submission, parameter=executeCriteria, userProperty=null]->[useCase=search, inCollection=true, className=com.vermeg.services.taxCore.Revenue, actionType=technical, parameter=search, userProperty=null]
+May 17, 2026 10:59:01:385 |Palmyra : INFO |default-[WebContainer : 5]: MegaCommon: The action handler that will be executed is 'com.palmyra.arch.presentation.flavors.actions.ActionSearch'
+May 17, 2026 10:59:01:385 |Palmyra : INFO |default-[WebContainer : 5]: MegaCommon: *************
+May 17, 2026 10:59:01:386 |Palmyra : WARN |default-[WebContainer : 5]: MegaCommon: Data Source: DataSource
+May 17, 2026 10:59:01:387 |Palmyra : WARN |default-[WebContainer : 5]: MegaCommon: 
+The query after setting its parameters: 
+select T_.pk_ from taxCore_Revenue_ T_ where ((T_.pk_ = T_.pk_) and ((T_.mainEntityId_ = 'ALL') or (T_.mainEntityId_ = 'AWB'))) order by T_.pk_ desc
+May 17, 2026 10:59:01:498 |Palmyra : WARN |default-[WebContainer : 8]: MegaCommon: Result Size: 1
+May 17, 2026 10:59:01:499 |Palmyra : ERROR |default-[WebContainer : 8]: MegaCommon: null
+java.lang.NullPointerException
+	at com.palmyra.arch.presentation.port.server.ApplicationServiceImpl.run(ApplicationServiceImpl.java:95)
+	at com.palmyra.arch.presentation.port.server.ApplicationServiceImpl.sendRequest(ApplicationServiceImpl.java:60)
+	at sun.reflect.GeneratedMethodAccessor83.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:37)
+	at java.lang.reflect.Method.invoke(Method.java:611)
+	at com.google.gwt.user.server.rpc.RPC.invokeAndEncodeResponse(RPC.java:569)
+	at com.google.gwt.user.server.rpc.RemoteServiceServlet.processCall(RemoteServiceServlet.java:208)
+	at com.google.gwt.user.server.rpc.RemoteServiceServlet.processPost(RemoteServiceServlet.java:248)
+	at com.google.gwt.user.server.rpc.AbstractRemoteServiceServlet.doPost(AbstractRemoteServiceServlet.java:62)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:595)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:668)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.service(ServletWrapper.java:1233)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:782)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:481)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapperImpl.handleRequest(ServletWrapperImpl.java:178)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterChain.invokeTarget(WebAppFilterChain.java:136)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterChain.doFilter(WebAppFilterChain.java:97)
+	at com.palmyra.arch.security.authentication.AuthenticationFilter$ChainAction.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(AccessController.java:488)
+	at javax.security.auth.Subject.doAs(Subject.java:573)
+	at com.palmyra.arch.security.authentication.AuthenticationFilter.A(Unknown Source)
+	at com.palmyra.arch.security.authentication.AuthenticationFilter.doFilter(Unknown Source)
+	at com.ibm.ws.webcontainer.filter.FilterInstanceWrapper.doFilter(FilterInstanceWrapper.java:195)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterChain.doFilter(WebAppFilterChain.java:91)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterManager.doFilter(WebAppFilterManager.java:967)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterManager.invokeFilters(WebAppFilterManager.java:1107)
+	at com.ibm.ws.webcontainer.servlet.CacheServletWrapper.handleRequest(CacheServletWrapper.java:87)
+	at com.ibm.ws.webcontainer.WebContainer.handleRequest(WebContainer.java:949)
+	at com.ibm.ws.webcontainer.WSWebContainer.handleRequest(WSWebContainer.java:1817)
+	at com.ibm.ws.webcontainer.channel.WCChannelLink.ready(WCChannelLink.java:200)
+	at com.ibm.ws.http.channel.inbound.impl.HttpInboundLink.handleDiscrimination(HttpInboundLink.java:463)
+	at com.ibm.ws.http.channel.inbound.impl.HttpInboundLink.handleNewRequest(HttpInboundLink.java:530)
+	at com.ibm.ws.http.channel.inbound.impl.HttpInboundLink.processRequest(HttpInboundLink.java:316)
+	at com.ibm.ws.http.channel.inbound.impl.HttpICLReadCallback.complete(HttpICLReadCallback.java:88)
+	at com.ibm.ws.tcp.channel.impl.AioReadCompletionListener.futureCompleted(AioReadCompletionListener.java:175)
+	at com.ibm.io.async.AbstractAsyncFuture.invokeCallback(AbstractAsyncFuture.java:217)
+	at com.ibm.io.async.AsyncChannelFuture.fireCompletionActions(AsyncChannelFuture.java:161)
+	at com.ibm.io.async.AsyncFuture.completed(AsyncFuture.java:138)
+	at com.ibm.io.async.ResultHandler.complete(ResultHandler.java:204)
+	at com.ibm.io.async.ResultHandler.runEventProcessingLoop(ResultHandler.java:775)
+	at com.ibm.io.async.ResultHandler$2.run(ResultHandler.java:905)
+	at com.ibm.ws.util.ThreadPool$Worker.run(ThreadPool.java:1892)
+May 17, 2026 10:59:01:499 |Palmyra : ERROR |default-[WebContainer : 8]: MegaCommon: null
+java.lang.NullPointerException
+	at com.palmyra.arch.presentation.port.server.ApplicationServiceImpl.run(ApplicationServiceImpl.java:95)
+	at com.palmyra.arch.presentation.port.server.ApplicationServiceImpl.sendRequest(ApplicationServiceImpl.java:60)
+	at sun.reflect.GeneratedMethodAccessor83.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:37)
+	at java.lang.reflect.Method.invoke(Method.java:611)
+	at com.google.gwt.user.server.rpc.RPC.invokeAndEncodeResponse(RPC.java:569)
+	at com.google.gwt.user.server.rpc.RemoteServiceServlet.processCall(RemoteServiceServlet.java:208)
+	at com.google.gwt.user.server.rpc.RemoteServiceServlet.processPost(RemoteServiceServlet.java:248)
+	at com.google.gwt.user.server.rpc.AbstractRemoteServiceServlet.doPost(AbstractRemoteServiceServlet.java:62)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:595)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:668)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.service(ServletWrapper.java:1233)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:782)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:481)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapperImpl.handleRequest(ServletWrapperImpl.java:178)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterChain.invokeTarget(WebAppFilterChain.java:136)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterChain.doFilter(WebAppFilterChain.java:97)
+	at com.palmyra.arch.security.authentication.AuthenticationFilter$ChainAction.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(AccessController.java:488)
+	at javax.security.auth.Subject.doAs(Subject.java:573)
+	at com.palmyra.arch.security.authentication.AuthenticationFilter.A(Unknown Source)
+	at com.palmyra.arch.security.authentication.AuthenticationFilter.doFilter(Unknown Source)
+	at com.ibm.ws.webcontainer.filter.FilterInstanceWrapper.doFilter(FilterInstanceWrapper.java:195)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterChain.doFilter(WebAppFilterChain.java:91)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterManager.doFilter(WebAppFilterManager.java:967)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterManager.invokeFilters(WebAppFilterManager.java:1107)
+	at com.ibm.ws.webcontainer.servlet.CacheServletWrapper.handleRequest(CacheServletWrapper.java:87)
+	at com.ibm.ws.webcontainer.WebContainer.handleRequest(WebContainer.java:949)
+	at com.ibm.ws.webcontainer.WSWebContainer.handleRequest(WSWebContainer.java:1817)
+	at com.ibm.ws.webcontainer.channel.WCChannelLink.ready(WCChannelLink.java:200)
+	at com.ibm.ws.http.channel.inbound.impl.HttpInboundLink.handleDiscrimination(HttpInboundLink.java:463)
+	at com.ibm.ws.http.channel.inbound.impl.HttpInboundLink.handleNewRequest(HttpInboundLink.java:530)
+	at com.ibm.ws.http.channel.inbound.impl.HttpInboundLink.processRequest(HttpInboundLink.java:316)
+	at com.ibm.ws.http.channel.inbound.impl.HttpICLReadCallback.complete(HttpICLReadCallback.java:88)
+	at com.ibm.ws.tcp.channel.impl.AioReadCompletionListener.futureCompleted(AioReadCompletionListener.java:175)
+	at com.ibm.io.async.AbstractAsyncFuture.invokeCallback(AbstractAsyncFuture.java:217)
+	at com.ibm.io.async.AsyncChannelFuture.fireCompletionActions(AsyncChannelFuture.java:161)
+	at com.ibm.io.async.AsyncFuture.completed(AsyncFuture.java:138)
+	at com.ibm.io.async.ResultHandler.complete(ResultHandler.java:204)
+	at com.ibm.io.async.ResultHandler.runEventProcessingLoop(ResultHandler.java:775)
+	at com.ibm.io.async.ResultHandler$2.run(ResultHandler.java:905)
+	at com.ibm.ws.util.ThreadPool$Worker.run(ThreadPool.java:1892)
+May 17, 2026 10:59:01:500 |Palmyra : ERROR |default-[WebContainer : 8]: MegaCommon: null
+java.lang.NullPointerException
+	at com.palmyra.arch.presentation.flavors.views.AbstractViewBuilder.buildView(Unknown Source)
+	at com.palmyra.arch.presentation.engine.FullPageRenderer.getPageDataContent(Unknown Source)
+	at com.palmyra.arch.presentation.engine.FullPageRenderer.render(Unknown Source)
+	at com.palmyra.arch.presentation.engine.PresentationController.render(Unknown Source)
+	at com.palmyra.arch.presentation.port.server.ApplicationServiceImpl.render(ApplicationServiceImpl.java:176)
+	at com.palmyra.arch.presentation.port.server.ApplicationServiceImpl.run(ApplicationServiceImpl.java:118)
+	at com.palmyra.arch.presentation.port.server.ApplicationServiceImpl.sendRequest(ApplicationServiceImpl.java:60)
+	at sun.reflect.GeneratedMethodAccessor83.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:37)
+	at java.lang.reflect.Method.invoke(Method.java:611)
+	at com.google.gwt.user.server.rpc.RPC.invokeAndEncodeResponse(RPC.java:569)
+	at com.google.gwt.user.server.rpc.RemoteServiceServlet.processCall(RemoteServiceServlet.java:208)
+	at com.google.gwt.user.server.rpc.RemoteServiceServlet.processPost(RemoteServiceServlet.java:248)
+	at com.google.gwt.user.server.rpc.AbstractRemoteServiceServlet.doPost(AbstractRemoteServiceServlet.java:62)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:595)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:668)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.service(ServletWrapper.java:1233)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:782)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:481)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapperImpl.handleRequest(ServletWrapperImpl.java:178)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterChain.invokeTarget(WebAppFilterChain.java:136)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterChain.doFilter(WebAppFilterChain.java:97)
+	at com.palmyra.arch.security.authentication.AuthenticationFilter$ChainAction.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(AccessController.java:488)
+	at javax.security.auth.Subject.doAs(Subject.java:573)
+	at com.palmyra.arch.security.authentication.AuthenticationFilter.A(Unknown Source)
+	at com.palmyra.arch.security.authentication.AuthenticationFilter.doFilter(Unknown Source)
+	at com.ibm.ws.webcontainer.filter.FilterInstanceWrapper.doFilter(FilterInstanceWrapper.java:195)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterChain.doFilter(WebAppFilterChain.java:91)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterManager.doFilter(WebAppFilterManager.java:967)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterManager.invokeFilters(WebAppFilterManager.java:1107)
+	at com.ibm.ws.webcontainer.servlet.CacheServletWrapper.handleRequest(CacheServletWrapper.java:87)
+	at com.ibm.ws.webcontainer.WebContainer.handleRequest(WebContainer.java:949)
+	at com.ibm.ws.webcontainer.WSWebContainer.handleRequest(WSWebContainer.java:1817)
+	at com.ibm.ws.webcontainer.channel.WCChannelLink.ready(WCChannelLink.java:200)
+	at com.ibm.ws.http.channel.inbound.impl.HttpInboundLink.handleDiscrimination(HttpInboundLink.java:463)
+	at com.ibm.ws.http.channel.inbound.impl.HttpInboundLink.handleNewRequest(HttpInboundLink.java:530)
+	at com.ibm.ws.http.channel.inbound.impl.HttpInboundLink.processRequest(HttpInboundLink.java:316)
+	at com.ibm.ws.http.channel.inbound.impl.HttpICLReadCallback.complete(HttpICLReadCallback.java:88)
+	at com.ibm.ws.tcp.channel.impl.AioReadCompletionListener.futureCompleted(AioReadCompletionListener.java:175)
+	at com.ibm.io.async.AbstractAsyncFuture.invokeCallback(AbstractAsyncFuture.java:217)
+	at com.ibm.io.async.AsyncChannelFuture.fireCompletionActions(AsyncChannelFuture.java:161)
+	at com.ibm.io.async.AsyncFuture.completed(AsyncFuture.java:138)
+	at com.ibm.io.async.ResultHandler.complete(ResultHandler.java:204)
+	at com.ibm.io.async.ResultHandler.runEventProcessingLoop(ResultHandler.java:775)
+	at com.ibm.io.async.ResultHandler$2.run(ResultHandler.java:905)
+	at com.ibm.ws.util.ThreadPool$Worker.run(ThreadPool.java:1892)
+May 17, 2026 10:59:01:542 |Palmyra : INFO |default-[WebContainer : 1]: MegaCommon: ********** isAuthenticated. Request path is: /webapp/resources/red/images/window/win-tr.png
+May 17, 2026 10:59:01:542 |Palmyra : INFO |default-[WebContainer : 8]: MegaCommon: ********** isAuthenticated. Request path is: /webapp/resources/red/images/window/win-tl.png
+May 17, 2026 10:59:01:543 |Palmyra : INFO |default-[WebContainer : 4]: MegaCommon: ********** isAuthenticated. Request path is: /webapp/resources/red/images/window/win-tm.png
+May 17, 2026 10:59:01:543 |Palmyra : INFO |default-[WebContainer : 0]: MegaCommon: ********** isAuthenticated. Request path is: /webapp/resources/red/images/window/win-ml.png
+May 17, 2026 10:59:01:544 |Palmyra : INFO |default-[WebContainer : 0]: MegaCommon: ********** isAuthenticated. Request path is: /webapp/resources/red/images/window/win-mr.png
+May 17, 2026 10:59:01:574 |Palmyra : INFO |default-[WebContainer : 0]: MegaCommon: ********** isAuthenticated. Request path is: /webapp/resources/red/images/window/win-bm.png
+May 17, 2026 10:59:01:613 |Palmyra : INFO |default-[WebContainer : 0]: MegaCommon: ********** isAuthenticated. Request path is: /webapp/resources/red/images/window/win-bl.png
+May 17, 2026 10:59:01:622 |Palmyra : INFO |default-[WebContainer : 0]: MegaCommon: ********** isAuthenticated. Request path is: /webapp/resources/red/images/window/win-br.png
+May 17, 2026 10:59:01:622 |Palmyra : INFO |default-[WebContainer : 6]: MegaCommon: ********** isAuthenticated. Request path is: /ExtGWT/images/default/shadow.png
+May 17, 2026 10:59:01:624 |Palmyra : INFO |default-[WebContainer : 0]: MegaCommon: ********** isAuthenticated. Request path is: /ExtGWT/images/default/shadow-c.png
+May 17, 2026 10:59:01:653 |Palmyra : INFO |default-[WebContainer : 0]: MegaCommon: ********** isAuthenticated. Request path is: /webapp/resources/red/images/panel/tools-sprites-trans.png
+May 17, 2026 10:59:01:662 |Palmyra : INFO |default-[WebContainer : 0]: MegaCommon: ********** isAuthenticated. Request path is: /webapp/resources/red/images/panel/accordeon-hdr.png
+May 17, 2026 10:59:02:185 |Palmyra : WARN |default-[WebContainer : 5]: MegaCommon: Result Size: 10001
+May 17, 2026 10:59:02:261 |Palmyra : WARN |default-[WebContainer : 5]: MegaCommon: Data Source: DataSource
+May 17, 2026 10:59:02:262 |Palmyra : WARN |default-[WebContainer : 5]: MegaCommon: 
+The query after setting its parameters: 
+select count(*) from taxCore_Revenue_ T_ where ((T_.pk_ = T_.pk_) and ((T_.mainEntityId_ = 'ALL') or (T_.mainEntityId_ = 'AWB')))
+May 17, 2026 10:59:02:728 |Palmyra : WARN |default-[WebContainer : 5]: MegaCommon: Result Size: 1
+May 17, 2026 10:59:02:790 |Palmyra : INFO |default-[WebContainer : 4]: MegaCommon: ********** isAuthenticated. Request path is: /webapp/resources/red/images/grid/grid-toolbar-sep.png
+May 17, 2026 10:59:02:798 |Palmyra : INFO |default-[WebContainer : 6]: MegaCommon: ********** isAuthenticated. Request path is: /webapp/applicationServicenull
+May 17, 2026 10:59:02:799 |Palmyra : WARN |default-[WebContainer : 6]: MegaCommon: Data Source: DataSource
+May 17, 2026 10:59:02:800 |Palmyra : WARN |default-[WebContainer : 6]: MegaCommon: 
+The query after setting its parameters: 
+select T_.fiscalCategory$pk_, T_clientSecAccount_.billingCashAccount$pk_, T_clientSecAccount_.updatorUserId_, T_clientSecAccount_.accShortName_, T_clientSecAccount_.accountID_, T_clientSecAccount_client_.creatorUserId_, T_clientSec_8VIIO5_tingEntity_.creatorUserId_, T_clientSec_8VIIO5_tingEntity_.updatorUserId_, T_clientSec_8VIIO5_tingEntity_.mainEntityId_, T_clientSec_8VIIO5_tingEntity_.updateDate_, T_clientSec_8VIIO5_tingEntity_.identifier_, T_clientSec_8VIIO5_tingEntity_.identifier2_, T_clientSec_8VIIO5_tingEntity_.type_, T_clientSec_8VIIO5_tingEntity_.pk_, T_clientSec_8VIIO5_tingEntity_.accessPoint_, T_clientSec_8VIIO5_tingEntity_.creationDate_, T_clientSecAccount_client_.updatorUserId_, T_clientSecAccount_client_.mainEntityId_, T_clientSecAccount_client_.updateDate_, T_clientSecAccount_client_.type_, T_clientSecAccount_client_.pk_, T_clientSecAccount_client_.accessPoint_, T_clientSecAccount_client_.creationDate_, T_clientSecAccount_client_.actingEntity$code_, T_clientSecAccount_.accessPoint_, T_clientSecAccount_.creationDate_, T_clientSecAccount_.billingCashAccount$code_, T_clientSecAccount_.creatorUserId_, T_clientSecAccount_.updateDate_, T_clientSecAccount_.mainEntityId_, T_clientSecAccount_.type_, T_clientSecAccount_.pk_, T_.totalDueAmount_, T_.accessPoint_, T_.revenueReference_, T_.creatorUserId_, T_.updateDate_, T_.net_, T_.effectDate_, T_.updatorUserId_, T_.appReference_, T_.creationDate_, T_.hasRevenue$code_, T_.fiscalCategory$code_, T_tradableAsset_.creatorUserId_, T_tradableAsset_.updatorUserId_, T_tradableAsset_.mainEntityId_, T_tradableAsset_.updateDate_, T_tradableAsset_.identifier_, T_tradableAsset_.type_, T_tradableAsset_.pk_, T_tradableAsset_.accessPoint_, T_tradableAsset_.description_, T_tradableAsset_.creationDate_, T_.mainEntityId_, T_.type_, T_.pk_, T_.taxableAmount_, T_.hasRevenue$pk_ from taxCore_Revenue_ T_ left join acc_ClientSecAccount_ T_clientSecAccount_ on (T_.clientSecAccount$pk_ = T_clientSecAccount_.pk_) left join ent_Client_ T_clientSecAccount_client_ on (T_clientSecAccount_.client$pk_ = T_clientSecAccount_client_.pk_) left join ent_Entity_ T_clientSec_8VIIO5_tingEntity_ on (T_clientSecAccount_client_.actingEntity$pk_ = T_clientSec_8VIIO5_tingEntity_.pk_) left join fi_TradableAsset_ T_tradableAsset_ on (T_.tradableAsset$pk_ = T_tradableAsset_.pk_) where (((((((((((T_.pk_ = 166208584812954) or (T_.pk_ = 166208584173522)) or (T_.pk_ = 166208584173489)) or (T_.pk_ = 166208574319435)) or (T_.pk_ = 166208572727855)) or (T_.pk_ = 166208572727841)) or (T_.pk_ = 166208572727819)) or (T_.pk_ = 166208572727805)) or (T_.pk_ = 166208572727783)) or (T_.pk_ = 166208572727769)) and ((((((T_.pk_ = T_.pk_) and ((T_.mainEntityId_ = 'ALL') or (T_.mainEntityId_ = 'AWB'))) and ((T_clientSecAccount_.pk_ = T_clientSecAccount_.pk_) or (T_clientSecAccount_.pk_ is null))) and ((T_clientSecAccount_client_.pk_ = T_clientSecAccount_client_.pk_) or (T_clientSecAccount_client_.pk_ is null))) and ((T_clientSec_8VIIO5_tingEntity_.pk_ = T_clientSec_8VIIO5_tingEntity_.pk_) or (T_clientSec_8VIIO5_tingEntity_.pk_ is null))) and ((T_tradableAsset_.pk_ = T_tradableAsset_.pk_) or (T_tradableAsset_.pk_ is null)))) order by T_.pk_ desc
+May 17, 2026 10:59:02:842 |Palmyra : WARN |default-[WebContainer : 6]: MegaCommon: Result Size: 10
+May 17, 2026 10:59:02:853 |Palmyra : WARN |default-[WebContainer : 6]: MegaCommon: Data Source: DataSource
+May 17, 2026 10:59:02:854 |Palmyra : WARN |default-[WebContainer : 6]: MegaCommon: 
+The query after setting its parameters: 
+select T_.clientReference_, T_.forcedTaxRates_, T_.computeTaxes_, T_.fiscalOrigin_, T_.gross_, T_.origin_, T_.simulation_, T_.realized_, T_.originalCurrency$code_, T_.status_, T_.mainReference_, T_.bookNet_, T_.bookTaxableAmount_, T_.event_, T_.bookGross_, T_.description_, T_.totalBookDueAmount_, T_.pk_ from taxCore_Revenue_ T_ where ((T_.pk_ = 166208584812954) and ((T_.pk_ = T_.pk_) and ((T_.mainEntityId_ = 'ALL') or (T_.mainEntityId_ = 'AWB'))))
+May 17, 2026 10:59:02:854 |Palmyra : WARN |default-[WebContainer : 6]: MegaCommon: Result Size: 1
+May 17, 2026 10:59:02:856 |Palmyra : WARN |default-[WebContainer : 6]: MegaCommon: Data Source: DataSource
+May 17, 2026 10:59:02:857 |Palmyra : WARN |default-[WebContainer : 6]: MegaCommon: 
+The query after setting its parameters: 
+select T_.address4_, T_.locale$pk_, T_.number_, T_.country$pk_, T_.contactName_, T_.accessPoint_, T_.telex_, T_.addressMedia_, T_.creatorUserId_, T_.hasAddressType_, T_.updateDate_, T_.hasAddress$code_, T_.contactFunction_, T_.email_, T_.fax_, T_.purpose_, T_.comment_, T_.swiftAddress_, T_.mobile_, T_.hasAddress$type_, T_.hasAddress$pk_, T_.updatorUserId_, T_.profile_, T_.city_, T_.creationDate_, T_.zipCode_, T_.phone_, T_.areaPhoneCode_, T_.building_, T_.locale$code_, T_.mainEntityId_, T_.type_, T_.country$code_, T_.pk_, T_.shortSwiftAddress_, T_.address1_, T_.address2_, T_.address3_ from add_Address_ T_ where (T_.hasAddress$pk_ = 166151584309004)
+May 17, 2026 10:59:02:857 |Palmyra : WARN |default-[WebContainer : 6]: MegaCommon: Result Size: 0
+May 17, 2026 10:59:02:858 |Palmyra : WARN |default-[WebContainer : 6]: MegaCommon: Data Source: DataSource
+May 17, 2026 10:59:02:859 |Palmyra : WARN |default-[WebContainer : 6]: MegaCommon: 
+The query after setting its parameters: 
+select T_.clientReference_, T_.forcedTaxRates_, T_.computeTaxes_, T_.fiscalOrigin_, T_.gross_, T_.origin_, T_.simulation_, T_.realized_, T_.originalCurrency$code_, T_.status_, T_.mainReference_, T_.bookNet_, T_.bookTaxableAmount_, T_.event_, T_.bookGross_, T_.description_, T_.totalBookDueAmount_, T_.pk_ from taxCore_Revenue_ T_ where ((T_.pk_ = 166208584173522) and ((T_.pk_ = T_.pk_) and ((T_.mainEntityId_ = 'ALL') or (T_.mainEntityId_ = 'AWB'))))
+May 17, 2026 10:59:02:859 |Palmyra : WARN |default-[WebContainer : 6]: MegaCommon: Result Size: 1
+May 17, 2026 10:59:02:861 |Palmyra : WARN |default-[WebContainer : 6]: MegaCommon: Data Source: DataSource
+May 17, 2026 10:59:02:861 |Palmyra : WARN |default-[WebContainer : 6]: MegaCommon: 
+The query after setting its parameters: 
+select T_.clientReference_, T_.forcedTaxRates_, T_.computeTaxes_, T_.fiscalOrigin_, T_.gross_, T_.origin_, T_.simulation_, T_.realized_, T_.originalCurrency$code_, T_.status_, T_.mainReference_, T_.bookNet_, T_.bookTaxableAmount_, T_.event_, T_.bookGross_, T_.description_, T_.totalBookDueAmount_, T_.pk_ from taxCore_Revenue_ T_ where ((T_.pk_ = 166208584173489) and ((T_.pk_ = T_.pk_) and ((T_.mainEntityId_ = 'ALL') or (T_.mainEntityId_ = 'AWB'))))
+May 17, 2026 10:59:02:862 |Palmyra : WARN |default-[WebContainer : 6]: MegaCommon: Result Size: 1
+May 17, 2026 10:59:02:863 |Palmyra : WARN |default-[WebContainer : 6]: MegaCommon: Data Source: DataSource
+May 17, 2026 10:59:02:864 |Palmyra : WARN |default-[WebContainer : 6]: MegaCommon: 
+The query after setting its parameters: 
+select T_.clientReference_, T_.forcedTaxRates_, T_.computeTaxes_, T_.fiscalOrigin_, T_.gross_, T_.origin_, T_.simulation_, T_.realized_, T_.originalCurrency$code_, T_.status_, T_.mainReference_, T_.bookNet_, T_.bookTaxableAmount_, T_.event_, T_.bookGross_, T_.description_, T_.totalBookDueAmount_, T_.pk_ from taxCore_Revenue_ T_ where ((T_.pk_ = 166208574319435) and ((T_.pk_ = T_.pk_) and ((T_.mainEntityId_ = 'ALL') or (T_.mainEntityId_ = 'AWB'))))
+May 17, 2026 10:59:02:864 |Palmyra : WARN |default-[WebContainer : 6]: MegaCommon: Result Size: 1
+May 17, 2026 10:59:02:865 |Palmyra : WARN |default-[WebContainer : 6]: MegaCommon: Data Source: DataSource
+May 17, 2026 10:59:02:866 |Palmyra : WARN |default-[WebContainer : 6]: MegaCommon: 
+The query after setting its parameters: 
+select T_.address4_, T_.locale$pk_, T_.number_, T_.country$pk_, T_.contactName_, T_.accessPoint_, T_.telex_, T_.addressMedia_, T_.creatorUserId_, T_.hasAddressType_, T_.updateDate_, T_.hasAddress$code_, T_.contactFunction_, T_.email_, T_.fax_, T_.purpose_, T_.comment_, T_.swiftAddress_, T_.mobile_, T_.hasAddress$type_, T_.hasAddress$pk_, T_.updatorUserId_, T_.profile_, T_.city_, T_.creationDate_, T_.zipCode_, T_.phone_, T_.areaPhoneCode_, T_.building_, T_.locale$code_, T_.mainEntityId_, T_.type_, T_.country$code_, T_.pk_, T_.shortSwiftAddress_, T_.address1_, T_.address2_, T_.address3_ from add_Address_ T_ where (T_.hasAddress$pk_ = 151205802337249)
+May 17, 2026 10:59:02:866 |Palmyra : WARN |default-[WebContainer : 6]: MegaCommon: Result Size: 0
+May 17, 2026 10:59:02:867 |Palmyra : WARN |default-[WebContainer : 6]: MegaCommon: Data Source: DataSource
+May 17, 2026 10:59:02:867 |Palmyra : WARN |default-[WebContainer : 6]: MegaCommon: 
+The query after setting its parameters: 
+select T_.clientReference_, T_.forcedTaxRates_, T_.computeTaxes_, T_.fiscalOrigin_, T_.gross_, T_.origin_, T_.simulation_, T_.realized_, T_.originalCurrency$code_, T_.status_, T_.mainReference_, T_.bookNet_, T_.bookTaxableAmount_, T_.event_, T_.bookGross_, T_.description_, T_.totalBookDueAmount_, T_.pk_ from taxCore_Revenue_ T_ where ((T_.pk_ = 166208572727855) and ((T_.pk_ = T_.pk_) and ((T_.mainEntityId_ = 'ALL') or (T_.mainEntityId_ = 'AWB'))))
+May 17, 2026 10:59:02:867 |Palmyra : WARN |default-[WebContainer : 6]: MegaCommon: Result Size: 1
+May 17, 2026 10:59:02:869 |Palmyra : WARN |default-[WebContainer : 6]: MegaCommon: Data Source: DataSource
+May 17, 2026 10:59:02:869 |Palmyra : WARN |default-[WebContainer : 6]: MegaCommon: 
+The query after setting its parameters: 
+select T_.address4_, T_.locale$pk_, T_.number_, T_.country$pk_, T_.contactName_, T_.accessPoint_, T_.telex_, T_.addressMedia_, T_.creatorUserId_, T_.hasAddressType_, T_.updateDate_, T_.hasAddress$code_, T_.contactFunction_, T_.email_, T_.fax_, T_.purpose_, T_.comment_, T_.swiftAddress_, T_.mobile_, T_.hasAddress$type_, T_.hasAddress$pk_, T_.updatorUserId_, T_.profile_, T_.city_, T_.creationDate_, T_.zipCode_, T_.phone_, T_.areaPhoneCode_, T_.building_, T_.locale$code_, T_.mainEntityId_, T_.type_, T_.country$code_, T_.pk_, T_.shortSwiftAddress_, T_.address1_, T_.address2_, T_.address3_ from add_Address_ T_ where (T_.hasAddress$pk_ = 10597305578293)
+May 17, 2026 10:59:02:869 |Palmyra : WARN |default-[WebContainer : 6]: MegaCommon: Result Size: 4
+May 17, 2026 10:59:02:872 |Palmyra : WARN |default-[WebContainer : 6]: MegaCommon: Data Source: DataSource
+May 17, 2026 10:59:02:872 |Palmyra : WARN |default-[WebContainer : 6]: MegaCommon: 
+The query after setting its parameters: 
+select T_.clientReference_, T_.forcedTaxRates_, T_.computeTaxes_, T_.fiscalOrigin_, T_.gross_, T_.origin_, T_.simulation_, T_.realized_, T_.originalCurrency$code_, T_.status_, T_.mainReference_, T_.bookNet_, T_.bookTaxableAmount_, T_.event_, T_.bookGross_, T_.description_, T_.totalBookDueAmount_, T_.pk_ from taxCore_Revenue_ T_ where ((T_.pk_ = 166208572727841) and ((T_.pk_ = T_.pk_) and ((T_.mainEntityId_ = 'ALL') or (T_.mainEntityId_ = 'AWB'))))
+May 17, 2026 10:59:02:873 |Palmyra : WARN |default-[WebContainer : 6]: MegaCommon: Result Size: 1
+May 17, 2026 10:59:02:874 |Palmyra : WARN |default-[WebContainer : 6]: MegaCommon: Data Source: DataSource
+May 17, 2026 10:59:02:874 |Palmyra : WARN |default-[WebContainer : 6]: MegaCommon: 
+The query after setting its parameters: 
+select T_.clientReference_, T_.forcedTaxRates_, T_.computeTaxes_, T_.fiscalOrigin_, T_.gross_, T_.origin_, T_.simulation_, T_.realized_, T_.originalCurrency$code_, T_.status_, T_.mainReference_, T_.bookNet_, T_.bookTaxableAmount_, T_.event_, T_.bookGross_, T_.description_, T_.totalBookDueAmount_, T_.pk_ from taxCore_Revenue_ T_ where ((T_.pk_ = 166208572727819) and ((T_.pk_ = T_.pk_) and ((T_.mainEntityId_ = 'ALL') or (T_.mainEntityId_ = 'AWB'))))
+May 17, 2026 10:59:02:875 |Palmyra : WARN |default-[WebContainer : 6]: MegaCommon: Result Size: 1
+May 17, 2026 10:59:02:876 |Palmyra : WARN |default-[WebContainer : 6]: MegaCommon: Data Source: DataSource
+May 17, 2026 10:59:02:877 |Palmyra : WARN |default-[WebContainer : 6]: MegaCommon: 
+The query after setting its parameters: 
+select T_.clientReference_, T_.forcedTaxRates_, T_.computeTaxes_, T_.fiscalOrigin_, T_.gross_, T_.origin_, T_.simulation_, T_.realized_, T_.originalCurrency$code_, T_.status_, T_.mainReference_, T_.bookNet_, T_.bookTaxableAmount_, T_.event_, T_.bookGross_, T_.description_, T_.totalBookDueAmount_, T_.pk_ from taxCore_Revenue_ T_ where ((T_.pk_ = 166208572727805) and ((T_.pk_ = T_.pk_) and ((T_.mainEntityId_ = 'ALL') or (T_.mainEntityId_ = 'AWB'))))
+May 17, 2026 10:59:02:877 |Palmyra : WARN |default-[WebContainer : 6]: MegaCommon: Result Size: 1
+May 17, 2026 10:59:02:879 |Palmyra : WARN |default-[WebContainer : 6]: MegaCommon: Data Source: DataSource
+May 17, 2026 10:59:02:879 |Palmyra : WARN |default-[WebContainer : 6]: MegaCommon: 
+The query after setting its parameters: 
+select T_.clientReference_, T_.forcedTaxRates_, T_.computeTaxes_, T_.fiscalOrigin_, T_.gross_, T_.origin_, T_.simulation_, T_.realized_, T_.originalCurrency$code_, T_.status_, T_.mainReference_, T_.bookNet_, T_.bookTaxableAmount_, T_.event_, T_.bookGross_, T_.description_, T_.totalBookDueAmount_, T_.pk_ from taxCore_Revenue_ T_ where ((T_.pk_ = 166208572727783) and ((T_.pk_ = T_.pk_) and ((T_.mainEntityId_ = 'ALL') or (T_.mainEntityId_ = 'AWB'))))
+May 17, 2026 10:59:02:879 |Palmyra : WARN |default-[WebContainer : 6]: MegaCommon: Result Size: 1
+May 17, 2026 10:59:02:881 |Palmyra : WARN |default-[WebContainer : 6]: MegaCommon: Data Source: DataSource
+May 17, 2026 10:59:02:881 |Palmyra : WARN |default-[WebContainer : 6]: MegaCommon: 
+The query after setting its parameters: 
+select T_.clientReference_, T_.forcedTaxRates_, T_.computeTaxes_, T_.fiscalOrigin_, T_.gross_, T_.origin_, T_.simulation_, T_.realized_, T_.originalCurrency$code_, T_.status_, T_.mainReference_, T_.bookNet_, T_.bookTaxableAmount_, T_.event_, T_.bookGross_, T_.description_, T_.totalBookDueAmount_, T_.pk_ from taxCore_Revenue_ T_ where ((T_.pk_ = 166208572727769) and ((T_.pk_ = T_.pk_) and ((T_.mainEntityId_ = 'ALL') or (T_.mainEntityId_ = 'AWB'))))
+May 17, 2026 10:59:02:882 |Palmyra : WARN |default-[WebContainer : 6]: MegaCommon: Result Size: 1
+May 17, 2026 10:59:02:914 |Palmyra : INFO |default-[WebContainer : 6]: MegaCommon: ********** isAuthenticated. Request path is: /webapp/resources/red/images/grid/grid-border.png
+May 17, 2026 10:59:05:576 |Palmyra : ERROR |default-[Thread-84]: MegaCommon: the source folder /Megara/IODevices/MegaCommon/IN/MARKETDATA/opc does not exist.
+com.palmyra.arch.devices.input.InputDeviceException: the source folder /Megara/IODevices/MegaCommon/IN/MARKETDATA/opc does not exist.
+	at com.palmyra.arch.devices.input.file.InputDeviceFileConsumer.A(Unknown Source)
+	at com.palmyra.arch.devices.input.file.InputFilePrivilegedExceptionAction.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(AccessController.java:488)
+	at javax.security.auth.Subject.doAs(Subject.java:573)
+	at com.palmyra.arch.security.SecurityManager.A(Unknown Source)
+	at com.palmyra.arch.security.SecurityManager.runAs(Unknown Source)
+	at com.palmyra.arch.devices.input.file.InputDeviceFileConsumer.run(Unknown Source)
+May 17, 2026 10:59:10:576 |Palmyra : ERROR |default-[Thread-84]: MegaCommon: the source folder /Megara/IODevices/MegaCommon/IN/MARKETDATA/opc does not exist.
+com.palmyra.arch.devices.input.InputDeviceException: the source folder /Megara/IODevices/MegaCommon/IN/MARKETDATA/opc does not exist.
+	at com.palmyra.arch.devices.input.file.InputDeviceFileConsumer.A(Unknown Source)
+	at com.palmyra.arch.devices.input.file.InputFilePrivilegedExceptionAction.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(AccessController.java:488)
+	at javax.security.auth.Subject.doAs(Subject.java:573)
+	at com.palmyra.arch.security.SecurityManager.A(Unknown Source)
+	at com.palmyra.arch.security.SecurityManager.runAs(Unknown Source)
+	at com.palmyra.arch.devices.input.file.InputDeviceFileConsumer.run(Unknown Source)
+May 17, 2026 10:59:12:402 |Palmyra : INFO |default-[WebContainer : 6]: MegaCommon: ********** isAuthenticated. Request path is: /webapp/applicationServicenull
+May 17, 2026 10:59:15:577 |Palmyra : ERROR |default-[Thread-84]: MegaCommon: the source folder /Megara/IODevices/MegaCommon/IN/MARKETDATA/opc does not exist.
+com.palmyra.arch.devices.input.InputDeviceException: the source folder /Megara/IODevices/MegaCommon/IN/MARKETDATA/opc does not exist.
+	at com.palmyra.arch.devices.input.file.InputDeviceFileConsumer.A(Unknown Source)
+	at com.palmyra.arch.devices.input.file.InputFilePrivilegedExceptionAction.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(AccessController.java:488)
+	at javax.security.auth.Subject.doAs(Subject.java:573)
+	at com.palmyra.arch.security.SecurityManager.A(Unknown Source)
+	at com.palmyra.arch.security.SecurityManager.runAs(Unknown Source)
+	at com.palmyra.arch.devices.input.file.InputDeviceFileConsumer.run(Unknown Source)
+May 17, 2026 10:59:20:577 |Palmyra : ERROR |default-[Thread-84]: MegaCommon: the source folder /Megara/IODevices/MegaCommon/IN/MARKETDATA/opc does not exist.
+com.palmyra.arch.devices.input.InputDeviceException: the source folder /Megara/IODevices/MegaCommon/IN/MARKETDATA/opc does not exist.
+	at com.palmyra.arch.devices.input.file.InputDeviceFileConsumer.A(Unknown Source)
+	at com.palmyra.arch.devices.input.file.InputFilePrivilegedExceptionAction.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(AccessController.java:488)
+	at javax.security.auth.Subject.doAs(Subject.java:573)
+	at com.palmyra.arch.security.SecurityManager.A(Unknown Source)
+	at com.palmyra.arch.security.SecurityManager.runAs(Unknown Source)
+	at com.palmyra.arch.devices.input.file.InputDeviceFileConsumer.run(Unknown Source)
+May 17, 2026 10:59:25:578 |Palmyra : ERROR |default-[Thread-84]: MegaCommon: the source folder /Megara/IODevices/MegaCommon/IN/MARKETDATA/opc does not exist.
+com.palmyra.arch.devices.input.InputDeviceException: the source folder /Megara/IODevices/MegaCommon/IN/MARKETDATA/opc does not exist.
+	at com.palmyra.arch.devices.input.file.InputDeviceFileConsumer.A(Unknown Source)
+	at com.palmyra.arch.devices.input.file.InputFilePrivilegedExceptionAction.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(AccessController.java:488)
+	at javax.security.auth.Subject.doAs(Subject.java:573)
+	at com.palmyra.arch.security.SecurityManager.A(Unknown Source)
+	at com.palmyra.arch.security.SecurityManager.runAs(Unknown Source)
+	at com.palmyra.arch.devices.input.file.InputDeviceFileConsumer.run(Unknown Source)
+May 17, 2026 10:59:30:578 |Palmyra : ERROR |default-[Thread-84]: MegaCommon: the source folder /Megara/IODevices/MegaCommon/IN/MARKETDATA/opc does not exist.
+com.palmyra.arch.devices.input.InputDeviceException: the source folder /Megara/IODevices/MegaCommon/IN/MARKETDATA/opc does not exist.
+	at com.palmyra.arch.devices.input.file.InputDeviceFileConsumer.A(Unknown Source)
+	at com.palmyra.arch.devices.input.file.InputFilePrivilegedExceptionAction.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(AccessController.java:488)
+	at javax.security.auth.Subject.doAs(Subject.java:573)
+	at com.palmyra.arch.security.SecurityManager.A(Unknown Source)
+	at com.palmyra.arch.security.SecurityManager.runAs(Unknown Source)
+	at com.palmyra.arch.devices.input.file.InputDeviceFileConsumer.run(Unknown Source)
+May 17, 2026 10:59:35:579 |Palmyra : ERROR |default-[Thread-84]: MegaCommon: the source folder /Megara/IODevices/MegaCommon/IN/MARKETDATA/opc does not exist.
+com.palmyra.arch.devices.input.InputDeviceException: the source folder /Megara/IODevices/MegaCommon/IN/MARKETDATA/opc does not exist.
+	at com.palmyra.arch.devices.input.file.InputDeviceFileConsumer.A(Unknown Source)
+	at com.palmyra.arch.devices.input.file.InputFilePrivilegedExceptionAction.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(AccessController.java:488)
+	at javax.security.auth.Subject.doAs(Subject.java:573)
+	at com.palmyra.arch.security.SecurityManager.A(Unknown Source)
+	at com.palmyra.arch.security.SecurityManager.runAs(Unknown Source)
+	at com.palmyra.arch.devices.input.file.InputDeviceFileConsumer.run(Unknown Source)
+May 17, 2026 10:59:40:579 |Palmyra : ERROR |default-[Thread-84]: MegaCommon: the source folder /Megara/IODevices/MegaCommon/IN/MARKETDATA/opc does not exist.
+com.palmyra.arch.devices.input.InputDeviceException: the source folder /Megara/IODevices/MegaCommon/IN/MARKETDATA/opc does not exist.
+	at com.palmyra.arch.devices.input.file.InputDeviceFileConsumer.A(Unknown Source)
+	at com.palmyra.arch.devices.input.file.InputFilePrivilegedExceptionAction.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(AccessController.java:488)
+	at javax.security.auth.Subject.doAs(Subject.java:573)
+	at com.palmyra.arch.security.SecurityManager.A(Unknown Source)
+	at com.palmyra.arch.security.SecurityManager.runAs(Unknown Source)
+	at com.palmyra.arch.devices.input.file.InputDeviceFileConsumer.run(Unknown Source)
+May 17, 2026 10:59:45:579 |Palmyra : ERROR |default-[Thread-84]: MegaCommon: the source folder /Megara/IODevices/MegaCommon/IN/MARKETDATA/opc does not exist.
+com.palmyra.arch.devices.input.InputDeviceException: the source folder /Megara/IODevices/MegaCommon/IN/MARKETDATA/opc does not exist.
+	at com.palmyra.arch.devices.input.file.InputDeviceFileConsumer.A(Unknown Source)
+	at com.palmyra.arch.devices.input.file.InputFilePrivilegedExceptionAction.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(AccessController.java:488)
+	at javax.security.auth.Subject.doAs(Subject.java:573)
+	at com.palmyra.arch.security.SecurityManager.A(Unknown Source)
+	at com.palmyra.arch.security.SecurityManager.runAs(Unknown Source)
+	at com.palmyra.arch.devices.input.file.InputDeviceFileConsumer.run(Unknown Source)
+May 17, 2026 10:59:50:580 |Palmyra : ERROR |default-[Thread-84]: MegaCommon: the source folder /Megara/IODevices/MegaCommon/IN/MARKETDATA/opc does not exist.
+com.palmyra.arch.devices.input.InputDeviceException: the source folder /Megara/IODevices/MegaCommon/IN/MARKETDATA/opc does not exist.
+	at com.palmyra.arch.devices.input.file.InputDeviceFileConsumer.A(Unknown Source)
+	at com.palmyra.arch.devices.input.file.InputFilePrivilegedExceptionAction.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(AccessController.java:488)
+	at javax.security.auth.Subject.doAs(Subject.java:573)
+	at com.palmyra.arch.security.SecurityManager.A(Unknown Source)
+	at com.palmyra.arch.security.SecurityManager.runAs(Unknown Source)
+	at com.palmyra.arch.devices.input.file.InputDeviceFileConsumer.run(Unknown Source)
+May 17, 2026 10:59:55:580 |Palmyra : ERROR |default-[Thread-84]: MegaCommon: the source folder /Megara/IODevices/MegaCommon/IN/MARKETDATA/opc does not exist.
+com.palmyra.arch.devices.input.InputDeviceException: the source folder /Megara/IODevices/MegaCommon/IN/MARKETDATA/opc does not exist.
+	at com.palmyra.arch.devices.input.file.InputDeviceFileConsumer.A(Unknown Source)
+	at com.palmyra.arch.devices.input.file.InputFilePrivilegedExceptionAction.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(AccessController.java:488)
+	at javax.security.auth.Subject.doAs(Subject.java:573)
+	at com.palmyra.arch.security.SecurityManager.A(Unknown Source)
+	at com.palmyra.arch.security.SecurityManager.runAs(Unknown Source)
+	at com.palmyra.arch.devices.input.file.InputDeviceFileConsumer.run(Unknown Source)

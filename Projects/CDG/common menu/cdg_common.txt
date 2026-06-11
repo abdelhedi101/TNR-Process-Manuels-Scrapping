@@ -1,0 +1,18 @@
+Referentiel>Donnees Generiques>Zones Geographiques
+Referentiel>Donnees Generiques>Pays
+Referentiel>Donnees Generiques>localites
+Referentiel>Donnees Generiques>Marches
+Referentiel>Donnees Generiques>Devises
+Referentiel>Donnees Generiques>Taux de Reference
+Referentiel>Donnees Generiques>les Calendriers>Calendrier de l'Entite Principale
+Referentiel>Donnees Generiques>les Calendriers>Calendrier de Devise
+Referentiel>Donnees Generiques>les Calendriers>Calendrier du Pays
+Referentiel>Donnees Generiques>les Calendriers>Vacances hebdomadaires
+Referentiel>Donnees Generiques>les Calendriers>Vacances permanentes
+Referentiel>Donnees Generiques>les Calendriers>vacances exceptionnelles
+Referentiel>Donnees Generiques>Referentiel TVA>Classification de la TVA
+Referentiel>Donnees Generiques>Referentiel TVA>Configuration de la TVA
+Referentiel>Entites>Consulter l'Entite Principale
+Referentiel>Entites>Creer/Afficher les Entites
+Referentiel>Entites>Affecter les Roles des Entites
+Referentiel>Entites>Creer/Afficher les Agences

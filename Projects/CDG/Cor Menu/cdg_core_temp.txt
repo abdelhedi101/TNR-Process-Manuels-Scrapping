@@ -1,0 +1,16 @@
+Opérations Sur titres>Data Cleansing>Flux>Lister Data CA
+Opérations Sur titres>Data Cleansing>Flux>Création
+Opérations Sur titres>Data Cleansing>Flux>Corrections Data CA
+Opérations Sur titres>Data Cleansing>Flux>Reprocesser Données manquantes
+Opérations Sur titres>Data Cleansing>Golden Record>Lister CADataFeed
+Opérations Sur titres>Data Cleansing>Golden Record>Lister Golden Record
+Opérations Sur titres>Data Cleansing>Golden Record>Lister Groupe
+Opérations Sur titres>Data Cleansing>Golden Record>Fermer Groupe
+Opérations Sur titres>Data Cleansing>Golden Record>Comparer CADataFeed
+Opérations Sur titres>Annonces>Lister
+Opérations Sur titres>Annonces>Consultation Des Annonces Clôturées
+Opérations Sur titres>Annonces>Création>OST Marché Local
+Opérations Sur titres>Annonces>Création>OST Marché Etranger
+Opérations Sur titres>Annonces>Création>OST sans Brouillon
+Opérations Sur titres>Annonces>Accepter/Rejeter Brouillon
+Opérations Sur titres>Annonces>Valider

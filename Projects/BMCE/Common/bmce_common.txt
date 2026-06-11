@@ -1,0 +1,120 @@
+Paramétrage>SLA Mondataire Compte Titres Client 
+Paramétrage>Référentiel & Autre Configuration
+Paramétrage>Portal User Configuration
+Paramétrage>Paramétrage Calcul des prix>Formule de calcul
+Paramétrage>Paramétrage Calcul des prix
+Paramétrage>Les taches Périodiques>Jobs Executés
+Paramétrage>Les taches Périodiques>Frais De Conservation
+Paramétrage>Les taches Périodiques>Factures
+Paramétrage>Les taches Périodiques
+Paramétrage>Configuration des prix
+Paramétrage>Configuration des MT53X Sortants>Configuration des MT537>MT537 SLA périodique
+Paramétrage>Configuration des MT53X Sortants>Configuration des MT537>MT537 Configuration de Job Planifié
+Paramétrage>Configuration des MT53X Sortants>Configuration des MT537
+Paramétrage>Configuration des MT53X Sortants>Configuration des MT536>MT536 SLA périodique
+Paramétrage>Configuration des MT53X Sortants>Configuration des MT536>MT536 Configuration de Job Planifié
+Paramétrage>Configuration des MT53X Sortants>Configuration des MT536
+Paramétrage>Configuration des MT53X Sortants>Configuration des MT535 >MT535 SLA périodique
+Paramétrage>Configuration des MT53X Sortants>Configuration des MT535 >MT535 Configuration de Job Planifié
+Paramétrage>Configuration des MT53X Sortants>Configuration des MT535 
+Paramétrage>Configuration des MT53X Sortants
+Paramétrage>Configuration de la Position>Configuration de la Position Titre>Position Titres
+Paramétrage>Configuration de la Position>Configuration de la Position Titre>Configuration du Chargement des Positions
+Paramétrage>Configuration de la Position>Configuration de la Position Titre
+Paramétrage>Configuration de la Position>Configuration de la Position Espèces
+Paramétrage>Configuration de la Position
+Paramétrage>Configuration de la Fiscalité>Créer / Afficher Type de taxation
+Paramétrage>Configuration de la Fiscalité>Créer / Afficher SLA exonération Taxe
+Paramétrage>Configuration de la Fiscalité>Créer / Afficher SLA Règle Fiscale
+Paramétrage>Configuration de la Fiscalité>Créer / Afficher SLA Exception Taxe 
+Paramétrage>Configuration de la Fiscalité>Créer / Afficher SLA Catégorie Fiscale
+Paramétrage>Configuration de la Fiscalité>Créer / Afficher Règles de Taxation 
+Paramétrage>Configuration de la Fiscalité>Créer / Afficher Profil Fiscal 
+Paramétrage>Configuration de la Fiscalité>Créer / Afficher Natures Fiscales
+Paramétrage>Configuration de la Fiscalité>Créer / Afficher Classification Fiscale
+Paramétrage>Configuration de la Fiscalité
+Paramétrage>Configuration de l'Ecran Principal
+Paramétrage>Configuration de La valorisation
+Paramétrage>Configuration de La Facturation
+Paramétrage>Configuration Technique>Text Driver>IO Config
+Paramétrage>Configuration Technique>Text Driver>Config
+Paramétrage>Configuration Technique>Text Driver
+Paramétrage>Configuration Technique>TestFeatures>TestPeriodicity
+Paramétrage>Configuration Technique>TestFeatures>TestCurrentAction
+Paramétrage>Configuration Technique>TestFeatures>Test Tool
+Paramétrage>Configuration Technique>TestFeatures>Appointments Created
+Paramétrage>Configuration Technique>TestFeatures
+Paramétrage>Configuration Technique>Scripting Config
+Paramétrage>Configuration Technique>Présentation>Screen Generator
+Paramétrage>Configuration Technique>Présentation>Report Template
+Paramétrage>Configuration Technique>Présentation>Homepage
+Paramétrage>Configuration Technique>Présentation>ActionsSuggestions>Next To Do Actions
+Paramétrage>Configuration Technique>Présentation>ActionsSuggestions>Current To Do Actions
+Paramétrage>Configuration Technique>Présentation>ActionsSuggestions
+Paramétrage>Configuration Technique>Présentation
+Paramétrage>Configuration Technique>Process Monitoring>Purge Process Log
+Paramétrage>Configuration Technique>Process Monitoring>Monitoring SLA
+Paramétrage>Configuration Technique>Process Monitoring>Monitor Process Logs
+Paramétrage>Configuration Technique>Process Monitoring> Log Configuration>Monitor Log Configuration
+Paramétrage>Configuration Technique>Process Monitoring> Log Configuration
+Paramétrage>Configuration Technique>Process Monitoring
+Paramétrage>Configuration Technique>Notification Setup>Notification Out Configuration>Notification Types
+Paramétrage>Configuration Technique>Notification Setup>Notification Out Configuration>Journalisation des interfaces OUT
+Paramétrage>Configuration Technique>Notification Setup>Notification Out Configuration>Channel Configuration
+Paramétrage>Configuration Technique>Notification Setup>Notification Out Configuration
+Paramétrage>Configuration Technique>Notification Setup>Notification In Configuration>Routing SLA
+Paramétrage>Configuration Technique>Notification Setup>Notification In Configuration> Impact Configuration>Request Security Statement Impact SLA 
+Paramétrage>Configuration Technique>Notification Setup>Notification In Configuration> Impact Configuration>MT537 Impact SLA
+Paramétrage>Configuration Technique>Notification Setup>Notification In Configuration> Impact Configuration>MT536 Impact SLA
+Paramétrage>Configuration Technique>Notification Setup>Notification In Configuration> Impact Configuration>MT535 Impact SLA
+Paramétrage>Configuration Technique>Notification Setup>Notification In Configuration> Impact Configuration>Impacts
+Paramétrage>Configuration Technique>Notification Setup>Notification In Configuration> Impact Configuration
+Paramétrage>Configuration Technique>Notification Setup>Notification In Configuration
+Paramétrage>Configuration Technique>Notification Setup
+Paramétrage>Configuration Technique>Monitor Dynamic Join Configuration
+Paramétrage>Configuration Technique>Jobs à executer
+Paramétrage>Configuration Technique>Importer des Données>Load Static Data
+Paramétrage>Configuration Technique>Importer des Données>Import From Text
+Paramétrage>Configuration Technique>Importer des Données>Import From Excel
+Paramétrage>Configuration Technique>Importer des Données
+Paramétrage>Configuration Technique>Excel Driver>IO Config
+Paramétrage>Configuration Technique>Excel Driver>Config
+Paramétrage>Configuration Technique>Excel Driver
+Paramétrage>Configuration Technique>EntityExtractor
+Paramétrage>Configuration Technique>Configuration Loader
+Paramétrage>Configuration Technique>Clean Config
+Paramétrage>Configuration Technique
+Paramétrage>Configuration Notification>Configuration Marché>SLA Notification Marché
+Paramétrage>Configuration Notification>Configuration Marché
+Paramétrage>Configuration Notification>Configuration Client>SLA Notification Client
+Paramétrage>Configuration Notification>Configuration Client
+Paramétrage>Configuration Notification
+Notifications>Relevé Titres>Notification Interface Relevés Titres
+Notifications>Relevé Titres>Génération Fichier Relevé Titres
+Notifications>Relevé Titres
+Notifications>Notification Transaction Statement>Notification MT537
+Notifications>Notification Transaction Statement>Notification MT536
+Notifications>Notification Transaction Statement>Notification MT535
+Notifications>Notification Transaction Statement
+Notifications>Message
+Notifications>Interfaces entrantes>Interface agence
+Notifications>Interfaces entrantes>Interface Cours devises
+Notifications>Interfaces entrantes>Interface Cours Valeurs
+Notifications>Interfaces entrantes
+Notifications>Interfaces OUT>Génération interface OUT
+Notifications>Interfaces OUT
+Notifications>Interface TPCVM
+Notifications>Gestion des MT53X>Génération du MT537
+Notifications>Gestion des MT53X>Génération du MT536
+Notifications>Gestion des MT53X>Génération du MT535
+Notifications>Gestion des MT53X>Consultation des MT53X générés>MT537 Manuel
+Notifications>Gestion des MT53X>Consultation des MT53X générés>MT537 Automatique
+Notifications>Gestion des MT53X>Consultation des MT53X générés>MT536 Manuel
+Notifications>Gestion des MT53X>Consultation des MT53X générés>MT536 Automatique
+Notifications>Gestion des MT53X>Consultation des MT53X générés>MT535 Manuel
+Notifications>Gestion des MT53X>Consultation des MT53X générés>MT535 Automatique
+Notifications>Gestion des MT53X>Consultation des MT53X générés>Consultation Statement 535
+Notifications>Gestion des MT53X>Consultation des MT53X générés
+Notifications>Gestion des MT53X
+Notifications>CRO>Re-envoi des CRO
+Notifications>CRO>Consultation CRO

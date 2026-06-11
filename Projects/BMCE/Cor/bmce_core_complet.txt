@@ -1,0 +1,320 @@
+Opérations Sur titres>Data Cleansing>Flux>Lister Data CA
+Opérations Sur titres>Data Cleansing>Flux>Reprocesser Données manquantes
+Opérations Sur titres>Data Cleansing>Golden Record>Lister CADataFeed
+Opérations Sur titres>Data Cleansing>Golden Record>Lister Golden Record
+Opérations Sur titres>Data Cleansing>Golden Record>Lister Groupe
+Opérations Sur titres>Data Cleansing>Golden Record>Fermer Groupe
+Opérations Sur titres>Data Cleansing>Golden Record>Comparer CADataFeed
+Opérations Sur titres>Annonces>Consultation des annonces
+Opérations Sur titres>Annonces>Création>OST Marché Local
+Opérations Sur titres>Annonces>Création>OST Marché Etranger
+Opérations Sur titres>Annonces>Mise à jour>OST Marché Local
+Opérations Sur titres>Annonces>Mise à jour>OST Marché étranger
+Opérations Sur titres>Annonces>Mise à jour>Accepter/Rejeter Brouillon
+Opérations Sur titres>Annonces>Mise à jour>Utilisateur en charge
+Opérations Sur titres>Annonces>Mise à jour>Code Coupon
+Opérations Sur titres>Annonces>Validation
+Opérations Sur titres>Annonces>Activation
+Opérations Sur titres>Annonces>Annulation
+Opérations Sur titres>Annonces>Clôture
+Opérations Sur titres>Annonces>Duplication des OST DVCA et DVOP
+Opérations Sur titres>Notifications>Consultation des notifications
+Opérations Sur titres>Notifications>Global>Génération globale
+Opérations Sur titres>Notifications>Global>Envoi global
+Opérations Sur titres>Notifications>Par OST>Génération par OST
+Opérations Sur titres>Notifications>Par OST>Envoi par OST
+Opérations Sur titres>Notifications>Par OST>Envoi des Rappels
+Consultation>Position Eligible par OST>Client
+Consultation>Position Eligible par OST>Marché
+Consultation>Messages>Notification MT564
+Consultation>Messages>Notification MT565
+Consultation>Messages>Notification MT566
+Consultation>Messages>Messages Sortants
+Consultation>Messages>Messages Entrants
+Consultation>Messages>Valider Messages Sortants
+Consultation>Messages>Re-traitement des Messages Sortants>Notification
+Consultation>Messages>Re-traitement des Messages Sortants>Instruction
+Consultation>Messages>Re-traitement des Messages Sortants>Confirmation
+Consultation>Messages>Re-traitement des Messages Sortants>Status and Processing Advice
+Consultation>CRO>Consultation CRO Opérations
+Consultation>CRO>CRO Réservation
+Consultation>CRO>Re-envoi des CRO opérations
+Instructions>Client>Consultation Inst Client
+Instructions>Client>Création>Saisie par compte
+Instructions>Client>Création>Sasie par masse
+Instructions>Client>Création>Génération Instructions Standing/Default
+Instructions>Client>Traitement des Instructions>Recycler
+Instructions>Client>Traitement des Instructions>Accepter après deadline
+Instructions>Client>Traitement des Instructions>Rejeter
+Instructions>Client>Traitement des Instructions>Annuler
+Instructions>Client>Traitement des Instructions>Valider
+Instructions>Client>Traitement des Instructions>Consolider
+Instructions>Client>Traitement des Instructions>Lister les Lock
+Instructions>Client>Traitement des Instructions>Déblocage Positions
+Instructions>Client>Traitement des Instructions>Recheck Cash
+Instructions>Client>Traitement des Instructions>Force Cash
+Instructions>Marché>Consultation Inst Marché
+Instructions>Marché>Envoi des instructions
+Instructions>Marché>Annulation
+Instructions>Messages MT565 Entrants / Sortants>MT567 :Statut des instructions
+Instructions>Messages MT565 Entrants / Sortants>Messages Instruction Reçu
+Instructions>Messages MT565 Entrants / Sortants>Consultation MT567 :Statut des instructions
+Exécutions>Client>Consultation Exe. Client
+Exécutions>Client>Calcul>OST d'Office
+Exécutions>Client>Calcul>OST Optionnelle
+Exécutions>Client>Annulation
+Exécutions>Marché>Consultation Exe. Marché
+Exécutions>Marché>Calcul>OST d'Office
+Exécutions>Marché>Calcul>OST Optionnelle
+Exécutions>Marché>Annulation
+Exécutions>Marché>Exécutions Marché Reçues>Exécutions Marché Reçues>Consulter Exécutions Reçues
+Exécutions>Marché>Exécutions Marché Reçues>Exécutions Marché Reçues>Annuler Exécution Espèce
+Exécutions>Marché>Exécutions Marché Reçues>Exécutions Marché Reçues>Annuler Exécution Titre
+Exécutions>Marché>Exécutions Marché Reçues>Reconcilier Exécutions Reçues>Reconcilier Exécution Espèce
+Exécutions>Marché>Exécutions Marché Reçues>Reconcilier Exécutions Reçues>Reconcilier Exécution Titre
+Exécutions>Marché>Exécutions Marché Reçues>Reconcilier Exécutions Reçues>Annuler Rec. Exécution Espèce
+Exécutions>Marché>Exécutions Marché Reçues>Reconcilier Exécutions Reçues>Annuler Rec. Exécution Titre
+Exécutions>Réclamations>Consulter>Réclamation Titres
+Exécutions>Réclamations>Consulter>Réclamation Espèce
+Exécutions>Réclamations>Late Trade>Détecter les Late Trades
+Exécutions>Réclamations>Late Trade>Générer réclamation sur Late Trade détécté
+Exécutions>Réclamations>Réparer>Réparer Titre
+Exécutions>Réclamations>Réparer>Réparer Espece
+Exécutions>Réclamations>Mettre à jour
+Exécutions>Réclamations>Confirmation>Confirmer Espèce
+Exécutions>Réclamations>Confirmation>Confirmer Titre
+Exécutions>Réclamations>Annulation>Annuler Espece
+Exécutions>Réclamations>Annulation>Annuler Titre
+Exécutions>Réclamations>Compensation
+Exécutions>Réclamations>Notifications>Lister Les Notifications
+Exécutions>Réclamations>Notifications>Générer Notification
+Exécutions>Réclamations>Générer
+Exécutions>Fichier Centralisateur>Fichier Centralisateur autre que BMCE
+Exécutions>Fichier Centralisateur>Envoi des instructions à MegaIssuer
+Paiements>Paiements Marché>Consultation Paie. Marché
+Paiements>Paiements Marché>Créer>Créer
+Paiements>Paiements Marché>Créer>Générer Ad-hoc
+Paiements>Paiements Marché>Annuler>Espèce
+Paiements>Paiements Marché>Annuler>Titre
+Paiements>Reconciliation>Résultats de Réconciliation>Titre
+Paiements>Reconciliation>Résultats de Réconciliation>Espéce
+Paiements>Reconciliation>Simulation>Espèce
+Paiements>Reconciliation>Simulation>Titre
+Paiements>Reconciliation>Manuelle>Espèce
+Paiements>Reconciliation>Manuelle>Titre
+Paiements>Reconciliation>Manuelle>Forcage Reconciliation
+Paiements>Reconciliation>Annulation>Espèce
+Paiements>Reconciliation>Annulation>Titre
+Paiements>Allocation>Simulation>Espèce
+Paiements>Allocation>Simulation>Titre
+Paiements>Allocation>Manuelle>Espèce Brut
+Paiements>Allocation>Manuelle>Espèce Net
+Paiements>Allocation>Manuelle>Titre
+Paiements>Allocation>Annulation>Espèce
+Paiements>Allocation>Annulation>Titre
+Paiements>Paiements Client>Consultation Paie. Client
+Paiements>Paiements Client>Création>Paiement Actuel
+Paiements>Paiements Client>Création>Paiement Contractuel
+Paiements>Paiements Client>Création>Forçage>Espèce
+Paiements>Paiements Client>Création>Forçage>Titre
+Paiements>Paiements Client>Validation>Paiements Espéces
+Paiements>Paiements Client>Validation>Paiements Titre
+Paiements>Paiements Client>Recyclage>Reprocess Paiement Titre
+Paiements>Paiements Client>Recyclage>Reprocess Paiement Espèce
+Paiements>Paiements Client>Annuler>Espèce
+Paiements>Paiements Client>Annuler>Titre
+Paiements>Paiements Client>Annuler>Paiement Confirmé
+Paiements>Paiements Client>Envoyer Confirmation
+Paiements>Messages Entrants / Sortants>Messages Reçus
+Paiements>Messages Entrants / Sortants>Messages Envoyés
+Rapports>Attestation De Blocage - Assemblee Generale
+Rapports>Attestation Paiement Dividendes
+Rapports>Attestation Paiements Interets XLS
+Rapports>Confirmation du paiement - REDM
+Rapports>Confirmation du paiement - DVCA
+Rapports>Confirmation du paiement - DVOP
+Rapports>Confirmation du paiement - SPLF
+Rapports>Confirmation du paiement - SPLR
+Rapports>Confirmation du paiement - BONU
+Rapports>Confirmation du paiement - BONUW
+Rapports>Confirmation du paiement - PRED
+Rapports>Confirmation du paiement - INTR
+Rapports>Confirmation du paiement - RHTS
+Rapports>Confirmation du paiement - MRGR
+Rapports>Confirmation du paiement - MRGRW
+Rapports>Confirmation du paiement - DECR
+Rapports>Confirmation du paiement - CHAN
+Rapports>Confirmation du paiement - CONV
+Rapports>Confirmation du paiement - PARI
+Rapports>Récapitulatif des montants prélevés par type de taxe et par client sur les OST
+Rapports>Annexe TCB 2 : Opérations sur titres>AUGMENTATION DE CAPITAL
+Rapports>Annexe TCB 2 : Opérations sur titres>PAIEMENT DE DIVIDENDES
+Rapports>Attestation De Blocage
+Rapports>ConfirmationReportOPR
+Rapports>ConfirmationReportOPA
+Report>Avis Des Operations sur Titres
+Configuration MegaCor>Application Setup
+Configuration MegaCor>SLA Référence
+Configuration MegaCor>Golden Record>Configuration Data Cleansing
+Configuration MegaCor>Golden Record>Modifications de la Configuration
+Configuration MegaCor>Golden Record>SLA Tâches à Faire
+Configuration MegaCor>Golden Record>Configuration On Bloor
+Configuration MegaCor>Echéancier>Report>ConfirmationReportDVOP
+Configuration MegaCor>Echéancier>Report>ConfirmationReportREDM
+Configuration MegaCor>Echéancier>Report>ConfirmationReportDVCA
+Configuration MegaCor>Echéancier>Report>ConfirmationReportSPLF
+Configuration MegaCor>Echéancier>Report>ConfirmationReportBONU
+Configuration MegaCor>Echéancier>Report>ConfirmationReportPRED
+Configuration MegaCor>Echéancier>Report>DVOPConfirmation
+Configuration MegaCor>Echéancier>Report>ConfirmationReportOPA
+Configuration MegaCor>Echéancier>Report>ConfirmationReportOPR
+Configuration MegaCor>Echéancier>Report>Avis Des Operations sur Titres
+Configuration MegaCor>Echéancier>Report>Attestation De Blocage - Assemblee Generale
+Configuration MegaCor>Echéancier>Configuration OST générées depuis l'Echéancier
+Configuration MegaCor>Notification>Données à Notifier
+Configuration MegaCor>Notification>SLA Notification par Défaut
+Configuration MegaCor>Notification>SLA Notification
+Configuration MegaCor>Notification>SLA Reporting Client
+Configuration MegaCor>Notification>SLA Reporting Nostro
+Configuration MegaCor>Notification>Profil de Reporting
+Configuration MegaCor>Notification>SLA Date de Rappel
+Configuration MegaCor>Notification>SLA Reporting Claims Marché
+Configuration MegaCor>Alertes>Alertes OST
+Configuration MegaCor>Alertes>SLA Gestion
+Configuration MegaCor>Alertes>SLA Gestion OST
+Configuration MegaCor>Alertes>Alertes MegaCommon
+Configuration MegaCor>Position>Eligible Position Set Up>Find / Create Eligible Position Setup
+Configuration MegaCor>Position>Eligible Position Set Up>Eligible Position Date
+Configuration MegaCor>Position>Eligible Position Set Up>Eligible date config
+Configuration MegaCor>Position>Eligible Position Set Up>Block Position SLA
+Configuration MegaCor>Position>Security Position Config>Position Config>Position Nature
+Configuration MegaCor>Position>Security Position Config>Position Config>KeyConfig
+Configuration MegaCor>Position>Security Position Config>Position Config>FungibleKeys
+Configuration MegaCor>Position>Security Position Config>Position Config>Impact On Position
+Configuration MegaCor>Position>Security Position Config>Position Config>SP Impact On Position SLA
+Configuration MegaCor>Position>Security Position Config>Position Config>Impact By event SLA
+Configuration MegaCor>Position>Security Position Config>PendingMvt Config>Security Context
+Configuration MegaCor>Position>Security Position Config>PendingMvt Config>Mvt Status
+Configuration MegaCor>Position>Security Position Config>PendingMvt Config>SPMvtStatusSLA
+Configuration MegaCor>Position>Security Position Config>Position Depo SLA
+Configuration MegaCor>Position>Security Position Config>TransactionIndicatorSLA
+Configuration MegaCor>Position>Security Position Config>Ordering Configuration
+Configuration MegaCor>Position>Security Position Config>OwnerShip Date SLA
+Configuration MegaCor>Position>Eligible Account>Eligible Cash Account
+Configuration MegaCor>Position>Eligible Account>Eligible Nostro Cash
+Configuration MegaCor>Instruction>SLA Date Limite Client
+Configuration MegaCor>Instruction>SLA Instruction par Défaut
+Configuration MegaCor>Instruction>Config Process Individuel
+Configuration MegaCor>Instruction>SLA Forex
+Configuration MegaCor>Instruction>Freeze Configuration
+Configuration MegaCor>Instruction>Configuration de la validation des instructions client
+Configuration MegaCor>Régles de Contrôle>Incomplete State Config
+Configuration MegaCor>Régles de Contrôle>His Rule Config
+Configuration MegaCor>Régles de Contrôle>CA status Config
+Configuration MegaCor>Réclamations>Claim Reporting SLA
+Configuration MegaCor>Réclamations>Claim Management SLA
+Configuration MegaCor>Réclamations>Claim Payment SLA
+Configuration MegaCor>Exécutions>SLA Calcul Fraction
+Configuration MegaCor>Exécutions>SLA Gestion Espèce
+Configuration MegaCor>Exécutions>SLA Methode de Calcul
+Configuration MegaCor>Exécutions>SLA éligibilité Compte espèce
+Configuration MegaCor>Exécutions>SLA Configuration Workflow
+Configuration MegaCor>Comptabilité>SLA de comptabilité
+Configuration MegaCor>Paiement>SLA Contractual Payment
+Configuration MegaCor>Paiement>SLA Validation Postage Comptabilité
+Configuration MegaCor>Paiement>SLA Génération de Comptabilité
+Configuration MegaCor>Configuration CRA>Config Consolidation
+Configuration MegaCor>Configuration CRA>Config Réconciliation
+Configuration MegaCor>Configuration CRA>Config Allocation
+Configuration MegaCor>Taxe>Référentiel>Créer/Afficher Exercice Fiscal
+Configuration MegaCor>Taxe>Référentiel>Créer/Afficher Autorité Fiscale
+Configuration MegaCor>Taxe>Référentiel>Créer/Afficher Nom Classification Fiscale
+Configuration MegaCor>Taxe>Référentiel>Créer/Afficher Règle de Calcul de Taxe
+Configuration MegaCor>Taxe>Référentiel>Créer/Afficher Type de Taxation
+Configuration MegaCor>Taxe>Référentiel>Créer/Afficher Crédit de Taxe
+Configuration MegaCor>Taxe>Configuration>Créer/Afficher Nature Fiscale
+Configuration MegaCor>Taxe>Configuration>Créer/Afficher Catégorie Fiscale
+Configuration MegaCor>Taxe>Configuration>Créer/Afficher Profil Fiscal
+Configuration MegaCor>Taxe>Configuration>Créer/Afficher SLA Règle Fiscale
+Configuration MegaCor>Taxe>Configuration>Créer/Afficher SLA Execption de Taxe
+Configuration MegaCor>Taxe>Configuration>Créer/Afficher SLA Exonération de Taxe
+Configuration MegaCor>Taxe>Configuration>Créer/Afficher Traité Bilatéral
+Configuration MegaCor>CGC>Messages Instruction sortants
+Configuration MegaCor>CGC>MegaCor CGC Impact Setup
+Configuration MegaCor>CGC>CGC Position Impact Setup
+Configuration MegaCor>CGC>CGC Caller SLA
+Configuration MegaCor>CGC>Cost Amount SLA
+Configuration MegaCor>CGC>Fungibility Keys Setup
+Configuration MegaCor>CGC>Ordering Method Setup
+Configuration MegaCor>CGC>Transaction Ordering Keys
+Configuration MegaCor>Commissions>SLA Règles de Commissionnement MegaCor
+Configuration MegaCor>Commissions>SLA Commission d'Intermédiation
+Configuration MegaCor>Commissions>SLA Commissions de Bourse
+Configuration MegaCor>Commissions>Créer/Afficher Règle de Commissionnement
+Configuration MegaCor>Operation Log>List Operation Log
+Configuration MegaCor>Operation Log>Operation Log Config
+Configuration MegaCor>Transaction Fees>Find/Create Transaction Fees
+Configuration MegaCor>Transaction Fees>Find/Create Transaction Fees Job
+Configuration MegaCor>Transaction Fees>Find/Create Transaction Fees Profile
+Configuration MegaCor>Transaction Fees>Find/Create Transaction Fees SLA
+Configuration MegaCor>Transaction Fees>Find/Create Bill By Process
+Configuration MegaCor>Transaction Fees>Manual Transaction Fees Process
+Configuration MegaCor>Jobs Automatiques>Config Job Automatique
+Configuration MegaCor>Jobs Automatiques>Config Activation Automatique de l'OST
+Configuration MegaCor>Advanced>Incoming Routing>MCNotificationImpactSLA
+Configuration MegaCor>Advanced>Incoming Routing>Routing SLA
+Configuration MegaCor>Advanced>Incoming Routing>Address Setup
+Configuration MegaCor>Advanced>Incoming Routing>Swift Rule
+Configuration MegaCor>Advanced>Outgoing Routing>Channel Configuration
+Configuration MegaCor>Advanced>Outgoing Routing>Notification Type
+Configuration MegaCor>Advanced>Outgoing Routing>Swift Driver Configuration
+Configuration MegaCor>Advanced>Outgoing Routing>Jasper Report Driver Configuration
+Configuration MegaCor>Advanced>Outgoing Routing>Scripting Configuration>Scripting Config
+Configuration MegaCor>Advanced>Outgoing Routing>Scripting Configuration>Scripting Driver Config
+Configuration MegaCor>Advanced>Internal Parameters>Constraint Instantiation SLA
+Configuration MegaCor>Advanced>Technical Config>Presentation>Next To Do Actions
+Configuration MegaCor>Advanced>Technical Config>Excel Driver>Config
+Configuration MegaCor>Advanced>Technical Config>Excel Driver>IOExcelGConfig
+Configuration MegaCor>Advanced>Technical Config>Configuration Loader
+Configuration MegaCor>Advanced>Cash Config>Cash Context
+Configuration MegaCor>Advanced>Cash Config>Min Balance SLA
+Configuration MegaCor>Advanced>Other Configs>Search Caches
+Configuration MegaCor>Advanced>Other Configs>Class Dipatcher
+Configuration MegaCor>Advanced>Other Configs>Massive Load
+Configuration MegaCor>Advanced>Other Configs>Update BusinessDate
+Configuration MegaCor>Autre>Reports>Uninstructed Balance
+Configuration MegaCor>Autre>Reports>Task To Do
+Configuration MegaCor>Autre>Reports>TotalSwift
+Configuration MegaCor>Autre>Reports>TotalIncomingSwift
+Configuration MegaCor>Autre>Reports>IncomingSwiftErrors
+Configuration MegaCor>Autre>Reports>TotalOutgoingSwift
+Configuration MegaCor>Autre>Reports>AckedOutgoingSwifts
+Configuration MegaCor>Autre>Web Access>Client Informations>Entities>Physical Clients
+Configuration MegaCor>Autre>Web Access>Client Informations>Entities>Organizations
+Configuration MegaCor>Autre>Web Access>Client Informations>Accounts>Client Securities Account
+Configuration MegaCor>Autre>Web Access>Client Informations>Accounts>Client Cash Account
+Configuration MegaCor>Autre>Web Access>Client Position>Client Eligible Position
+Configuration MegaCor>Autre>Web Access>Client Position>Security Position>Client Position
+Configuration MegaCor>Autre>Web Access>Client Position>Security Position>Client Pending Movements
+Configuration MegaCor>Autre>Web Access>Client Position>Cash Position>Client Balance
+Configuration MegaCor>Autre>Web Access>Client Position>Cash Position>Client Pending Movements
+Configuration MegaCor>Autre>Web Access>List Corporate Action
+Configuration MegaCor>Autre>Web Access>List Client Notifications
+Configuration MegaCor>Autre>Web Access>List Client Instructions
+Configuration MegaCor>Autre>Web Access>List Client Entitlements
+Configuration MegaCor>Autre>Web Access>List Client Payments>List Cash Payments
+Configuration MegaCor>Autre>Web Access>List Client Payments>List Security Payments
+Configuration MegaCor>Autre>Web Access>List Client Payments>List Confirmation Message
+Configuration MegaCor>Anciens liens>OST sans Brouillon
+Configuration MegaCor>Anciens liens>Vue Globale ALL
+Configuration MegaCor>Anciens liens>Réconciliation>Réconcilier
+Configuration MegaCor>Anciens liens>Réconciliation>Consultation
+Configuration MegaCor>Anciens liens>Paiement Confirmé
+Configuration MegaCor>Anciens liens>Création
+Configuration MegaCor>Anciens liens>Corrections Data CA
+Configuration MegaCor>Anciens liens>MT568>Lister
+Configuration MegaCor>Anciens liens>MT568>Fill MT568
+Configuration MegaCor>Anciens liens>MT568>Envoyer MT568
+Configuration MegaCor>Anciens liens>MT568>MT568
+Configuration MegaCor>Anciens liens>MT567>Générer MT567 Ad Hoc
+Configuration MegaCor>Anciens liens>MT567>Générer Ad hoc MT 567 pour MEET/ XMET

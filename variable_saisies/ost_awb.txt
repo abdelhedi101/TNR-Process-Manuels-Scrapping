@@ -1,0 +1,1 @@
+Type OST = Paiement de dividendes en espèce

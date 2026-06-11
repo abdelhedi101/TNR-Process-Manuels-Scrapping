@@ -1,0 +1,13 @@
+# Valeurs modifiables pour le menu Saisie Instruction Client
+OTC=Vrai
+Référence Client*=testrvp5
+Type de transaction*=RVP - ACHAT CONTRE PAIEMENT
+Actif*=MA0002010009
+Quantité entrante* = 10
+Ordered Qty = 10
+Compte titres client* = 520000869678500099
+Contrepartie= M000000000580
+Bénéficiaire = M000000000580
+Date Négociation*= 05/06/2026
+Prix* = 10
+Taux Négocié = 1

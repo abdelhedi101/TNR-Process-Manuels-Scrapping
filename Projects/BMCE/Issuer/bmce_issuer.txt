@@ -1,0 +1,76 @@
+Paramètrage>Planificateur Quartz>Chercher / Créer processus
+Paramètrage>Planificateur Quartz>Configuration processus
+Paramètrage>Planificateur Quartz>Suivi execution processus
+Paramètrage>Raccourci du Référentiel
+Paramètrage>Raccourci du Référentiel>Acteurs
+Paramètrage>Raccourci du Référentiel>Acteurs>Actionnaires
+Paramètrage>Raccourci du Référentiel>Acteurs>Centralisateur
+Paramètrage>Raccourci du Référentiel>Acteurs>Contreparties
+Paramètrage>Raccourci du Référentiel>Acteurs>Dépositaires
+Paramètrage>Raccourci du Référentiel>Acteurs>Emetteur
+Paramètrage>Raccourci du Référentiel>Acteurs>Société de Gestion
+Paramètrage>Raccourci du Référentiel>Acteurs>Teneur de Registre
+Paramètrage>Raccourci du Référentiel>Comptes
+Paramètrage>Raccourci du Référentiel>Comptes>Compte Titre Centralisateur
+Paramètrage>Raccourci du Référentiel>Comptes>Compte dépositaire
+Paramètrage>Raccourci du Référentiel>Comptes>Compte technique
+Paramètrage>Raccourci du Référentiel>Comptes>Compte émetteur
+Paramètrage>Raccourci du Référentiel>Entité Principale
+Paramètrage>Raccourci du Référentiel>Entité Principale>Consultattion de l'entité principale
+Paramètrage>Raccourci du Référentiel>Instruments Financiers
+Paramètrage>Raccourci du Référentiel>Instruments Financiers>Actions
+Paramètrage>Raccourci du Référentiel>Instruments Financiers>Droits
+Paramètrage>Raccourci du Référentiel>Instruments Financiers>OPCVM
+Paramètrage>Raccourci du Référentiel>Instruments Financiers>Obligations
+Paramètrage>Raccourci du Référentiel>Instruments Financiers>TCN
+Report>InsImpactStatus
+Tenue de registre>Compte émission OPCVM
+Tenue de registre>Compte émission OPCVM>Clôture des comptes émission
+Tenue de registre>Compte émission OPCVM>Consultation des comptes émission
+Tenue de registre>Compte émission OPCVM>Déversement du compte technique
+Tenue de registre>Compte émission OPCVM>Edition des comptes émission
+Tenue de registre>Compte émission OPCVM>Mise à jour des comptes émission
+Tenue de registre>Compte émission OPCVM>Validation
+Tenue de registre>Compte émission OPCVM>Validation>Rejet de la création
+Tenue de registre>Compte émission OPCVM>Validation>Validation de la création
+Tenue de registre>Compte émission OPCVM>Validation>Validation de la mise à jour / clôture
+Tenue de registre>Compte émission non OPCVM
+Tenue de registre>Compte émission non OPCVM>Clôture des comptes émission
+Tenue de registre>Compte émission non OPCVM>Consultation des comptes émission
+Tenue de registre>Compte émission non OPCVM>Edition des comptes émission
+Tenue de registre>Compte émission non OPCVM>Mise à jour des comptes émission
+Tenue de registre>Compte émission non OPCVM>Validation
+Tenue de registre>Compte émission non OPCVM>Validation>Rejet de la création
+Tenue de registre>Compte émission non OPCVM>Validation>Validation de la création
+Tenue de registre>Compte émission non OPCVM>Validation>Validation de la mise à jour / clôture
+Tenue de registre>Création compte émission
+Tenue de registre>Création compte émission>Création compte émission
+Tenue de registre>Création compte émission>Création compte émission droit / coupon
+Tenue de registre>Gestion des opérations
+Tenue de registre>Gestion des opérations>Annulation des opérations
+Tenue de registre>Gestion des opérations>Annulation des opérations>Annulation des opérations
+Tenue de registre>Gestion des opérations>Consultation des opérations
+Tenue de registre>Gestion des opérations>Consultation des opérations>Consultation des impacts d'opérations
+Tenue de registre>Gestion des opérations>Consultation des opérations>Consultation des opérations
+Tenue de registre>Gestion des opérations>Saisie des opérations
+Tenue de registre>Gestion des opérations>Saisie des opérations>Achat/Vente
+Tenue de registre>Gestion des opérations>Saisie des opérations>Blocage / Déblocage
+Tenue de registre>Gestion des opérations>Saisie des opérations>Conversion
+Tenue de registre>Gestion des opérations>Saisie des opérations>Nantissement / Levée de Nantissement
+Tenue de registre>Gestion des opérations>Saisie des opérations>Souscription/Rachat
+Tenue de registre>Gestion des opérations>Saisie des opérations>Transfert
+Tenue de registre>Gestion des opérations>Validation des opérations
+Tenue de registre>Gestion des opérations>Validation des opérations>Validation des opérations
+Tenue de registre>Gestion des opérations>Validation des opérations>Validation des transferts
+Tenue de registre>Gestion des registres
+Tenue de registre>Gestion des registres>Consultation des avoirs
+Tenue de registre>Gestion des registres>Consultation des registres générès par date
+Tenue de registre>Gestion des registres>Génération du registre nominatif
+Tenue de registre>Génération des rapports
+Tenue de registre>Génération des rapports>Etat Fiscal
+Tenue de registre>Génération des rapports>Etat des soldes de gestion
+Tenue de registre>Génération des rapports>Fiche position titres actionnaire
+Tenue de registre>Génération des rapports>Journal des mouvements émetteur
+Tenue de registre>Génération des rapports>Registre de transfert des actionnaires
+Tenue de registre>Génération des rapports>Relevé des titres par actionnaire
+Tenue de registre>Génération des rapports>Répartition du capital
