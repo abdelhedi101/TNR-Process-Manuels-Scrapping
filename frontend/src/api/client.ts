@@ -104,3 +104,70 @@ export const getExecutionLogs = (id: number) =>
 /** Arrête une exécution en cours */
 export const stopExecution = (id: number) =>
   api.delete(`/executions/${id}`).then(r => r.data)
+
+// ---------------------------------------------------------------------------
+// Variables de saisie — lire / écrire les fichiers de config
+// ---------------------------------------------------------------------------
+
+export interface VariableEntry {
+  key: string
+  value: string
+  required: boolean
+}
+
+export interface VariablesResponse {
+  client: string
+  process: string
+  file_path: string
+  variables: VariableEntry[]
+}
+
+/** Lit le fichier de variables d'un processus */
+export const getVariables = (client: string, process: string) =>
+  api.get<VariablesResponse>(`/variables/${client}/${process}`).then(r => r.data)
+
+/** Sauvegarde les variables d'un processus */
+export const updateVariables = (client: string, process: string, variables: VariableEntry[]) =>
+  api.put(`/variables/${client}/${process}`, { variables }).then(r => r.data)
+
+/** Parse un contenu de fichier .txt de variables (même format que le backend) */
+export function parseVariableFile(text: string): VariableEntry[] {
+  const entries: VariableEntry[] = []
+  for (const line of text.split(/\r?\n/)) {
+    const s = line.trim()
+    if (!s || s.startsWith('#')) continue
+    const idx = s.indexOf('=')
+    if (idx === -1) continue
+    const key   = s.slice(0, idx).trim()
+    const value = s.slice(idx + 1).trim()
+    entries.push({ key, value, required: key.endsWith('*') })
+  }
+  return entries
+}
+
+// ---------------------------------------------------------------------------
+// Screenshots — captures prises pendant un TNR
+// ---------------------------------------------------------------------------
+
+export interface ScreenshotFile {
+  name: string
+  path: string   // chemin relatif : "AWB/megacommon/position/screen_123.png"
+  size: number
+}
+
+export interface ScreenshotsInfo {
+  count: number
+  files: ScreenshotFile[]
+}
+
+/** Liste les captures d'une exécution */
+export const getScreenshots = (id: number) =>
+  api.get<ScreenshotsInfo>(`/executions/${id}/screenshots`).then(r => r.data)
+
+/** URL de téléchargement ZIP (utilisée directement dans un <a href>) */
+export const getScreenshotsDownloadUrl = (id: number) =>
+  `/api/executions/${id}/screenshots/download`
+
+/** URL d'une capture individuelle (pour <img src>) */
+export const getScreenshotUrl = (id: number, path: string) =>
+  `/api/executions/${id}/screenshots/${path}`

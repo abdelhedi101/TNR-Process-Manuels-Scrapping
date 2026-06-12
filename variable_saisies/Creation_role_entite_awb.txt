@@ -1,9 +1,9 @@
 # Valeurs modifiables pour le menu création entité
-Description* = Personne_58
+Description* = Personne_60
 Résidence* = MA - MAROC
 Type d'entité* = Personne Physique
 Type Identifiant = CIN
-N° piéce d'identité = 8218714392
+N° piéce d'identité =8218714398
 Role = Client Physique
 Catégorie d'agent économique = 340
 Catégorie Socioprofessionnelle = 51

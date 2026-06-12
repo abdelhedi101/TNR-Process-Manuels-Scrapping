@@ -18,6 +18,8 @@ from fastapi.middleware.cors import CORSMiddleware
 from database import engine, Base
 from api.clients import router as clients_router
 from api.executions import router as executions_router
+from api.screenshots import router as screenshots_router
+from api.variables import router as variables_router
 
 # ---------------------------------------------------------------------------
 # CRÉER L'APPLICATION FASTAPI
@@ -70,6 +72,12 @@ app.include_router(clients_router)
 
 # Les endpoints définis dans api/executions.py
 app.include_router(executions_router)
+
+# Les endpoints pour les captures d'écran TNR
+app.include_router(screenshots_router)
+
+# Les endpoints pour les variables de saisie
+app.include_router(variables_router)
 
 
 # ---------------------------------------------------------------------------

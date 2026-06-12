@@ -979,7 +979,11 @@ def main() -> None:
     base.AUTH_TYPE = AUTH_TYPE
 
     os.environ.setdefault("MENU_CATEGORY_SLUG", "MegaCustody")
-    menu_paths = awb.load_menu_paths(MENU_PATH_FILE)
+    menu_paths = [
+        ["Règlement/Livraison", "Instructions Clients", "Saisie Instruction Client"],
+        ["Règlement/Livraison", "Instructions Marché", "Appariement"],
+        ["Règlement/Livraison", "Instructions Marché", "Dénouement"],
+    ]
     with sync_playwright() as playwright:
         browser = playwright.chromium.launch(
             channel="chrome",
@@ -1040,7 +1044,7 @@ def main() -> None:
                     logging.error(traceback.format_exc())
                     raise
             else:
-                logging.error("No menu paths loaded from %s; strict ordered execution requires the txt file.", MENU_PATH_FILE)
+                logging.error("No menu paths defined; strict ordered execution aborted.")
                 return
 
             common_page = base.find_megacommon_page(context, common_page)

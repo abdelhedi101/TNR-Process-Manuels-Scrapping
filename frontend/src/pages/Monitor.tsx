@@ -10,8 +10,11 @@
 import { useEffect, useRef, useState } from 'react'
 import { useParams, Link } from 'react-router-dom'
 import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query'
-import { ArrowLeft, Square, CheckCircle, XCircle, Loader2 } from 'lucide-react'
-import { getExecution, stopExecution, type LogEntry } from '../api/client'
+import { ArrowLeft, Square, CheckCircle, XCircle, Loader2, Download, Camera, ImageIcon } from 'lucide-react'
+import {
+  getExecution, stopExecution, getScreenshots, getScreenshotsDownloadUrl, getScreenshotUrl,
+  type LogEntry,
+} from '../api/client'
 
 export default function Monitor() {
   // useParams récupère l'id depuis l'URL : /monitor/42 → id = "42"
@@ -88,7 +91,7 @@ export default function Monitor() {
   }
 
   return (
-    <div className="p-8 h-screen flex flex-col max-w-5xl">
+    <div className="p-6 h-screen flex flex-col">
 
       {/* En-tête */}
       <div className="flex items-center justify-between mb-6">
@@ -182,6 +185,107 @@ export default function Monitor() {
         <div className="mt-4 p-4 bg-red-500/10 border border-red-500/20 rounded-xl flex items-center gap-3">
           <XCircle className="w-5 h-5 text-red-400" />
           <p className="text-red-400 text-sm">{execution.error_msg || 'Erreur lors de l\'exécution'}</p>
+        </div>
+      )}
+
+      {/* Panneau captures — visible uniquement si l'exécution est terminée */}
+      {execution && (execution.status === 'success' || execution.status === 'error') && (
+        <ScreenshotsPanel executionId={executionId} />
+      )}
+    </div>
+  )
+}
+
+// ---------------------------------------------------------------------------
+// Panneau de captures d'écran TNR
+// ---------------------------------------------------------------------------
+
+function ScreenshotsPanel({ executionId }: { executionId: number }) {
+  const [showGallery, setShowGallery] = useState(false)
+
+  const { data, isLoading } = useQuery({
+    queryKey: ['screenshots', executionId],
+    queryFn:  () => getScreenshots(executionId),
+    // Relance la requête toutes les 3 secondes au cas où les captures arrivent
+    // juste après la fin du script (flush disque)
+    refetchInterval: (q) => (q.state.data?.count === 0 ? 3000 : false),
+    retry: 2,
+  })
+
+  const count = data?.count ?? 0
+
+  if (isLoading) return null  // ne rien afficher pendant le chargement
+
+  return (
+    <div className="mt-4 bg-[#1a1d27] border border-[#2d3148] rounded-xl overflow-hidden">
+
+      {/* En-tête avec compteur et bouton download */}
+      <div className="px-5 py-3 flex items-center justify-between border-b border-[#2d3148]">
+        <div className="flex items-center gap-2">
+          <Camera className="w-4 h-4 text-indigo-400" />
+          <span className="text-white text-sm font-medium">Captures d'écran</span>
+          <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${
+            count > 0
+              ? 'bg-amber-500/10 text-amber-400 border border-amber-500/20'
+              : 'bg-slate-500/10 text-slate-400 border border-slate-500/20'
+          }`}>
+            {count} fichier{count !== 1 ? 's' : ''}
+          </span>
+        </div>
+
+        {count > 0 && (
+          <div className="flex items-center gap-2">
+            <button
+              onClick={() => setShowGallery(v => !v)}
+              className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[#252836] hover:bg-[#2d3148] text-[#94a3b8] hover:text-white text-xs transition-colors"
+            >
+              <ImageIcon className="w-3.5 h-3.5" />
+              {showGallery ? 'Masquer' : 'Aperçu'}
+            </button>
+            <a
+              href={getScreenshotsDownloadUrl(executionId)}
+              download
+              className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white text-xs font-medium transition-colors"
+            >
+              <Download className="w-3.5 h-3.5" />
+              Télécharger ZIP
+            </a>
+          </div>
+        )}
+      </div>
+
+      {/* Pas de captures */}
+      {count === 0 && (
+        <div className="px-5 py-4 text-[#64748b] text-sm">
+          Aucune capture — le script n'a pas détecté d'erreurs.
+        </div>
+      )}
+
+      {/* Galerie miniatures */}
+      {count > 0 && showGallery && (
+        <div className="p-4 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3">
+          {data!.files.map((file) => (
+            <a
+              key={file.path}
+              href={getScreenshotUrl(executionId, file.path)}
+              target="_blank"
+              rel="noopener noreferrer"
+              title={file.path}
+              className="group block rounded-lg overflow-hidden border border-[#2d3148] hover:border-indigo-500 transition-colors"
+            >
+              <img
+                src={getScreenshotUrl(executionId, file.path)}
+                alt={file.name}
+                className="w-full h-24 object-cover object-top bg-[#0d0f16]"
+                loading="lazy"
+              />
+              <div className="px-2 py-1 bg-[#141720]">
+                <p className="text-[10px] text-[#64748b] truncate group-hover:text-white transition-colors">
+                  {file.name.replace(/\.[^.]+$/, '')}
+                </p>
+              </div>
+            </a>
+          ))}
         </div>
       )}
     </div>

@@ -10,11 +10,12 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 
-import Sidebar    from './components/Sidebar'
-import Dashboard  from './pages/Dashboard'
-import Execute    from './pages/Execute'
-import Monitor    from './pages/Monitor'
-import History    from './pages/History'
+import Sidebar      from './components/Sidebar'
+import Dashboard    from './pages/Dashboard'
+import Execute      from './pages/Execute'
+import ExecuteVars  from './pages/ExecuteVars'
+import Monitor      from './pages/Monitor'
+import History      from './pages/History'
 
 // QueryClient : le gestionnaire de cache pour tous les appels API
 // staleTime: 30s → les données ne sont pas rechargées pendant 30 secondes
@@ -37,13 +38,16 @@ export default function App() {
           <Sidebar />
 
           {/* Contenu principal — décalé de 240px (largeur sidebar) */}
-          <main className="flex-1 ml-60 overflow-auto">
+          <main className="flex-1 ml-60 min-h-screen">
             <Routes>
               {/* Route "/" → Dashboard (page d'accueil) */}
               <Route path="/"           element={<Dashboard />} />
 
               {/* Route "/execute" → Page de lancement */}
               <Route path="/execute"    element={<Execute />} />
+
+              {/* Route "/execute/:client/:module/:process" → Variables + lancement */}
+              <Route path="/execute/:client/:module/:process" element={<ExecuteVars />} />
 
               {/* Route "/monitor/:id" → Page de monitoring
                   :id est dynamique : /monitor/1, /monitor/42, etc. */}

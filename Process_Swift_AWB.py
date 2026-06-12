@@ -416,6 +416,33 @@ def step_settlement() -> bool:
 
 # ── MegaCustody UI verification (Playwright) ──────────────────────────────────
 
+EXECUTE_CRITERIA_SELECTOR = "#Component_PAGE_FORM_0_executeCriteria_null"
+AWB_CLOSE_TAB_AFTER_VIEW_XPATH = "/html/body/div[2]/div/div[3]/div[1]/div[1]/ul/li[1]/a[1]"
+
+
+def close_work_window(page, path_label: str) -> None:
+    from playwright.sync_api import TimeoutError as PlaywrightTimeoutError, Error as PlaywrightError
+    if page.is_closed():
+        return
+    close_candidates = [
+        page.locator(f"xpath={AWB_CLOSE_TAB_AFTER_VIEW_XPATH}").first,
+        page.locator("a.x-tab-strip-close").first,
+        page.locator("div.x-tool-close").first,
+        page.locator("button[aria-label='Close']").first,
+    ]
+    for target in close_candidates:
+        try:
+            if not target.count():
+                continue
+            target.click(force=True, timeout=3500)
+            page.wait_for_timeout(500)
+            return
+        except PlaywrightTimeoutError:
+            pass
+        except PlaywrightError:
+            return
+
+
 NOTIFICATION_MESSAGES_PATH = ("Notification", "Messages")
 NOTIFICATION_SWIFTS_MT54X_PATH = ("Notification", "Swifts", "MT54X")
 MONITORING_INSTRUCTIONS_PATH = (
@@ -531,7 +558,6 @@ def _close_all_work_tabs(page, max_iterations: int = 10) -> None:
     `close_work_window` call only dismisses one. Loop until no closable tab
     is found or the safety cap is reached.
     """
-    import saisie_awb as awb
     # First, dismiss any stuck modal popup (validation confirmation, error dialog, …)
     # by trying common OK/close affordances and pressing Escape twice.
     try:
@@ -576,7 +602,7 @@ def _close_all_work_tabs(page, max_iterations: int = 10) -> None:
     for _ in range(max_iterations):
         # First try the high-level helper (handles Megara-specific close icons)
         try:
-            awb.close_work_window(page, "")
+            close_work_window(page, "")
         except Exception:
             pass
         page.wait_for_timeout(150)
@@ -597,8 +623,7 @@ def _close_all_work_tabs(page, max_iterations: int = 10) -> None:
 
 
 def _click_execute_search(page) -> bool:
-    import saisie_awb as awb
-    locator = page.locator(awb.EXECUTE_CRITERIA_SELECTOR)
+    locator = page.locator(EXECUTE_CRITERIA_SELECTOR)
     for i in range(locator.count()):
         candidate = locator.nth(i)
         try:
@@ -935,11 +960,10 @@ def _right_click_first_row_voir_screenshot(page, screenshot_path: Path, return_a
 
 def _filter_view_and_screenshot(page, menu_path: Tuple[str, ...], timestamp: str, label: str) -> bool:
     """Open menu, set Creation Date >= timestamp, execute, view 1st row, screenshot."""
-    import saisie_awb as awb
     log.info("UI step → %s", " > ".join(menu_path))
     # Close any leftover work window from a previous step
     try:
-        awb.close_work_window(page, label)
+        close_work_window(page, label)
     except Exception:
         pass
     if not _open_menu_path(page, menu_path):
@@ -960,10 +984,9 @@ def _filter_view_and_screenshot(page, menu_path: Tuple[str, ...], timestamp: str
 
 def _execute_and_screenshot_grid(page, menu_path: Tuple[str, ...], label: str) -> bool:
     """Open menu, click Execute Search, screenshot the grid."""
-    import saisie_awb as awb
     log.info("UI step → %s", " > ".join(menu_path))
     try:
-        awb.close_work_window(page, label)
+        close_work_window(page, label)
     except Exception:
         pass
     if not _open_menu_path(page, menu_path):
@@ -1185,11 +1208,10 @@ def _screenshot_and_dismiss_popup(page, screenshot_path: Path) -> bool:
 def _monitoring_instruction_client_extended(page, timestamp: str) -> Optional[str]:
     """Open Monitoring Instructions Client, expand criteria, set Date, view first row,
     screenshot, capture Référence Client. Returns the captured reference or None."""
-    import saisie_awb as awb
     label = "monitoring_instructions_client"
     log.info("UI step → %s", " > ".join(MONITORING_INSTRUCTIONS_PATH))
     try:
-        awb.close_work_window(page, label)
+        close_work_window(page, label)
     except Exception:
         pass
     if not _open_menu_path(page, MONITORING_INSTRUCTIONS_PATH):
@@ -1265,7 +1287,6 @@ def _monitoring_instruction_client_extended(page, timestamp: str) -> Optional[st
 def _validation_instruction_client(page, client_ref: str) -> bool:
     """Open Validation Instruction Client, filter by client_ref, validate first row,
     screenshot popup and dismiss."""
-    import saisie_awb as awb
     label = "validation_instruction_client"
     log.info("UI step → %s", " > ".join(VALIDATION_INSTRUCTION_CLIENT_PATH))
     try:
@@ -1298,7 +1319,6 @@ def _validation_instruction_client(page, client_ref: str) -> bool:
 def _monitoring_instruction_marche(page, client_ref: str) -> Optional[str]:
     """Open Monitoring Instructions Marché, filter by client_ref, execute, right-click
     first row, click Voir, screenshot, capture `Ref Lien`. Returns ref or None."""
-    import saisie_awb as awb
     label = "monitoring_instructions_marche"
     log.info("UI step → %s", " > ".join(MONITORING_INSTRUCTIONS_MARCHE_PATH))
     try:

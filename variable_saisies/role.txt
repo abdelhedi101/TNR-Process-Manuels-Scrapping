@@ -1,1 +1,2 @@
-Entité = 00000000
+# Valeur de l'entite a utiliser pour l'affectation du role
+entity=Personne_59

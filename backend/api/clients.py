@@ -74,12 +74,12 @@ ALL_PROCESSES = {
     "swift":      {"slug": "swift",      "name": "Injection SWIFT",             "description": "Upload MT54X, MT548, MT54Y via SFTP"},
     "ost":        {"slug": "ost",        "name": "Operations sur Titres (OST)", "description": "Dividendes et paiements d'interets"},
     "tnr":        {"slug": "tnr",        "name": "Non-Regression (TNR)",        "description": "Tests complets de navigation + screenshots"},
-    "diagnostic": {"slug": "diagnostic", "name": "Diagnostic infra",            "description": "Verification WebSphere et IODevice ALLIANCE"},
+    "creation_entite": {"slug": "creation_entite", "name": "Création Entité",          "description": "Création entité + Affectation rôle (MegaCommon)"},
 }
 
 # Processus disponibles PAR CLIENT — uniquement ceux qui ont un script correspondant
 CLIENT_PROCESSES = {
-    "awb":  ["saisie", "process_rl", "swift", "ost", "tnr", "diagnostic"],
+    "awb":  ["saisie", "process_rl", "swift", "ost", "tnr", "creation_entite"],
     "bmce": ["saisie", "tnr"],
     "cdg":  ["saisie", "process_rl", "tnr"],
 }

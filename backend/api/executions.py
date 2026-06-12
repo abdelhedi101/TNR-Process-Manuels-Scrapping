@@ -81,7 +81,7 @@ SCRIPT_MAP = {
     ("awb",  "tnr"):        os.path.join(PROJECT_ROOT, "non_regression_awb.py"),
     ("bmce", "tnr"):        os.path.join(PROJECT_ROOT, "non_regression_bmce.py"),
     ("cdg",  "tnr"):        os.path.join(PROJECT_ROOT, "non_regression_cdg.py"),
-    ("awb",  "diagnostic"): os.path.join(PROJECT_ROOT, "diag_megara.py"),
+    ("awb",  "creation_entite"): os.path.join(PROJECT_ROOT, "Creation_entite_awb.py"),
 }
 
 # ---------------------------------------------------------------------------
@@ -149,6 +149,16 @@ ENV_CONFIG: dict[tuple, dict] = {
         "AUTH_PASSWORD":   "Vermeg+123",
         "AUTH_DOMAIN":     "awb",
         "AUTH_TYPE":       "standard",
+    },
+
+    # ── AWB CRÉATION ENTITÉ (MegaCommon) ────────────────────────────────────
+    ("awb", "creation_entite"): {
+        "AUTH_USERNAME":   "migration",
+        "AUTH_PASSWORD":   "Vermeg+123",
+        "AUTH_DOMAIN":     "ALL",
+        "AUTH_TYPE":       "standard",
+        "MODULE_URL":      "http://10.1.140.244:9080/MegaCommon/login.jsp",
+        "MENU_CATEGORY_SLUG": "megacommon",
     },
 
     # ── BMCE SAISIE ─────────────────────────────────────────────────────────

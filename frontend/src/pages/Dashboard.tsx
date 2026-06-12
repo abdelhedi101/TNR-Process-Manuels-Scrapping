@@ -65,7 +65,7 @@ export default function Dashboard() {
   ]
 
   return (
-    <div className="p-8 max-w-6xl">
+    <div className="p-8 w-full">
 
       {/* En-tête */}
       <div className="flex items-center justify-between mb-8">

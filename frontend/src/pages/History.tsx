@@ -37,7 +37,7 @@ export default function History() {
   })
 
   return (
-    <div className="p-8 max-w-6xl">
+    <div className="p-8 w-full">
       <div className="flex items-center justify-between mb-8">
         <div>
           <h1 className="text-2xl font-semibold text-white">Historique</h1>
